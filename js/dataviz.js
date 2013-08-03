@@ -66,7 +66,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the tsv file
             .attr('y1', yScale(60000))
             .attr('y2', yScale(60000))
             .attr('x1', 0)
-            .attr('x2', 573*barwidth) //TODO it should refered to the date. May 2007, and not to a row in the file!
+            .attr('x2', 594*barwidth) //TODO it should refered to the date. May 2007, and not to a row in the file!
 	    .attr("class", "donaciones")
 	    .on("mouseover", function(d) {      
             div.transition()        
@@ -84,8 +84,8 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the tsv file
    	svg.append('line')
             .attr('y1', yScale(100000))
             .attr('y2', yScale(100000))
-            .attr('x1', 573*barwidth)
-            .attr('x2', 624*barwidth)
+            .attr('x1', 594*barwidth)
+            .attr('x2', 647*barwidth)
 	    .attr("class", "donaciones")
 	    .on("mouseover", function(d) {      
             div.transition()        
@@ -104,7 +104,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the tsv file
             .attr('y1', yScale(-60000))
             .attr('y2', yScale(-60000))
             .attr('x1', 0)
-            .attr('x2', 573*barwidth)
+            .attr('x2', 594*barwidth)
 	    .attr("class", "donaciones")
 	    .on("mouseover", function(d) {      
             div.transition()        
@@ -122,8 +122,8 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the tsv file
    	svg.append('line')
             .attr('y1', yScale(-100000))
             .attr('y2', yScale(-100000))
-            .attr('x1', 573*barwidth)
-            .attr('x2', 624*barwidth)
+            .attr('x1', 594*barwidth)
+            .attr('x2', 647*barwidth)
 	    .attr("class", "donaciones")
 	    .on("mouseover", function(d) {      
             div.transition()        
