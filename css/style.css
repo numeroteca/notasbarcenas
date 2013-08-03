@@ -1,0 +1,61 @@
+
+body {
+  font: 10px sans-serif;
+}
+
+path {
+	stroke: steelblue;
+	stroke-width: 1;
+	fill: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+line.years  {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  stroke-width:5;
+}
+
+line.donaciones  {
+  fill: none;
+  stroke: #ccc;
+  shape-rendering: crispEdges;
+}
+
+line.donaciones:hover  {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  stroke-width:4;
+}
+.yearbar {
+ 
+}
+
+.x.axis path {
+  display: none;
+}
+
+.bar:hover {
+  fill: black;
+}
+.highlighted {fill: red;}
+.active {font-weight:bold;}
+
+div.tooltip {   
+  position: absolute;             
+  width: 150px;                         
+  padding: 8px;             
+  font: 12px sans-serif;        
+  background: #ddd;   
+  border: 0px;      
+  border-radius: 4px;           
+  pointer-events: none;         
+}
