@@ -1,647 +1,648 @@
-fecha	descripcion	entra	sale	entradas	saldo-anotado	saldo-calculado	persona
-04/1990	Saldo Inicial (Entrega R.N.)	48000		48000	48000	48000	Rosendo Naseiro
-04/1990	Entrega J. M.		1530	-1530		46470	J.M.
-05/1990	Entrega J. M.		1530	-1530		44940	J.M.
-06/1990	Entrega Paco (decl. Rent.)		3000	-3000		41940	Francisco Álvarez Cascos
-06/1990	Entrega J. M.		1530	-1530		40410	J.M.
-07/1990	Entrega J. M.		1530	-1530		38880	J.M.
-07/1990	Entrega J. M.		1530	-1530		37350	J.M.
-08/1990	Entrega J. M.		1530	-1530		35820	J.M.
-09/1990	Cobo		12000	-12000		23820	Manuel Cobo del Rosal
-09/1990	Cobo		12000	-12000		11820	Manuel Cobo del Rosal
-11/1990	Pepe C. (Gal.)	60000		60000	71820	71820	Pepe Cuiña
-11/1990	Piñeiro	30000		30000	101820	101820	Angel Piñeiro
-11/1990	Cobo		12000	-12000		89820	Manuel Cobo del Rosal
-11/1990	Cobo		12000	-12000		77820	Manuel Cobo del Rosal
-11/1990	Pedro A.		30000	-30000		47820	Pedro Arriola
-12/1990	Entrega Pedro A.		36000	-36000		11820	Pedro Arriola
-12/1990	Paco	90000		90000	101820	101820	Paco
-12/1990	Rosen (abogado)		12000	-12000		89820	Javier Boix
-01/1991	Entrega Pedro A.		45000	-45000		44820	Pedro Arriola
-02/1991	Piñeiro	31440		31440		76260	Angel Piñeiro
-02/1991	Piñeiro	54000		54000		130260	Angel Piñeiro
-03/1991	Pago IVA Sdades		2196	-2196		128064	Sociedades
-03/1991	Pago Sdades		3120	-3120		124944	Sociedades
-03/1991	Pago IVA		8640	-8640		116304	Sociedades
-03/1991	Pago Sdades		11712	-11712	104580	104592	Sociedades
-03/1991	Diferencia IRPF (Paco)		720	-720		103872	Francisco Álvarez Cascos
-03/1991	Pago IVA y Sdades		20040	-20040		83832	Sociedades
-03/1991	Entrega a Rosen (abogado)		30000	-30000		53832	Javier Boix
-03/1991	Entrega a Pedro A. (enero/febrero)		15000	-15000		38832	Pedro Arriola
-04/1991	Piñeiro 	36000		36000	74820	74832	Angel Piñeiro
-04/1991	Entrega a Pedro A. (marzo/abril)		15000	-15000		59832	Pedro Arriola
-05/1991	Entrega a Rosen (liq. final)		36000	-36000		23832	Javier Boix
-05/1991	Piñeiro 	42000		42000		65832	Angel Piñeiro
-06/1991	Difer IRPF Paco decl. 90		3000	-3000		62832	Francisco Álvarez Cascos
-06/1991	Piñeiro	36000		36000		98832	Angel Piñeiro
-06/1991	Entrega a Pedro A. (mayo/junio)		15000	-15000		83832	Pedro Arriola
-07/1991	Entrega "especial" a Pedro A. (encargo José M.)		6000	-6000		77832	Pedro Arriola / Jose M.
-09/1991	Registro Mercantil y acta notaría (Sdades)		120	-120		77712	Sociedades
-09/1991	Entrega a Pedro A. (julio/agosto)		15000	-15000	62712	62712	Pedro Arriola
-09/1991	Piñeiro	36000		36000		98712	Angel Piñeiro
-10/1991	Entrega a Viñarás (Canarias, Cascos/Rajoy)		1500	-1500		97212	Pedro Viñarás
-11/1991	Entrega a Pedro A. (sept y oct)		15000	-15000		82212	Pedro Arriola
-12/1991	Entrega a Jaime I. del B.		3600	-3600		78612	Jaime Ignacio de Burgo
-12/1991	Entrega a Pedro A. (nov y dic)		15000	-15000		63612	Pedro Arriola
-12/1991	Entrega a Javier A para Rafa A.		6000	-6000		57612	Javier Arenas, Rafa A.
-01/1992	Entrega Miguel A.R.		1050	-1050		56562	Miguel Ángel Rodríguez, Isabel Tenaille
-02/1992	Entrega Pedro A. (enero)		7500	-7500		49062	Pedro Arriola
-02/1992	Entrega a Javier A. para Rafa A.		6000	-6000		43062	Javier Arenas, Rafa A.
-02/1992	Entrega a Jaime I. del B. (Calixto)		3600	-3600		39462	Jaime Ignacio de Burgo, Calixto Yesa
-03/1992	Entrega A. Cámara para Laureano		9600	-9600		29862	Laureano López Rodó 
-03/1992	Entrega Pedro A. (febrero)		7500	-7500		22362	Pedro Arriola
-				0	9396	22362	
-05/1992	Piñeiro	60000		60000		82362	Angel Piñeiro
-05/1992	Entrega a Jaime I. (Calixto)		3600	-3600		78762	Jaime Ignacio de Burgo, Calixto Yesa
-05/1992	Entrega a Cámara para Laureano		7200	-7200		71562	Laureano López Rodó 
-05/1992	Entrega a Pedro A. (abril)		7500	-7500		64062	Pedro Arriola
-05/1992	Notaría Liq Ibé de F.		1200	-1200		62862	Sociedad Ibérica de Firmes
-05/1992	Entrega Pedro A. (regulariz. desde 1º año)		1788	-1788		61074	Pedro Arriola
-06/1992	Entrega Pedro A. (mayo)		7944	-7944		53130	Pedro Arriola
-06/1992	Entrega a Samuel Para anuncios (2 sdads)		18600	-18600		34530	Sociedades
-06/1992	Entrega a J.I. Burgo		3600	-3600		30930	Jaime Ignacio de Burgo
-06/1992	Entrega a Paco A. C. para declaración		1800	-1800		29130	Francisco Álvarez Cascos
-06/1992	Pag parte dictamen Cobo		18000	-18000		11130	Manuel Cobo del Rosal
-06/1992	Entrega a Ortí B. por indic. José Mª(canje)		3000	-3000		8130	José Miguel Ortí Bordás, Jose María Aznar
-06/1992	Entrega a Paco para Begoña		3900	-3900		4230	Francisco Álvarez Cascos, Begoña
-07/1992	Entrega a Pedro A. (julio)		7944	-7944		-3714	Pedro Arriola
-07/1992	Piñeiro	30000		30000		26286	Angel Piñeiro
-07/1992	Pago ingreso 123 IRPF IB. de F.		6186	-6186		20100	Sociedad Ibérica de Firmes
-07/1992	Entrega a J. Moreno para Begoña		3900	-3900		16200	J. Moreno
-07/1992	Entrega a Pedro A. (agosto)		7944	-7944		8256	Pedro Arriola
-07/1992	Entrega a Juan Carlos Aparicio Pérez (indicac. Paco)		3900	-3900		4356	Juan Carlos Aparicio Pérez, Francisco Álvarez Cascos
-07/1992	Entrega a Jaime I. del B. (junio/julio/agosto)		4500	-4500		-144	Jaime Ignacio de Burgo
-09/1992	Entrega a Pedro A.("operac. adicional" sept/oct)		12000	-12000		-12144	Pedro Arriola
-09/1992	Piñeiro	42000		42000	82986	29856	Angel Piñeiro
-09/1992	Entrega a Pedro A. (septiembre)		7404	-7404		22452	Pedro Arriola
-09/1992	Gto. Notar Liquid. 2 Sdads		2400	-2400		20052	Pedro Arriola
-09/1992	Entrega a Juan Carlos Aparicio Pérez (indic. Paco)		3900	-3900		16152	Juan Carlos Aparicio Pérez
-10/1992	Piñeiro	30000		30000		46152	Angel Piñeiro
-10/1992	Entrega a Pedro A. (octubre)		7944	-7944		38208	Pedro Arriola
-10/1992	Entrega a J.I. del B. (sept/oct.)		3600	-3600		34608	Jose Ignacio del Burgo
-10/1992	Ingreso Retención Cono y V.Sol. (292.000+928.000)		7320	-7320		27288	Sociedades Cono Sur y Vídeo Soluciones
-10/1992	Entrega a Pedro A. (noviembre)		10704	-10704		16584	Pedro Arriola
-11/1992	Entrega a Pedro A. (por trb. adic. de carácter. extraord.)		6000	-6000		10584	Pedro Arriola
-11/1992	Entrega a Pedro A. (trab adic. al cto 4º trim 91 y todo el 92)		17604	-17604		-7020	Pedro Arriola
-01/1993	Entrega a Pedro A. (diciembre)		7944	-7944		-14964	Pedro Arriola
-01/1993	Entrega a Rosen por indic. Paco (liquid. Ptes)		18000	-18000	22386	-32964	Francisco Álvarez Cascos
-01/1993	Entrega a Rosen por indic. Paco (FINIQUITO)		12000	-12000		-44964	Francisco Álvarez Cascos
-01/1993	Entrega a Pedro A. (por trab. adic. de carácter.extraord.)		6000	-6000	4386	-50964	Pedro Arriola
-01/1993	Devolución Liquid Notarios		210	-210	4596	-51174	Sociedades
-02/1993	Saldo anterior			0	4596		
-02/1993	Entrega a José M. Ortí (indic. Jose Mª)		2100	-2100	2496	-53274	José Miguel Ortí Bordás, José María Aznar
-02/1993	1os 93 / Entrega Piñeiro	42000		42000	44496	-11274	Angel Piñeiro
-02/1993	Entrega a Jaime I. (Nov.-Dic.)		3600	-3600	40896	-14874	Jaime Ignacio de Burgo
-02/1993	A Pedro (especial)		6000	-6000	34896	-20874	Pedro Arriola
-03/1993	Entrega a P.A. cta 1993 (En. y Febr.)		19320	-19320	15576	-40194	Pedro Arriola
-03/1993	Entre a P.A Trab. Extraord. ( En. y Febr. )		12000	-12000	3576	-52194	Pedro Arriola
-03/1993	Entrega a Jose Mª Robles (severo moto)		3000	-3000	576	-55194	Jose Manuel Robles, Severo Moto
-04/1993	Entrega Piñeiro	90000		90000	90576		Angel Piñeiro
-03/1993	Entrega a Jaime I. (Ene.-Febr.)		3600	-3600	86976	-58794	Jaime Ignacio de Burgo
-04/1993	Entrega a Jose M. Orti		2100	-2100	84876	-60894	José Miguel Ortí Bordás
-04/1993	P. Arr. (Marzo)		9660	-9660	75216	-9660	Pedro Arriola
-04/1993	P. Arr. Trab. extraord.(Marzo)		6000	-6000	69216	-15660	Pedro Arriola
-05/1993	Entrega a Jaime I. (Marzo-Abril)		3600	-3600	65616	-19260	Jaime Ignacio de Burgo
-05/1993	P. Arr. (Abril)		9660	-9660	55956	-28920	Pedro Arriola
-05/1993	P. Arr. por Trab. extraord. (Abril)		6000	-6000	49956	-34920	Pedro Arriola
-06/1993	P. Arr. (Mayo)		9660	-9660	40296	-44580	Pedro Arriola
-05/1993	Entrega Piñeiro	60000		60000	100296	15420	Angel Piñeiro
-06/1993	Entrega a P.A.C para Renta 92		3600	-3600	96696	11820	Francisco Álvarez Cascos
-07/1993	Entrega a Jaime I. (Mayo-Junio)		3600	-3600	93096	8220	Jaime Ignacio de Burgo
-07/1993	P. Arr. (trab. extr. (Mayo)		6000	-6000	87096	2220	Pedro Arriola
-07/1993	P. Arr. (Junio)		9660	-9660	77436	-7440	Pedro Arriola
-07/1993	P. ( Arr (trab extr. Junio)		6000	-6000	71436	-3780	Pedro Arriola
-07/1993	Jose Miguel O.		2100	-2100	69336	-9540	José Miguel Ortí Bordás
-07/1993	Marz Abr Mayo y Jun Dieta Sº G (218652x4) 		5250	-5250	64086	-14790	Francisco Álvarez Cascos
-07/1993	P. Arr. (Julio)		9660	-9660	54426	-24450	Pedro Arriola
-07/1993	Entrega a Jose Mª Robles (moto)		1200	-1200	53226	-25650	Jose Manuel Robles, Severo Moto
-07/1993	Dietas Sº Gral. (220.000 Julio)		1320	-1320	51906	-26970	Francisco Álvarez Cascos
-09/1993	Dietas Sº Gral. (Agosto)		1320	-1320	50586	-28290	Francisco Álvarez Cascos
-09/1993	Pedro Arr. (Agosto)		9660	-9660	40926	-37950	Pedro Arriola
-09/1993	P. A. (trab. extr. Julio-Agosto)		12000	-12000	28926	-49950	Pedro Arriola
-09/1993	Entrega a Jaime I. (Julio-Agosto)		3600	-3600	25326	-53550	Jaime Ignacio de Burgo
-09/1993	Dietas Sº Gral. (Sept.)		1320	-1320	24006	-54870	Francisco Álvarez Cascos
-09/1993	Gratif. campaña Gral. Asesoría Sº Gral.		1200	-1200	22806	-56070	Francisco Álvarez Cascos
-09/1993	Compensar Renta J.A.		3600	-3600		-59670	Javier Arenas
-09/1993	Pago Hotel		1932	-1932		-61602	Hotel
-10/1993	A Pedro (Trabajo. Ex. Sep.)		6000	-6000		-67602	Pedro Arriola
-10/1993	Entrega Piñe.	60000		60000		-7602	Angel Piñeiro
-10/1993	A Pedro (Septiembre)		9660	-9660		-17262	Pedro Arriola
-10/1993	A P.A.C dietas octubre		1320	-1320		-18582	Francisco Álvarez Cascos
-11/1993	A Pedro, trabajos extra.		6000	-6000		-24582	Pedro Arriola
-11/1993	A Pedro (Octubre)		9660	-9660		-34242	Pedro Arriola
-11/1993	A P.A.C. dietas noviemb		1320	-1320		-35562	Francisco Álvarez Cascos
-11/1993	A Jaime I. (sept. y octub)		3600	-3600		-39162	Jaime Ignacio de Burgo
-11/1993	A Jose M. Orti		2100	-2100		-41262	José Miguel Ortí Bordás
-11/1993	Sanchez		1800	-1800		-43062	Sanchez
-12/1993	Entrega Piñe.	30000		30000		-13062	Angel Piñeiro
-12/1993	Entrega Piñe.	42000		42000		28938	Angel Piñeiro
-12/1993	A Pedro Trabajos extra		6000	-6000		22938	Pedro Arriola
-12/1993	A Pedro (Noviembre)		9660	-9660		13278	Pedro Arriola
-12/1993	A P.A.C dietas Diciembre		1320	-1320		11958	Francisco Álvarez Cascos
-12/1993	A Pedro Trab.ext.diciem		6000	-6000		5958	Pedro Arriola
-12/1993	A Pedro (Diciembre)		9660	-9660		-3702	Pedro Arriola
-01/1994	Saldo anterior			0	75174	-3702	
-01/1994	a jaime I.Nov.yDic.		3600	-3600	71574	-7302	Jaime Ignacio de Burgo
-01/1994	Billete secretario		180	-180	71394	-7482	Secretario
-02/1994	Pedro trab.ext.enero		6000	-6000	65394	-13482	Pedro Arriola
-02/1994	Pedro enero		9660	-9660	55734	-23142	Pedro Arriola
-02/1994	Jose Miguel O.		2100	-2100	53634	-25242	José Miguel Ortí Bordás
-02/1994	P.A.C. Enero		1320	-1320	52314	-26562	Francisco Álvarez Cascos
-02/1994	P.A.C. Febrero		1320	-1320	50994	-27882	Francisco Álvarez Cascos
-03/1994	a Jaime I.Ener y Febr.		3600	-3600	47394	-31482	Jaime Ignacio de Burgo
-03/1994	Atrasos Enero Pedro		480	-480	46914	-31962	Pedro Arriola
-03/1994	Pedro trab.ext.febrero		6000	-6000	40914	-37962	Pedro Arriola
-03/1994	Pedro Febrero		10140	-10140	30774	-48102	Pedro Arriola
-03/1994	Pedro trab.ext.marzo		6000	-6000	24774	-54102	Pedro Arriola
-03/1994	Pedro Marzo		10140	-10140	14634	-64242	Pedro Arriola
-03/1994	P.A.C. Marzo		1320	-1320	13314	-65562	Francisco Álvarez Cascos
-04/1994	P.A.C. Abril		1320	-1320	11994	-66882	Francisco Álvarez Cascos
-04/1994	Pedro trab.ext. abril		6000	-6000	5994	-72882	Pedro Arriola
-04/1994	Entrega F.A.C.	60000		60000	65994	-12882	Francisco Álvarez Cascos
-05/1994	P.A.C. Mayo		1320	-1320	64674	-14202	Francisco Álvarez Cascos
-05/1994	Entrega a Jose M.Ort.		2100	-2100	62574	-16302	José Miguel Ortí Bordás
-05/1994	Pedro Abril		10140	-10140	52434	-26442	Pedro Arriola
-05/1994	A Jaime ign. (Mar.Abril)		3600	-3600	48834	-30042	Jaime Ignacio de Burgo
-05/1994	Sanchez		2400	-2400	46434	-32442	Sanchez
-05/1994	Pedro trab.extr.mayo		6000	-6000	40434	-38442	Pedro Arriola
-05/1994	Pedro Mayo		10140	-10140	30294	-48582	Pedro Arriola
-06/1994	Javier compens.rent93		4200	-4200	26094	-52782	Javier Arenas
-07/1994	Paco compens.rent.93		3600	-3600	22494	-56382	Francisco Álvarez Cascos
-07/1994	Pedro trab.ext. Junio		6000	-6000	16494	-62382	Pedro Arriola
-07/1994	Pedro Junio		10140	-10140	6354	-72522	Pedro Arriola
-06/1994	P.A.C. Junio		1320	-1320	5034	-73842	Francisco Álvarez Cascos
-07/1994	A Jaime ign. (Mayo Jun)		3600	-3600	1434	-77442	Jaime Ignacio de Burgo
-07/1994	Entrega Ramón	42000		42000	43434	-35442	Ramon
-07/1994	Pedro trab.ex.julio		6000	-6000	37434	-41442	Pedro Arriola
-07/1994	Pedro Julio		10140	-10140	27294	-51582	Pedro Arriola
-07/1994	PAC Julio		1320	-1320	25974	-52902	Francisco Álvarez Cascos
-08/1994	PAC Agosto		1320	-1320	24654	-54222	Francisco Álvarez Cascos
-09/1994	Pedro Trab.ex.agosto		6000	-6000	18654	-60222	Pedro Arriola
-09/1994	Pedro Agosto		10140	-10140	8514	-70362	Pedro Arriola
-09/1994	Jose Miguel Orti		1800	-1800	6714	-72162	José Miguel Ortí Bordás
-09/1994	Jaime Ign. (jul y Agosto)		3600	-3600	3114	-75762	Jaime Ignacio de Burgo
-09/1994	PAC Septiembre		1320	-1320	1794	-77082	Francisco Álvarez Cascos
-09/1994	Parte Pedro Septiem.		240	-240	1554	-77322	Pedro Arriola
-10/1994	Entrega Piñeiro	90000		90000	91554	12678	Angel Piñeiro
-10/1994	PAC Octubre		1320	-1320	90234	11358	Francisco Álvarez Cascos
-11/1994	Jaime Ign. (Sep. y Oct.)		3600	-3600	86634	7758	Jaime Ignacio de Burgo
-11/1994	Pedro Octubre		10140	-10140	76494	-2382	Pedro Arriola
-11/1994	Pedro Trab.ex.Octubre		6000	-6000	70494	-8382	Pedro Arriola
-11/1994	PAC Noviembre		1320	-1320	69174	-9702	Francisco Álvarez Cascos
-12/1994	J.A. Sanchez		2400	-2400	66774	-12102	José Antonio Sánchez
-01/1995	Saldo anterior			0	27354	-12102	
-01/1995	Entrega a Salvador		12900	-12900	14454	-25002	Salvador Palop
-01/1995	PAC Enero		1368	-1368	13086	-26370	Francisco Álvarez Cascos
-02/1995	Entrega Angel P.	90000		90000	103086	63630	Angel Piñeiro
-02/1995	Pedro enero		6000	-6000	97086	57630	Pedro Arriola
-02/1995	Pedro enero		10590	-10590	86496	47040	Pedro Arriola
-03/1995	Pedro Febrero		6000	-6000	80496	41040	Pedro Arriola
-03/1995	Pedro Febrero		10590	-10590	69906	30450	Pedro Arriola
-03/1995	PAC Febrero		1368	-1368	68538	29082	Francisco Álvarez Cascos
-03/1995	Jaime I.(enero y febrer.)		3600	-3600	64938	25482	Jaime Ignacio de Burgo
-03/1995	Recargo Iv.Ib. de fir		1068	-1068	63870	24414	Sociedad Ibérica de Firmes
-03/1995	PAC Marzo		1368	-1368	62502	23046	Francisco Álvarez Cascos
-04/1995	Entrega a J.M.Orti		1800	-1800	60702	21246	José Miguel Ortí Bordás
-04/1995	Pedro Marzo		6000	-6000	54702	15246	Pedro Arriola
-04/1995	Pedro Marzo		10590	-10590	44112	4656	Pedro Arriola
-04/1995	Entrega Angel P-	30000		30000	74112	34656	Angel Piñeiro
-04/1995	PAC Abril		1368	-1368	72744	33288	Francisco Álvarez Cascos
-05/1995	Jaime I.(Mar. y Abril)		3600	-3600	69144	29688	Jaime Ignacio de Burgo
-05/1995	Entrega Angel Piñeiro	24000		24000	93144	53688	Angel Piñeiro
-05/1995	Pedro Abril		600	-600	87144	53088	Pedro Arriola
-05/1995	Pedro Abril		10590	-10590	76554	42498	Pedro Arriola
-05/1995	Entrega Angel P.	48000		48000	124554	90498	Angel Piñeiro
-06/1995	PAC Mayo		1368	-1368	123186	89130	Francisco Álvarez Cascos
-06/1995	Pedro Mayo		6000	-6000	117186	83130	Pedro Arriola
-06/1995	Pedro Mayo		10590	-10590	106596	72540	Pedro Arriola
-06/1995	Entrega Angel P.	24000		24000	130596	96540	Angel Piñeiro
-06/1995	Jaime I (Mayo y Junio)		3600	-3600	126996	92940	Jaime Ignacio de Burgo
-07/1995	Pedro Junio		6000	-6000	120996	86940	Pedro Arriola
-07/1995	Pedro Junio		10590	-10590	110406	76350	Pedro Arriola
-07/1995	PAC Junio		1368	-1368	109038	74982	Francisco Álvarez Cascos
-07/1995	Entrega J.M.Orti		1800	-1800	107238	73182	José Miguel Ortí Bordás
-07/1995	J.A. Sanchez (M.A. Rod)		1800	-1800	105438	71382	José Antonio Sánchez
-07/1995	PAC Julio		1368	-1368	104070	70014	Francisco Álvarez Cascos
-07/1995	Entrega PAC	24000		24000	128070	94014	Francisco Álvarez Cascos
-07/1995	Pedro Julio		6000	-6000	122070	88014	Pedro Arriola
-07/1995	Pedro Julio		10590	-10590	111480	77424	Pedro Arriola
-09/1995	PAC Agosto		1368	-1368	110112	76056	Francisco Álvarez Cascos
-09/1995	Pedro Agosto		6000	-6000	104112	70056	Pedro Arriola
-09/1995	Pedro Agosto		10590	-10590	93522	59466	Pedro Arriola
-09/1995	Entrega J.M.Orti		1800	-1800	91722	57666	José Miguel Ortí Bordás
-10/1995	PAC Septiembre		1368	-1368	90354	56298	Francisco Álvarez Cascos
-10/1995	Pedro Septiembre		6000	-6000	8435.4	50298	Pedro Arriola
-10/1995	Pedro Septiembre		10590	-10590	73764	39708	Pedro Arriola
-11/1995	Pedro Octubre		6000	-6000	67764	33708	Pedro Arriola
-11/1995	Pedro Octubre		10590	-10590	57174	23118	Pedro Arriola
-11/1995	PAC Octubre		1368	-1368	55806	21750	Francisco Álvarez Cascos
-11/1995	Jaime I (Jul.Ag.Sep.fin)		5400	-5400	50406	16350	Jaime Ignacio de Burgo
-11/1995	Entrega Angel P.	30000		30000	80406	46350	Angel Piñeiro
-12/1995	PAC Noviembre		1368	-1368	79038	44982	Francisco Álvarez Cascos
-01/1996	saldo anterior			0	72690	44982	
-01/1996	PAC enero		1416	-1416	71274	43566	Francisco Álvarez Cascos
-01/1996	Pedro		6000	-6000	65274	37566	Pedro Arriola
-01/1996	Pedro		1059	-1059	54684	36507	Pedro Arriola
-02/1996	PAC febrero		1416	-1416	53268	35091	Francisco Álvarez Cascos
-02/1996	Pedro		6000	-6000	47268	29091	Pedro Arriola
-02/1996	Pedro		10590	-10590	36678	18501	Pedro Arriola
-03/1996	PAC marzo		1416	-1416	35262	17085	Francisco Álvarez Cascos
-03/1996	Pedro		6000	-6000	29262	11085	Pedro Arriola
-03/1996	Pedro		10590	-10590	18672	495	Pedro Arriola
-04/1996	Pedro Abril		1416	-1416	17256	-921	Pedro Arriola
-05/1996	Entrega PAC	48000		48000	65256	47079	Francisco Álvarez Cascos
-05/1996	Pedro Abril		8100	-8100	57156	38979	Pedro Arriola
-05/1996	Pedro Abril		10590	-10590	46566	28389	Pedro Arriola
-06/1996	Pedro Mayo		8100	-8100	38466	20289	Pedro Arriola
-06/1996	Pedro Mayo		10590	-10590	27876	9699	Pedro Arriola
-06/1996	PAC Mayo		1416	-1416	26460	8283	Francisco Álvarez Cascos
-06/1996	PAC junio		1416	-1416	25044	6867	Francisco Álvarez Cascos
-07/1996	Pedro Junio		8100	-8100	16944	-1233	Pedro Arriola
-07/1996	Pedro Junio		10590	-10590	6354	-11823	Pedro Arriola
-09/1996	PAC Julio		1416	-1416	4938	-13239	Francisco Álvarez Cascos
-09/1996	PAC Agosto		1416	-1416	3522	-14655	Francisco Álvarez Cascos
-10/1996	PAC Septiembre		1416	-1416	2106	-16071	Francisco Álvarez Cascos
-11/1996	PAC Octubre		1416	-1416	690	-17487	Francisco Álvarez Cascos
-8/1/1997	Galicia	30000		30000		12513	Galicia
-9/1/1997	Are (Mayo/Dic.)		19200	-19200	10800	-6687	Javier Arenas
-24/01/1997	Sant. L.	60000		60000		53313	Sant. L.
-29/01/1997	R. (Mayo/Dic.)		18000	-18000		35313	Rodrigo Rato
-24/02/1997	P.A. (Mayo/Dic.)		26400	-26400		8913	Francisco Álvarez Cascos
-24/02/1997	M.R. (Mayo/Dic)		16800	-16800		-7887	Mariano Rajoy
-28/02/1997	Galicia	11953.2		11953.2		4066	Galicia
-4/3/1997	J.M. (Mayo/Dic.)		16800	-16800		-12734	Jaime Mayor Oreja
-24/04/1997	Galicia (O.C.)	18000		18000	22753.2	5266	Galicia
-05/1997	entrega PAC	60000		60000	60690	65266	Francisco Álvarez Cascos
-05/1997	a Pedro a Cta.regulariz.		60000	-60000	690	5266	Pedro Arriola
-5/5/1997	R. (Enero / Junio 97)		13680	-13680		-8414	Rodrigo Rato
-8/7/1997	López H.	90000		90000		81586	Ignacio López del Hierro
-8/7/1997	Are (Enero/Junio 97)		14400	-14400		67186	Javier Arenas
-9/7/1997	P.A. (Enero/Junio 97)		19800	-19800		47386	Francisco Álvarez Cascos
-15/07/1997	M. R. (Enero / Junio 97)		12600	-12600		34786	Mariano Rajoy
-21/07/1997	J.M. (Enero / Junio 97)		12600	-12600		22186	Jaime Mayor Oreja
-09/1997	entrega PAC	60000		60000	60690	82186	Francisco Álvarez Cascos
-09/1997	entrega Ramon	42000		42000	102690	124186	Ramon
-10/1997	PAC de nov.96 a sep.97		15900	-15900	86790	108286	Francisco Álvarez Cascos
-10/1997	a Pedro a Cta.regulariz.		60000	-60000	26790	48286	Pedro Arriola
-23/10/1997	M.A.R.		9000	-9000		39286	Miguel Ángel Rodríguez
-18/11/1997	R. (Julio / Dic. 97)		13680	-13680	16993.2	25606	Rodrigo Rato
-24/11/1997	P.A. (Julio / Dic. 97)		19800	-19800	2806.8	5806	Francisco Álvarez Cascos
-16/12/1997	Galicia (O.C.)	18000		18000		23806	Galicia
-22/12/1997	M.R. (Jul. Dic. 97)		12600	-12600	2593.2	11206	Mariano Rajoy
-31/12/1997	Acta Are (Julio-Dic.97)		2400	-2400	193.2	8806	Javier Arenas
-31/12/1997	Acta Are (Julio-Dic.97)		12000	-12000		-3194	Javier Arenas
-01/1998	PAC de oct. a Diciem 97		4356	-4356	22434	-7550	Francisco Álvarez Cascos
-4/2/1998	Galicia (O.C.)	18000		18000	6193.2	10450	Galicia
-	J.M. (Jul-Dic. 97)		12600	-12600		-2150	Jaime Mayor Oreja
-03/1998	PAC de ener. a marzo 98		4446	-4446	22434	-6596	Francisco Álvarez Cascos
-04/1998	Generales des	30000		30000	23593.2	23404	Générale des Eaux
-05/1998	Gre. (Rafael P.)	30000		30000	53592	53404	Rafael Palencia
-05/1998	Galicia (O.C.)	18000		18000	71593.2	71404	Galicia
-05/1998	Acta Arens (Enero- Junio 98)		14400	-14400	57193.2	57004	Javier Arenas
-06/1998	PAC de abr.a junio 98		4446	-4446	13542	52558	Francisco Álvarez Cascos
-06/1998	Acta R. Rat (Enero-Junio 98)		13680	-13680	43513.2	38878	Rodrigo Rato
-06/1998	Acta Paco A.C. (Enero- Junio 98		19800	-19800	23713.2	19078	Francisco Álvarez Cascos
-06/1998	Acta Jaime (Enero- Junio 98)		12600	-12600	11113.2	6478	Jaime Mayor Oreja
-06/1998	Acta M. Raj (Enero- Junio 98)		12600	-12600	1486.8	-6122	Mariano Rajoy
-09/1998	entrega de PAC	30000		30000	43542	23878	Francisco Álvarez Cascos
-09/1998	Acta J.A. de Julio a Dic.		6000	-6000	7486.8	17878	Javier Arenas
-11/1998	De Málaga	18000		18000	10513.2	35878	Málaga
-11/1998	López Hierro	24000		24000	34513.2	59878	Ignacio López del Hierro
-11/1998	J.A. (resto de Jul. A Dic.)		8400	-8400		51478	Javier Arenas
-12/1998	M. Raj. (Julio a Dic.)		12600	-12600		38878	Mariano Rajoy
-12/1998	R. Rat (Julio a Dic.)		13680	-13680	166.8	25198	Rodrigo Rato
-12/1998	A. Ga Pozu.	24000		24000		49198	Alfonso García Pozuelo
-12/1998	Jaime (Resto de Jul. A Dic.)		12600	-12600		36598	Jaime Mayor Oreja
-01/1999	Moreno (A. de la P.)	6000		6000		42598	José Luis Moreno
-02/1999	Moreno (A. de la P.)	6000		6000		48598	José Luis Moreno
-02/1999	J. Ar. (liquidación a Enero)		4200	-4200	19033.2	44398	Javier Arenas
-04/1999	De Málaga	18000		18000		62398	Málaga
-04/1999	Moreno (A. de la P.)	6000		6000		68398	José Luis Moreno
-04/1999	Lucio	24000		24000		92398	Lucio
-05/1999	P. Crespo	126000		126000		218398	Pablo Crespo
-05/1999	M. Rajoy (En.- Junio 99)		12600	-12600		205798	Mariano Rajoy
-05/1999	Jaime M. (En. - Junio 99)		12600	-12600		193198	Jaime Mayor Oreja
-05/1999	Acta Paco A.C. (Juli.-Dic.98)		19800	-19800		173398	Francisco Álvarez Cascos
-05/1999	Paco A.C. (En.-Junio 99)		19800	-19800		153598	Francisco Álvarez Cascos
-05/1999	R.Rato (En.-Junio 99)		13680	-13680		139918	Rodrigo Rato
-06/1999	Javier Arenas (pagos varios)		12000	-12000		127918	Javier Arenas
-06/1999	Moreno (A. de la P.)	6000		6000	108553.2	133918	José Luis Moreno
-07/1999	Entrega a Álvaro Lap.(País Vasco) para Abascal		12000	-12000	96553.2	121918	Álvaro Lapuerta
-09/1999	De Málaga	18000		18000	114553.2	139918	Málaga
-10/1999	R.Rato (2do Semestre 99)		13680	-13680		126238	Rodrigo Rato
-11/1999	M. Rajoy (2do semestre 99)		12600	-12600		113638	Mariano Rajoy
-	Paco A.C. (2do semestre 99)		19800	-19800		93838	Francisco Álvarez Cascos
-	Jaime Mayor		12600	-12600		81238	Jaime Mayor Oreja
-01/2000	Moreno a A. de la P.	6000		6000	61872.6	87238	José Luis Moreno
-01/2000	Lucio	12000		12000	73873.2	99238	Lucio
-01/2000	Alfonso Gª Pozuelo	1800		1800	67873.2	101038	Alfonso García Pozuelo
-02/2000	De Málaga	18000		18000	121873.2	119038	Málaga
-02/2000	R. Palenc.	24000		24000	145873.2	143038	Rafael Palencia
-03/2000	Moreno a A. de la P.	9000		9000	151873.2	152038	José Luis Moreno
-04/2000	1º Trimestre R. Rato		6840	-6840		145198	Rodrigo Rato
-04/2000	1º Trimestre Mariano R.		6300	-6300		138898	Mariano Rajoy
-04/2000	1º Trimestre Jaime M		6300	-6300		132598	Jaime Mayor Oreja
-04/2000	1º Trimestre P.A.C.		9900	-9900		122698	Francisco Álvarez Cascos
-04/2000	Regalos		3561	-3561		119137	Javier Arenas
-05/2000	Moreno	6000		6000		125137	José Luis Moreno
-05/2000	De Málaga	18000		18000		143137	Málaga
-05/2000	Moreno	6000		6000		149137	José Luis Moreno
-06/2000	Copa Crespo	30000		30000	178972.2	179137	Pablo Crespo
-07/2000	Amigo diputados grupo	12000		12000	190972.2	191137	Diputados
-07/2000	2º Trimestre Mariano R.		6300	-6300		184837	Mariano Rajoy
-07/2000	2º Trimestre Jaime M.		6300	-6300		178537	Jaime Mayor Oreja
-07/2000	Cancelación cto. Concejal Málaga		12090	-12090		166447	Martín Carpena
-07/2000	2º Trimestre R. Rato		6840	-6840	159442.2	159607	Rodrigo Rato
-07/2000	Cancelac. Concejal Málaga Unicaja		960	-960	160402.2	158647	Martín Carpena
-07/2000	Alfonso Gª Pozuelo	12000		12000		170647	Alfonso García Pozuelo
-07/2000	Cancelación Cto. Concejal Durango		33000	-33000		137647	Jesús María Pedrosa Urquiza
-08/2000	Acta. FEDERICO*		12000	-12000	127402.2	125647	Federico Trillo
-09/2000	2o Trimestre P.A.C.		9900	-9900	117502.2	115747	Francisco Álvarez Cascos
-09/2000	Amigo diputado grupo (Jose Ma Rubio)	6000		6000		121747	José Manuel Fernández Rubio
-09/2000	De Málaga	18000		18000	141502.2	139747	Málaga
-10/2000	Coche San Adriá		22770	-22770		116977	José Luis Ruiz Casado
-11/2000	3o y 4o Trimestre R. Rato		13680	-13680		103297	Rodrigo Rato
-11/2000	3o y 4o Trimestre J. Mayor		12600	-12600	92416.2	90697	Jaime Mayor Oreja
-11/2000	De Málaga	18000		18000		108697	Málaga
-11/2000	De Alfonso Ga Poz	30000		30000	140452.2	138697	Alfonso García Pozuelo
-12/2000	Lucio Moreno	12000		12000		150697	Lucio Moreno
-12/2000	Moreno	6000		6000		156697	José Luis Moreno
-12/2000	R. Palencia	15000		15000	173452.2	171697	Rafael Palencia
-12/2000	M. Rajoy 3o y 4o trimestre		12600	-12600		159097	Mariano Rajoy
-12/2000	Paco A.C. 3o y 4o trimestre		19800	-19800	141052.2	139297	Francisco Álvarez Cascos
-	Saldo Anterior			0	141052.2	139297	
-01/2001	J.M. Rubio	6000		6000	147052.2	145297	José Manuel Fernández Rubio
-01/2001	Federico *		18000	-18000	129052.2	127297	Federico Trillo
-01/2001	Celicio Sanch. (Aguas)	30000		30000	159052.2	157297	Cecilio Sanchez
-02/2001	J.M. Rubio	12000		12000	171052.2	169297	José Manuel Fernández Rubio
-03/2001	Especial Jaime		6000	-6000	165052.2	163297	Jaime Mayor Oreja
-04/2001	Málaga	18000		18000	183052.2	181297	Málaga
-04/2001	J.M. Rubio	30000		30000	213052.2	211297	José Manuel Fernández Rubio
-04/2001	1º Semestre 2001 Mariano		12600	-12600	200452.2	198697	Mariano Rajoy
-04/2001	Moreno	6000		6000	206452.2	204697	José Luis Moreno
-04/2001	Federico (resto 2000) *		8166	-8166	198286.2	196531	Federico Trillo
-04/2001	País Vasco Mª Eug. Rico (Álvaro)		2700	-2700		193831	María Eugenia García Rico
-05/2001	1º Semestre 2001 Rodrigo		13680	-13680	181906.2	180151	Rodrigo Rato
-06/2001	Málaga	18000		18000		198151	Málaga
-06/2001	1º Semestre 2001 Jaime		12600	-12600	187306.2	185551	Jaime Mayor Oreja
-07/2001	Jaime Ignacio		3000	-3000		182551	Jaime Ignacio de Burgo
-07/2001	Concejal Viuda Francisco Cano (Barcelona)		18000	-18000	166306.2	164551	Francisco Cano
-07/2001	1º Semestre Paco Álv-Cascos		19800	-19800	148306.2	144751	Francisco Álvarez Cascos
-07/2001	Federico correspondiente a 2001 *		18000	-18000	128506.2	126751	Federico Trillo
-09/2001	Deuda Tenerife telemarketing		27600	-27600	100906.2	99151	Tenerife
-09/2001	2º Semestre 2001 Rodrigo R.		13680	-13680	87226.2	85471	Rodrigo Rato
-09/2001	2º Semestre 2001Mariano		12600	-12600	74626.2	72871	Mariano Rajoy
-11/2001	2º Semestre 2001 Paco A.Cascos		19800	-19800	54826.2	53071	Francisco Álvarez Cascos
-11/2001	Liquidación Linaza (León)		15000	-15000	39826.2	38071	Luis Guillermo López Linaza
-12/2001	Resto año 2001 Federico Trillo *		18000	-18000		20071	Federico Trillo
-12/2001	A Pio García Escudero (devol. Antic. Atentado)		6000	-6000		14071	Pio García Escudero
-12/2001	Federico		3000	-3000		11071	Federico Trillo
-12/2001	A Jaime Mayor		12000	-12000	826.2	-929	Jaime Mayor Oreja
-2002	Aportación Manuel Contreras	60000		60000	60000	59071	Manuel Contreras
-	Liq. 2001 Federico		19470	-19470		39601	Federico Trillo
-	1º Semestre 2002 Mariano ...		12620	-12620		26981	Mariano Rajoy
-	1º Semestre 2002 Rodrigo		13700	-13700		13281	Rodrigo Rato
-	Jose Luis S.	50000		50000		63281	José Luis Sánchez
-	Entrega Amparo Bordá (Jaime)		15000	-15000		48281	Alfonso García Pozuelo
-	M. Contreras	30000		30000		78281	Manuel Contreras
-	1º Semestre Cascos		19860	-19860	59350	58421	José Manuel Fernández Rubio
-	Alfonso Gª Poz.	24000		24000		82421	Alfonso García Pozuelo
-	Jaime (Basta Ya)		3005	-3005		79416	Jaime Mayor Oreja
-	J. M. Fdez Rubio	18000		18000	98345	97416	José Manuel Fernández Rubio
-07/2002	Jose Luis	100000		100000	198345	197416	José Luis Sánchez
-07/2002	Pedro Arriola		60000	-60000		137416	Pedro Arriola
-07/2002	J.M. Fernández Rubio	18000		18000		155416	José Manuel Fernández Rubio
-07/2002	Jaime Mayor		7500	-7500	148845	147916	Jaime Mayor Oreja
-07/2002	1º semestre Federico		27760	-27760		120156	Federico Trillo
-07/2002	Liquidación Javier		3050	-3050		117106	Javier Arenas
-07/2002	Mes de julio Javier		3300	-3300		113806	Javier Arenas
-09/2002	2º semestre Rodrigo		13700	-13700	101035	100106	Rodrigo Rato
-09/2002	Jose Luis	100000		100000	201035	200106	José Luis Sánchez
-09/2002	Mes de Agosto y Sept. Javier		6600	-6600		193506	Javier Arenas
-09/2002	2º Semestre Mariano		12620	-12620	181815	180886	Mariano Rajoy
-10/2002	2º Semestre Cascos		19860	-19860		161026	Francisco Álvarez Cascos
-10/2002	Oct. Nov. Dic Javier		9900	-9900		151126	Javier Arenas
-10/2002	2º Semestre Federico		27760	-27760		123366	Federico Trillo
-10/2002	Extra 15º Javier		8400	-8400	115895	114966	Javier Arenas
-11/2002	Pedro Arriola		100000	-100000	15895	14966	Pedro Arriola
-12/2002	A Javier Arenas		12000	-12000	3895	2966	Javier Arenas
-12/2002	A Euroconsumo		4500	-4500		-1534	Euroconsumo
-12/2002	De J. M. F. Rubio	18000		18000		16466	José Manuel Fernández Rubio
-12/2002	A Jaime Mayor		12000	-12000	5395	4466	Jaime Mayor Oreja
-12/2002	A c/c donativos B. Vitor.		5395	-5395		-929	Donativo
-16/01/2003	M. Contreras	60000		60000		59071	Manuel Contreras
-4/2/2003	J.L.Sánchez	100000		100000	160000	159071	José Luis Sánchez
-02/2003	1º Semestre Javier (3300/mes)		19800	-19800		139271	Javier Arenas
-02/2003	1º Semestre Rodrigo R.		13700	-13700		125571	Rodrigo Rato
-6/2/2003	Rubio	18000		18000		143571	José Manuel Fernández Rubio
-6/2/2003	Camilo (Sisocia)	60000		60000		203571	Camilo José Alcalá Sánchez
-24/02/2003	1º Semestre Mariano		12620	-12620		190951	Mariano Rajoy
-27/02/2003	1º Semestre Paco		19860	-19860		171091	Francisco Álvarez Cascos
-3/3/2003	Ángel Salado	60000		60000		231091	Ángel Salado
-4/3/2003	Donativo a Euroconsumo		1100	-1100		229991	Euroconsumo
-11/3/2003	Copisa / Socique	100000		100000	270920	329991	Copisa y Sorigué
-27/03/2003	Pedro Arriola		120000	-120000	150920	209991	Pedro Arriola
-31/03/2003	Congregación		4100	-4100	146820	205891	Congregación
-31/03/2003	Jose L. Moreno	6000		6000	152820	211891	Jose L. José Luis Moreno
-2/4/2003	M. Contreras	60000		60000	212820	271891	Manuel Contreras
-2/4/2003	A Matas para piso			0		271891	Jaime Matas
-24/04/2003	Aldesa	18000		18000		289891	José Manuel Fernández Rubio
-29/04/2003	Teofila Martínez		30000	-30000		259891	Teofila Martínez
-30/04/2003	Jerez (el Lili)		6000	-6000		253891	Aurelio Romero
-5/5/2003	De Javier (L. del R.)	100000		100000		353891	Javier L. del R.
-13/05/2003	Polo/Llorens	30000		30000		383891	Polo Llorens
-6/5/2003	Copisa / Socique	100000		100000		483891	Copisa y Sorigué
-25/05/2003	Rubio	18000		18000	431420	501891	José Manuel Fernández Rubio
-2/6/2003	Lérida (J.I. Llorens)		6000	-6000	428420	495891	J. I. Llorens Lérida
-16/06/2003	J.L. Sánchez	100000		100000		595891	José Luis Sánchez
-17/06/2003	Liquidación Arriola		161000	-161000	367420	434891	Pedro Arriola
-25/06/2003	M. Contreras	120000		120000		554891	M. Contreras
-1/7/2003	Federico año 2003 completo		36000	-36000		518891	Federico Trillo
-2/7/2003	Rubio	30000		30000	481420	548891	José Manuel Fernández Rubio
-8/7/2003	Pio Gª (15ºpaga)		6000	-6000		542891	Pio García Escudero
-16/07/2003	2º Semestre Rodrigo		13700	-13700		529191	Rodrigo Rato
-16/07/2003	2º Semestre Javier		19800	-19800		509391	Javier Arenas
-16/07/2003	Paco Álvarez (2º Semestre)		19800	-19800		489591	Francisco Álvarez Cascos
-16/07/2003	2º Semestre Mariano		12600	-12600	409520	476991	Mariano Rajoy
-29/07/2003	Jaime Mayor		7500	-7500	402020	469491	Jaime Mayor Oreja
-11/9/2003	J.L. Sánchez	100000		100000	502020	569491	José Luis Sánchez
-15/09/2003	Reloj Javier Arenas		700	-700		568791	Javier Arenas Reloj
-26/09/2003	Ingresado en Banco Vitoria		50000	-50000	451320	518791	Banco Vitoria Ingresado
-3/10/2003	Manuel Contreras	120000		120000		638791	Manuel Contreras
-6/10/2003	Ingresado en Banco Vitoria		120000	-120000	451320	518791	Banco Vitoria Ingresado
-22/10/2003	Guillermo Contreras	30000		30000		548791	Guillermo Contreras
-23/10/2003	Eug. Nasarre (Humanismo y D.)		30000	-30000	451320	518791	Eugenio Nasarre, Fundación Humanismo y
-Democracia
-17/11/2003	J.L.Sánchez (otros 100 a Javier)	100000		100000	551320	618791	José Luis Sánchez
-18/11/2003	Extra 15º Mariano Rajoy		8420	-8420	542920	610371	Mariano Rajoy
-2/12/2003	Entrega a Javier Rojas		198000	-198000	344900	412371	Javier Rojas Entrega
-4/12/2003	Alfonso Gª Pozuelo	60000		60000	404900	472371	Alfonso García Pozuelo
-10/12/2003	Rubio	24000		24000	428900	496371	José Manuel Fernández Rubio
-12/12/2003	Camilo	90000		90000	518900	586371	Camilo
-17/12/2003	Jaime Mayor		12000	-12000	506900	574371	Jaime Mayor Oreja
-7/1/2004	Ingresos en B. Vitoria		206900	-206900	300000	367471	Donativo
-8/1/2004	1º Trimestre Rodrigo Rato		6850	-6850		360621	Rodrigo Rato
-12/1/2004	Aldesa	24000		24000		384621	José Manuel Fernández Rubio
-14/01/2004	1º Trimestre J. Arenas		9900	-9900		374721	Javier Arenas
-22/01/2004	M. Contreras	120000		120000		494721	M. Contreras
-01/2004	Fund. Hum. Y D. (Pin)		40000	-40000		454721	Fundación Humanismo y
-Democracia
-5/2/2004	Elvira		6000	-6000		448721	Elvira Rodríguez
-5/2/2004	Aldesa	48000		48000	429250	496721	José Manuel Fernández Rubio
-10/2/2004	Ana Palacios		6000	-6000		490721	Ana Palacios
-10/2/2004	Pilar Castillo		6000	-6000		484721	Pilar Castillo
-10/2/2004	Cantabria		60000	-60000		424721	Cantabria
-10/2/2004	1º Trimestre Mariano		6300	-6300	350950	418421	Mariano Rajoy
-17/02/2004	Romero Polo (Lérida)	24000		24000	374950	442421	Romero Polo
-19/02/2004	Mariano cuota dip. Madrid		1000	-1000	373950	441421	Mariano Rajoy
-24/02/2004	J.L.Sánchez	100000		100000		541421	José Luis Sánchez
-24/02/2004	A. Sevilla		50000	-50000		491421	Sevilla
-24/02/2004	A Málaga		20000	-20000	403950	471421	Málaga
-1/3/2004	Ruban (Antonio Vilella)	50000		50000	453950	521421	Ruban Antonio Vilella
-1/3/2004	Copasa	75000		75000	528950	596421	Copasa
-2/3/2004	Ubaldo Nieto	3000		3000	531950	599421	Ubaldo Nieto
-8/3/2004	Fdez. Rubio	48000		48000		647421	José Manuel Fernández Rubio
-10/3/2004	Pilar Castillo		3000	-3000		644421	Pilar Castillo
-11/3/2004	Juan Cotino (Sedesa)	200000		200000		844421	Juan Cotino
-11/3/2004	A. Villela	50000		50000		894421	Antonio Vilella
-15/03/2004	Mercadona	90000		90000	916950	984421	Mercadona
-20/04/2004	1º trimestre Cascos		9900	-9900		974521	Francisco Álvarez Cascos
-26/04/2004	15º de A. de la P.		8200	-8200	898850	966321	Álvaro de la Puerta
-27/04/2004	Ingresado en B. Vitoria-Banesto. Donativo		100850	-100850	798000	865471	Donativo
-4/5/2004	Ingresado en B. Vitoria-Banesto. Donativo		100000	-100000	698000	765471	Donativo
-6/5/2004	Pago a J. Rojo (Campaña)		280000	-280000	418000	485471	J. Rojo
-14/05/2004	Ingresado en Banesto Donativos		118000	-118000	300000	367471	Donativo
-14/05/2004	Mariano Rajoy 2º Trimestre		6300	-6300		361171	Mariano Rajoy
-14/05/2004	Ángel Acebes 2º Trimestre (1º pago)		6300	-6300		354871	Ángel Acebes
-14/05/2004	Javier Arenas 2º Trimestre		9900	-9900	277500	344971	Javier Arenas
-25/05/2004	Ingresado en Banesto Donativos		77500	-77500	200000	267471	Donativo
-4/6/2004	Cantabria Campaña		30000	-30000	170000	237471	Cantabria
-4/6/2004	Ingresado en Banesto Donativos		100000	-100000	70000	137471	Donativo
-9/6/2004	Jose Luis Sánchez	100000		100000	170000	237471	José Luis Sánchez
-11/6/2004	Volpeceres	60000		60000	230000	297471	Volpeceres
-11/6/2004	Alfonso Gª Poz	30000		30000	260000	327471	Alfonso García Pozuelo
-24/06/2004	Colaboración Asesoria (Álvaro)		2100	-2100		325371	Álvaro Lapuerta
-7/7/2004	Campaña Europes		100000	-100000		225371	Campaña Europes
-14/07/2004	Ángel Acebes 3º Trimestre		6300	-6300		219071	Ángel Acebes
-18/07/2004	Mariano Rajoy		6300	-6300		212771	Mariano Rajoy
-28/07/2004	Luis Fraga [Guadalajara]		3000	-3000		209771	Luis Fraga
-14/09/2004	Jose Luis Sánchez	100000		100000		309771	José Luis Sánchez
-21/09/2004	Ángel Acebes 4º trimestre		6300	-6300		303471	Ángel Acebes
-21/09/2004	Mariano Rajoy 4º trimestre		6300	-6300	229700	297171	Mariano Rajoy
-22/09/2004	Luis de Rivero	120000		120000		417171	Luis de Rivero
-22/09/2004	Manuel Contreras	60000		60000	409700	477171	Manuel Contreras
-19/10/2004	Villar Mir	100000		100000	509700	577171	Juan Manuel Villar Mir
-20/10/2004	A c/c donativos		60000	-60000	449700	517171	Donativo
-20/10/2004	Entrega a Paco Yáñez para suscribir 1.100 titulos		121000	-121000	328700	396171	Paco Yáñez
-29/10/2004	Entrega a Álvaro Lapuerta 1.270 titulos		139700	-139700	189000	256471	Álvaro Lapuerta
-26/11/2004	Entrega Pozuelo (Hispánica)	30000		30000	69400	286471	Alfonso García Pozuelo
-3/12/2004	Compra Alberto Dorrego Libertad Digital		12100	-12100	57300	274371	Alberto Dorrego
-14/12/2004	Compra Alberto Dorrego Libertad Digital		24000	-24000		250371	Alberto Dorrego
-23/12/2004	Devolución Paco Yáñez	121000		121000	154300	371371	Paco Yáñez
-12/1/2005	Ingresados en c/c Donativos		111840	-111840	42460	259531	Donativo
-24/01/2005	1º Trimestre Ángel Acebes		6300	-6300		253231	Ángel Acebes
-24/01/2005	1º Trimestre Mariano Rajoy		6300	-6300	29860	246931	Mariano Rajoy
-26/01/2005	Entrega Federico Trillo		12000	-12000	17860	234931	Federico Trillo
-31/03/2005	Entrega gastos Paco Yáñez L. Digital		950	-950		233981	Paco Yáñez
-4/5/2005	Entrega gastos Rosa Iglesias L. Digital		650	-650		233331	Rosa Iglesias
-18/05/2005	2º Trimestre 2005 Mariano		6300	-6300		227031	Mariano Rajoy
-18/05/2005	2º Trimestre 2005 Ángel A.		6300	-6300	3660	220731	Ángel Acebes
-20/05/2005	Manuel Contreras	48000		48000	51660	268731	Manuel Contreras
-26/07/2005	3º Trimestre 2005 Mariano		6300	-6300	45360	262431	Mariano Rajoy
-26/07/2005	3º Trimestre 2005 Ángel A.		6300	-6300	39060	256131	Ángel Acebes
-17/06/2005	Liq. Paco Yáñez		210	-210	38850	255921	Paco Yáñez
-10/10/2005	4º Trimestre 2005 Mariano		6300	-6300		249621	Mariano Rajoy
-10/10/2005	4º Trimestre 2005 Ángel		6300	-6300	26250	243321	Ángel Acebes
-24/11/2005	Ingresado en Banesto Donativos		26090	-26090		217231	Donativo
-01/2006	Ant. Pinol	12000		12000		229231	Antonio Pinal Emilio
-01/2006	Vta. Aces P.Y. a Álvaro Cruz gastos		315	-315	11685	228916	Ángel Acebes, Paco Yáñez, Álvaro de la Cruz
-01/2006	Pilar (Empresa Estudios) Pulido	12000		12000		240916	Pilar Pulido
-1/2/2006	1º Trimestre Mariano		6300	-6300	0	234616	Mariano Rajoy
-1/2/2006	1º Trimestre Ángel		6300	-6300	11085	228316	Ángel Acebes
-04/2006	Alfonso Gª Pozuelo	18000		18000		246316	Alfonso García Pozuelo
-04/2006	2º Trimestre Mariano		6300	-6300		240016	Mariano Rajoy
-04/2006	2º Trimestre Ángel		6300	-6300	16485	233716	Ángel Acebes
-06/2006	Corbatas Presidente		667	-667	15818	233049	Mariano Rajoy
-06/2006	Adolfo Sánchez	12000		12000		245049	Adolfo Sánchez
-07/2006	3º Trimestre Mariano		6300	-6300	0	238749	Mariano Rajoy
-07/2006	3º Trimestre Ángel		6300	-6300	15218	232449	Ángel Acebes
-14/07/2006	Trajes y camisas		5720	-5720	9498	226729	Mariano Rajoy
-26/07/2006	Federico Trillo		3000	-3000	6498	223729	Federico Trillo
-14/09/2006	Antonio Pinal / Emilio	12000		12000		235729	Antonio Pinal Emilio
-2/10/2006	4º Trimestre Mariano		6300	-6300	0	229429	Mariano Rajoy
-2/10/2006	4º Trimestre Ángel		6300	-6300	5898	223129	Ángel Acebes
-25/10/2006	J.M. Villar Mir	180000		180000		403129	Juan Manuel Villar Mir
-26/10/2006	Ingresado B. Banesto		80000	-80000	105898	323129	Donativo
-31/10/2006	Adolfo Sánchez	10000		10000		333129	Adolfo Sánchez
-6/11/2006	Luis Rivero	60000		60000		393129	Luis Rivero
-15/11/2006	M. Contreras	60000		60000		453129	Manuel Contreras
-15/11/2006	Emilia Álvarez	12000		12000		465129	Emilia Álvarez
-23/11/2006	Arquitecto Gonzalo Urquijo		184000	-184000	63898	281129	Gonzalo Urquijo
-13/12/2006	Adolfo Sánchez	9500		9500		290629	Adolfo Sánchez
-19/12/2006	J.L.Sánchez	100000		100000		390629	José Luis Sánchez
-21/12/2006	Emilia Álvarez	12000		12000		402629	Emilia Álvarez
-21/12/2006	Traje Mariano		9100	-9100	176298	393529	Mariano Rajoy
-9/1/2007	Ingresar en Donativos		53000	-53000	123298	340529	Donativo
-9/1/2007	1º Trimestre Mariano		6300	-6300	0	334229	Mariano Rajoy
-9/1/2007	1º Trimestre Ángel		6300	-6300	110698	327929	Ángel Acebes
-10/1/2007	Ingresar en Donativos		60000	-60000	50698	267929	Donativo
-7/3/2007	de J.L. para Andalucía		30000	-30000	20698	237929	José Luis Sánchez
-21/03/2007	Ignacio Ugarteche (C. Sanz)	90000		90000		327929	Ignacio Ugarteche, C. Sanz
-26/03/2007	Entrega a Cantabria		60000	-60000	50698	267929	Cantabria
-11/4/2007	Entrega a Álvaro Lap. Para Alberto Fdez		30000	-30000	20698	237929	Álvaro Lapuerta, Alberto Fernández
-25/04/2007	Entrega a Cristobal Páez		6000	-6000	14698	231929	Cristobal Páez
-25/04/2007	2º Trimestre Mariano		6300	-6300	0	225629	Mariano Rajoy
-25/04/2007	2º Trimestre Ángel		6300	-6300	2098	219329	Ángel Acebes
-22/05/2007	Rafa Palencia	35000		35000		254329	Rafael Palencia
-24/05/2007	Manuel Contreras	60000		60000		314329	Manuel Contreras
-20/05/2007	Sánchez Jose Luis	100000		100000		414329	José Luis Sánchez
-06/2007	Entrega a J. Arenas		30000	-30000	167098	384329	Javier Arenas
-06/2007	Entrega a Adolfo Sánchez	12000		12000		396329	Adolfo Sánchez
-9/7/2007	3º Trimestre Mariano		6300	-6300	0	390029	Mariano Rajoy
-9/7/2007	3º Trimestre Ángel Ac.		6300	-6300	0	383729	Ángel Acebes
-20/07/2007	Adolfo Sánchez	24000		24000		407729	Adolfo Sánchez
-09/2007	Adolfo Sánchez	10000		10000		417729	Adolfo Sánchez
-10/2007	4º Trimestre Mariano		6300	-6300	0	411429	Mariano Rajoy
-10/2007	4º Trimestre Ángel		6300	-6300	187898	405129	Ángel Acebes
-7/11/2007	Adolfo Sánchez	11000		11000	198898	416129	Adolfo Sánchez
-14/12/2007	Luis Del R.	200000		200000	398898	616129	Luis del Rivero
-01/2008	1º Semestre Mariano		12600	-12600	0	603529	Mariano Rajoy
-01/2008	1º Semestre Ángel		12600	-12600	373698	590929	Ángel Acebes
-01/2008	J. Luis Sánchez	100000		100000	473698	690929	José Luis Sánchez
-26/01/2008	A Cantabria		30000	-30000	443698	660929	Cantabria
-28/01/2008	Gonz. Urquijo		195000	-195000	248698	465929	Gonzalo Urquijo
-28/01/2008	Ramón Aige	36000		36000		501929	Ramón Aige Sánchez
-31/01/2008	País Vasco (Ignacio Aguirre)		25000	-25000		476929	Ignacio Aguirre
-31/01/2008	Lérida (J.L. Meres)		30000	-30000		446929	J.L. Meres
-31/01/2008	Cantabria		30000	-30000		416929	Cantabria
-7/2/2008	M. Contreras	60000		60000		476929	Manuel Contreras
-11/2/2008	J.M. Villar Mir	250000		250000	509698	726929	Juan Manuel Villar Mir
-14/02/2008	Luis Fraga		6000	-6000	503698	720929	Luis Fraga
-20/02/2008	Pilar Pulido	36000		36000		756929	Pilar Pulido
-22/02/2008	Luis Gálvez	50000		50000		806929	Luis Gálvez
-27/02/2008	Mercadona	150000		150000	739698	956929	Mercadona
-3/3/2008	De J.L.Sánchez a Sevilla		50000	-50000		906929	José Luis Sánchez
-5/3/2008	País Vasco (Ignacio Aguirre)		25000	-25000		881929	Ignacio Aguirre
-10/3/2008	Jose Mayor (FCC)	90000		90000		971929	Jose Mayor
-13/03/2008	De Ramón Aige a Sevilla		18000	-18000		953929	Ramón Aige Sánchez
-13/03/2008	Gonzalo (Arquitecto)		258000	-258000		695929	Gonzalo Urquijo
-13/03/2008	J. Rojo / Valls		220000	-220000	258698	475929	J. Rojo, Valls
-03/2008	M.R. entrega Asesor		3000	-3000	255698	472929	Mariano Rajoy
-31/03/2008	Alv. Lapuerta a cambio de talón ingresado hoy		60000	-60000	195698	412929	Álvaro Lapuerta
-18/04/2008	Trajes M.R.		11020	-11020		401909	Mariano Rajoy
-6/5/2008	Rafael Palencia	30000		30000		431909	Rafael Palencia
-26/05/2008	Entrega de La Rioja	200000		200000	414678	631909	La Rioja
-2/6/2008	Entrega a Cristobal Paez		6000	-6000		625909	Cristobal Páez
-3/6/2008	2º Semestre M. Rajoy		12600	-12600	396078	613309	Mariano Rajoy
-25/06/2008	Ramón Aige	18000		18000		631309	Ramón Aige Sánchez
-30/06/2008	Adolfo Sanchez	10000		10000	424078	641309	Adolfo Sánchez
-3/7/2008	Jose Mayor	75000		75000	499078	716309	Jose Mayor
-7/7/2008	D. Cospedal 3º trimestre 2500 x 3		7500	-7500		708809	Dolores del Cospedal
-15/07/2008	Regul. M. Raj 2º Semestre 400 x 6		2400	-2400		706409	Mariano Rajoy
-22/07/2008	Entrega a J. I. de Ramón Aige		6000	-6000		700409	Ramón Aige Sánchez
-22/07/2008	Regalo Álvaro Lap.		1490	-1490		698919	Álvaro Lapuerta
-31/07/2008	Gonzalo Urquijo (3º Planta)		235000	-235000	246688	463919	Gonzalo Urquijo
-14/10/2008	D. Cospedal 4º Trimestre		7500	-7500	239188	456419	Dolores del Cospedal
-10/2008	Entrega M.C	10000		10000	249188	466419	Manuel Contreras
-12/2008	G.U.		200000	-200000		266419	Gonzalo Urquijo
+fecha	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
+04/1990	Saldo Inicial (Entrega R.N.)	48000	48000	48000	Rosendo Naseiro
+04/1990	Entrega J. M.	-1530		46470	J.M.
+05/1990	Entrega J. M.	-1530		44940	J.M.
+06/1990	Entrega Paco (decl. Rent.)	-3000		41940	Francisco Álvarez Cascos
+06/1990	Entrega J. M.	-1530		40410	J.M.
+07/1990	Entrega J. M.	-1530		38880	J.M.
+07/1990	Entrega J. M.	-1530		37350	J.M.
+08/1990	Entrega J. M.	-1530		35820	J.M.
+09/1990	Cobo	-12000		23820	Manuel Cobo del Rosal
+09/1990	Cobo	-12000		11820	Manuel Cobo del Rosal
+11/1990	Pepe C. (Gal.)	60000	71820	71820	Pepe Cuiña
+11/1990	Piñeiro	30000	101820	101820	Angel Piñeiro
+11/1990	Cobo	-12000		89820	Manuel Cobo del Rosal
+11/1990	Cobo	-12000		77820	Manuel Cobo del Rosal
+11/1990	Pedro A.	-30000		47820	Pedro Arriola
+12/1990	Entrega Pedro A.	-36000		11820	Pedro Arriola
+12/1990	Paco	90000	101820	101820	Paco
+12/1990	Rosen (abogado)	-12000		89820	Javier Boix
+01/1991	Entrega Pedro A.	-45000		44820	Pedro Arriola
+02/1991	Piñeiro	31440		76260	Angel Piñeiro
+02/1991	Piñeiro	54000		130260	Angel Piñeiro
+03/1991	Pago IVA Sdades	-2196		128064	Sociedades
+03/1991	Pago Sdades	-3120		124944	Sociedades
+03/1991	Pago IVA	-8640		116304	Sociedades
+03/1991	Pago Sdades	-11712	104580	104592	Sociedades
+03/1991	Diferencia IRPF (Paco)	-720		103872	Francisco Álvarez Cascos
+03/1991	Pago IVA y Sdades	-20040		83832	Sociedades
+03/1991	Entrega a Rosen (abogado)	-30000		53832	Javier Boix
+03/1991	Entrega a Pedro A. (enero/febrero)	-15000		38832	Pedro Arriola
+04/1991	Piñeiro 	36000	74820	74832	Angel Piñeiro
+04/1991	Entrega a Pedro A. (marzo/abril)	-15000		59832	Pedro Arriola
+05/1991	Entrega a Rosen (liq. final)	-36000		23832	Javier Boix
+05/1991	Piñeiro 	42000		65832	Angel Piñeiro
+06/1991	Difer IRPF Paco decl. 90	-3000		62832	Francisco Álvarez Cascos
+06/1991	Piñeiro	36000		98832	Angel Piñeiro
+06/1991	Entrega a Pedro A. (mayo/junio)	-15000		83832	Pedro Arriola
+07/1991	Entrega "especial" a Pedro A. (encargo José M.)	-6000		77832	Pedro Arriola / Jose M.
+09/1991	Registro Mercantil y acta notaría (Sdades)	-120		77712	Sociedades
+09/1991	Entrega a Pedro A. (julio/agosto)	-15000	62712	62712	Pedro Arriola
+09/1991	Piñeiro	36000		98712	Angel Piñeiro
+10/1991	Entrega a Viñarás (Canarias, Cascos/Rajoy)	-1500		97212	Pedro Viñarás
+11/1991	Entrega a Pedro A. (sept y oct)	-15000		82212	Pedro Arriola
+12/1991	Entrega a Jaime I. del B.	-3600		78612	Jaime Ignacio de Burgo
+12/1991	Entrega a Pedro A. (nov y dic)	-15000		63612	Pedro Arriola
+12/1991	Entrega a Javier A para Rafa A.	-6000		57612	Javier Arenas, Rafa A.
+01/1992	Entrega Miguel A.R.	-1050		56562	Miguel Ángel Rodríguez, Isabel Tenaille
+02/1992	Entrega Pedro A. (enero)	-7500		49062	Pedro Arriola
+02/1992	Entrega a Javier A. para Rafa A.	-6000		43062	Javier Arenas, Rafa A.
+02/1992	Entrega a Jaime I. del B. (Calixto)	-3600		39462	Jaime Ignacio de Burgo, Calixto Yesa
+03/1992	Entrega A. Cámara para Laureano	-9600		29862	Laureano López Rodó 
+03/1992	Entrega Pedro A. (febrero)	-7500		22362	Pedro Arriola
+		0	9396	22362	
+05/1992	Piñeiro	60000		82362	Angel Piñeiro
+05/1992	Entrega a Jaime I. (Calixto)	-3600		78762	Jaime Ignacio de Burgo, Calixto Yesa
+05/1992	Entrega a Cámara para Laureano	-7200		71562	Laureano López Rodó 
+05/1992	Entrega a Pedro A. (abril)	-7500		64062	Pedro Arriola
+05/1992	Notaría Liq Ibé de F.	-1200		62862	Sociedad Ibérica de Firmes
+05/1992	Entrega Pedro A. (regulariz. desde 1º año)	-1788		61074	Pedro Arriola
+06/1992	Entrega Pedro A. (mayo)	-7944		53130	Pedro Arriola
+06/1992	Entrega a Samuel Para anuncios (2 sdads)	-18600		34530	Sociedades
+06/1992	Entrega a J.I. Burgo	-3600		30930	Jaime Ignacio de Burgo
+06/1992	Entrega a Paco A. C. para declaración	-1800		29130	Francisco Álvarez Cascos
+06/1992	Pag parte dictamen Cobo	-18000		11130	Manuel Cobo del Rosal
+06/1992	Entrega a Ortí B. por indic. José Mª(canje)	-3000		8130	José Miguel Ortí Bordás, Jose María Aznar
+06/1992	Entrega a Paco para Begoña	-3900		4230	Francisco Álvarez Cascos, Begoña
+07/1992	Entrega a Pedro A. (julio)	-7944		-3714	Pedro Arriola
+07/1992	Piñeiro	30000		26286	Angel Piñeiro
+07/1992	Pago ingreso 123 IRPF IB. de F.	-6186		20100	Sociedad Ibérica de Firmes
+07/1992	Entrega a J. Moreno para Begoña	-3900		16200	J. Moreno
+07/1992	Entrega a Pedro A. (agosto)	-7944		8256	Pedro Arriola
+07/1992	Entrega a Juan Carlos Aparicio Pérez (indicac. Paco)	-3900		4356	Juan Carlos Aparicio Pérez, Francisco Álvarez Cascos
+07/1992	Entrega a Jaime I. del B. (junio/julio/agosto)	-4500		-144	Jaime Ignacio de Burgo
+09/1992	Entrega a Pedro A.("operac. adicional" sept/oct)	-12000		-12144	Pedro Arriola
+09/1992	Piñeiro	42000	82986	29856	Angel Piñeiro
+09/1992	Entrega a Pedro A. (septiembre)	-7404		22452	Pedro Arriola
+09/1992	Gto. Notar Liquid. 2 Sdads	-2400		20052	Pedro Arriola
+09/1992	Entrega a Juan Carlos Aparicio Pérez (indic. Paco)	-3900		16152	Juan Carlos Aparicio Pérez
+10/1992	Piñeiro	30000		46152	Angel Piñeiro
+10/1992	Entrega a Pedro A. (octubre)	-7944		38208	Pedro Arriola
+10/1992	Entrega a J.I. del B. (sept/oct.)	-3600		34608	Jose Ignacio del Burgo
+10/1992	Ingreso Retención Cono y V.Sol. (292.000+928.000)	-7320		27288	Sociedades Cono Sur y Vídeo Soluciones
+10/1992	Entrega a Pedro A. (noviembre)	-10704		16584	Pedro Arriola
+11/1992	Entrega a Pedro A. (por trb. adic. de carácter. extraord.)	-6000		10584	Pedro Arriola
+11/1992	Entrega a Pedro A. (trab adic. al cto 4º trim 91 y todo el 92)	-17604		-7020	Pedro Arriola
+01/1993	Entrega a Pedro A. (diciembre)	-7944		-14964	Pedro Arriola
+01/1993	Entrega a Rosen por indic. Paco (liquid. Ptes)	-18000	22386	-32964	Francisco Álvarez Cascos
+01/1993	Entrega a Rosen por indic. Paco (FINIQUITO)	-12000		-44964	Francisco Álvarez Cascos
+01/1993	Entrega a Pedro A. (por trab. adic. de carácter.extraord.)	-6000	4386	-50964	Pedro Arriola
+01/1993	Devolución Liquid Notarios	-210	4596	-51174	Sociedades
+02/1993	Saldo anterior	0	4596		
+02/1993	Entrega a José M. Ortí (indic. Jose Mª)	-2100	2496	-53274	José Miguel Ortí Bordás, José María Aznar
+02/1993	1os 93 / Entrega Piñeiro	42000	44496	-11274	Angel Piñeiro
+02/1993	Entrega a Jaime I. (Nov.-Dic.)	-3600	40896	-14874	Jaime Ignacio de Burgo
+02/1993	A Pedro (especial)	-6000	34896	-20874	Pedro Arriola
+03/1993	Entrega a P.A. cta 1993 (En. y Febr.)	-19320	15576	-40194	Pedro Arriola
+03/1993	Entre a P.A     Trab. Extraord. (  En. y Febr. )	-12000	3576	-52194	Pedro Arriola
+03/1993	Entrega a Jose Mª Robles (severo moto)	-3000	576	-55194	Jose Manuel Robles, Severo Moto
+04/1993	Entrega Piñeiro	90000	90576		Angel Piñeiro
+03/1993	Entrega a Jaime I. (Ene.-Febr.)	-3600	86976	-58794	Jaime Ignacio de Burgo
+04/1993	Entrega a Jose M. Orti	-2100	84876	-60894	José Miguel Ortí Bordás
+04/1993	P. Arr. (Marzo)	-9660	75216	-9660	Pedro Arriola
+04/1993	P. Arr. Trab. extraord.(Marzo)	-6000	69216	-15660	Pedro Arriola
+05/1993	Entrega a Jaime I. (Marzo-Abril)	-3600	65616	-19260	Jaime Ignacio de Burgo
+05/1993	P. Arr. (Abril)	-9660	55956	-28920	Pedro Arriola
+05/1993	P. Arr. por Trab. extraord. (Abril)	-6000	49956	-34920	Pedro Arriola
+06/1993	P. Arr. (Mayo)	-9660	40296	-44580	Pedro Arriola
+05/1993	Entrega Piñeiro	60000	100296	15420	Angel Piñeiro
+06/1993	Entrega a P.A.C para Renta 92	-3600	96696	11820	Francisco Álvarez Cascos
+07/1993	Entrega a Jaime I. (Mayo-Junio)	-3600	93096	8220	Jaime Ignacio de Burgo
+07/1993	P. Arr. (trab. extr. (Mayo)	-6000	87096	2220	Pedro Arriola
+07/1993	P. Arr. (Junio)	-9660	77436	-7440	Pedro Arriola
+07/1993	P. ( Arr (trab extr. Junio)	-6000	71436	-3780	Pedro Arriola
+07/1993	Jose Miguel O.	-2100	69336	-9540	José Miguel Ortí Bordás
+07/1993	Marz Abr Mayo y Jun Dieta Sº G (218652x4) 	-5250	64086	-14790	Francisco Álvarez Cascos
+07/1993	P. Arr. (Julio)	-9660	54426	-24450	Pedro Arriola
+07/1993	Entrega a Jose Mª Robles (moto)	-1200	53226	-25650	Jose Manuel Robles, Severo Moto
+07/1993	Dietas Sº Gral. (220.000 Julio)	-1320	51906	-26970	Francisco Álvarez Cascos
+09/1993	Dietas Sº Gral. (Agosto)	-1320	50586	-28290	Francisco Álvarez Cascos
+09/1993	Pedro Arr. (Agosto)	-9660	40926	-37950	Pedro Arriola
+09/1993	P. A. (trab. extr. Julio-Agosto)	-12000	28926	-49950	Pedro Arriola
+09/1993	Entrega a Jaime I. (Julio-Agosto)	-3600	25326	-53550	Jaime Ignacio de Burgo
+09/1993	Dietas Sº Gral. (Sept.)	-1320	24006	-54870	Francisco Álvarez Cascos
+09/1993	Gratif. campaña Gral. Asesoría Sº Gral.	-1200	22806	-56070	Francisco Álvarez Cascos
+09/1993	Compensar Renta J.A.	-3600		-59670	Javier Arenas
+09/1993	Pago Hotel	-1932		-61602	Hotel
+10/1993	A Pedro (Trabajo. Ex. Sep.)	-6000		-67602	Pedro Arriola
+10/1993	Entrega Piñe.	60000		-7602	Angel Piñeiro
+10/1993	A Pedro (Septiembre)	-9660		-17262	Pedro Arriola
+10/1993	A P.A.C dietas octubre	-1320		-18582	Francisco Álvarez Cascos
+11/1993	A Pedro, trabajos extra.	-6000		-24582	Pedro Arriola
+11/1993	A Pedro (Octubre)	-9660		-34242	Pedro Arriola
+11/1993	A P.A.C. dietas noviemb	-1320		-35562	Francisco Álvarez Cascos
+11/1993	A Jaime I. (sept. y octub)	-3600		-39162	Jaime Ignacio de Burgo
+11/1993	A Jose M. Orti	-2100		-41262	José Miguel Ortí Bordás
+11/1993	Sanchez	-1800		-43062	Sanchez
+12/1993	Entrega Piñe.	30000		-13062	Angel Piñeiro
+12/1993	Entrega Piñe.	42000		28938	Angel Piñeiro
+12/1993	A Pedro Trabajos extra	-6000		22938	Pedro Arriola
+12/1993	A Pedro (Noviembre)	-9660		13278	Pedro Arriola
+12/1993	A P.A.C dietas Diciembre	-1320		11958	Francisco Álvarez Cascos
+12/1993	A Pedro Trab.ext.diciem	-6000		5958	Pedro Arriola
+12/1993	A Pedro (Diciembre)	-9660		-3702	Pedro Arriola
+01/1994	Saldo anterior	0	75174	-3702	
+01/1994	a jaime I.Nov.yDic.	-3600	71574	-7302	Jaime Ignacio de Burgo
+01/1994	Billete secretario	-180	71394	-7482	Secretario
+02/1994	Pedro trab.ext.enero	-6000	65394	-13482	Pedro Arriola
+02/1994	Pedro enero	-9660	55734	-23142	Pedro Arriola
+02/1994	Jose Miguel O.	-2100	53634	-25242	José Miguel Ortí Bordás
+02/1994	P.A.C. Enero	-1320	52314	-26562	Francisco Álvarez Cascos
+02/1994	P.A.C. Febrero	-1320	50994	-27882	Francisco Álvarez Cascos
+03/1994	a Jaime I.Ener y Febr.	-3600	47394	-31482	Jaime Ignacio de Burgo
+03/1994	Atrasos Enero Pedro	-480	46914	-31962	Pedro Arriola
+03/1994	Pedro trab.ext.febrero	-6000	40914	-37962	Pedro Arriola
+03/1994	Pedro Febrero	-10140	30774	-48102	Pedro Arriola
+03/1994	Pedro trab.ext.marzo	-6000	24774	-54102	Pedro Arriola
+03/1994	Pedro Marzo	-10140	14634	-64242	Pedro Arriola
+03/1994	P.A.C. Marzo	-1320	13314	-65562	Francisco Álvarez Cascos
+04/1994	P.A.C. Abril	-1320	11994	-66882	Francisco Álvarez Cascos
+04/1994	Pedro trab.ext. abril	-6000	5994	-72882	Pedro Arriola
+04/1994	Entrega F.A.C.	60000	65994	-12882	Francisco Álvarez Cascos
+05/1994	P.A.C. Mayo	-1320	64674	-14202	Francisco Álvarez Cascos
+05/1994	Entrega a Jose M.Ort.	-2100	62574	-16302	José Miguel Ortí Bordás
+05/1994	Pedro Abril	-10140	52434	-26442	Pedro Arriola
+05/1994	A Jaime ign. (Mar.Abril)	-3600	48834	-30042	Jaime Ignacio de Burgo
+05/1994	Sanchez	-2400	46434	-32442	Sanchez
+05/1994	Pedro trab.extr.mayo	-6000	40434	-38442	Pedro Arriola
+05/1994	Pedro Mayo	-10140	30294	-48582	Pedro Arriola
+06/1994	Javier compens.rent93	-4200	26094	-52782	Javier Arenas
+07/1994	Paco compens.rent.93	-3600	22494	-56382	Francisco Álvarez Cascos
+07/1994	Pedro trab.ext. Junio	-6000	16494	-62382	Pedro Arriola
+07/1994	Pedro Junio	-10140	6354	-72522	Pedro Arriola
+06/1994	P.A.C. Junio	-1320	5034	-73842	Francisco Álvarez Cascos
+07/1994	A Jaime ign. (Mayo Jun)	-3600	1434	-77442	Jaime Ignacio de Burgo
+07/1994	Entrega Ramón	42000	43434	-35442	Ramon
+07/1994	Pedro trab.ex.julio	-6000	37434	-41442	Pedro Arriola
+07/1994	Pedro Julio	-10140	27294	-51582	Pedro Arriola
+07/1994	PAC Julio	-1320	25974	-52902	Francisco Álvarez Cascos
+08/1994	PAC Agosto	-1320	24654	-54222	Francisco Álvarez Cascos
+09/1994	Pedro Trab.ex.agosto	-6000	18654	-60222	Pedro Arriola
+09/1994	Pedro Agosto	-10140	8514	-70362	Pedro Arriola
+09/1994	Jose Miguel Orti	-1800	6714	-72162	José Miguel Ortí Bordás
+09/1994	Jaime Ign. (jul y Agosto)	-3600	3114	-75762	Jaime Ignacio de Burgo
+09/1994	PAC Septiembre	-1320	1794	-77082	Francisco Álvarez Cascos
+09/1994	Parte Pedro Septiem.	-240	1554	-77322	Pedro Arriola
+10/1994	Entrega Piñeiro	90000	91554	12678	Angel Piñeiro
+10/1994	PAC Octubre	-1320	90234	11358	Francisco Álvarez Cascos
+11/1994	Jaime Ign. (Sep. y Oct.)	-3600	86634	7758	Jaime Ignacio de Burgo
+11/1994	Pedro Octubre	-10140	76494	-2382	Pedro Arriola
+11/1994	Pedro Trab.ex.Octubre	-6000	70494	-8382	Pedro Arriola
+11/1994	PAC Noviembre	-1320	69174	-9702	Francisco Álvarez Cascos
+12/1994	J.A. Sanchez	-2400	66774	-12102	José Antonio Sánchez
+01/1995	Saldo anterior	0	27354	-12102	
+01/1995	Entrega a Salvador	-12900	14454	-25002	Salvador Palop
+01/1995	PAC Enero	-1368	13086	-26370	Francisco Álvarez Cascos
+02/1995	Entrega Angel P.	90000	103086	63630	Angel Piñeiro
+02/1995	Pedro enero	-6000	97086	57630	Pedro Arriola
+02/1995	Pedro enero	-10590	86496	47040	Pedro Arriola
+03/1995	Pedro Febrero	-6000	80496	41040	Pedro Arriola
+03/1995	Pedro Febrero	-10590	69906	30450	Pedro Arriola
+03/1995	PAC Febrero	-1368	68538	29082	Francisco Álvarez Cascos
+03/1995	Jaime I.(enero y febrer.)	-3600	64938	25482	Jaime Ignacio de Burgo
+03/1995	Recargo Iv.Ib. de fir	-1068	63870	24414	Sociedad Ibérica de Firmes
+03/1995	PAC Marzo	-1368	62502	23046	Francisco Álvarez Cascos
+04/1995	Entrega a J.M.Orti	-1800	60702	21246	José Miguel Ortí Bordás
+04/1995	Pedro Marzo	-6000	54702	15246	Pedro Arriola
+04/1995	Pedro Marzo	-10590	44112	4656	Pedro Arriola
+04/1995	Entrega Angel P-	30000	74112	34656	Angel Piñeiro
+04/1995	PAC Abril	-1368	72744	33288	Francisco Álvarez Cascos
+05/1995	Jaime I.(Mar. y Abril)	-3600	69144	29688	Jaime Ignacio de Burgo
+05/1995	Entrega Angel Piñeiro	24000	93144	53688	Angel Piñeiro
+05/1995	Pedro Abril	-600	87144	53088	Pedro Arriola
+05/1995	Pedro Abril	-10590	76554	42498	Pedro Arriola
+05/1995	Entrega Angel P.	48000	124554	90498	Angel Piñeiro
+06/1995	PAC Mayo	-1368	123186	89130	Francisco Álvarez Cascos
+06/1995	Pedro Mayo	-6000	117186	83130	Pedro Arriola
+06/1995	Pedro Mayo	-10590	106596	72540	Pedro Arriola
+06/1995	Entrega Angel P.	24000	130596	96540	Angel Piñeiro
+06/1995	Jaime I (Mayo y Junio)	-3600	126996	92940	Jaime Ignacio de Burgo
+07/1995	Pedro Junio	-6000	120996	86940	Pedro Arriola
+07/1995	Pedro Junio	-10590	110406	76350	Pedro Arriola
+07/1995	PAC Junio	-1368	109038	74982	Francisco Álvarez Cascos
+07/1995	Entrega J.M.Orti	-1800	107238	73182	José Miguel Ortí Bordás
+07/1995	J.A. Sanchez (M.A. Rod)	-1800	105438	71382	José Antonio Sánchez
+07/1995	PAC Julio	-1368	104070	70014	Francisco Álvarez Cascos
+07/1995	Entrega PAC	24000	128070	94014	Francisco Álvarez Cascos
+07/1995	Pedro Julio	-6000	122070	88014	Pedro Arriola
+07/1995	Pedro Julio	-10590	111480	77424	Pedro Arriola
+09/1995	PAC Agosto	-1368	110112	76056	Francisco Álvarez Cascos
+09/1995	Pedro Agosto	-6000	104112	70056	Pedro Arriola
+09/1995	Pedro Agosto	-10590	93522	59466	Pedro Arriola
+09/1995	Entrega J.M.Orti	-1800	91722	57666	José Miguel Ortí Bordás
+10/1995	PAC Septiembre	-1368	90354	56298	Francisco Álvarez Cascos
+10/1995	Pedro Septiembre	-6000	8435.4	50298	Pedro Arriola
+10/1995	Pedro Septiembre	-10590	73764	39708	Pedro Arriola
+11/1995	Pedro Octubre	-6000	67764	33708	Pedro Arriola
+11/1995	Pedro Octubre	-10590	57174	23118	Pedro Arriola
+11/1995	PAC Octubre	-1368	55806	21750	Francisco Álvarez Cascos
+11/1995	Jaime I (Jul.Ag.Sep.fin)	-5400	50406	16350	Jaime Ignacio de Burgo
+11/1995	Entrega Angel P.	30000	80406	46350	Angel Piñeiro
+12/1995	PAC Noviembre	-1368	79038	44982	Francisco Álvarez Cascos
+01/1996	saldo anterior	0	72690	44982	
+01/1996	PAC enero	-1416	71274	43566	Francisco Álvarez Cascos
+01/1996	Pedro	-6000	65274	37566	Pedro Arriola
+01/1996	Pedro	-1059	54684	36507	Pedro Arriola
+02/1996	PAC febrero	-1416	53268	35091	Francisco Álvarez Cascos
+02/1996	Pedro	-6000	47268	29091	Pedro Arriola
+02/1996	Pedro	-10590	36678	18501	Pedro Arriola
+03/1996	PAC marzo	-1416	35262	17085	Francisco Álvarez Cascos
+03/1996	Pedro	-6000	29262	11085	Pedro Arriola
+03/1996	Pedro	-10590	18672	495	Pedro Arriola
+04/1996	Pedro Abril	-1416	17256	-921	Pedro Arriola
+05/1996	Entrega PAC	48000	65256	47079	Francisco Álvarez Cascos
+05/1996	Pedro Abril	-8100	57156	38979	Pedro Arriola
+05/1996	Pedro Abril	-10590	46566	28389	Pedro Arriola
+06/1996	Pedro Mayo	-8100	38466	20289	Pedro Arriola
+06/1996	Pedro Mayo	-10590	27876	9699	Pedro Arriola
+06/1996	PAC Mayo	-1416	26460	8283	Francisco Álvarez Cascos
+06/1996	PAC junio	-1416	25044	6867	Francisco Álvarez Cascos
+07/1996	Pedro Junio	-8100	16944	-1233	Pedro Arriola
+07/1996	Pedro Junio	-10590	6354	-11823	Pedro Arriola
+09/1996	PAC Julio	-1416	4938	-13239	Francisco Álvarez Cascos
+09/1996	PAC Agosto	-1416	3522	-14655	Francisco Álvarez Cascos
+10/1996	PAC Septiembre	-1416	2106	-16071	Francisco Álvarez Cascos
+11/1996	PAC Octubre	-1416	690	-17487	Francisco Álvarez Cascos
+8/1/1997	Galicia	30000		12513	Galicia
+9/1/1997	Are (Mayo/Dic.)	-19200	10800	-6687	Javier Arenas
+24/01/1997	Sant. L.	60000		53313	Sant. L.
+29/01/1997	R. (Mayo/Dic.)	-18000		35313	Rodrigo Rato
+24/02/1997	P.A. (Mayo/Dic.)	-26400		8913	Francisco Álvarez Cascos
+24/02/1997	M.R. (Mayo/Dic)	-16800		-7887	Mariano Rajoy
+28/02/1997	Galicia	11953.2		4066.2	Galicia
+4/3/1997	J.M. (Mayo/Dic.)	-16800		-12733.8	Jaime Mayor Oreja
+24/04/1997	Galicia (O.C.)	18000	22753.2	5266.2	Galicia
+05/1997	entrega PAC	60000	60690	65266.2	Francisco Álvarez Cascos
+05/1997	a Pedro a Cta.regulariz.	-60000	690	5266.2	Pedro Arriola
+5/5/1997	R. (Enero / Junio 97)	-13680		-8413.8	Rodrigo Rato
+8/7/1997	López H.	90000		81586.2	Ignacio López del Hierro
+8/7/1997	Are (Enero/Junio 97)	-14400		67186.2	Javier Arenas
+9/7/1997	P.A. (Enero/Junio 97)	-19800		47386.2	Francisco Álvarez Cascos
+15/07/1997	M. R. (Enero / Junio 97)	-12600		34786.2	Mariano Rajoy
+21/07/1997	J.M. (Enero / Junio 97)	-12600		22186.2	Jaime Mayor Oreja
+09/1997	entrega PAC	60000	60690	82186.2	Francisco Álvarez Cascos
+09/1997	entrega Ramon	42000	102690	124186.2	Ramon
+10/1997	PAC de nov.96 a sep.97	-15900	86790	108286.2	Francisco Álvarez Cascos
+10/1997	a Pedro a Cta.regulariz.	-60000	26790	48286.2	Pedro Arriola
+23/10/1997	M.A.R.	-9000		39286.2	Miguel Ángel Rodríguez
+18/11/1997	R. (Julio / Dic. 97)	-13680	16993.2	25606.2	Rodrigo Rato
+24/11/1997	P.A. (Julio / Dic. 97)	-19800	2806.8	5806.2	Francisco Álvarez Cascos
+16/12/1997	Galicia (O.C.)	18000		23806.2	Galicia
+22/12/1997	M.R. (Jul. Dic. 97)	-12600	2593.2	11206.2	Mariano Rajoy
+31/12/1997	Acta Are (Julio-Dic.97)	-2400	193.2	8806.2	Javier Arenas
+31/12/1997	Acta Are (Julio-Dic.97)	-12000		-3193.8	Javier Arenas
+01/1998	PAC de oct. a Diciem 97	-4356	22434	-7549.8	Francisco Álvarez Cascos
+4/2/1998	Galicia (O.C.)	18000	6193.2	10450.2	Galicia
+	J.M. (Jul-Dic. 97)	-12600		-2149.8	Jaime Mayor Oreja
+03/1998	PAC de ener. a marzo 98	-4446	22434	-6595.8	Francisco Álvarez Cascos
+04/1998	Generales des	30000	23593.2	23404.2	Générale des Eaux
+05/1998	Gre. (Rafael P.)	30000	53592	53404.2	Rafael Palencia
+05/1998	Galicia (O.C.)	18000	71593.2	71404.2	Galicia
+05/1998	Acta Arens (Enero- Junio 98)	-14400	57193.2	57004.2	Javier Arenas
+06/1998	PAC de abr.a junio 98	-4446	13542	52558.2	Francisco Álvarez Cascos
+06/1998	Acta R. Rat (Enero-Junio  98)	-13680	43513.2	38878.2	Rodrigo Rato
+06/1998	Acta Paco A.C. (Enero- Junio 98	-19800	23713.2	19078.2	Francisco Álvarez Cascos
+06/1998	Acta Jaime (Enero- Junio 98)	-12600	11113.2	6478.2	Jaime Mayor Oreja
+06/1998	Acta M. Raj (Enero- Junio 98)	-12600	1486.8	-6121.8	Mariano Rajoy
+09/1998	entrega de PAC	30000	43542	23878.2	Francisco Álvarez Cascos
+09/1998	Acta J.A. de Julio a Dic.	-6000	7486.8	17878.2	Javier Arenas
+11/1998	De Málaga	18000	10513.2	35878.2	Málaga
+11/1998	López Hierro	24000	34513.2	59878.2	Ignacio López del Hierro
+11/1998	J.A. (resto de Jul. A Dic.)	-8400		51478.2	Javier Arenas
+12/1998	M. Raj. (Julio a Dic.)	-12600		38878.2	Mariano Rajoy
+12/1998	R. Rat (Julio a Dic.)	-13680	166.8	25198.2	Rodrigo Rato
+12/1998	A. Ga Pozu.	24000		49198.2	Alfonso García Pozuelo
+12/1998	Jaime (Resto de Jul. A Dic.)	-12600		36598.2	Jaime Mayor Oreja
+01/1999	Moreno (A. de la P.)	6000		42598.2	José Luis Moreno
+02/1999	Moreno (A. de la P.)	6000		48598.2	José Luis Moreno
+02/1999	J. Ar. (liquidación a Enero)	-4200	19033.2	44398.2	Javier Arenas
+04/1999	De Málaga	18000		62398.2	Málaga
+04/1999	Moreno (A. de la P.)	6000		68398.2	José Luis Moreno
+04/1999	Lucio	24000		92398.2	Lucio
+05/1999	P. Crespo	126000		218398.2	Pablo Crespo
+05/1999	M. Rajoy (En.- Junio 99)	-12600		205798.2	Mariano Rajoy
+05/1999	Jaime M. (En. - Junio 99)	-12600		193198.2	Jaime Mayor Oreja
+05/1999	Acta Paco A.C. (Juli.-Dic.98)	-19800		173398.2	Francisco Álvarez Cascos
+05/1999	Paco A.C. (En.-Junio 99)	-19800		153598.2	Francisco Álvarez Cascos
+05/1999	R.Rato (En.-Junio 99)	-13680		139918.2	Rodrigo Rato
+06/1999	Javier Arenas (pagos varios)	-12000		127918.2	Javier Arenas
+06/1999	Moreno (A. de la P.)	6000	108553.2	133918.2	José Luis Moreno
+07/1999	Entrega a Álvaro Lap.(País Vasco) para Abascal	-12000	96553.2	121918.2	Álvaro Lapuerta
+09/1999	De Málaga	18000	114553.2	139918.2	Málaga
+10/1999	R.Rato (2do Semestre 99)	-13680		126238.2	Rodrigo Rato
+11/1999	M. Rajoy (2do semestre 99)	-12600		113638.2	Mariano Rajoy
+	Paco A.C. (2do semestre 99)	-19800		93838.2	Francisco Álvarez Cascos
+	Jaime Mayor	-12600		81238.2	Jaime Mayor Oreja
+01/2000	Moreno a A. de la P.	6000	61872.6	87238.2	José Luis Moreno
+01/2000	Lucio	12000	73873.2	99238.2	Lucio
+01/2000	Alfonso Gª Pozuelo	1800	67873.2	101038.2	Alfonso García Pozuelo
+02/2000	De Málaga	18000	121873.2	119038.2	Málaga
+02/2000	R. Palenc.	24000	145873.2	143038.2	Rafael Palencia
+03/2000	Moreno a A. de la P.	9000	151873.2	152038.2	José Luis Moreno
+04/2000	1º Trimestre R. Rato	-6840		145198.2	Rodrigo Rato
+04/2000	1º Trimestre Mariano R.	-6300		138898.2	Mariano Rajoy
+04/2000	1º Trimestre Jaime M	-6300		132598.2	Jaime Mayor Oreja
+04/2000	1º Trimestre P.A.C.	-9900		122698.2	Francisco Álvarez Cascos
+04/2000	Regalos	-3561		119137.2	Javier Arenas
+05/2000	Moreno	6000		125137.2	José Luis Moreno
+05/2000	De Málaga	18000		143137.2	Málaga
+05/2000	Moreno	6000		149137.2	José Luis Moreno
+06/2000	Copa Crespo	30000	178972.2	179137.2	Pablo Crespo
+07/2000	Amigo diputados grupo	12000	190972.2	191137.2	Diputados
+07/2000	2º Trimestre Mariano R.	-6300		184837.2	Mariano Rajoy
+07/2000	2º Trimestre Jaime M.	-6300		178537.2	Jaime Mayor Oreja
+07/2000	Cancelación cto. Concejal Málaga	-12090		166447.2	Martín Carpena
+07/2000	2º Trimestre R. Rato	-6840	159442.2	159607.2	Rodrigo Rato
+07/2000	Cancelac. Concejal Málaga Unicaja	-960	160402.2	158647.2	Martín Carpena
+07/2000	Alfonso Gª Pozuelo	12000		170647.2	Alfonso García Pozuelo
+07/2000	Cancelación Cto. Concejal Durango	-33000		137647.2	Jesús María Pedrosa Urquiza
+08/2000	Acta. FEDERICO*	-12000	127402.2	125647.2	Federico Trillo
+09/2000	2o Trimestre P.A.C.	-9900	117502.2	115747.2	Francisco Álvarez Cascos
+09/2000	Amigo diputado grupo (Jose Ma Rubio)	6000		121747.2	José Manuel Fernández Rubio
+09/2000	De Málaga	18000	141502.2	139747.2	Málaga
+10/2000	Coche San Adriá	-22770		116977.2	José Luis Ruiz Casado
+11/2000	3o y 4o Trimestre R. Rato	-13680		103297.2	Rodrigo Rato
+11/2000	3o y 4o Trimestre J. Mayor	-12600	92416.2	90697.2	Jaime Mayor Oreja
+11/2000	De Málaga	18000		108697.2	Málaga
+11/2000	De Alfonso Ga Poz	30000	140452.2	138697.2	Alfonso García Pozuelo
+12/2000	Lucio Moreno	12000		150697.2	Lucio Moreno
+12/2000	Moreno	6000		156697.2	José Luis Moreno
+12/2000	R. Palencia	15000	173452.2	171697.2	Rafael Palencia
+12/2000	M. Rajoy 3o y 4o trimestre	-12600		159097.2	Mariano Rajoy
+12/2000	Paco A.C. 3o y 4o trimestre	-19800	141052.2	139297.2	Francisco Álvarez Cascos
+	Saldo Anterior	0	141052.2	139297.2	
+01/2001	J.M. Rubio	6000	147052.2	145297.2	José Manuel Fernández Rubio
+01/2001	Federico *	-18000	129052.2	127297.2	Federico Trillo
+01/2001	Celicio Sanch. (Aguas)	30000	159052.2	157297.2	Cecilio Sanchez
+02/2001	J.M. Rubio	12000	171052.2	169297.2	José Manuel Fernández Rubio
+03/2001	Especial Jaime	-6000	165052.2	163297.2	Jaime Mayor Oreja
+04/2001	Málaga	18000	183052.2	181297.2	Málaga
+04/2001	J.M. Rubio	30000	213052.2	211297.2	José Manuel Fernández Rubio
+04/2001	1º Semestre 2001 Mariano	-12600	200452.2	198697.2	Mariano Rajoy
+04/2001	Moreno	6000	206452.2	204697.2	José Luis Moreno
+04/2001	Federico (resto 2000) *	-8166	198286.2	196531.2	Federico Trillo
+04/2001	País Vasco Mª Eug. Rico (Álvaro)	-2700		193831.2	 María Eugenia García Rico
+05/2001	1º Semestre 2001 Rodrigo	-13680	181906.2	180151.2	Rodrigo Rato
+06/2001	Málaga	18000		198151.2	Málaga
+06/2001	1º Semestre 2001 Jaime	-12600	187306.2	185551.2	Jaime Mayor Oreja
+07/2001	Jaime Ignacio	-3000		182551.2	Jaime Ignacio de Burgo
+07/2001	Concejal Viuda Francisco Cano (Barcelona)	-18000	166306.2	164551.2	Francisco Cano
+07/2001	1º Semestre Paco Álv-Cascos	-19800	148306.2	144751.2	Francisco Álvarez Cascos
+07/2001	Federico correspondiente a 2001 *	-18000	128506.2	126751.2	Federico Trillo
+09/2001	Deuda Tenerife telemarketing	-27600	100906.2	99151.2	Tenerife
+09/2001	2º Semestre 2001 Rodrigo R.	-13680	87226.2	85471.2	Rodrigo Rato
+09/2001	2º Semestre 2001Mariano	-12600	74626.2	72871.2	Mariano Rajoy
+11/2001	2º Semestre 2001 Paco A.Cascos	-19800	54826.2	53071.2	Francisco Álvarez Cascos
+11/2001	Liquidación Linaza (León)	-15000	39826.2	38071.2	Luis Guillermo López Linaza
+12/2001	Resto año 2001 Federico Trillo *	-18000		20071.2	Federico Trillo
+12/2001	A Pio García Escudero (devol. Antic. Atentado)	-6000		14071.2	Pio García Escudero
+12/2001	Federico	-3000		11071.2	Federico Trillo
+12/2001	A Jaime Mayor	-12000	826.2	-928.8	Jaime Mayor Oreja
+2002	Aportación Manuel Contreras	60000	60000	59071.2	Manuel Contreras
+	Liq. 2001 Federico	-19470		39601.2	Federico Trillo
+	1º Semestre 2002 Mariano ...	-12620		26981.2	Mariano Rajoy
+	1º Semestre 2002 Rodrigo	-13700		13281.2	Rodrigo Rato
+	Jose Luis S.	50000		63281.2	José Luis Sánchez
+	Entrega Amparo Bordá (Jaime)	-15000		48281.2	Alfonso García Pozuelo
+	M. Contreras	30000		78281.2	Manuel Contreras
+	1º Semestre Cascos	-19860	59350	58421.2	José Manuel Fernández Rubio
+	Alfonso Gª Poz.	24000		82421.2	Alfonso García Pozuelo
+	Jaime (Basta Ya)	-3005		79416.2	Jaime Mayor Oreja
+	J. M. Fdez Rubio	18000	98345	97416.2	José Manuel Fernández Rubio
+07/2002	Jose Luis	100000	198345	197416.2	José Luis Sánchez
+07/2002	Pedro Arriola	-60000		137416.2	Pedro Arriola
+07/2002	J.M. Fernández Rubio	18000		155416.2	José Manuel Fernández Rubio
+07/2002	Jaime Mayor	-7500	148845	147916.2	Jaime Mayor Oreja
+07/2002	1º semestre Federico	-27760		120156.2	Federico Trillo
+07/2002	Liquidación Javier	-3050		117106.2	Javier Arenas
+07/2002	Mes de julio Javier	-3300		113806.2	Javier Arenas
+09/2002	2º semestre Rodrigo	-13700	101035	100106.2	Rodrigo Rato
+09/2002	Jose Luis	100000	201035	200106.2	José Luis Sánchez
+09/2002	Mes de Agosto y Sept. Javier	-6600		193506.2	Javier Arenas
+09/2002	2º Semestre Mariano	-12620	181815	180886.2	Mariano Rajoy
+10/2002	2º Semestre Cascos	-19860		161026.2	Francisco Álvarez Cascos
+10/2002	Oct. Nov. Dic Javier	-9900		151126.2	Javier Arenas
+10/2002	2º Semestre Federico	-27760		123366.2	Federico Trillo
+10/2002	Extra 15º Javier	-8400	115895	114966.2	Javier Arenas
+11/2002	Pedro Arriola	-100000	15895	14966.2	Pedro Arriola
+12/2002	A Javier Arenas	-12000	3895	2966.2	Javier Arenas
+12/2002	A Euroconsumo	-4500		-1533.8	Euroconsumo
+12/2002	De J. M. F. Rubio	18000		16466.2	José Manuel Fernández Rubio
+12/2002	A Jaime Mayor	-12000	5395	4466.2	Jaime Mayor Oreja
+12/2002	A c/c donativos B. Vitor.	-5395		-928.8	Donativo
+16/01/2003	M. Contreras	60000		59071.2	Manuel Contreras
+4/2/2003	J.L.Sánchez	100000	160000	159071.2	José Luis Sánchez
+02/2003	1º Semestre Javier (3300/mes)	-19800		139271.2	Javier Arenas
+02/2003	1º Semestre Rodrigo R.	-13700		125571.2	Rodrigo Rato
+6/2/2003	Rubio	18000		143571.2	José Manuel Fernández Rubio
+6/2/2003	Camilo (Sisocia)	60000		203571.2	Camilo José Alcalá Sánchez
+24/02/2003	1º Semestre Mariano	-12620		190951.2	Mariano Rajoy
+27/02/2003	1º Semestre Paco	-19860		171091.2	Francisco Álvarez Cascos
+3/3/2003	Ángel Salado	60000		231091.2	Ángel Salado
+4/3/2003	Donativo a Euroconsumo	-1100		229991.2	Euroconsumo
+11/3/2003	Copisa / Socique	100000	270920	329991.2	Copisa y Sorigué
+27/03/2003	Pedro Arriola	-120000	150920	209991.2	Pedro Arriola
+31/03/2003	Congregación	-4100	146820	205891.2	Congregación
+31/03/2003	Jose L. Moreno	6000	152820	211891.2	Jose L. José Luis Moreno
+2/4/2003	M. Contreras	60000	212820	271891.2	Manuel Contreras
+2/4/2003	A Matas para piso	0		271891.2	Jaime Matas
+24/04/2003	Aldesa	18000		289891.2	José Manuel Fernández Rubio
+29/04/2003	Teofila Martínez	-30000		259891.2	Teofila Martínez
+30/04/2003	Jerez (el Lili)	-6000		253891.2	Aurelio Romero
+5/5/2003	De Javier (L. del R.)	100000		353891.2	Javier L. del R.
+13/05/2003	Polo/Llorens	30000		383891.2	Polo Llorens
+6/5/2003	Copisa / Socique	100000		483891.2	Copisa y Sorigué
+25/05/2003	Rubio	18000	431420	501891.2	José Manuel Fernández Rubio
+2/6/2003	Lérida (J.I. Llorens)	-6000	428420	495891.2	J. I. Llorens Lérida
+16/06/2003	J.L. Sánchez	100000		595891.2	José Luis Sánchez
+17/06/2003	Liquidación Arriola	-161000	367420	434891.2	Pedro Arriola
+25/06/2003	M. Contreras	120000		554891.2	M. Contreras
+1/7/2003	Federico año 2003 completo	-36000		518891.2	Federico Trillo
+2/7/2003	Rubio	30000	481420	548891.2	José Manuel Fernández Rubio
+8/7/2003	Pio Gª (15ºpaga)	-6000		542891.2	Pio García Escudero
+16/07/2003	2º Semestre Rodrigo	-13700		529191.2	Rodrigo Rato
+16/07/2003	2º Semestre Javier	-19800		509391.2	Javier Arenas
+16/07/2003	Paco Álvarez (2º Semestre)	-19800		489591.2	Francisco Álvarez Cascos
+16/07/2003	2º Semestre Mariano	-12600	409520	476991.2	Mariano Rajoy
+29/07/2003	Jaime Mayor	-7500	402020	469491.2	Jaime Mayor Oreja
+11/9/2003	J.L. Sánchez	100000	502020	569491.2	José Luis Sánchez
+15/09/2003	Reloj Javier Arenas	-700		568791.2	Javier Arenas Reloj
+26/09/2003	Ingresado en Banco Vitoria	-50000	451320	518791.2	Banco Vitoria Ingresado
+3/10/2003	Manuel Contreras	120000		638791.2	Manuel Contreras
+6/10/2003	Ingresado en Banco Vitoria	-120000	451320	518791.2	Banco Vitoria Ingresado
+22/10/2003	Guillermo Contreras	30000		548791.2	Guillermo Contreras
+23/10/2003	Eug. Nasarre (Humanismo y D.)	-30000	451320	518791.2	"Eugenio Nasarre, Fundación Humanismo y
+Democracia"
+17/11/2003	J.L.Sánchez (otros 100 a Javier)	100000	551320	618791.2	José Luis Sánchez
+18/11/2003	Extra 15º Mariano Rajoy	-8420	542920	610371.2	Mariano Rajoy
+2/12/2003	Entrega a Javier Rojas	-198000	344900	412371.2	Javier Rojas Entrega
+4/12/2003	Alfonso Gª Pozuelo	60000	404900	472371.2	Alfonso García Pozuelo
+10/12/2003	Rubio	24000	428900	496371.2	José Manuel Fernández Rubio
+12/12/2003	Camilo	90000	518900	586371.2	Camilo
+17/12/2003	Jaime Mayor	-12000	506900	574371.2	Jaime Mayor Oreja
+7/1/2004	Ingresos en B. Vitoria	-206900	300000	367471.2	Donativo
+8/1/2004	1º Trimestre Rodrigo Rato	-6850		360621.2	Rodrigo Rato
+12/1/2004	Aldesa	24000		384621.2	José Manuel Fernández Rubio
+14/01/2004	1º Trimestre J. Arenas	-9900		374721.2	Javier Arenas
+22/01/2004	M. Contreras	120000		494721.2	M. Contreras
+01/2004	Fund. Hum. Y D. (Pin)	-40000		454721.2	"Fundación Humanismo y
+Democracia"
+5/2/2004	Elvira	-6000		448721.2	Elvira Rodríguez
+5/2/2004	Aldesa	48000	429250	496721.2	José Manuel Fernández Rubio
+10/2/2004	Ana Palacios	-6000		490721.2	Ana Palacios
+10/2/2004	Pilar Castillo	-6000		484721.2	Pilar Castillo
+10/2/2004	Cantabria	-60000		424721.2	Cantabria
+10/2/2004	1º Trimestre Mariano	-6300	350950	418421.2	Mariano Rajoy
+17/02/2004	Romero Polo (Lérida)	24000	374950	442421.2	Romero Polo
+19/02/2004	Mariano cuota dip. Madrid	-1000	373950	441421.2	Mariano Rajoy
+24/02/2004	J.L.Sánchez	100000		541421.2	José Luis Sánchez
+24/02/2004	A. Sevilla	-50000		491421.2	Sevilla
+24/02/2004	A Málaga	-20000	403950	471421.2	Málaga
+1/3/2004	Ruban (Antonio Vilella)	50000	453950	521421.2	Ruban Antonio Vilella
+1/3/2004	Copasa	75000	528950	596421.2	Copasa
+2/3/2004	Ubaldo Nieto	3000	531950	599421.2	Ubaldo Nieto
+8/3/2004	Fdez. Rubio	48000		647421.2	José Manuel Fernández Rubio
+10/3/2004	Pilar Castillo	-3000		644421.2	Pilar Castillo
+11/3/2004	Juan Cotino (Sedesa)	200000		844421.2	Juan Cotino
+11/3/2004	A. Villela	50000		894421.2	Antonio Vilella
+15/03/2004	Mercadona	90000	916950	984421.2	Mercadona
+20/04/2004	1º trimestre Cascos	-9900		974521.2	Francisco Álvarez Cascos
+26/04/2004	15º de A. de la P.	-8200	898850	966321.2	Álvaro de la Puerta
+27/04/2004	Ingresado en B. Vitoria-Banesto. Donativo	-100850	798000	865471.2	Donativo
+4/5/2004	Ingresado en B. Vitoria-Banesto. Donativo	-100000	698000	765471.2	Donativo
+6/5/2004	Pago a J. Rojo (Campaña)	-280000	418000	485471.2	J. Rojo
+14/05/2004	Ingresado en Banesto Donativos	-118000	300000	367471.2	Donativo
+14/05/2004	Mariano Rajoy 2º Trimestre	-6300		361171.2	Mariano Rajoy
+14/05/2004	Ángel Acebes 2º Trimestre (1º pago)	-6300		354871.2	Ángel Acebes
+14/05/2004	Javier Arenas 2º Trimestre	-9900	277500	344971.2	Javier Arenas
+25/05/2004	Ingresado en Banesto Donativos	-77500	200000	267471.2	Donativo
+4/6/2004	Cantabria Campaña	-30000	170000	237471.2	Cantabria
+4/6/2004	Ingresado en Banesto Donativos	-100000	70000	137471.2	Donativo
+9/6/2004	Jose Luis Sánchez	100000	170000	237471.2	José Luis Sánchez
+11/6/2004	Volpeceres	60000	230000	297471.2	Volpeceres
+11/6/2004	Alfonso Gª Poz	30000	260000	327471.2	Alfonso García Pozuelo
+24/06/2004	Colaboración Asesoria (Álvaro)	-2100		325371.2	Álvaro Lapuerta
+7/7/2004	Campaña Europes	-100000		225371.2	Campaña Europes
+14/07/2004	Ángel Acebes 3º Trimestre	-6300		219071.2	Ángel Acebes
+18/07/2004	Mariano Rajoy	-6300		212771.2	Mariano Rajoy
+28/07/2004	Luis Fraga [Guadalajara]	-3000		209771.2	Luis Fraga
+14/09/2004	Jose Luis Sánchez	100000		309771.2	José Luis Sánchez
+21/09/2004	Ángel Acebes 4º trimestre	-6300		303471.2	Ángel Acebes
+21/09/2004	Mariano Rajoy 4º trimestre	-6300	229700	297171.2	Mariano Rajoy
+22/09/2004	Luis de Rivero	120000		417171.2	Luis de Rivero
+22/09/2004	Manuel Contreras	60000	409700	477171.2	Manuel Contreras
+19/10/2004	Villar Mir	100000	509700	577171.2	Juan Manuel Villar Mir
+20/10/2004	A c/c donativos	-60000	449700	517171.2	Donativo
+20/10/2004	Entrega a Paco Yáñez para suscribir 1.100 titulos	-121000	328700	396171.2	Paco Yáñez
+29/10/2004	Entrega a Álvaro Lapuerta 1.270 titulos	-139700	189000	256471.2	Álvaro Lapuerta
+26/11/2004	Entrega Pozuelo (Hispánica)	30000	69400	286471.2	Alfonso García Pozuelo
+3/12/2004	Compra Alberto Dorrego Libertad Digital	-12100	57300	274371.2	 Alberto Dorrego
+14/12/2004	Compra Alberto Dorrego Libertad Digital	-24000		250371.2	 Alberto Dorrego
+23/12/2004	Devolución Paco Yáñez	121000	154300	371371.2	Paco Yáñez
+12/1/2005	Ingresados en c/c Donativos	-111840	42460	259531.2	Donativo
+24/01/2005	1º Trimestre Ángel Acebes	-6300		253231.2	Ángel Acebes
+24/01/2005	1º Trimestre Mariano Rajoy	-6300	29860	246931.2	Mariano Rajoy
+26/01/2005	Entrega Federico Trillo	-12000	17860	234931.2	Federico Trillo
+31/03/2005	Entrega gastos Paco Yáñez L. Digital	-950		233981.2	Paco Yáñez
+4/5/2005	Entrega gastos Rosa Iglesias L. Digital	-650		233331.2	Rosa Iglesias
+18/05/2005	2º Trimestre 2005 Mariano	-6300		227031.2	Mariano Rajoy
+18/05/2005	2º Trimestre 2005 Ángel A.	-6300	3660	220731.2	Ángel Acebes
+20/05/2005	Manuel Contreras	48000	51660	268731.2	Manuel Contreras
+26/07/2005	3º Trimestre 2005 Mariano	-6300	45360	262431.2	Mariano Rajoy
+26/07/2005	3º Trimestre 2005 Ángel A.	-6300	39060	256131.2	Ángel Acebes
+17/06/2005	Liq. Paco Yáñez	-210	38850	255921.2	Paco Yáñez
+10/10/2005	4º Trimestre 2005 Mariano	-6300		249621.2	Mariano Rajoy
+10/10/2005	4º Trimestre 2005 Ángel	-6300	26250	243321.2	Ángel Acebes
+24/11/2005	Ingresado en Banesto Donativos	-26090		217231.2	Donativo
+01/2006	Ant. Pinol	12000		229231.2	Antonio Pinal Emilio
+01/2006	Vta. Aces P.Y. a Álvaro Cruz gastos	-315	11685	228916.2	Ángel Acebes, Paco Yáñez, Álvaro de la Cruz
+01/2006	Pilar (Empresa Estudios) Pulido	12000		240916.2	Pilar Pulido
+1/2/2006	1º Trimestre Mariano	-6300	0	234616.2	Mariano Rajoy
+1/2/2006	1º Trimestre Ángel	-6300	11085	228316.2	Ángel Acebes
+04/2006	Alfonso Gª Pozuelo	18000		246316.2	Alfonso García Pozuelo
+04/2006	2º Trimestre Mariano	-6300		240016.2	Mariano Rajoy
+04/2006	2º Trimestre Ángel	-6300	16485	233716.2	Ángel Acebes
+06/2006	Corbatas Presidente	-667	15818	233049.2	Mariano Rajoy
+06/2006	Adolfo Sánchez	12000		245049.2	Adolfo Sánchez
+07/2006	3º Trimestre Mariano	-6300	0	238749.2	Mariano Rajoy
+07/2006	3º Trimestre Ángel	-6300	15218	232449.2	Ángel Acebes
+14/07/2006	Trajes y camisas	-5720	9498	226729.2	Mariano Rajoy
+26/07/2006	Federico Trillo	-3000	6498	223729.2	Federico Trillo
+14/09/2006	Antonio Pinal / Emilio	12000		235729.2	Antonio Pinal Emilio
+2/10/2006	4º Trimestre Mariano	-6300	0	229429.2	Mariano Rajoy
+2/10/2006	4º Trimestre Ángel	-6300	5898	223129.2	Ángel Acebes
+25/10/2006	J.M. Villar Mir	180000		403129.2	Juan Manuel Villar Mir
+26/10/2006	Ingresado B. Banesto	-80000	105898	323129.2	Donativo
+31/10/2006	Adolfo Sánchez	10000		333129.2	Adolfo Sánchez
+6/11/2006	Luis Rivero	60000		393129.2	Luis Rivero
+15/11/2006	M. Contreras	60000		453129.2	Manuel Contreras
+15/11/2006	Emilia Álvarez	12000		465129.2	Emilia Álvarez
+23/11/2006	Arquitecto Gonzalo Urquijo	-184000	63898	281129.2	Gonzalo Urquijo
+13/12/2006	Adolfo Sánchez	9500		290629.2	Adolfo Sánchez
+19/12/2006	J.L.Sánchez	100000		390629.2	José Luis Sánchez
+21/12/2006	Emilia Álvarez	12000		402629.2	Emilia Álvarez
+21/12/2006	Traje Mariano	-9100	176298	393529.2	Mariano Rajoy
+9/1/2007	Ingresar en Donativos	-53000	123298	340529.2	Donativo
+9/1/2007	1º Trimestre Mariano	-6300	0	334229.2	Mariano Rajoy
+9/1/2007	1º Trimestre Ángel	-6300	110698	327929.2	Ángel Acebes
+10/1/2007	Ingresar en Donativos	-60000	50698	267929.2	Donativo
+7/3/2007	de J.L. para Andalucía	-30000	20698	237929.2	José Luis Sánchez
+21/03/2007	Ignacio Ugarteche (C. Sanz)	90000		327929.2	Ignacio Ugarteche, C. Sanz
+26/03/2007	Entrega a Cantabria	-60000	50698	267929.2	Cantabria
+11/4/2007	Entrega a Álvaro Lap. Para Alberto Fdez	-30000	20698	237929.2	Álvaro Lapuerta, Alberto Fernández
+25/04/2007	Entrega a Cristobal Páez	-6000	14698	231929.2	Cristobal Páez
+25/04/2007	2º Trimestre Mariano	-6300	0	225629.2	Mariano Rajoy
+25/04/2007	2º Trimestre Ángel	-6300	2098	219329.2	Ángel Acebes
+22/05/2007	Rafa Palencia	35000		254329.2	Rafael Palencia
+24/05/2007	Manuel Contreras	60000		314329.2	Manuel Contreras
+20/05/2007	Sánchez Jose Luis	100000		414329.2	José Luis Sánchez
+06/2007	Entrega a J. Arenas	-30000	167098	384329.2	Javier Arenas
+06/2007	Entrega a Adolfo Sánchez	12000		396329.2	Adolfo Sánchez
+9/7/2007	3º Trimestre Mariano	-6300	0	390029.2	Mariano Rajoy
+9/7/2007	3º Trimestre Ángel Ac.	-6300	0	383729.2	Ángel Acebes
+20/07/2007	Adolfo Sánchez	24000		407729.2	Adolfo Sánchez
+09/2007	Adolfo Sánchez	10000		417729.2	Adolfo Sánchez
+10/2007	4º Trimestre Mariano	-6300	0	411429.2	Mariano Rajoy
+10/2007	4º Trimestre Ángel	-6300	187898	405129.2	Ángel Acebes
+7/11/2007	Adolfo Sánchez	11000	198898	416129.2	Adolfo Sánchez
+14/12/2007	Luis Del R.	200000	398898	616129.2	Luis del Rivero
+01/2008	1º Semestre Mariano	-12600	0	603529.2	Mariano Rajoy
+01/2008	1º Semestre Ángel	-12600	373698	590929.2	Ángel Acebes
+01/2008	J. Luis Sánchez	100000	473698	690929.2	José Luis Sánchez
+26/01/2008	A Cantabria	-30000	443698	660929.2	Cantabria
+28/01/2008	Gonz. Urquijo	-195000	248698	465929.2	Gonzalo Urquijo
+28/01/2008	Ramón Aige	36000		501929.2	Ramón Aige Sánchez
+31/01/2008	País Vasco (Ignacio Aguirre)	-25000		476929.2	Ignacio Aguirre
+31/01/2008	Lérida (J.L. Meres)	-30000		446929.2	J.L. Meres
+31/01/2008	Cantabria	-30000		416929.2	Cantabria
+7/2/2008	M. Contreras	60000		476929.2	Manuel Contreras
+11/2/2008	J.M. Villar Mir	250000	509698	726929.2	Juan Manuel Villar Mir
+14/02/2008	Luis Fraga	-6000	503698	720929.2	Luis Fraga
+20/02/2008	Pilar Pulido	36000		756929.2	Pilar Pulido
+22/02/2008	Luis Gálvez	50000		806929.2	Luis Gálvez
+27/02/2008	Mercadona	150000	739698	956929.2	Mercadona
+3/3/2008	De J.L.Sánchez a Sevilla	-50000		906929.2	José Luis Sánchez
+5/3/2008	País Vasco (Ignacio Aguirre)	-25000		881929.2	Ignacio Aguirre
+10/3/2008	Jose Mayor (FCC)	90000		971929.2	Jose Mayor
+13/03/2008	De Ramón Aige a Sevilla	-18000		953929.2	Ramón Aige Sánchez
+13/03/2008	Gonzalo (Arquitecto)	-258000		695929.2	Gonzalo Urquijo
+13/03/2008	J. Rojo / Valls	-220000	258698	475929.2	J. Rojo, Valls
+03/2008	M.R. entrega Asesor	-3000	255698	472929.2	Mariano Rajoy
+31/03/2008	Alv. Lapuerta a cambio de talón ingresado hoy	-60000	195698	412929.2	Álvaro Lapuerta
+18/04/2008	Trajes M.R.	-11020		401909.2	Mariano Rajoy
+6/5/2008	Rafael Palencia	30000		431909.2	Rafael Palencia
+26/05/2008	Entrega de La Rioja	200000	414678	631909.2	La Rioja
+2/6/2008	Entrega a Cristobal Paez	-6000		625909.2	Cristobal Páez
+3/6/2008	2º Semestre M. Rajoy	-12600	396078	613309.2	Mariano Rajoy
+25/06/2008	Ramón Aige	18000		631309.2	Ramón Aige Sánchez
+30/06/2008	Adolfo Sanchez	10000	424078	641309.2	Adolfo Sánchez
+3/7/2008	Jose Mayor	75000	499078	716309.2	Jose Mayor
+7/7/2008	D. Cospedal 3º trimestre 2500 x 3	-7500		708809.2	Dolores del Cospedal
+15/07/2008	Regul. M. Raj 2º Semestre 400 x 6	-2400		706409.2	Mariano Rajoy
+22/07/2008	Entrega a J. I. de Ramón Aige	-6000		700409.2	Ramón Aige Sánchez
+22/07/2008	Regalo Álvaro Lap.	-1490		698919.2	Álvaro Lapuerta
+31/07/2008	Gonzalo Urquijo (3º Planta)	-235000	246688	463919.2	Gonzalo Urquijo
+14/10/2008	D. Cospedal 4º Trimestre	-7500	239188	456419.2	Dolores del Cospedal
+10/2008	Entrega M.C	10000	249188	466419.2	Manuel Contreras
+12/2008	G.U.	-200000		266419.2	Gonzalo Urquijo
+
