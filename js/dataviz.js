@@ -13,7 +13,7 @@ var widthyears = 5;
 
 //Prepare canvas size
 var margin = {top: 20, right: 20, bottom: 150, left: 60},
-    width = /*data.length*/ 647*barwidth - margin.left - margin.right,
+    width = /*data.length*/ 676*barwidth - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
 
 var formatComma = d3.format(",");
