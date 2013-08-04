@@ -6,28 +6,31 @@ Also some ideas come from https://github.com/erhardt/Attention-Plotter
 */
 
 
-//Prepare canvas siza
-var margin = {top: 20, right: 20, bottom: 30, left: 60},
-    width = 1900 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
 
-var formatComma = d3.format(",");
 var barwidth = 2; //width of the bars
 var baseyears = 470;
 var widthyears = 5;
 
+//Prepare canvas size
+var margin = {top: 20, right: 20, bottom: 150, left: 60},
+    width = /*data.length*/ 647*barwidth - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
+
+var formatComma = d3.format(",");
+
+
 //Sets xScale
-var xValue = function(d) { return d.fecha; }, // data -> value, this is not working
-    //xScale = d3.scale.ordinal().rangeRoundBands([0, width], .0), // value -> display
-	xScale = d3.scale.linear(), // value -> display
+/*var xValue = function(d) { return d.fecha; }, // data -> value, this is not working
+    xScale = d3.scale.ordinal().rangeRoundBands([0, width], .0), // value -> display
+    xScale = d3.scale.linear(), // value -> display
     xMap = function(d) { return xScale(xValue(d)); }, // data -> display
-    xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+    xAxis = d3.svg.axis().scale(xScale).orient("bottom");*/
 
 //Sets yScale
 var yValue = function(d) { return d.saldocalculado; }, // data -> value
     yScale = d3.scale.linear()
-	.range([height, 0]), // value -> display
-    yMap = function(d) { return yScale(yValue(d)); }, // data -> display
+	.range([height, 0]), // fuction that converts the data values into display values: value -> display
+    //yMap = function(d) { return yScale(yValue(d)); }, // data -> display
     yAxis = d3.svg.axis().scale(yScale).orient("left").tickFormat(formatComma);
 
 //Adds the div that is used for the tooltip
@@ -42,24 +45,63 @@ var svg = d3.select("body").append("svg")
   	.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-//Adds Background image with envelopes
-var imgs = svg.selectAll("image").data([0]);
-                imgs.enter()
-                .append("svg:image")
-                .attr("xlink:href", "img/leyenda-1.png")
-                .attr("x", "60")
-                .attr("y", "60")
-                .attr("width", "250")
-                .attr("height", "301");
+//Adds Background image with envelopes in and out
+svg.append("image")
+	.attr("xlink:href", "img/leyenda-1.png")
+	.attr("x", "40")
+	.attr("y", "60")
+	.attr("width", "250")
+	.attr("height", "301");
+
+svg.append("text").attr("class","active").attr("y",height).attr("x",50).text("Selecciona una persona");
+
+var vip = ["","Mariano Rajoy","Pedro Arriola","Francisco Álvarez Cascos","Javier Arenas","Angel Piñeiro","Juan Manuel Villar Mir","Jaime Ignacio de Burgo","Jaime Mayor Oreja","Rodrigo Rato","Juan Cotino","Ángel Acebes","José Luis Sánchez"];
+	svg.selectAll("text")
+		.data(vip)
+	.enter().append("text")
+		.attr("y", function(d, i) { return i * 11 + height; })
+		.attr("x",50)
+		.attr("dy", ".71em")
+		.attr("class","inactive")
+		.text(String)
+		.on('click',function(d) { //when click on name
+			var personflat = d.replace(/\s+/g, ''); //removes spaces from person name
+				if (d3.select(this).attr('class')==='inactive'){
+				//first time
+				d3.selectAll('svg .bar').attr("opacity",1)
+				d3.selectAll('svg .bar').transition().duration(500).attr("opacity",.15); //dims all bars 
+			      	d3.selectAll('svg .'+personflat).transition().duration(2500).attr("class","bar highlighted "+personflat); //adds class "highlighted" to al .marianorajoy bars
+				d3.select(this).transition().duration(0).attr("class","active"); //adds class .active to button
+
+				//second time
+				} else if (d3.select(this).attr('class')==='active'){
+				      	d3.select(this).attr("class","inactive"); //removes .active class
+					d3.selectAll("svg .highlighted."+  personflat).attr("class","bar "+  personflat);
+					d3.selectAll('svg .bar').transition().duration(500).attr("opacity",1);
+				}
+          		});
 
 d3.tsv("data/data.tsv", type, function(error, data) {//reads the tsv file
-  xScale.domain(data.map(xValue)); 
+  //xScale.domain(data.map(xValue)); 
   yScale.domain(d3.extent(data, function(d) { return d.entradas; })).nice();
 
+	/* X axis 
 	svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
+		.attr("class", "x axis")
+		.attr("transform", "translate(0," + height + ")")
+ 		.call(xAxis);*/
+
+	//Y axis
+	svg.append("g")
+		.attr("class", "y axis")
+	      	.call(yAxis)
+	    	.append("text")
+		.attr("transform", "rotate(-90)")
+		.attr("y", 6)
+		.attr("dy", ".71em")
+		.style("text-anchor", "end")
+		.text("Euros");
+
 
 	//Donations horizontal lines
 	svg.append('line')
@@ -140,7 +182,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the tsv file
 		});
 
 	//TODO years. Lines with years at the bottom.
-	svg.append('line')
+	/*svg.append('line')
             .attr('y1', baseyears)
             .attr('y2', baseyears)
             .attr('x1', 0*barwidth)
@@ -234,187 +276,43 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the tsv file
             .attr('y2', baseyears+widthyears)
             .attr('x1', 248*barwidth)
             .attr('x2', 270*barwidth)
-	    .attr("class", "years");
-
-	//Y axis
-  	svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-    .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Euros");
-	
-
-	//Legend TODO add loop to iterate through names
-	/*var vip = [["Mariano Rajoy","marianorajoy"], ["Pedro Arriola","pedroarriola"], ["Francisco Álvarez Cascos","cascos"]];
-
-	var index;
-	for (index = 0; index < vip.length; ++index) {
-		svg.append("g")
-    		.append("text")
-			.attr("y", index*18)
-			.attr("x",300)
-			.attr("dy", ".71em")
-			//.attr('class','active')
-			//.attr("class",vip[index][1])
-			.text(vip[index][0])
-			.on('click',function(d,index) { //when click on name
-				d3.select(this).attr('class','active'); //turns text grey an adds class .active
-		      	//d3.select('svg .active').attr('class',''); //turns .active text back to full opacity, removes .active	
-				d3.selectAll('svg .'+ vip[index][1]).attr('class','bar highlighted '+ vip[index][1]); //adds class "highlighted" to all .marianorajoy bars
-				//d3.selectAll('svg .highlighted').attr('class','bar ' + a[index][1]);
-
-          	});
-	}*/
-
-	  svg.append("g")
-		.append("text")
-		  .attr("y", 6)
-		  .attr("x",300)
-		  .attr("dy", ".71em")
-		  .text("Mariano Rajoy")
-		.on('click',function(d) { 
-		      	d3.selectAll('svg .marianorajoy').transition().duration(0).attr("class","bar marianorajoy highlighted"); //adds class "highlighted" to al .marianorajoy bars
-				d3.select(this).transition().duration(0).attr("class","active"); //turns text grey an adds class .active
-		      	d3.select('svg .active').transition().duration(0).attr('opacity',1).attr("class",""); //turns .active text back to full opacity, removes .active	
-				d3.selectAll('svg .highlighted').transition().duration(0).attr("class","bar marianorajoy");
-		      	});
-
-	  svg.append("g")
-		.append("text")
-		  .attr("y", 25)
-		  .attr("x",300)
-		  .attr("dy", ".71em")
-		  .text("Pedro Arriola")
-		.on('click',function(d) { 
-		      	d3.selectAll('svg .pedroarriola').transition().duration(0).attr("class","bar pedroarriola highlighted");
-				d3.select(this).transition().duration(0).attr("class","active");
-		      	d3.select('svg .active').transition().duration(0).attr('opacity',1).attr("class","");
-				d3.selectAll('svg .highlighted').transition().duration(0).attr("class","bar pedroarriola");
-		      	});
-
-	  svg.append("g")
-		.append("text")
-		  .attr("y", 44)
-		  .attr("x",300)
-		  .attr("dy", ".71em")
-		  .text("Francisco Álvarez Cascos")
-		.on('click',function(d) { 
-		      	d3.selectAll('svg .cascos').transition().duration(0).attr("class","bar cascos highlighted");
-				d3.select(this).transition().duration(0).attr("class","active");
-		      	d3.select('svg .active').transition().duration(0).attr('opacity',1).attr("class","");
-				d3.selectAll('svg .highlighted').transition().duration(0).attr("class","bar cascos");
-		      	});
-
-	  svg.append("g")
-		.append("text")
-		  .attr("y", 63)
-		  .attr("x",300)
-		  .attr("dy", ".71em")
-		  .text("Javier Arenas")
-		.on('click',function(d) { 
-		      	d3.selectAll('svg .arenas').transition().duration(0).attr("class","bar arenas highlighted");
-				d3.select(this).transition().duration(0).attr("class","active");
-		      	d3.select('svg .active').transition().duration(0).attr('opacity',1).attr("class","");
-				d3.selectAll('svg .highlighted').transition().duration(0).attr("class","bar arenas");
-		      	});
-
-	  svg.append("g")
-		.append("text")
-		  .attr("y", 82)
-		  .attr("x",300)
-		  .attr("dy", ".71em")
-		  .text("Angel Piñeiro")
-		.on('click',function(d) { 
-		      	d3.selectAll('svg .pineiro').transition().duration(0).attr("class","bar pineiro highlighted");
-				d3.select(this).transition().duration(0).attr("class","active");
-		      	d3.select('svg .active').transition().duration(0).attr('opacity',1).attr("class","");
-				d3.selectAll('svg .highlighted').transition().duration(0).attr("class","bar pineiro");
-		      	});
-
-	  svg.append("g")
-		.append("text")
-		  .attr("y", 6)
-		  .attr("x",460)
-		  .attr("dy", ".71em")
-		  .text("Juan Manuel Villar Mir")
-		.on('click',function(d) { 
-		      	d3.selectAll('svg .villarmir').transition().duration(0).attr("class","bar villarmir highlighted");
-				d3.select(this).transition().duration(0).attr("class","active");
-		      	d3.select('svg .active').transition().duration(0).attr('opacity',1).attr("class","");
-				d3.selectAll('svg .highlighted').transition().duration(0).attr("class","bar villarmir");
-		      	});
-
-	  svg.append("g")
-		.append("text")
-		  .attr("y", 25)
-		  .attr("x",460)
-		  .attr("dy", ".71em")
-		  .text("Jaime Ignacio de Burgo")
-		.on('click',function(d) { 
-		      	d3.selectAll('svg .deburgo').transition().duration(0).attr("class","bar deburgo highlighted");
-				d3.select(this).transition().duration(0).attr("class","active");
-		      	d3.select('svg .active').transition().duration(0).attr('opacity',1).attr("class","");
-				d3.selectAll('svg .highlighted').transition().duration(0).attr("class","bar deburgo");
-		      	});
-
-	  svg.append("g")
-		.append("text")
-		  .attr("y", 44)
-		  .attr("x",460)
-		  .attr("dy", ".71em")
-		  .text("Jaime Mayor Oreja")
-		.on('click',function(d) { 
-		      	d3.selectAll('svg .oreja').transition().duration(0).attr("class","bar oreja highlighted");
-				d3.select(this).transition().duration(0).attr("class","active");
-		      	d3.select('svg .active').transition().duration(0).attr('opacity',1).attr("class","");
-				d3.selectAll('svg .highlighted').transition().duration(0).attr("class","bar oreja");
-		      	});
-
-	  svg.append("g")
-		.append("text")
-		  .attr("y", 63)
-		  .attr("x",460)
-		  .attr("dy", ".71em")
-		  .text("Rodrigo Rato")
-		.on('click',function(d) { 
-		      	d3.selectAll('svg .rato').transition().duration(0).attr("class","bar rato highlighted");
-				d3.select(this).transition().duration(0).attr("class","active");
-		      	d3.select('svg .active').transition().duration(0).attr('opacity',1).attr("class","");
-				d3.selectAll('svg .highlighted').transition().duration(0).attr("class","bar rato");
-		      	});
+	    .attr("class", "years")
+	*/
 
 	//The Bars
   	svg.selectAll(".bar")
-      .data(data)
-    	.enter().append("rect")
-    	.attr("fill", function(d) { return d.entradas < 0 ? "#800000" : "#0055D4"; })
+	      	.data(data)
+	    	.enter().append("rect")
+	    	.attr("fill", function(d) { return d.entradas < 0 ? "#C00000" : "#0055D4"; })
 		// .attr("class",function(d) { return d.persona == "Mariano Rajoy" ? "bar pedroarriola" : "bar"; })
-     	// .attr("title", function(d) { return d.persona;  })
-	.attr("class", 
+     		// .attr("title", function(d) { return d.persona;  })
+		.attr("class", 
 		function(d) { //TODO iterate through array
 			var perso = d.persona;
 			if ( perso == "Francisco Álvarez Cascos") { 
-				 return "bar cascos";
+				 return "bar FranciscoÁlvarezCascos";
 			} else if ( perso == "Mariano Rajoy") { 
-				return "bar marianorajoy";
+				return "bar MarianoRajoy";
 			} else if (  perso == "Pedro Arriola") { 
-				return "bar pedroarriola";
+				return "bar PedroArriola";
 			} else if (  perso == "Javier Arenas") { 
-				return "bar arenas";
+				return "bar JavierArenas";
 			} else if (  perso == "Angel Piñeiro") { 
-				return "bar pineiro";
+				return "bar AngelPiñeiro";
 			} else if ( perso == "Juan Manuel Villar Mir") { 
-				return "bar villarmir";
+				return "bar JuanManuelVillarMir";
 			} else if (  perso == "Jaime Ignacio de Burgo") { 
-				return "bar deburgo";
+				return "bar JaimeIgnaciodeBurgo";
 			} else if (  perso == "Jaime Mayor Oreja") { 
-				return "bar oreja";
+				return "bar JaimeMayorOreja";
 			} else if (  perso == "Rodrigo Rato") { 
-				return "bar rato";
+				return "bar RodrigoRato";
+			} else if (  perso == "Ángel Acebes") { 
+				return "bar ÁngelAcebes";
+			} else if (  perso == "Juan Cotino") { 
+				return "bar JuanCotino";
+			} else if (  perso == "José Luis Sánchez") { 
+				return "bar JoséLuisSánchez";
 			} else { 
 				return "bar";
 		}
@@ -437,7 +335,6 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the tsv file
                 .duration(500)      
                 .style("opacity", 0);   
         });
-
 });
 
 function type(d) {
