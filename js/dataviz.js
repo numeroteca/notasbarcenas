@@ -12,9 +12,9 @@ var baseyears = 470;
 var widthyears = 5;
 
 //Prepare canvas size
-var margin = {top: 20, right: 20, bottom: 150, left: 60},
+var margin = {top: 10, right: 20, bottom: 20, left: 60},
     width = /*data.length*/ 676*barwidth - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom;
+    height = 450 - margin.top - margin.bottom;
 
 var formatComma = d3.format(",");
 
@@ -39,7 +39,7 @@ var div = d3.select("body").append("div")
     .style("opacity", 0);	
 
 //Sets Canvas
-var svg = d3.select("body").append("svg")
+var svg = d3.select('#vis').append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   	.append("g")
@@ -53,33 +53,33 @@ svg.append("image")
 	.attr("width", "250")
 	.attr("height", "301");
 
-svg.append("text").attr("class","active").attr("y",height).attr("x",50).text("Selecciona una persona");
+//Cretes Legend
+var legend = d3.select("#legend").attr("class", "legend");
 
-var vip = ["","Mariano Rajoy","Pedro Arriola","Francisco Álvarez Cascos","Javier Arenas","Angel Piñeiro","Juan Manuel Villar Mir","Jaime Ignacio de Burgo","Jaime Mayor Oreja","Rodrigo Rato","Juan Cotino","Ángel Acebes","José Luis Sánchez"];
-	svg.selectAll("text")
-		.data(vip)
-	.enter().append("text")
-		.attr("y", function(d, i) { return i * 11 + height; })
-		.attr("x",50)
-		.attr("dy", ".71em")
-		.attr("class","inactive")
-		.text(String)
-		.on('click',function(d) { //when click on name
-			var personflat = d.replace(/\s+/g, ''); //removes spaces from person name
-				if (d3.select(this).attr('class')==='inactive'){
-				//first time
-				d3.selectAll('svg .bar').attr("opacity",1)
-				d3.selectAll('svg .bar').transition().duration(500).attr("opacity",.15); //dims all bars 
-			      	d3.selectAll('svg .'+personflat).transition().duration(2500).attr("class","bar highlighted "+personflat); //adds class "highlighted" to al .marianorajoy bars
-				d3.select(this).transition().duration(0).attr("class","active"); //adds class .active to button
+legend.append("h5").style("font-weight","bold").text("Selecciona una persona"); //legend title
 
-				//second time
-				} else if (d3.select(this).attr('class')==='active'){
-				      	d3.select(this).attr("class","inactive"); //removes .active class
-					d3.selectAll("svg .highlighted."+  personflat).attr("class","bar "+  personflat);
-					d3.selectAll('svg .bar').transition().duration(500).attr("opacity",1);
-				}
-          		});
+var vip = ["Mariano Rajoy","Pedro Arriola","Francisco Álvarez Cascos","Javier Arenas","Angel Piñeiro","Juan Manuel Villar Mir","Jaime Ignacio de Burgo","Jaime Mayor Oreja","Rodrigo Rato","Juan Cotino","Ángel Acebes","José Luis Sánchez","José Luis Moreno","Mercadona","Gonzalo Urquijo","Luis del Rivero","Pablo Crespo","Ignacio López del Hierro","Alfonso García Pozuelo","Copisa y Sorigué","Manuel Contreras","Pepe Cuiña","Galicia","Paco Yáñez","Jose Mayor","Ruban Antonio Vilella","José Manuel Fernández Rubio","Rafael Palencia","Álvaro Lapuerta","Ramón Aige Sánchez","Ignacio Aguirre","Adolfo Sánchez","Luis Fraga","Pilar Pulido","Luis de Rivero","Volpeceres","Aurelio Romero","Teofila Martínez","Jaime Matas","Luis Gálvez","Ángel Salado","Antonio Pinal Emilio","Cecilio Sanchez"];
+legend.selectAll('div')
+	.data(vip)
+	.enter().append("div")
+	.attr("class","inactive btn btn-default btn-mini")
+	.text(String)
+	.on('click',function(d) { //when click on name
+		var personflat = d.replace(/\s+/g, ''); //removes spaces from person name
+			if (d3.select(this).attr('class')==='inactive btn btn-default btn-mini'){
+			//first time
+			d3.selectAll('svg .bar').attr("opacity",1)
+			d3.selectAll('svg .bar').transition().duration(500).attr("opacity",.15); //dims all bars 
+		      	d3.selectAll('svg .'+personflat).transition().duration(2500).attr("class","bar highlighted "+personflat); //adds class "highlighted" and person related class to the bar
+			d3.select(this).transition().duration(0).attr("class","btn-danger btn btn-default btn-mini"); //adds class .active to button
+
+			//second time
+			} else if (d3.select(this).attr('class')==='btn-danger btn btn-default btn-mini'){
+			      	d3.select(this).attr("class","inactive btn btn-default btn-mini"); //removes .active class
+				d3.selectAll("svg .highlighted."+  personflat).attr("class","bar "+  personflat);
+				d3.selectAll('svg .bar').transition().duration(500).attr("opacity",1);
+			}
+  		});
 
 d3.tsv("data/data.tsv", type, function(error, data) {//reads the tsv file
   //xScale.domain(data.map(xValue)); 
@@ -94,12 +94,13 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the tsv file
 	//Y axis
 	svg.append("g")
 		.attr("class", "y axis")
-	      	.call(yAxis)
+	      	.call(yAxis).attr("font-size","12")
 	    	.append("text")
 		.attr("transform", "rotate(-90)")
 		.attr("y", 6)
 		.attr("dy", ".71em")
 		.style("text-anchor", "end")
+		.attr("font-size","10")
 		.text("Euros");
 
 
@@ -287,55 +288,28 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the tsv file
 		// .attr("class",function(d) { return d.persona == "Mariano Rajoy" ? "bar pedroarriola" : "bar"; })
      		// .attr("title", function(d) { return d.persona;  })
 		.attr("class", 
-		function(d) { //TODO iterate through array
-			var perso = d.persona;
-			if ( perso == "Francisco Álvarez Cascos") { 
-				 return "bar FranciscoÁlvarezCascos";
-			} else if ( perso == "Mariano Rajoy") { 
-				return "bar MarianoRajoy";
-			} else if (  perso == "Pedro Arriola") { 
-				return "bar PedroArriola";
-			} else if (  perso == "Javier Arenas") { 
-				return "bar JavierArenas";
-			} else if (  perso == "Angel Piñeiro") { 
-				return "bar AngelPiñeiro";
-			} else if ( perso == "Juan Manuel Villar Mir") { 
-				return "bar JuanManuelVillarMir";
-			} else if (  perso == "Jaime Ignacio de Burgo") { 
-				return "bar JaimeIgnaciodeBurgo";
-			} else if (  perso == "Jaime Mayor Oreja") { 
-				return "bar JaimeMayorOreja";
-			} else if (  perso == "Rodrigo Rato") { 
-				return "bar RodrigoRato";
-			} else if (  perso == "Ángel Acebes") { 
-				return "bar ÁngelAcebes";
-			} else if (  perso == "Juan Cotino") { 
-				return "bar JuanCotino";
-			} else if (  perso == "José Luis Sánchez") { 
-				return "bar JoséLuisSánchez";
-			} else { 
-				return "bar";
-		}
-	} 
-	) //The tooltips
-      .attr("x", function(d, i) { return i * barwidth; })
-      .attr("width", 3)
-      .attr("y", function(d) { return yScale(Math.max(0, d.entradas)); })
-      .attr("height", function(d) { return Math.abs(yScale(d.entradas) - yScale(0)); })
-	.on("mouseover", function(d) {      
-            div.transition()        
-                .duration(200)      
-                .style("opacity", .9);      
-            div.html(d.fecha + "<br/><strong/>"  + d.persona + "</strong/><br/>"  + formatComma(d.entradas) + "€ <br/>'"  + d.descripcion + "'" )  
-                .style("left", (d3.event.pageX) + "px")     
-                .style("top", (d3.event.pageY - 128) + "px");    
-            })                  
-        .on("mouseout", function(d) {       
-            div.transition()        
-                .duration(500)      
-                .style("opacity", 0);   
-        });
-});
+			function(d) { //TODO iterate through array
+				return d.persona.replace(/\s+/g, '')+" bar"; //sets the name of the person without pacs as class for the bar
+			}) 
+		//The tooltips
+	      .attr("x", function(d, i) { return i * barwidth; })
+	      .attr("width", 3)
+	      .attr("y", function(d) { return yScale(Math.max(0, d.entradas)); })
+	      .attr("height", function(d) { return Math.abs(yScale(d.entradas) - yScale(0)); })
+			.on("mouseover", function(d) {      
+			    div.transition()        
+				.duration(200)      
+				.style("opacity", .9);      
+			    div.html(d.fecha + "<br/><strong/>"  + d.persona + "</strong/><br/>"  + formatComma(d.entradas) + "€ <br/>'"  + d.descripcion + "'" )  
+				.style("left", (d3.event.pageX) + "px")     
+				.style("top", (d3.event.pageY - 128) + "px");    
+			    })                  
+			.on("mouseout", function(d) {       
+			    div.transition()        
+				.duration(500)      
+				.style("opacity", 0);   
+			});
+		});
 
 function type(d) {
   d.entradas = +d.entradas;
