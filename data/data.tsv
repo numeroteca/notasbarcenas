@@ -78,7 +78,7 @@ fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
 09/1992	01-09-1992	Entrega a Juan Carlos Aparicio Pérez (indic. Paco)	-3900		16152	Juan Carlos Aparicio Pérez
 10/1992	01-10-1992	Piñeiro	30000		46152	Angel Piñeiro
 10/1992	01-10-1992	Entrega a Pedro A. (octubre)	-7944		38208	Pedro Arriola
-10/1992	01-10-1992	Entrega a J.I. del B. (sept/oct.)	-3600		34608	Jose Ignacio del Burgo
+10/1992	01-10-1992	Entrega a J.I. del B. (sept/oct.)	-3600		34608	Jaime Ignacio de Burgo
 10/1992	01-10-1992	Ingreso Retención Cono y V.Sol. (292.000+928.000)	-7320		27288	Sociedades Cono Sur y Vídeo Soluciones
 10/1992	01-10-1992	Entrega a Pedro A. (noviembre)	-10704		16584	Pedro Arriola
 11/1992	01-11-1992	Entrega a Pedro A. (por trb. adic. de carácter. extraord.)	-6000		10584	Pedro Arriola
@@ -477,7 +477,7 @@ fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
 2/12/2003	02-12-2003	Entrega a Javier Rojas	-198000	344900	433077	Javier Rojas Entrega
 4/12/2003	04-12-2003	Alfonso Gª Pozuelo	60000	404900	493077	Alfonso García Pozuelo
 10/12/2003	12-10-2003	Rubio	24000	428900	517077	José Manuel Fernández Rubio
-12/12/2003	12-12-2003	Camilo	90000	518900	607077	Camilo
+12/12/2003	12-12-2003	Camilo	90000	518900	607077	Camilo José Alcalá Sánchez
 17/12/2003	17-12-2003	Jaime Mayor	-12000	506900	595077	Jaime Mayor Oreja
 7/1/2004	07-01-2004	Ingresos en B. Vitoria	-206900	300000	388177	Donativo
 8/1/2004	08-01-2004	1º Trimestre Rodrigo Rato	-6850		381327	Rodrigo Rato
@@ -527,7 +527,7 @@ fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
 14/09/2004	14-09-2004	Jose Luis Sánchez	100000		330477	José Luis Sánchez
 21/09/2004	21-09-2004	Ángel Acebes 4º trimestre	-6300		324177	Ángel Acebes
 21/09/2004	21-09-2004	Mariano Rajoy 4º trimestre	-6300	229700	317877	Mariano Rajoy
-22/09/2004	22-09-2004	Luis de Rivero	120000		437877	Luis de Rivero
+22/09/2004	22-09-2004	Luis de Rivero	120000		437877	Luis del Rivero
 22/09/2004	22-09-2004	Manuel Contreras	60000	409700	497877	Manuel Contreras
 19/10/2004	19-10-2004	Villar Mir	100000	509700	597877	Juan Manuel Villar Mir
 20/10/2004	20-10-2004	A c/c donativos	-60000	449700	537877	Donativo
@@ -572,7 +572,7 @@ fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
 25/10/2006	25-10-2006	J.M. Villar Mir	180000		423835	Juan Manuel Villar Mir
 26/10/2006	26-10-2006	Ingresado B. Banesto	-80000	105898	343835	Donativo
 31/10/2006	31-10-2006	Adolfo Sánchez	10000		353835	Adolfo Sánchez
-6/11/2006	06-11-2006	Luis Rivero	60000		413835	Luis Rivero
+6/11/2006	06-11-2006	Luis Rivero	60000		413835	Luis del Rivero
 15/11/2006	15-11-2006	M. Contreras	60000		473835	Manuel Contreras
 15/11/2006	15-11-2006	Emilia Álvarez	12000		485835	Emilia Álvarez
 23/11/2006	23-11-2006	Arquitecto Gonzalo Urquijo	-184000	63898	301835	Gonzalo Urquijo
@@ -635,11 +635,11 @@ fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
 25/06/2008	25-06-2008	Ramón Aige	18000		652015	Ramón Aige Sánchez
 30/06/2008	30-06-2008	Adolfo Sanchez	10000	424078	662015	Adolfo Sánchez
 3/7/2008	03-07-2008	Jose Mayor	75000	499078	737015	Jose Mayor
-7/7/2008	07-07-2008	D. Cospedal 3º trimestre 2500 x 3	-7500		729515	Dolores del Cospedal
+7/7/2008	07-07-2008	D. Cospedal 3º trimestre 2500 x 3	-7500		729515	Dolores de Cospedal
 15/07/2008	15-07-2008	Regul. M. Raj 2º Semestre 400 x 6	-2400		727115	Mariano Rajoy
 22/07/2008	22-07-2008	Entrega a J. I. de Ramón Aige	-6000		721115	Ramón Aige Sánchez
 22/07/2008	22-07-2008	Regalo Álvaro Lap.	-1490		719625	Álvaro Lapuerta
 31/07/2008	31-07-2008	Gonzalo Urquijo (3º Planta)	-235000	246688	484625	Gonzalo Urquijo
-14/10/2008	14-10-2008	D. Cospedal 4º Trimestre	-7500	239188	477125	Dolores del Cospedal
+14/10/2008	14-10-2008	D. Cospedal 4º Trimestre	-7500	239188	477125	Dolores de Cospedal
 10/2008	01-10-2008	Entrega M.C	10000	249188	487125	Manuel Contreras
 12/2008	01-12-2008	G.U.	-200000		287125	Gonzalo Urquijo
