@@ -6,20 +6,23 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/libs/bootstrap.min.css" />
-
 </head>
-
 <body>
 	<div class="container">
-		<div class="page-header">
+		<div class="">
 			<h3>Entradas y salidas de dinero de las notas de B&aacute;rcenas sobre la contabilidad b del PP</h3>
 			<div id="description">
         <p>Datos de #AdoptaUnCorrupto <a href="http://bit.ly/notasbarcenas">http://bit.ly/notasbarcenas</a> (El País y El Mundo).<br>
 			Pasa el rat&oacute;n por el gr&aacute;fico y descubre qui&eacute;n hay detr&aacute;s de cada entrada o salida de dinero.</p>
 			</div>
 		</div>
+		<div class="btn-group pull-right" data-toggle="buttons-radio">
+        <button type="button" id="sintiempo" class="btn btn-small active">Sin escala de tiempo</button>
+        <button type="button" id="contiempo" class="btn btn-small">Escala de tiempo</button>
+		</div>
 		<div id="vis"></div>
 		<div id="legend"></div>
+		<div id="legendnotime"></div>
 		<div class="page-footer">
 			<p>Visualizaci&oacute;n por <a href="http://twitter.com/numeroteca">@numeroteca</a>. Puedes reutilizar y mejorar esta visualizaci&oacute;n (c&oacute;digo disponible) en <a href="http://github.com/numeroteca/notasbarcenas">http://github.com/numeroteca/notasbarcenas</a></p>
 		</div>

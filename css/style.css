@@ -69,16 +69,20 @@ div.tooltip {
   margin-left: 20px;
 }
 
-#legend {
+#legend, #legendnotime {
   margin-left: 60px;
 }
 
 .active {
-  background-color:#000 !important;
+  background-color:#999 !important;
 }
 .btn {
   margin:3px;
 }
 .page-footer {
   margin-top:25px;	
+}
+
+.bar, #legend, .xaxis, .x.axis {
+  display:none;
 }
