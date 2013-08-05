@@ -86,3 +86,11 @@ div.tooltip {
 .bar, #legend, .xaxis, .x.axis {
   display:none;
 }
+
+.x.axis {
+  font-size:10px;
+}
+
+.btn-mini {
+  font-size:11px !important;
+}
