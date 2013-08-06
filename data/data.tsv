@@ -1,4 +1,4 @@
-fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
+fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona
 04/1990	01-04-1990	Saldo Inicial (Entrega R.N.)	48000	48000	48000	Rosendo Naseiro
 04/1990	01-04-1990	Entrega J. M.	-1530		46470	J.M.
 05/1990	01-05-1990	Entrega J. M.	-1530		44940	J.M.
@@ -50,7 +50,6 @@ fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
 02/1992	01-02-1992	Entrega a Jaime I. del B. (Calixto)	-3600		39462	Jaime Ignacio de Burgo, Calixto Yesa
 03/1992	01-03-1992	Entrega A. Cámara para Laureano	-9600		29862	Laureano López Rodó 
 03/1992	01-03-1992	Entrega Pedro A. (febrero)	-7500		22362	Pedro Arriola
-			0	9396	22362	
 05/1992	01-05-1992	Piñeiro	60000		82362	Angel Piñeiro
 05/1992	01-05-1992	Entrega a Jaime I. (Calixto)	-3600		78762	Jaime Ignacio de Burgo, Calixto Yesa
 05/1992	01-05-1992	Entrega a Cámara para Laureano	-7200		71562	Laureano López Rodó 
@@ -64,14 +63,14 @@ fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
 06/1992	01-06-1992	Pag parte dictamen Cobo	-18000		11130	Manuel Cobo del Rosal
 06/1992	01-06-1992	Entrega a Ortí B. por indic. José Mª(canje)	-3000		8130	José Miguel Ortí Bordás, Jose María Aznar
 06/1992	01-06-1992	Entrega a Paco para Begoña	-3900		4230	Francisco Álvarez Cascos, Begoña
-07/1992	01-07-1992	Entrega a Pedro A. (julio)	-7944		−3714	Pedro Arriola
+07/1992	01-07-1992	Entrega a Pedro A. (julio)	-7944		-3714	Pedro Arriola
 07/1992	01-07-1992	Piñeiro	30000		26286	Angel Piñeiro
 07/1992	01-07-1992	Pago ingreso 123 IRPF IB. de F.	-6186		20100	Sociedad Ibérica de Firmes
 07/1992	01-07-1992	Entrega a J. Moreno para Begoña	-3900		16200	J. Moreno
 07/1992	01-07-1992	Entrega a Pedro A. (agosto)	-7944		8256	Pedro Arriola
 07/1992	01-07-1992	Entrega a Juan Carlos Aparicio Pérez (indicac. Paco)	-3900		4356	Juan Carlos Aparicio Pérez, Francisco Álvarez Cascos
-07/1992	01-07-1992	Entrega a Jaime I. del B. (junio/julio/agosto)	-4500		−144	Jaime Ignacio de Burgo
-09/1992	01-09-1992	Entrega a Pedro A.("operac. adicional" sept/oct)	-12000		−12144	Pedro Arriola
+07/1992	01-07-1992	Entrega a Jaime I. del B. (junio/julio/agosto)	-4500		-144	Jaime Ignacio de Burgo
+09/1992	01-09-1992	Entrega a Pedro A.("operac. adicional" sept/oct)	-12000		-12144	Pedro Arriola
 09/1992	01-09-1992	Piñeiro	42000	82986	29856	Angel Piñeiro
 09/1992	01-09-1992	Entrega a Pedro A. (septiembre)	-7404		22452	Pedro Arriola
 09/1992	01-09-1992	Gto. Notar Liquid. 2 Sdads	-2400		20052	Pedro Arriola
@@ -82,20 +81,19 @@ fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
 10/1992	01-10-1992	Ingreso Retención Cono y V.Sol. (292.000+928.000)	-7320		27288	Sociedades Cono Sur y Vídeo Soluciones
 10/1992	01-10-1992	Entrega a Pedro A. (noviembre)	-10704		16584	Pedro Arriola
 11/1992	01-11-1992	Entrega a Pedro A. (por trb. adic. de carácter. extraord.)	-6000		10584	Pedro Arriola
-11/1992	01-11-1992	Entrega a Pedro A. (trab adic. al cto 4º trim 91 y todo el 92)	-17604		−7020	Pedro Arriola
-01/1993	01-01-1993	Entrega a Pedro A. (diciembre)	-7944		−14964	Pedro Arriola
-01/1993	01-01-1993	Entrega a Rosen por indic. Paco (liquid. Ptes)	-18000	22386	−32964	Francisco Álvarez Cascos
-01/1993	01-01-1993	Entrega a Rosen por indic. Paco (FINIQUITO)	-12000		−44964	Francisco Álvarez Cascos
-01/1993	01-01-1993	Entrega a Pedro A. (por trab. adic. de carácter.extraord.)	-6000	4386	−50964	Pedro Arriola
-01/1993	01-01-1993	Devolución Liquid Notarios	-210	4596	−51174	Sociedades
-02/1993	01-02-1993	Saldo anterior	0	4596		
-02/1993	01-02-1993	Entrega a José M. Ortí (indic. Jose Mª)	-2100	2496	−53274	José Miguel Ortí Bordás, José María Aznar
-02/1993	01-02-1993	1os 93 / Entrega Piñeiro	42000	44496	−11274	Angel Piñeiro
-02/1993	01-02-1993	Entrega a Jaime I. (Nov.-Dic.)	-3600	40896	−14874	Jaime Ignacio de Burgo
-02/1993	01-02-1993	A Pedro (especial)	-6000	34896	−20874	Pedro Arriola
-03/1993	01-03-1993	Entrega a P.A. cta 1993 (En. y Febr.)	-19320	15576	−40194	Pedro Arriola
-03/1993	01-03-1993	Entre a P.A Trab. Extraord. ( En. y Febr. )	-12000	3576	−52194	Pedro Arriola
-03/1993	01-03-1993	Entrega a Jose Mª Robles (severo moto)	-3000	576	−55194	Jose Manuel Robles, Severo Moto
+11/1992	01-11-1992	Entrega a Pedro A. (trab adic. al cto 4º trim 91 y todo el 92)	-17604		-7020	Pedro Arriola
+01/1993	01-01-1993	Entrega a Pedro A. (diciembre)	-7944		-14964	Pedro Arriola
+01/1993	01-01-1993	Entrega a Rosen por indic. Paco (liquid. Ptes)	-18000	22386	-32964	Francisco Álvarez Cascos
+01/1993	01-01-1993	Entrega a Rosen por indic. Paco (FINIQUITO)	-12000		-44964	Francisco Álvarez Cascos
+01/1993	01-01-1993	Entrega a Pedro A. (por trab. adic. de carácter.extraord.)	-6000	4386	-50964	Pedro Arriola
+01/1993	01-01-1993	Devolución Liquid Notarios	-210	4596	-51174	Sociedades
+02/1993	01-02-1993	Entrega a José M. Ortí (indic. Jose Mª)	-2100	2496	-53274	José Miguel Ortí Bordás, José María Aznar
+02/1993	01-02-1993	1os 93 / Entrega Piñeiro	42000	44496	-11274	Angel Piñeiro
+02/1993	01-02-1993	Entrega a Jaime I. (Nov.-Dic.)	-3600	40896	-14874	Jaime Ignacio de Burgo
+02/1993	01-02-1993	A Pedro (especial)	-6000	34896	-20874	Pedro Arriola
+03/1993	01-03-1993	Entrega a P.A. cta 1993 (En. y Febr.)	-19320	15576	-40194	Pedro Arriola
+03/1993	01-03-1993	Entre a P.A Trab. Extraord. ( En. y Febr. )	-12000	3576	-52194	Pedro Arriola
+03/1993	01-03-1993	Entrega a Jose Mª Robles (severo moto)	-3000	576	-55194	Jose Manuel Robles, Severo Moto
 04/1993	01-04-1993	Entrega Piñeiro	90000	90576	34806	Angel Piñeiro
 03/1993	01-03-1993	Entrega a Jaime I. (Ene.-Febr.)	-3600	86976	31206	Jaime Ignacio de Burgo
 04/1993	01-04-1993	Entrega a Jose M. Orti	-2100	84876	29106	José Miguel Ortí Bordás
@@ -103,8 +101,8 @@ fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
 04/1993	01-04-1993	P. Arr. Trab. extraord.(Marzo)	-6000	69216	13446	Pedro Arriola
 05/1993	01-05-1993	Entrega a Jaime I. (Marzo-Abril)	-3600	65616	9846	Jaime Ignacio de Burgo
 05/1993	01-05-1993	P. Arr. (Abril)	-9660	55956	186	Pedro Arriola
-05/1993	01-05-1993	P. Arr. por Trab. extraord. (Abril)	-6000	49956	−5814	Pedro Arriola
-06/1993	01-06-1993	P. Arr. (Mayo)	-9660	40296	−15474	Pedro Arriola
+05/1993	01-05-1993	P. Arr. por Trab. extraord. (Abril)	-6000	49956	-5814	Pedro Arriola
+06/1993	01-06-1993	P. Arr. (Mayo)	-9660	40296	-15474	Pedro Arriola
 05/1993	01-05-1993	Entrega Piñeiro	60000	100296	44526	Angel Piñeiro
 06/1993	01-06-1993	Entrega a P.A.C para Renta 92	-3600	96696	40926	Francisco Álvarez Cascos
 07/1993	01-07-1993	Entrega a Jaime I. (Mayo-Junio)	-3600	93096	37326	Jaime Ignacio de Burgo
@@ -117,23 +115,23 @@ fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
 07/1993	01-07-1993	Entrega a Jose Mª Robles (moto)	-1200	53226	3456	Jose Manuel Robles, Severo Moto
 07/1993	01-07-1993	Dietas Sº Gral. (220.000 Julio)	-1320	51906	2136	Francisco Álvarez Cascos
 09/1993	01-09-1993	Dietas Sº Gral. (Agosto)	-1320	50586	816	Francisco Álvarez Cascos
-09/1993	01-09-1993	Pedro Arr. (Agosto)	-9660	40926	−8844	Pedro Arriola
-09/1993	01-09-1993	P. A. (trab. extr. Julio-Agosto)	-12000	28926	−20844	Pedro Arriola
-09/1993	01-09-1993	Entrega a Jaime I. (Julio-Agosto)	-3600	25326	−24444	Jaime Ignacio de Burgo
-09/1993	01-09-1993	Dietas Sº Gral. (Sept.)	-1320	24006	−25764	Francisco Álvarez Cascos
-09/1993	01-09-1993	Gratif. campaña Gral. Asesoría Sº Gral.	-1200	22806	−26964	Francisco Álvarez Cascos
-09/1993	01-09-1993	Compensar Renta J.A.	-3600		−30564	Javier Arenas
-09/1993	01-09-1993	Pago Hotel	-1932		−32496	Hotel
-10/1993	01-10-1993	A Pedro (Trabajo. Ex. Sep.)	-6000		−38496	Pedro Arriola
+09/1993	01-09-1993	Pedro Arr. (Agosto)	-9660	40926	-8844	Pedro Arriola
+09/1993	01-09-1993	P. A. (trab. extr. Julio-Agosto)	-12000	28926	-20844	Pedro Arriola
+09/1993	01-09-1993	Entrega a Jaime I. (Julio-Agosto)	-3600	25326	-24444	Jaime Ignacio de Burgo
+09/1993	01-09-1993	Dietas Sº Gral. (Sept.)	-1320	24006	-25764	Francisco Álvarez Cascos
+09/1993	01-09-1993	Gratif. campaña Gral. Asesoría Sº Gral.	-1200	22806	-26964	Francisco Álvarez Cascos
+09/1993	01-09-1993	Compensar Renta J.A.	-3600		-30564	Javier Arenas
+09/1993	01-09-1993	Pago Hotel	-1932		-32496	Hotel
+10/1993	01-10-1993	A Pedro (Trabajo. Ex. Sep.)	-6000		-38496	Pedro Arriola
 10/1993	01-10-1993	Entrega Piñe.	60000		21504	Angel Piñeiro
 10/1993	01-10-1993	A Pedro (Septiembre)	-9660		11844	Pedro Arriola
 10/1993	01-10-1993	A P.A.C dietas octubre	-1320		10524	Francisco Álvarez Cascos
 11/1993	01-11-1993	A Pedro, trabajos extra.	-6000		4524	Pedro Arriola
-11/1993	01-11-1993	A Pedro (Octubre)	-9660		−5136	Pedro Arriola
-11/1993	01-11-1993	A P.A.C. dietas noviemb	-1320		−6456	Francisco Álvarez Cascos
-11/1993	01-11-1993	A Jaime I. (sept. y octub)	-3600		−10056	Jaime Ignacio de Burgo
-11/1993	01-11-1993	A Jose M. Orti	-2100		−12156	José Miguel Ortí Bordás
-11/1993	01-11-1993	Sanchez	-1800		−13956	Sanchez
+11/1993	01-11-1993	A Pedro (Octubre)	-9660		-5136	Pedro Arriola
+11/1993	01-11-1993	A P.A.C. dietas noviemb	-1320		-6456	Francisco Álvarez Cascos
+11/1993	01-11-1993	A Jaime I. (sept. y octub)	-3600		-10056	Jaime Ignacio de Burgo
+11/1993	01-11-1993	A Jose M. Orti	-2100		-12156	José Miguel Ortí Bordás
+11/1993	01-11-1993	Sanchez	-1800		-13956	Sanchez
 12/1993	01-12-1993	Entrega Piñe.	30000		16044	Angel Piñeiro
 12/1993	01-12-1993	Entrega Piñe.	42000		58044	Angel Piñeiro
 12/1993	01-12-1993	A Pedro Trabajos extra	-6000		52044	Pedro Arriola
@@ -149,40 +147,40 @@ fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
 02/1994	01-02-1994	Jose Miguel O.	-2100	53634	3864	José Miguel Ortí Bordás
 02/1994	01-02-1994	P.A.C. Enero	-1320	52314	2544	Francisco Álvarez Cascos
 02/1994	01-02-1994	P.A.C. Febrero	-1320	50994	1224	Francisco Álvarez Cascos
-03/1994	01-03-1994	a Jaime I.Ener y Febr.	-3600	47394	−2376	Jaime Ignacio de Burgo
-03/1994	01-03-1994	Atrasos Enero Pedro	-480	46914	−2856	Pedro Arriola
-03/1994	01-03-1994	Pedro trab.ext.febrero	-6000	40914	−8856	Pedro Arriola
-03/1994	01-03-1994	Pedro Febrero	-10140	30774	−18996	Pedro Arriola
-03/1994	01-03-1994	Pedro trab.ext.marzo	-6000	24774	−24996	Pedro Arriola
-03/1994	01-03-1994	Pedro Marzo	-10140	14634	−35136	Pedro Arriola
-03/1994	01-03-1994	P.A.C. Marzo	-1320	13314	−36456	Francisco Álvarez Cascos
-04/1994	01-04-1994	P.A.C. Abril	-1320	11994	−37776	Francisco Álvarez Cascos
-04/1994	01-04-1994	Pedro trab.ext. abril	-6000	5994	−43776	Pedro Arriola
+03/1994	01-03-1994	a Jaime I.Ener y Febr.	-3600	47394	-2376	Jaime Ignacio de Burgo
+03/1994	01-03-1994	Atrasos Enero Pedro	-480	46914	-2856	Pedro Arriola
+03/1994	01-03-1994	Pedro trab.ext.febrero	-6000	40914	-8856	Pedro Arriola
+03/1994	01-03-1994	Pedro Febrero	-10140	30774	-18996	Pedro Arriola
+03/1994	01-03-1994	Pedro trab.ext.marzo	-6000	24774	-24996	Pedro Arriola
+03/1994	01-03-1994	Pedro Marzo	-10140	14634	-35136	Pedro Arriola
+03/1994	01-03-1994	P.A.C. Marzo	-1320	13314	-36456	Francisco Álvarez Cascos
+04/1994	01-04-1994	P.A.C. Abril	-1320	11994	-37776	Francisco Álvarez Cascos
+04/1994	01-04-1994	Pedro trab.ext. abril	-6000	5994	-43776	Pedro Arriola
 04/1994	01-04-1994	Entrega F.A.C.	60000	65994	16224	Francisco Álvarez Cascos
 05/1994	01-05-1994	P.A.C. Mayo	-1320	64674	14904	Francisco Álvarez Cascos
 05/1994	01-05-1994	Entrega a Jose M.Ort.	-2100	62574	12804	José Miguel Ortí Bordás
 05/1994	01-05-1994	Pedro Abril	-10140	52434	2664	Pedro Arriola
-05/1994	01-05-1994	A Jaime ign. (Mar.Abril)	-3600	48834	−936	Jaime Ignacio de Burgo
-05/1994	01-05-1994	Sanchez	-2400	46434	−3336	Sanchez
-05/1994	01-05-1994	Pedro trab.extr.mayo	-6000	40434	−9336	Pedro Arriola
-05/1994	01-05-1994	Pedro Mayo	-10140	30294	−19476	Pedro Arriola
-06/1994	01-06-1994	Javier compens.rent93	-4200	26094	−23676	Javier Arenas
-07/1994	01-07-1994	Paco compens.rent.93	-3600	22494	−27276	Francisco Álvarez Cascos
-07/1994	01-07-1994	Pedro trab.ext. Junio	-6000	16494	−33276	Pedro Arriola
-07/1994	01-07-1994	Pedro Junio	-10140	6354	−43416	Pedro Arriola
-06/1994	01-06-1994	P.A.C. Junio	-1320	5034	−44736	Francisco Álvarez Cascos
-07/1994	01-07-1994	A Jaime ign. (Mayo Jun)	-3600	1434	−48336	Jaime Ignacio de Burgo
-07/1994	01-07-1994	Entrega Ramón	42000	43434	−6336	Ramon
-07/1994	01-07-1994	Pedro trab.ex.julio	-6000	37434	−12336	Pedro Arriola
-07/1994	01-07-1994	Pedro Julio	-10140	27294	−22476	Pedro Arriola
-07/1994	01-07-1994	PAC Julio	-1320	25974	−23796	Francisco Álvarez Cascos
-08/1994	01-08-1994	PAC Agosto	-1320	24654	−25116	Francisco Álvarez Cascos
-09/1994	01-09-1994	Pedro Trab.ex.agosto	-6000	18654	−31116	Pedro Arriola
-09/1994	01-09-1994	Pedro Agosto	-10140	8514	−41256	Pedro Arriola
-09/1994	01-09-1994	Jose Miguel Orti	-1800	6714	−43056	José Miguel Ortí Bordás
-09/1994	01-09-1994	Jaime Ign. (jul y Agosto)	-3600	3114	−46656	Jaime Ignacio de Burgo
-09/1994	01-09-1994	PAC Septiembre	-1320	1794	−47976	Francisco Álvarez Cascos
-09/1994	01-09-1994	Parte Pedro Septiem.	-240	1554	−48216	Pedro Arriola
+05/1994	01-05-1994	A Jaime ign. (Mar.Abril)	-3600	48834	-936	Jaime Ignacio de Burgo
+05/1994	01-05-1994	Sanchez	-2400	46434	-3336	Sanchez
+05/1994	01-05-1994	Pedro trab.extr.mayo	-6000	40434	-9336	Pedro Arriola
+05/1994	01-05-1994	Pedro Mayo	-10140	30294	-19476	Pedro Arriola
+06/1994	01-06-1994	Javier compens.rent93	-4200	26094	-23676	Javier Arenas
+07/1994	01-07-1994	Paco compens.rent.93	-3600	22494	-27276	Francisco Álvarez Cascos
+07/1994	01-07-1994	Pedro trab.ext. Junio	-6000	16494	-33276	Pedro Arriola
+07/1994	01-07-1994	Pedro Junio	-10140	6354	-43416	Pedro Arriola
+06/1994	01-06-1994	P.A.C. Junio	-1320	5034	-44736	Francisco Álvarez Cascos
+07/1994	01-07-1994	A Jaime ign. (Mayo Jun)	-3600	1434	-48336	Jaime Ignacio de Burgo
+07/1994	01-07-1994	Entrega Ramón	42000	43434	-6336	Ramon
+07/1994	01-07-1994	Pedro trab.ex.julio	-6000	37434	-12336	Pedro Arriola
+07/1994	01-07-1994	Pedro Julio	-10140	27294	-22476	Pedro Arriola
+07/1994	01-07-1994	PAC Julio	-1320	25974	-23796	Francisco Álvarez Cascos
+08/1994	01-08-1994	PAC Agosto	-1320	24654	-25116	Francisco Álvarez Cascos
+09/1994	01-09-1994	Pedro Trab.ex.agosto	-6000	18654	-31116	Pedro Arriola
+09/1994	01-09-1994	Pedro Agosto	-10140	8514	-41256	Pedro Arriola
+09/1994	01-09-1994	Jose Miguel Orti	-1800	6714	-43056	José Miguel Ortí Bordás
+09/1994	01-09-1994	Jaime Ign. (jul y Agosto)	-3600	3114	-46656	Jaime Ignacio de Burgo
+09/1994	01-09-1994	PAC Septiembre	-1320	1794	-47976	Francisco Álvarez Cascos
+09/1994	01-09-1994	Parte Pedro Septiem.	-240	1554	-48216	Pedro Arriola
 10/1994	01-10-1994	Entrega Piñeiro	90000	91554	41784	Angel Piñeiro
 10/1994	01-10-1994	PAC Octubre	-1320	90234	40464	Francisco Álvarez Cascos
 11/1994	01-11-1994	Jaime Ign. (Sep. y Oct.)	-3600	86634	36864	Jaime Ignacio de Burgo
@@ -331,8 +329,8 @@ fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
 09/1999	01-09-1999	De Málaga	18000	114553	169024	Málaga
 10/1999	01-10-1999	R.Rato (2do Semestre 99)	-13680		155344	Rodrigo Rato
 11/1999	01-11-1999	M. Rajoy (2do semestre 99)	-12600		142744	Mariano Rajoy
-		Paco A.C. (2do semestre 99)	-19800		122944	Francisco Álvarez Cascos
-		Jaime Mayor	-12600		110344	Jaime Mayor Oreja
+?	01-11-1999	Paco A.C. (2do semestre 99)	-19800		122944	Francisco Álvarez Cascos
+?	01-11-1999	Jaime Mayor	-12600		110344	Jaime Mayor Oreja
 01/2000	01-01-2000	Moreno a A. de la P.	6000	61873	116344	José Luis Moreno
 01/2000	01-01-2000	Lucio	12000	73873	128344	Lucio
 01/2000	01-01-2000	Alfonso Gª Pozuelo	1800	67873	130144	Alfonso García Pozuelo
@@ -370,7 +368,6 @@ fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
 12/2000	01-12-2000	R. Palencia	15000	173452	200803	Rafael Palencia
 12/2000	01-12-2000	M. Rajoy 3o y 4o trimestre	-12600		188203	Mariano Rajoy
 12/2000	01-12-2000	Paco A.C. 3o y 4o trimestre	-19800	141052	168403	Francisco Álvarez Cascos
-		Saldo Anterior	0	141052	168403	
 01/2001	01-01-2001	J.M. Rubio	6000	147052	174403	José Manuel Fernández Rubio
 01/2001	01-01-2001	Federico *	-18000	129052	156403	Federico Trillo
 01/2001	01-01-2001	Celicio Sanch. (Aguas)	30000	159052	186403	Cecilio Sanchez
@@ -399,16 +396,16 @@ fecha	date	descripcion	entradas	Saldo-anotado	Saldo-calculado	persona
 12/2001	01-12-2001	Federico	-3000		40177	Federico Trillo
 12/2001	01-12-2001	A Jaime Mayor	-12000	826	28177	Jaime Mayor Oreja
 2002	20-01-2002	Aportación Manuel Contreras	60000	60000	88177	Manuel Contreras
-		Liq. 2001 Federico	-19470		68707	Federico Trillo
-		1º Semestre 2002 Mariano ...	-12620		56087	Mariano Rajoy
-		1º Semestre 2002 Rodrigo	-13700		42387	Rodrigo Rato
-		Jose Luis S.	50000		92387	José Luis Sánchez
-		Entrega Amparo Bordá (Jaime)	-15000		77387	Alfonso García Pozuelo
-		M. Contreras	30000		107387	Manuel Contreras
-		1º Semestre Cascos	-19860	59350	87527	José Manuel Fernández Rubio
-		Alfonso Gª Poz.	24000		111527	Alfonso García Pozuelo
-		Jaime (Basta Ya)	-3005		108522	Jaime Mayor Oreja
-		J. M. Fdez Rubio	18000	98345	126522	José Manuel Fernández Rubio
+?	01-05-2002	Liq. 2001 Federico	-19470		68707	Federico Trillo
+?	01-05-2002	1º Semestre 2002 Mariano ...	-12620		56087	Mariano Rajoy
+?	01-05-2002	1º Semestre 2002 Rodrigo	-13700		42387	Rodrigo Rato
+?	01-05-2002	Jose Luis S.	50000		92387	José Luis Sánchez
+?	01-05-2002	Entrega Amparo Bordá (Jaime)	-15000		77387	Alfonso García Pozuelo
+?	01-05-2002	M. Contreras	30000		107387	Manuel Contreras
+?	01-05-2002	1º Semestre Cascos	-19860	59350	87527	José Manuel Fernández Rubio
+?	01-05-2002	Alfonso Gª Poz.	24000		111527	Alfonso García Pozuelo
+?	01-05-2002	Jaime (Basta Ya)	-3005		108522	Jaime Mayor Oreja
+?	01-05-2002	J. M. Fdez Rubio	18000	98345	126522	José Manuel Fernández Rubio
 07/2002	01-07-2002	Jose Luis	100000	198345	226522	José Luis Sánchez
 07/2002	01-07-2002	Pedro Arriola	-60000		166522	Pedro Arriola
 07/2002	01-07-2002	J.M. Fernández Rubio	18000		184522	José Manuel Fernández Rubio
