@@ -43,7 +43,7 @@ line.donaciones:hover  {
   display: none;
 }
 
-.bar:hover {
+.bar:hover, .barnotime:hover  {
   fill: black;
 }
 .highlighted {fill: red;}
@@ -93,4 +93,30 @@ div.tooltip {
 
 .btn-mini {
   font-size:11px !important;
+}
+
+.saldocalculado {
+  fill: none;
+  stroke: #ccc;
+  shape-rendering: crispEdges;
+  stroke-width:1;
+}
+
+.saldoanotado {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  stroke-width:1;
+}
+
+/*elections */
+line.elections {
+  fill: none;
+  stroke: #999;
+  shape-rendering: crispEdges;
+  stroke-width:4;
+}
+
+.electionschart {
+  display:none;
 }

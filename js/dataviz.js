@@ -9,15 +9,18 @@ var barwidth = 2; //width of the bars
 var baseyears = 470;
 var widthyears = 5;
 
+var electionsposition = 440;
+var electionslineheight = 12;
+
 //Prepare canvas size
-var margin = {top: 10, right: 20, bottom: 20, left: 60},
+var margin = {top: 10, right: 20, bottom: 30, left: 60},
     width = /*data.length*/ 676*barwidth - margin.left - margin.right,
-    height = 450 - margin.top - margin.bottom;
+    height = 490 - margin.top - margin.bottom;
 
 var formatComma = d3.format(",");
 
 //Sets yScale
-var yValue = function(d) { return d.saldocalculado; }, // data -> value
+var yValue = function(d) { return d.SaldoCalculado; }, // data -> value
     yScale = d3.scale.linear()
 	.range([height, 0]), // fuction that converts the data values into display values: value -> display
     //yMap = function(d) { return yScale(yValue(d)); }, // data -> display
@@ -63,11 +66,24 @@ svg.append("g")
 //Adds Background image with envelopes in and out
 svg.append("image")
 	.attr("xlink:href", "img/leyenda-1.png")
-	.attr("x", "40")
-	.attr("y", "60")
+	.attr("x", "0")
+	.attr("y", "50")
 	.attr("width", "250")
 	.attr("height", "301");
 
+//Line Chart
+var lineFunction = d3.svg.line()
+	.interpolate("linear")
+//xScale(parseDate('07-06-2007')); 
+	.x(function(d,i) { return i*barwidth; })
+	.y(function(d) { return yScale(d.SaldoCalculado);}); 
+
+//Line Chart
+var lineFunction2 = d3.svg.line()
+	.interpolate("linear")
+//xScale(parseDate('07-06-2007')); 
+	.x(function(d,i) { return i*barwidth; })
+	.y(function(d) { return yScale(d.SaldoAnotado);}); 
 
 d3.tsv("data/viplist.tsv", function(error, data) {//reads the data.tsv file
 	
@@ -127,11 +143,11 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the data.tsv file
 
 //Switch between graphs with and without time scales
 d3.selectAll(".btn-group .btn").on('click', function() {//when click //
-	if (d3.select(this).attr('id')==='contiempo'){/// si es el de con tiempo
-		if (d3.select(this).attr('class')==='btn btn-small active'){ // si est'a activo
+	if (d3.select(this).attr('id')==='contiempo'){/// with time
+		if (d3.select(this).attr('class')==='btn btn-small btn-danger'){ // si est'a activo
 			//no hacer nada
 		} else {						//si estaba desactivado
-			d3.select(this).attr("class","btn btn-small active"); //adds class .active to button
+			d3.select(this).attr("class","btn btn-small btn-danger"); //adds class .active to button
 			d3.selectAll("svg .bar").style("display","block");	
 			//d3.selectAll("svg .xaxis").style("display","block");
 			d3.selectAll("svg .x.axis").style("display","block");
@@ -139,21 +155,24 @@ d3.selectAll(".btn-group .btn").on('click', function() {//when click //
 			d3.select("#legendnotime").style("display","none");
 			d3.selectAll("svg .barnotime").style("display","none");
 			d3.select("#sintiempo").attr("class","btn btn-small");
+			d3.selectAll("svg .electionschart").style("display","block");
+	
 			
 			
 		}
 	} else {
-		if (d3.select(this).attr('class')==='btn active'){ // si est'a activo
+		if (d3.select(this).attr('class')==='btn btn-danger'){ // si est'a activo
 			return;						//no hacer nada
 		} else {
 			d3.select("#contiempo").attr("class","btn btn-small");
-			d3.select(this).attr("class","btn btn-small active"); //adds class .active to button
+			d3.select(this).attr("class","btn btn-small btn-danger"); //adds class .active to button
 			d3.selectAll("svg .barnotime").style("display","block");
 			d3.select("#legend").style("display","none");
 			d3.select("#legendnotime").style("display","block");
 			d3.selectAll("svg .bar").style("display","none");
 			d3.selectAll("svg .xaxis").style("display","none");
 			d3.selectAll("svg .x.axis").style("display","none");
+			d3.selectAll("svg .electionschart").style("display","none");
 		}
 	}
 });
@@ -293,6 +312,59 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 			.style("opacity", 0);   
 		});
 		
+	//Election years
+	svg.append("text").attr("x", 25).attr("y", electionsposition+5)
+	.text("Elecciones Generales")
+	.attr("font-size", "12px")
+	.attr("fill", "grey")
+	.attr("class", "electionschart");
+
+	svg.append('line')
+		.attr("class", "elections electionschart")
+    .attr('y1', electionsposition)
+    .attr('y2', electionsposition+electionslineheight )
+    .attr('x1', function(d) { return xScale(parseDate('06-06-1993')); })
+    .attr('x2', function(d) { return xScale(parseDate('06-06-1993')); })
+		.attr('title','Generales 1993');
+
+	svg.append('line')
+		.attr("class", "elections electionschart")
+    .attr('y1', electionsposition)
+    .attr('y2', electionsposition+electionslineheight )
+    .attr('x1', function(d) { return xScale(parseDate('03-03-1996')); })
+    .attr('x2', function(d) { return xScale(parseDate('03-03-1996')); })
+		.attr('title','Generales 1996');
+
+	svg.append('line')
+		.attr("class", "elections electionschart")
+    .attr('y1', electionsposition)
+    .attr('y2', electionsposition+electionslineheight)
+    .attr('x1', function(d) { return xScale(parseDate('12-03-2000')); })
+    .attr('x2', function(d) { return xScale(parseDate('12-03-2000')); })
+		.attr('title','Generales 2000');
+
+	svg.append('line')
+		.attr("class", "elections electionschart")
+    .attr('y1', electionsposition)
+    .attr('y2', electionsposition+electionslineheight)
+    .attr('x1', function(d) { return xScale(parseDate('14-03-2004')); })
+    .attr('x2', function(d) { return xScale(parseDate('14-03-2004')); })
+		.attr('title','Generales 2004');
+
+	svg.append('line')
+		.attr("class", "elections electionschart")
+    .attr('y1', electionsposition)
+    .attr('y2', electionsposition+electionslineheight)
+    .attr('x1', function(d) { return xScale(parseDate('09-03-2008')); })
+    .attr('x2', function(d) { return xScale(parseDate('09-03-2008')); })
+		.attr('title','Generales 2008');
+
+	//Saldo notime
+	/*svg.append("path")
+		.attr("d", function(d) { return lineFunction(data);}).attr("class","saldocalculado");
+
+	svg.append("path")
+		.attr("d", function(d) { return lineFunction2(data);}).attr("class","saldoanotado");*/
 
 	//The Bars with no time scale
 	svg.selectAll(".barnotime")
