@@ -35,8 +35,21 @@ line.donaciones:hover  {
   shape-rendering: crispEdges;
   stroke-width:4;
 }
-.yearbar {
- 
+.donante{
+  background-color:#d5ecf1 !important;
+  border:2px solid #0055D4 !important;
+}
+.donante:hover, .beneficiario:hover, .donabenef:hover{
+  background-color:#ccc !important;
+}
+.beneficiario{
+  background-color:#ffd3d3 !important;
+  border:2px solid #C00000!important;
+}
+
+.donabenef{
+  background-color:#efb4ee !important;
+  border:2px solid #900090 !important;
 }
 
 .x.axis path {

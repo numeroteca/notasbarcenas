@@ -89,26 +89,24 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the data.tsv file
 	
 	//Creates Legend for notime graph
 	var legendnotime = d3.select("#legendnotime").attr("class", "legend");
-
 	legendnotime.append("h5").style("font-weight","bold").text("Selecciona una persona"); //legend title
-
 	legendnotime.selectAll('div')
 		.data(data)
 		.enter().append("div")
-		.attr("class","inactive btn btn-default btn-mini")
+		.attr("class", function(d) { return "inactive btn btn-default btn-xs " + d.tipo;})
 		.text(function(d) { return d.people; })
 		.on('click',function(d) { //when click on name
-			var personflat = d.people.replace(/\s+/g, ''); //removes spaces from person name
-				if (d3.select(this).attr('class')==='inactive btn btn-default btn-mini'){
+			var personflat = d.people.replace(/\s+/g, '').replace('.', ''); //removes spaces and . from person name
+				if (d3.select(this).attr('class')==='inactive btn btn-default btn-xs donante' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs beneficiario' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs donabenef'){
 				//first time
 				d3.selectAll('svg .barnotime').attr("opacity",1)
 				d3.selectAll('svg .barnotime').transition().duration(500).attr("opacity",.15); //dims all bars 
 			      	d3.selectAll('svg .barnotime.'+personflat).transition().duration(2500).attr("class","barnotime highlighted "+personflat); //adds class "highlighted" and person related class to the bar
-				d3.select(this).transition().duration(0).attr("class","btn-danger btn btn-default btn-mini"); //adds class .active to button
+				d3.select(this).transition().duration(0).attr("class","btn-warning btn btn-default btn-xs"); //adds class .active to button
 
 				//second time
-				} else if (d3.select(this).attr('class')==='btn-danger btn btn-default btn-mini'){
-				      	d3.select(this).attr("class","inactive btn btn-default btn-mini"); //removes .active class
+				} else if (d3.select(this).attr('class')==='btn-warning btn btn-default btn-xs'){
+				      	d3.select(this).attr("class",function(d) { return "inactive btn btn-default btn-xs " + d.tipo;}); //removes .active class
 					d3.selectAll("svg .highlighted."+  personflat).attr("class","barnotime "+  personflat);
 					d3.selectAll('svg .barnotime').transition().duration(500).attr("opacity",1);
 				}
@@ -116,25 +114,24 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the data.tsv file
 
 	//Creates Legend for time graph
 	var legend = d3.select("#legend").attr("class", "legend");
-
 	legend.append("h5").style("font-weight","bold").text("Selecciona una persona"); //legend title
 	legend.selectAll('div')
 		.data(data)
 		.enter().append("div")
-		.attr("class","inactive btn btn-default btn-mini")
+		.attr("class", function(d) { return "inactive btn btn-default btn-xs " + d.tipo;})
 		.text(function(d) { return d.people; })
 		.on('click',function(d) { //when click on name
-			var personflat = d.people.replace(/\s+/g, ''); //removes spaces from person name
-				if (d3.select(this).attr('class')==='inactive btn btn-default btn-mini'){
-					//first time
+			var personflat = d.people.replace(/\s+/g, '').replace('.', ''); //removes spaces and . from person name
+				if (d3.select(this).attr('class')==='inactive btn btn-default btn-xs donante' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs beneficiario' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs donabenef'){
+				//first time
 					d3.selectAll('svg .bar').attr("opacity",1)
 					d3.selectAll('svg .bar').transition().duration(500).attr("opacity",.05); //dims all bars 
 					    	d3.selectAll('svg .bar.'+personflat).transition().duration(2500).attr("class","bar highlighted "+personflat); //adds class "highlighted" and person related class to the bar
-					d3.select(this).transition().duration(0).attr("class","btn-danger btn btn-default btn-mini"); //adds class .active to button
+					d3.select(this).transition().duration(0).attr("class","btn-warning btn btn-default btn-xs"); //adds class .active to button
 
 				//second time
-				} else if (d3.select(this).attr('class')==='btn-danger btn btn-default btn-mini'){
-				  d3.select(this).attr("class","inactive btn btn-default btn-mini"); //removes .active class
+				} else if (d3.select(this).attr('class')==='btn-warning btn btn-default btn-xs'){
+				  d3.select(this).attr("class",function(d) { return "inactive btn btn-default btn-xs " + d.tipo;}); //removes .active class
 					d3.selectAll("svg .highlighted."+  personflat).attr("class","bar "+  personflat);
 					d3.selectAll('svg .bar').transition().duration(500).attr("opacity",.15);
 				}
@@ -290,7 +287,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 	.attr("opacity",.4)
 	.attr("class", 
 		function(d) { //TODO iterate through array
-			return d.persona.replace(/\s+/g, '')+" bar"; //sets the name of the person without spaces as class for the bar
+			return d.persona.replace(/\s+/g, '').replace(/\./g, '') +" bar"; //sets the name of the person without spaces as class for the bar
 		}) 
 	//The tooltips
       //.attr("x", function(d, i) { return i * barwidth; })
@@ -373,7 +370,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
     	.attr("fill", function(d) { return d.entradas < 0 ? "#C00000" : "#0055D4"; })
 	.attr("class", 
 		function(d) { //TODO iterate through array
-			return d.persona.replace(/\s+/g, '')+" barnotime"; //sets the name of the person without spaces as class for the bar
+			return d.persona.replace(/\s+/g, '').replace(/\./g, '')+" barnotime"; //sets the name of the person without spaces as class for the bar
 		}) 
 	//The tooltips
       .attr("x", function(d, i) { return i * barwidth; })
