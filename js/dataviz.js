@@ -49,7 +49,6 @@ var xScale = d3.time.scale()
 //var parseDate = d3.time.format("%m-%d-%Y").parse;
 var parseDate = d3.time.format("%d-%m-%Y").parse;
 
-
 // define the x axis
 var xAxis = d3.svg.axis()
     .orient("bottom")
@@ -62,7 +61,6 @@ svg.append("g")
     .attr("transform", "translate(0," + (height) + ")")
     .call(xAxis);
 
-
 //Adds Background image with envelopes in and out
 svg.append("image")
 	.attr("xlink:href", "img/leyenda-1.png")
@@ -70,6 +68,10 @@ svg.append("image")
 	.attr("y", "50")
 	.attr("width", "250")
 	.attr("height", "301");
+
+//set Donations line
+var donationslines = svg.append('g').attr('class','donationslines');
+var donationslinesnotime = svg.append('g').attr('class','donationslinesnotime');
 
 //Line Chart
 var lineFunction = d3.svg.line()
@@ -141,35 +143,35 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the data.tsv file
 //Switch between graphs with and without time scales
 d3.selectAll(".btn-group .btn").on('click', function() {//when click //
 	if (d3.select(this).attr('id')==='contiempo'){/// with time
-		if (d3.select(this).attr('class')==='btn btn-small btn-danger'){ // si est'a activo
+		if (d3.select(this).attr('class')==='btn btn-small btn-danger'){ // si activo
 			//no hacer nada
 		} else {						//si estaba desactivado
 			d3.select(this).attr("class","btn btn-small btn-danger"); //adds class .active to button
+			d3.select("#sintiempo").attr("class","btn btn-small");
 			d3.selectAll("svg .bar").style("display","block");	
-			//d3.selectAll("svg .xaxis").style("display","block");
 			d3.selectAll("svg .x.axis").style("display","block");
+			d3.selectAll("svg .donationslines").style("display","block");
 			d3.select("#legend").style("display","block");
+			d3.selectAll("svg .electionschart").style("display","block");
 			d3.select("#legendnotime").style("display","none");
 			d3.selectAll("svg .barnotime").style("display","none");
-			d3.select("#sintiempo").attr("class","btn btn-small");
-			d3.selectAll("svg .electionschart").style("display","block");
-	
-			
-			
+			d3.selectAll("svg .donationslinesnotime").style("display","none");
 		}
 	} else {
-		if (d3.select(this).attr('class')==='btn btn-danger'){ // si est'a activo
+		if (d3.select(this).attr('class')==='btn btn-danger'){ // without time
 			return;						//no hacer nada
 		} else {
-			d3.select("#contiempo").attr("class","btn btn-small");
 			d3.select(this).attr("class","btn btn-small btn-danger"); //adds class .active to button
+			d3.select("#contiempo").attr("class","btn btn-small");
 			d3.selectAll("svg .barnotime").style("display","block");
-			d3.select("#legend").style("display","none");
 			d3.select("#legendnotime").style("display","block");
+			d3.selectAll("svg .donationslinesnotime").style("display","block");
+			d3.select("#legend").style("display","none");
 			d3.selectAll("svg .bar").style("display","none");
 			d3.selectAll("svg .xaxis").style("display","none");
 			d3.selectAll("svg .x.axis").style("display","none");
 			d3.selectAll("svg .electionschart").style("display","none");
+			d3.selectAll("svg .donationslines").style("display","none");
 		}
 	}
 });
@@ -201,84 +203,161 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		.text("Euros");
 
 
-	//Donations horizontal lines
-	svg.append('line')
-      .attr('y1', yScale(60000))
-      .attr('y2', yScale(60000))
-      .attr('x1', 0)
-      .attr('x2', function(d) { return xScale(parseDate('07-06-2007')); }) //BOE http://www.boe.es/diario_boe/txt.php?id=BOE-A-2007-13022
+	//Donations horizontal lines time
+	donationslines.append('line')
+		.attr('y1', yScale(60000))
+		.attr('y2', yScale(60000))
+		.attr('x1', 0)
+		.attr('x2', function(d) { return xScale(parseDate('06-07-2007')); }) //6 julio 2007. BOE http://www.boe.es/diario_boe/txt.php?id=BOE-A-2007-13022
+		.attr("class", "donaciones")
+		.on("mouseover", function(d) {      
+		  div.transition()        
+		      .duration(200)      
+		      .style("opacity", .9);      
+		  div.html("Limite Donaciones 60.000€" )  
+		      .style("left", (d3.event.pageX) + "px")     
+		      .style("top", (d3.event.pageY) - 60 + "px");    
+		  })                  
+		.on("mouseout", function(d) {       
+		  div.transition()        
+		      .duration(500)      
+		      .style("opacity", 0);   
+		});
+ 	donationslines.append('line')
+		.attr('y1', yScale(100000))
+		.attr('y2', yScale(100000))
+		.attr('x1', function(d) { return xScale(parseDate('06-07-2007')); })
+		.attr('x2', 647*barwidth)
+		.attr("class", "donaciones")
+	    	.on("mouseover", function(d) {      
+			  div.transition()        
+			      .duration(200)      
+			      .style("opacity", .9);      
+			  div.html("Limite Donaciones 100.000€" )  
+			      .style("left", (d3.event.pageX) + "px")     
+			      .style("top", (d3.event.pageY) - 60 + "px");    
+			  })                  
+			.on("mouseout", function(d) {       
+			  div.transition()        
+			      .duration(500)      
+			      .style("opacity", 0);   
+		     	 });
+	donationslines.append('line')
+	    .attr('y1', yScale(-60000))
+	    .attr('y2', yScale(-60000))
+	    .attr('x1', 0)
+	    .attr('x2', function(d) { return xScale(parseDate('06-07-2007')); })
 	    .attr("class", "donaciones")
 	    .on("mouseover", function(d) {      
-          div.transition()        
-              .duration(200)      
-              .style("opacity", .9);      
-          div.html("Limite Donaciones 60.000€" )  
-              .style("left", (d3.event.pageX) + "px")     
-              .style("top", (d3.event.pageY) - 60 + "px");    
-          })                  
-      .on("mouseout", function(d) {       
-          div.transition()        
-              .duration(500)      
-              .style("opacity", 0);   
-      });
- 	svg.append('line')
-    .attr('y1', yScale(100000))
-    .attr('y2', yScale(100000))
-    .attr('x1', function(d) { return xScale(parseDate('07-06-2007')); })
-    .attr('x2', 647*barwidth)
-    .attr("class", "donaciones")
-    .on("mouseover", function(d) {      
-          div.transition()        
-              .duration(200)      
-              .style("opacity", .9);      
-          div.html("Limite Donaciones 100.000€" )  
-              .style("left", (d3.event.pageX) + "px")     
-              .style("top", (d3.event.pageY) - 60 + "px");    
-          })                  
-      .on("mouseout", function(d) {       
-          div.transition()        
-              .duration(500)      
-              .style("opacity", 0);   
-      });
-	svg.append('line')
-    .attr('y1', yScale(-60000))
-    .attr('y2', yScale(-60000))
-    .attr('x1', 0)
-    .attr('x2', function(d) { return xScale(parseDate('07-06-2007')); })
-    .attr("class", "donaciones")
-    .on("mouseover", function(d) {      
-          div.transition()        
-              .duration(200)      
-              .style("opacity", .9);      
-          div.html("Limite Donaciones 60.000€" )  
-              .style("left", (d3.event.pageX) + "px")     
-              .style("top", (d3.event.pageY) +20 + "px");    
-          })                  
-      .on("mouseout", function(d) {       
-          div.transition()        
-              .duration(500)      
-              .style("opacity", 0);   
-      });
- 	svg.append('line')
-          .attr('y1', yScale(-100000))
-          .attr('y2', yScale(-100000))
-          .attr('x1', function(d) { return xScale(parseDate('07-06-2007')); })
-          .attr('x2', 647*barwidth)
-    .attr("class", "donaciones")
-                     	    .on("mouseover", function(d) {      
-          div.transition()        
-              .duration(200)      
-              .style("opacity", .9);      
-          div.html("Limite Donaciones 100.000€" )  
-              .style("left", (d3.event.pageX) + "px")     
-              .style("top", (d3.event.pageY) +20 + "px");    
-          })                  
-	.on("mouseout", function(d) {       
-	    div.transition()        
-	        .duration(500)      
-	        .style("opacity", 0);   
-	});
+		  div.transition()        
+		      .duration(200)      
+		      .style("opacity", .9);      
+		  div.html("Limite Donaciones 60.000€" )  
+		      .style("left", (d3.event.pageX) + "px")     
+		      .style("top", (d3.event.pageY) +20 + "px");    
+		  })                  
+	      .on("mouseout", function(d) {       
+		  div.transition()        
+		      .duration(500)      
+		      .style("opacity", 0);   
+	      });
+ 	donationslines.append('line')
+		.attr('y1', yScale(-100000))
+		.attr('y2', yScale(-100000))
+		.attr('x1', function(d) { return xScale(parseDate('06-07-2007')); })
+		.attr('x2', 647*barwidth)
+		.attr("class", "donaciones")
+		.on("mouseover", function(d) {      
+			  div.transition()        
+			      .duration(200)      
+			      .style("opacity", .9);      
+			  div.html("Limite Donaciones 100.000€" )  
+			      .style("left", (d3.event.pageX) + "px")     
+			      .style("top", (d3.event.pageY) +20 + "px");    
+			  })                  
+			.on("mouseout", function(d) {       
+			    div.transition()        
+				.duration(500)      
+				.style("opacity", 0);   
+			});
 
+	//Donations horizontal lines notime
+	donationslinesnotime.append('line')
+		.attr('y1', yScale(60000))
+		.attr('y2', yScale(60000))
+		.attr('x1', 0)
+		.attr('x2',596*barwidth) //6 julio 2007. BOE http://www.boe.es/diario_boe/txt.php?id=BOE-A-2007-13022
+		.attr("class", "donaciones")
+		.on("mouseover", function(d) {      
+		  div.transition()        
+		      .duration(200)      
+		      .style("opacity", .9);      
+		  div.html("Limite Donaciones 60.000€" )  
+		      .style("left", (d3.event.pageX) + "px")     
+		      .style("top", (d3.event.pageY) - 60 + "px");    
+		  })                  
+		.on("mouseout", function(d) {       
+		  div.transition()        
+		      .duration(500)      
+		      .style("opacity", 0);   
+		});
+ 	donationslinesnotime.append('line')
+		.attr('y1', yScale(100000))
+		.attr('y2', yScale(100000))
+		.attr('x1', 596*barwidth)
+		.attr('x2', 647*barwidth)
+		.attr("class", "donaciones")
+	    	.on("mouseover", function(d) {      
+			  div.transition()        
+			      .duration(200)      
+			      .style("opacity", .9);      
+			  div.html("Limite Donaciones 100.000€" )  
+			      .style("left", (d3.event.pageX) + "px")     
+			      .style("top", (d3.event.pageY) - 60 + "px");    
+			  })                  
+			.on("mouseout", function(d) {       
+			  div.transition()        
+			      .duration(500)      
+			      .style("opacity", 0);   
+		     	 });
+	donationslinesnotime.append('line')
+	    .attr('y1', yScale(-60000))
+	    .attr('y2', yScale(-60000))
+	    .attr('x1', 0)
+	    .attr('x2', 596*barwidth)
+	    .attr("class", "donaciones")
+	    .on("mouseover", function(d) {      
+		  div.transition()        
+		      .duration(200)      
+		      .style("opacity", .9);      
+		  div.html("Limite Donaciones 60.000€" )  
+		      .style("left", (d3.event.pageX) + "px")     
+		      .style("top", (d3.event.pageY) +20 + "px");    
+		  })                  
+	      .on("mouseout", function(d) {       
+		  div.transition()        
+		      .duration(500)      
+		      .style("opacity", 0);   
+	      });
+ 	donationslinesnotime.append('line')
+		.attr('y1', yScale(-100000))
+		.attr('y2', yScale(-100000))
+		.attr('x1', 596*barwidth)
+		.attr('x2', 647*barwidth)
+		.attr("class", "donaciones")
+		.on("mouseover", function(d) {      
+			  div.transition()        
+			      .duration(200)      
+			      .style("opacity", .9);      
+			  div.html("Limite Donaciones 100.000€" )  
+			      .style("left", (d3.event.pageX) + "px")     
+			      .style("top", (d3.event.pageY) +20 + "px");    
+			  })                  
+			.on("mouseout", function(d) {       
+			    div.transition()        
+				.duration(500)      
+				.style("opacity", 0);   
+			});
 	//The Bars with time scale
 	svg.selectAll(".bar")
       	.data(data)

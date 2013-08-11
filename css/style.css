@@ -35,6 +35,15 @@ line.donaciones:hover  {
   shape-rendering: crispEdges;
   stroke-width:4;
 }
+
+.donationslines {
+
+}
+
+.donationslinesnotime {
+  display:none;
+  stroke-width:4;
+}
 .donante{
   background-color:#d5ecf1 !important;
   border:2px solid #0055D4 !important;
@@ -96,7 +105,10 @@ div.tooltip {
   margin-top:25px;	
 }
 
-.bar, #legend, .xaxis, .x.axis {
+/*.bar, #legend,  .x.axis {
+  display:none;
+}*/
+.barnotime, .xaxis{
   display:none;
 }
 
@@ -131,5 +143,5 @@ line.elections {
 }
 
 .electionschart {
-  display:none;
+ 
 }
