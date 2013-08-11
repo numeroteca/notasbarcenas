@@ -93,7 +93,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona
 02/1993	01-02-1993	A Pedro (especial)	-6000	34896	-20874	Pedro Arriola
 03/1993	01-03-1993	Entrega a P.A. cta 1993 (En. y Febr.)	-19320	15576	-40194	Pedro Arriola
 03/1993	01-03-1993	Entre a P.A Trab. Extraord. ( En. y Febr. )	-12000	3576	-52194	Pedro Arriola
-03/1993	01-03-1993	Entrega a Jose Mª Robles (severo moto)	-3000	576	-55194	Jose Manuel Robles, Severo Moto
+03/1993	01-03-1993	Entrega a Jose Mª Robles (severo moto)	-3000	576	-55194	Jose Manuel Robles- Severo Moto
 04/1993	01-04-1993	Entrega Piñeiro	90000	90576	34806	Angel Piñeiro
 03/1993	01-03-1993	Entrega a Jaime I. (Ene.-Febr.)	-3600	86976	31206	Jaime Ignacio de Burgo
 04/1993	01-04-1993	Entrega a Jose M. Orti	-2100	84876	29106	José Miguel Ortí Bordás
@@ -112,7 +112,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona
 07/1993	01-07-1993	Jose Miguel O.	-2100	69336	19566	José Miguel Ortí Bordás
 07/1993	01-07-1993	Marz Abr Mayo y Jun Dieta Sº G (218652x4) 	-5250	64086	14316	Francisco Álvarez Cascos
 07/1993	01-07-1993	P. Arr. (Julio)	-9660	54426	4656	Pedro Arriola
-07/1993	01-07-1993	Entrega a Jose Mª Robles (moto)	-1200	53226	3456	Jose Manuel Robles, Severo Moto
+07/1993	01-07-1993	Entrega a Jose Mª Robles (moto)	-1200	53226	3456	Jose Manuel Robles- Severo Moto
 07/1993	01-07-1993	Dietas Sº Gral. (220.000 Julio)	-1320	51906	2136	Francisco Álvarez Cascos
 09/1993	01-09-1993	Dietas Sº Gral. (Agosto)	-1320	50586	816	Francisco Álvarez Cascos
 09/1993	01-09-1993	Pedro Arr. (Agosto)	-9660	40926	-8844	Pedro Arriola
@@ -400,9 +400,9 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona
 ?	01-05-2002	1º Semestre 2002 Mariano ...	-12620		56087	Mariano Rajoy
 ?	01-05-2002	1º Semestre 2002 Rodrigo	-13700		42387	Rodrigo Rato
 ?	01-05-2002	Jose Luis S.	50000		92387	José Luis Sánchez
-?	01-05-2002	Entrega Amparo Bordá (Jaime)	-15000		77387	Alfonso García Pozuelo
+?	01-05-2002	Entrega Amparo Bordá (Jaime)	-15000		77387	Jaime Mayor Oreja
 ?	01-05-2002	M. Contreras	30000		107387	Manuel Contreras
-?	01-05-2002	1º Semestre Cascos	-19860	59350	87527	José Manuel Fernández Rubio
+?	01-05-2002	1º Semestre Cascos	-19860	59350	87527	Francisco Álvarez Cascos
 ?	01-05-2002	Alfonso Gª Poz.	24000		111527	Alfonso García Pozuelo
 ?	01-05-2002	Jaime (Basta Ya)	-3005		108522	Jaime Mayor Oreja
 ?	01-05-2002	J. M. Fdez Rubio	18000	98345	126522	José Manuel Fernández Rubio
@@ -471,7 +471,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona
 23/10/2003	23-10-2003	Eug. Nasarre (Humanismo y D.)	-30000	451320	539497	Eugenio Nasarre, Fundación Humanismo y Democracia
 17/11/2003	17-11-2003	J.L.Sánchez (otros 100 a Javier)	100000	551320	639497	José Luis Sánchez
 18/11/2003	18-11-2003	Extra 15º Mariano Rajoy	-8420	542920	631077	Mariano Rajoy
-2/12/2003	02-12-2003	Entrega a Javier Rojas	-198000	344900	433077	Javier Rojas Entrega
+2/12/2003	02-12-2003	Entrega a Javier Rojas	-198000	344900	433077	Javier Rojas
 4/12/2003	04-12-2003	Alfonso Gª Pozuelo	60000	404900	493077	Alfonso García Pozuelo
 10/12/2003	12-10-2003	Rubio	24000	428900	517077	José Manuel Fernández Rubio
 12/12/2003	12-12-2003	Camilo	90000	518900	607077	Camilo José Alcalá Sánchez
@@ -517,7 +517,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona
 11/6/2004	06-11-2004	Volpeceres	60000	230000	318177	Volpeceres
 11/6/2004	06-11-2004	Alfonso Gª Poz	30000	260000	348177	Alfonso García Pozuelo
 24/06/2004	24-06-2004	Colaboración Asesoria (Álvaro)	-2100		346077	Álvaro Lapuerta
-7/7/2004	07-07-2004	Campaña Europes	-100000		246077	Campaña Europes
+7/7/2004	07-07-2004	Campaña Europeas	-100000		246077	Campaña Europeas
 14/07/2004	14-07-2004	Ángel Acebes 3º Trimestre	-6300		239777	Ángel Acebes
 18/07/2004	18-07-2004	Mariano Rajoy	-6300		233477	Mariano Rajoy
 28/07/2004	28-07-2004	Luis Fraga [Guadalajara]	-3000		230477	Luis Fraga
