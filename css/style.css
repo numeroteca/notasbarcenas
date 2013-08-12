@@ -25,7 +25,7 @@ line.years  {
 
 line.donaciones  {
   fill: none;
-  stroke: #ccc;
+  stroke: #aaa;
   shape-rendering: crispEdges;
 }
 
@@ -108,7 +108,7 @@ div.tooltip {
 /*.bar, #legend,  .x.axis {
   display:none;
 }*/
-.barnotime, .xaxis{
+.barnotime, .xaxis, #legendnotime{
   display:none;
 }
 
@@ -135,9 +135,9 @@ div.tooltip {
 }
 
 /*elections */
-line.elections {
+.elections line {
   fill: none;
-  stroke: #999;
+  stroke: #bbb;
   shape-rendering: crispEdges;
   stroke-width:4;
 }

@@ -5,16 +5,15 @@ Tooltip based on http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.htm
 Also some ideas come from https://github.com/erhardt/Attention-Plotter
 */
 
-var barwidth = 2; //width of the bars
-var baseyears = 470;
-var widthyears = 5;
-
-var electionsposition = 440;
-var electionslineheight = 12;
+var barwidth = 2, //width of the bars
+ widthyears = 5,
+ electionsgeneral = 435,
+ electionsmunicipal = 415,
+ electionslineheight = 15;
 
 //Prepare canvas size
 var margin = {top: 10, right: 20, bottom: 30, left: 60},
-    width = /*data.length*/ 676*barwidth - margin.left - margin.right,
+    width = 676*barwidth - margin.left - margin.right,
     height = 490 - margin.top - margin.bottom;
 
 var formatComma = d3.format(",");
@@ -41,7 +40,7 @@ var svg = d3.select('#vis').append("svg")
 //Sets xScale
 // define the x scale (horizontal)
 var mindate = new Date(1990,3,1),
-    maxdate = new Date(2008,11,31);
+    maxdate = new Date(2009,1,1);
 var xScale = d3.time.scale()
     //.domain([mindate, maxdate])    // values between for month of january
     .range([0, width]);   // map these the the chart width = total width minus padding at both sides
@@ -73,6 +72,10 @@ svg.append("image")
 var donationslines = svg.append('g').attr('class','donationslines');
 var donationslinesnotime = svg.append('g').attr('class','donationslinesnotime');
 
+//set elctions lines
+var elections = svg.append('g').attr('class','elections electionschart');
+
+/*
 //Line Chart
 var lineFunction = d3.svg.line()
 	.interpolate("linear")
@@ -86,7 +89,7 @@ var lineFunction2 = d3.svg.line()
 //xScale(parseDate('07-06-2007')); 
 	.x(function(d,i) { return i*barwidth; })
 	.y(function(d) { return yScale(d.SaldoAnotado);}); 
-
+*/
 d3.tsv("data/viplist.tsv", function(error, data) {//reads the data.tsv file
 	
 	//Creates Legend for notime graph
@@ -214,7 +217,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		  div.transition()        
 		      .duration(200)      
 		      .style("opacity", .9);      
-		  div.html("Limite Donaciones 60.000€" )  
+		  div.html("Límite Donaciones 60.000€" )  
 		      .style("left", (d3.event.pageX) + "px")     
 		      .style("top", (d3.event.pageY) - 60 + "px");    
 		  })                  
@@ -233,7 +236,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 			  div.transition()        
 			      .duration(200)      
 			      .style("opacity", .9);      
-			  div.html("Limite Donaciones 100.000€" )  
+			  div.html("Límite Donaciones 100.000€" )  
 			      .style("left", (d3.event.pageX) + "px")     
 			      .style("top", (d3.event.pageY) - 60 + "px");    
 			  })                  
@@ -252,7 +255,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		  div.transition()        
 		      .duration(200)      
 		      .style("opacity", .9);      
-		  div.html("Limite Donaciones 60.000€" )  
+		  div.html("Límite Donaciones 60.000€" )  
 		      .style("left", (d3.event.pageX) + "px")     
 		      .style("top", (d3.event.pageY) +20 + "px");    
 		  })                  
@@ -271,7 +274,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 			  div.transition()        
 			      .duration(200)      
 			      .style("opacity", .9);      
-			  div.html("Limite Donaciones 100.000€" )  
+			  div.html("Límite Donaciones 100.000€" )  
 			      .style("left", (d3.event.pageX) + "px")     
 			      .style("top", (d3.event.pageY) +20 + "px");    
 			  })                  
@@ -292,7 +295,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		  div.transition()        
 		      .duration(200)      
 		      .style("opacity", .9);      
-		  div.html("Limite Donaciones 60.000€" )  
+		  div.html("Límite Donaciones 60.000€" )  
 		      .style("left", (d3.event.pageX) + "px")     
 		      .style("top", (d3.event.pageY) - 60 + "px");    
 		  })                  
@@ -311,7 +314,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 			  div.transition()        
 			      .duration(200)      
 			      .style("opacity", .9);      
-			  div.html("Limite Donaciones 100.000€" )  
+			  div.html("Límite Donaciones 100.000€" )  
 			      .style("left", (d3.event.pageX) + "px")     
 			      .style("top", (d3.event.pageY) - 60 + "px");    
 			  })                  
@@ -330,7 +333,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		  div.transition()        
 		      .duration(200)      
 		      .style("opacity", .9);      
-		  div.html("Limite Donaciones 60.000€" )  
+		  div.html("Límite Donaciones 60.000€" )  
 		      .style("left", (d3.event.pageX) + "px")     
 		      .style("top", (d3.event.pageY) +20 + "px");    
 		  })                  
@@ -349,7 +352,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 			  div.transition()        
 			      .duration(200)      
 			      .style("opacity", .9);      
-			  div.html("Limite Donaciones 100.000€" )  
+			  div.html("Límite Donaciones 100.000€" )  
 			      .style("left", (d3.event.pageX) + "px")     
 			      .style("top", (d3.event.pageY) +20 + "px");    
 			  })                  
@@ -365,13 +368,12 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
     	.attr("fill", function(d) { return d.entradas < 0 ? "#C00000" : "#0055D4"; })
 	.attr("opacity",.4)
 	.attr("class", 
-		function(d) { //TODO iterate through array
+		function(d) { 
 			return d.persona.replace(/\s+/g, '').replace(/\./g, '') +" bar"; //sets the name of the person without spaces as class for the bar
 		}) 
 	//The tooltips
-      //.attr("x", function(d, i) { return i * barwidth; })
       .attr("x", function(d) { return xScale(d.date); })
-      .attr("width", 3)
+      .attr("width", barwidth+1)
       .attr("y", function(d) { return yScale(Math.max(0, d.entradas)); })
       .attr("height", function(d) { return Math.abs(yScale(d.entradas) - yScale(0)); })
 		.on("mouseover", function(d) {      
@@ -388,52 +390,143 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 			.style("opacity", 0);   
 		});
 		
-	//Election years
-	svg.append("text").attr("x", 25).attr("y", electionsposition+5)
-	.text("Elecciones Generales")
-	.attr("font-size", "12px")
-	.attr("fill", "grey")
-	.attr("class", "electionschart");
-
-	svg.append('line')
-		.attr("class", "elections electionschart")
-    .attr('y1', electionsposition)
-    .attr('y2', electionsposition+electionslineheight )
+	//Election years TODO iterate through array
+	elections.append("text").attr("x", 5).attr("y", electionsmunicipal-10)
+		.text("Elecciones")
+		.attr("font-size", "12px")
+		.attr("fill", "black")
+		.attr("font-weight", "bold"); 
+	//Generales	
+	elections.append("text").attr("x", 5).attr("y", electionsgeneral+7.5)
+		.text("Generales")
+		.attr("font-size", "12px")
+		.attr("fill", "grey");
+	elections.append('line')
+    .attr('y1', electionsgeneral)
+    .attr('y2', electionsgeneral+electionslineheight )
     .attr('x1', function(d) { return xScale(parseDate('06-06-1993')); })
     .attr('x2', function(d) { return xScale(parseDate('06-06-1993')); })
-		.attr('title','Generales 1993');
-
-	svg.append('line')
-		.attr("class", "elections electionschart")
-    .attr('y1', electionsposition)
-    .attr('y2', electionsposition+electionslineheight )
+		.attr('title','Generales 1993')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsgeneral)  
+			});
+	elections.append('line')
+    .attr('y1', electionsgeneral)
+    .attr('y2', electionsgeneral+electionslineheight )
     .attr('x1', function(d) { return xScale(parseDate('03-03-1996')); })
     .attr('x2', function(d) { return xScale(parseDate('03-03-1996')); })
-		.attr('title','Generales 1996');
-
-	svg.append('line')
-		.attr("class", "elections electionschart")
-    .attr('y1', electionsposition)
-    .attr('y2', electionsposition+electionslineheight)
+		.attr('title','Generales 1996')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsgeneral)  
+			});
+	elections.append('line')
+    .attr('y1', electionsgeneral)
+    .attr('y2', electionsgeneral+electionslineheight)
     .attr('x1', function(d) { return xScale(parseDate('12-03-2000')); })
     .attr('x2', function(d) { return xScale(parseDate('12-03-2000')); })
-		.attr('title','Generales 2000');
-
-	svg.append('line')
-		.attr("class", "elections electionschart")
-    .attr('y1', electionsposition)
-    .attr('y2', electionsposition+electionslineheight)
+		.attr('title','Generales 2000')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsgeneral)  
+			});
+	elections.append('line')
+    .attr('y1', electionsgeneral)
+    .attr('y2', electionsgeneral+electionslineheight)
     .attr('x1', function(d) { return xScale(parseDate('14-03-2004')); })
     .attr('x2', function(d) { return xScale(parseDate('14-03-2004')); })
-		.attr('title','Generales 2004');
-
-	svg.append('line')
-		.attr("class", "elections electionschart")
-    .attr('y1', electionsposition)
-    .attr('y2', electionsposition+electionslineheight)
+		.attr('title','Generales 2004')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsgeneral)  
+			});
+	elections.append('line')
+    .attr('y1', electionsgeneral)
+    .attr('y2', electionsgeneral+electionslineheight)
     .attr('x1', function(d) { return xScale(parseDate('09-03-2008')); })
     .attr('x2', function(d) { return xScale(parseDate('09-03-2008')); })
-		.attr('title','Generales 2008');
+		.attr('title','Generales 2008')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsgeneral)  
+			});
+
+	//Municipales
+	elections.append("text").attr("x", 5).attr("y", electionsmunicipal+10)
+		.text("Municipales")
+		.attr("font-size", "12px")
+		.attr("fill", "grey");
+	elections.append('line')
+    .attr('y1', electionsmunicipal)
+    .attr('y2', electionsmunicipal+electionslineheight)
+    .attr('x1', function(d) { return xScale(parseDate('26-05-1991')); })
+    .attr('x2', function(d) { return xScale(parseDate('26-05-1991')); })
+		.attr('title','Municipales 1991')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsmunicipal)  
+			});
+	elections.append('line')
+    .attr('y1', electionsmunicipal)
+    .attr('y2', electionsmunicipal+electionslineheight)
+    .attr('x1', function(d) { return xScale(parseDate('28-05-1995')); })
+    .attr('x2', function(d) { return xScale(parseDate('28-05-1995')); })
+		.attr('title','Municipales 1995')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsmunicipal)  
+			});
+	elections.append('line')
+    .attr('y1', electionsmunicipal)
+    .attr('y2', electionsmunicipal+electionslineheight)
+    .attr('x1', function(d) { return xScale(parseDate('13-06-1999')); })
+    .attr('x2', function(d) { return xScale(parseDate('13-06-1999')); })
+		.attr('title','Municipales 1999')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsmunicipal)  
+			});
+	elections.append('line')
+    .attr('y1', electionsmunicipal)
+    .attr('y2', electionsmunicipal+electionslineheight)
+    .attr('x1', function(d) { return xScale(parseDate('25-05-2003')); })
+    .attr('x2', function(d) { return xScale(parseDate('25-05-2003')); })
+		.attr('title','Municipales 2003')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsmunicipal)  
+			});
+	elections.append('line')
+    .attr('y1', electionsmunicipal)
+    .attr('y2', electionsmunicipal+electionslineheight)
+    .attr('x1', function(d) { return xScale(parseDate('27-05-2007')); })
+    .attr('x2', function(d) { return xScale(parseDate('27-05-2007')); })
+		.attr('title','Municipales 2007')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsmunicipal)  
+			});
 
 	//Saldo notime
 	/*svg.append("path")
@@ -454,7 +547,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 	//The tooltips
       .attr("x", function(d, i) { return i * barwidth; })
       //.attr("x", function(d) { return xScale(d.date); })
-      .attr("width", 3)
+      .attr("width", barwidth+1)
       .attr("y", function(d) { return yScale(Math.max(0, d.entradas)); })
       .attr("height", function(d) { return Math.abs(yScale(d.entradas) - yScale(0)); })
 		.on("mouseover", function(d) {      
