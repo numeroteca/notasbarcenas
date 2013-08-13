@@ -9,6 +9,17 @@ path {
 	fill: none;
 }
 
+svg { 
+  cursor:pointer;
+}
+
+circle:hover {
+  fill:black;
+}
+
+.cirulos {
+}
+
 .axis path,
 .axis line {
   fill: none;
@@ -108,12 +119,15 @@ div.tooltip {
 /*.bar, #legend,  .x.axis {
   display:none;
 }*/
-.barnotime, .xaxis, #legendnotime{
+
+.barnotime, .xaxis, #legendnotime, .bar, .donaciones, .y.axis, #legend{
   display:none;
 }
 
+#legendcirculos {margin-left:60px;}
+
 .x.axis {
-  font-size:10px;
+  font-size:14px;
 }
 
 .btn-mini {

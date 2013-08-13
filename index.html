@@ -13,16 +13,18 @@
 			<h3>Entradas y salidas de dinero de las notas de B&aacute;rcenas sobre la contabilidad b del PP</h3>
 			<div id="description">
         <p>Datos de #AdoptaUnCorrupto <a href="http://bit.ly/notasbarcenas">http://bit.ly/notasbarcenas</a> (El País y El Mundo).<br>
-				Pasa el rat&oacute;n por el gr&aacute;fico y descubre qui&eacute;n hay detr&aacute;s de cada entrada o salida de dinero.</p>
+				Explora el gr&aacute;fico y descubre qui&eacute;n hay detr&aacute;s de cada <span style="background-color:#C00000;width:50px;height:20px;">&nbsp;&nbsp;&nbsp;</span> entrada o <span style="background-color:#0055D4;width:50px;height:20px;">&nbsp;&nbsp;&nbsp;</span> salida de dinero en los diferentes modos de visualizaci&oacute;n.</p>
 			</div>
-			<div class="btn-group pull-right" data-toggle="buttons-radio">
-			      <button type="button" id="contiempo" class="btn btn-small btn-danger" title="Se han aproximado las fechas a primero de mes cuando no se indicaba d&iacute;a del mes">Escala de tiempo</button>
-			      <button type="button" id="sintiempo" class="btn btn-small">Sin escala de tiempo</button>
+			<div class="btn-group" data-toggle="buttons-radio">
+				<button type="button" id="circulos" class="btn btn-small btn-danger">C&iacute;rculos</button>
+				<button type="button" id="contiempo" class="btn btn-small" title="Se han aproximado las fechas a primero de mes cuando no se indicaba d&iacute;a del mes">Modo barras / tiempo </button>
+				<button type="button" id="sintiempo" class="btn btn-small">Barras</button>
 			</div>
 		</div>
 		<div id="vis"></div>
-		<div id="legend"></div>
-		<div id="legendnotime"></div>
+		<div id="legend">Leyenda <span class="btn btn-default btn-xs donante">Donante</span> <span class="btn btn-default btn-xs beneficiario">Beneficiario</span> <span class="btn btn-default btn-xs donabenef">Donante y Beneficiario</span></div>
+		<div id="legendnotime">Leyenda <span class="btn btn-default btn-xs donante">Donante</span> <span class="btn btn-default btn-xs beneficiario">Beneficiario</span> <span class="btn btn-default btn-xs donabenef">Donante y Beneficiario</span></div>
+		<div id="legendcirculos">Leyenda <span class="btn btn-default btn-xs donante">Donante</span> <span class="btn btn-default btn-xs beneficiario">Beneficiario</span> <span class="btn btn-default btn-xs donabenef">Donante y Beneficiario</span></div>
 		<div class="page-footer">
 			<p>Visualizaci&oacute;n por <a href="http://twitter.com/numeroteca">@numeroteca</a>. Puedes reutilizar y mejorar esta visualizaci&oacute;n (c&oacute;digo disponible) en <a href="http://github.com/numeroteca/notasbarcenas">http://github.com/numeroteca/notasbarcenas</a></p>
 		</div>
