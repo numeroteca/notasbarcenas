@@ -613,7 +613,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 	.attr("cx", function(d) { return xScale(d.date); })
 	//.attr("cx", function(d,i) { return i*barwidth;})
 	.attr("cy",function(d) { return Math.random() * 350 + 20;})
-	.attr("r", function(d) { return Math.abs(d.entradas)/10000; })
+	.attr("r", function(d) { return Math.sqrt(Math.abs(d.entradas))/22; })//square root of value for radius, as the area of circle is π*r². 22 is arbitrary value
 	.attr("opacity", .9)
 	.attr("class", 
 		function(d) { //TODO iterate through array
