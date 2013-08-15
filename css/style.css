@@ -1,12 +1,11 @@
-
 body {
   font: 10px sans-serif;
 }
 
 path {
-	stroke: steelblue;
-	stroke-width: 1;
-	fill: none;
+  stroke: black;
+  stroke-width: 1;
+  fill: none;
 }
 
 svg { 
@@ -25,6 +24,13 @@ circle:hover {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
+}
+
+.axisb path, .axisb line {
+  stroke-width:1;
+  shape-rendering: crispEdges;
+  fill:none;
+  stroke: #000;
 }
 
 line.years  {
@@ -47,13 +53,9 @@ line.donaciones:hover  {
   stroke-width:4;
 }
 
-.donationslines {
-
-}
-
 .donationslinesnotime {
   display:none;
-  stroke-width:4;
+  stroke-width:2;
 }
 .donante{
   background-color:#d5ecf1 !important;
@@ -116,12 +118,13 @@ div.tooltip {
   margin-top:25px;	
 }
 
-/*.bar, #legend,  .x.axis {
+.xaxis, #legendnotime, #barstimescale, #barsnotimescale, #barstimescalewithsaldo, .donaciones, .y.axis, #legend{
   display:none;
-}*/
+}
 
-.barnotime, .xaxis, #legendnotime, .bar, .donaciones, .y.axis, #legend{
-  display:none;
+#saldocalculado path:hover {
+  stroke-width:2px;
+  stroke: #000;
 }
 
 #legendcirculos {margin-left:60px;}
@@ -136,8 +139,8 @@ div.tooltip {
 
 .saldocalculado {
   fill: none;
-  stroke: #ccc;
-  shape-rendering: crispEdges;
+  stroke: #888;
+  /*shape-rendering: crispEdges;*/
   stroke-width:1;
 }
 
@@ -154,8 +157,4 @@ div.tooltip {
   stroke: #bbb;
   shape-rendering: crispEdges;
   stroke-width:4;
-}
-
-.electionschart {
- 
 }
