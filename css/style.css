@@ -157,3 +157,8 @@ div.tooltip {
   shape-rendering: crispEdges;
   stroke-width:4;
 }
+
+.electionstext{
+  font-size:12px;
+  fill:grey;
+}

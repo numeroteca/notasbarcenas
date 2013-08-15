@@ -7,14 +7,15 @@ Also some ideas come from https://github.com/erhardt/Attention-Plotter
 
 var barwidth = 2, //width of the bars
  widthyears = 5,
- electionsgeneral = 435,
- electionsmunicipal = 415,
+ electionsmunicipal = 410,
+ electionsgeneral = electionsmunicipal + 18,
+ electionsgalicia = electionsmunicipal + 36,
  electionslineheight = 15;
 
 //Prepare canvas size
-var margin = {top: 10, right: 20, bottom: 30, left: 65},
+var margin = {top: 15, right: 20, bottom: 100, left: 65},
     width = 676*barwidth - margin.left - margin.right,
-    height = 490 - margin.top - margin.bottom;
+    height = 485 - margin.top - margin.bottom;
 
 var formatComma = d3.format(",");
 
@@ -65,7 +66,7 @@ var background = svg.append('g').attr('id','backgroundimage');
 background.append("image")
 	.attr("xlink:href", "img/leyenda-1.png")
 	.attr("x", "0")
-	.attr("y", "50")
+	.attr("y", "20")
 	.attr("width", "250")
 	.attr("height", "301");
 
@@ -91,6 +92,9 @@ var barsnotimescale = svg.append('g').attr('id','barsnotimescale');
 var donationslines = barstimescale.append('g').attr('class','donationslines');
 var donationslinesnotime = barsnotimescale.append('g').attr('class','donationslinesnotime');
 
+//replaces spaces and . in viplist function(d) { return d.SaldoCalculado; }
+var replacement = function(d) { return d.replace(/\s+/g, '').replace(/\.+/g, '');};
+
 //Saldo Line Chart
 var lineFunction = d3.svg.line()
 	.interpolate("linear")
@@ -114,7 +118,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 		.attr("class", function(d) { return "inactive btn btn-default btn-xs " + d.tipo;})
 		.text(function(d) { return d.people; })
 		.on('click',function(d) { //when click on name
-			var personflat = d.people.replace(/\s+/g, '').replace(/\.+/g, ''), //removes spaces and . from person name
+			var personflat = replacement(d.people), //removes spaces and . from person name
 			    tipodonante = d.tipo,
 			    confirmado = d.confirmado;
 				if (d3.select(this).attr('class')==='inactive btn btn-default btn-xs donante' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs beneficiario' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs donabenef'){
@@ -140,7 +144,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 		.attr("class", function(d) { return "inactive btn btn-default btn-xs " + d.tipo;})
 		.text(function(d) { return d.people; })
 		.on('click',function(d) { //when click on name
-			var personflat = d.people.replace(/\s+/g, '').replace(/\.+/g, ''), //removes spaces and . from person name
+			var personflat = replacement(d.people), //removes spaces and . from person name
 			    tipodonante = d.tipo,
 			    confirmado = d.confirmado;
 			if (d3.select(this).attr('class')==='inactive btn btn-default btn-xs donante' 
@@ -168,7 +172,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 		.attr("class", function(d) { return "inactive btn btn-default btn-xs " + d.tipo;})
 		.text(function(d) { return d.people; })
 		.on('click',function(d) { //when click on name
-			var personflat = d.people.replace(/\s+/g, '').replace(/\.+/g, ''), //removes spaces and . from person name
+			var personflat = replacement(d.people), //removes spaces and . from person name
 			    tipodonante = d.tipo,
 			    confirmado = d.confirmado;
 			if (d3.select(this).attr('class')==='inactive btn btn-default btn-xs donante' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs beneficiario' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs donabenef'){
@@ -193,9 +197,9 @@ d3.selectAll(".btn-group .btn").on('click', function() {//when click //
 			//no hacer nada
 		} else {						//si estaba desactivado
 			d3.select(this).attr("class","btn btn-lg btn-danger"); //adds class .active to button
-			d3.select("#sintiempo").attr("class","btn btn-lg");
-			d3.select("#circulos").attr("class","btn btn-lg");
-			d3.select("#contiemposaldo").attr("class","btn btn-lg");
+			d3.select("#sintiempo").attr("class","btn btn-lg btn-default");
+			d3.select("#circulos").attr("class","btn btn-lg btn-default");
+			d3.select("#contiemposaldo").attr("class","btn btn-lg btn-default");
 			d3.select("#backgroundimage").style("display","block");
 			d3.selectAll("#barstimescale").style("display","block");
 			d3.selectAll("svg .x.axis").style("display","block");
@@ -215,9 +219,9 @@ d3.selectAll(".btn-group .btn").on('click', function() {//when click //
 			//no hacer nada
 		} else {						//si estaba desactivado
 			d3.select(this).attr("class","btn btn-lg btn-danger"); //adds class .active to button
-			d3.select("#sintiempo").attr("class","btn btn-lg");
-			d3.select("#contiempo").attr("class","btn btn-lg");
-			d3.select("#contiemposaldo").attr("class","btn btn-lg");
+			d3.select("#sintiempo").attr("class","btn btn-lg btn-default");
+			d3.select("#contiempo").attr("class","btn btn-lg btn-default");
+			d3.select("#contiemposaldo").attr("class","btn btn-lg btn-default");
 			d3.select("#circuloschart").style("display","block");
 			d3.select("#backgroundimage").style("display","block");
 			d3.selectAll("svg .x.axis").style("display","block");
@@ -235,9 +239,9 @@ d3.selectAll(".btn-group .btn").on('click', function() {//when click //
 			//no hacer nada
 		} else {						//si estaba desactivado
 			d3.select(this).attr("class","btn btn-lg btn-danger"); 
-			d3.select("#sintiempo").attr("class","btn btn-lg");
-			d3.select("#contiempo").attr("class","btn btn-lg");
-			d3.select("#circulos").attr("class","btn btn-lg");
+			d3.select("#sintiempo").attr("class","btn btn-lg btn-default");
+			d3.select("#contiempo").attr("class","btn btn-lg btn-default");
+			d3.select("#circulos").attr("class","btn btn-lg btn-default");
 			d3.select("#barstimescalewithsaldo").style("display","block");
 			d3.select("#backgroundimage").style("display","none");
 			d3.selectAll("svg .x.axis").style("display","block");
@@ -255,10 +259,10 @@ d3.selectAll(".btn-group .btn").on('click', function() {//when click //
 		if (d3.select(this).attr('class')==='btn  btn-lg btn-danger'){ // without time
 			return;						//no hacer nada
 		} else {
-			d3.select(this).attr("class","btn  btn-lg btn-danger");  
-			d3.select("#contiempo").attr("class","btn btn-lg");
-			d3.select("#circulos").attr("class","btn btn-lg");
-			d3.select("#contiemposaldo").attr("class","btn btn-lg");
+			d3.select(this).attr("class","btn  btn-lg btn-danger btn-default");  
+			d3.select("#contiempo").attr("class","btn btn-lg btn-default");
+			d3.select("#circulos").attr("class","btn btn-lg btn-default");
+			d3.select("#contiemposaldo").attr("class","btn btn-lg btn-default");
 			d3.select("#backgroundimage").style("display","block");
 			d3.select("#legendnotime").style("display","block");
 			d3.selectAll("#barsnotimescale").style("display","block");
@@ -283,7 +287,8 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
   });
 	//Sets scales
   xScale.domain(d3.extent(data, function(d) { return d.date; })); //sets xScale depending on dates values
-  yScale.domain(d3.extent(data, function(d) { return d.entradas; })).nice(); //sets yScale depending on entradas values
+  //yScale.domain(d3.extent(data, function(d) { return d.entradas; })).nice(); //sets yScale depending on entradas values
+	yScale.domain([-300000,250000]); //sets yScale depending on entradas values
   yScaleB.domain([-300000, 1000000]).nice(); 
 
 	//Sets X axis 
@@ -531,86 +536,11 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		});
 		
 	//Election years TODO iterate through array
-	elections.append("text").attr("x", 5).attr("y", electionsmunicipal-10)
+	elections.append("text").attr("x", 5).attr("y", electionsmunicipal-7)
 		.text("Elecciones")
 		.attr("font-size", "12px")
 		.attr("fill", "black")
 		.attr("font-weight", "bold"); 
-	//elecciones Generales	
-	elections.append("text").attr("x", 5).attr("y", electionsgeneral+7.5)
-		.text("Generales")
-		.attr("font-size", "12px")
-		.attr("fill", "grey");
-	elections.append('line')
-    .attr('y1', electionsgeneral)
-    .attr('y2', electionsgeneral+electionslineheight )
-    .attr('x1', function(d) { return xScale(parseDate('06-06-1993')); })
-    .attr('x2', function(d) { return xScale(parseDate('06-06-1993')); })
-		.attr('title','Generales 1993')
-		.on("mouseover", function(d) {      
-		  d3.select(this).attr('y1', 0)
-		    })
-		.on("mouseout", function(d) {       
-		    d3.select(this).attr('y1', electionsgeneral)  
-			});
-	elections.append('line')
-    .attr('y1', electionsgeneral)
-    .attr('y2', electionsgeneral+electionslineheight )
-    .attr('x1', function(d) { return xScale(parseDate('03-03-1996')); })
-    .attr('x2', function(d) { return xScale(parseDate('03-03-1996')); })
-		.attr('title','Generales 1996')
-		.on("mouseover", function(d) {      
-		  d3.select(this).attr('y1', 0)
-		    })
-		.on("mouseout", function(d) {       
-		    d3.select(this).attr('y1', electionsgeneral)  
-			});
-	elections.append('line')
-    .attr('y1', electionsgeneral)
-    .attr('y2', electionsgeneral+electionslineheight)
-    .attr('x1', function(d) { return xScale(parseDate('12-03-2000')); })
-    .attr('x2', function(d) { return xScale(parseDate('12-03-2000')); })
-		.attr('title','Generales 2000')
-		.on("mouseover", function(d) {      
-		  d3.select(this).attr('y1', 0)
-		    })
-		.on("mouseout", function(d) {       
-		    d3.select(this).attr('y1', electionsgeneral)  
-			});
-	elections.append('line')
-    .attr('y1', electionsgeneral)
-    .attr('y2', electionsgeneral+electionslineheight)
-    .attr('x1', function(d) { return xScale(parseDate('14-03-2004')); })
-    .attr('x2', function(d) { return xScale(parseDate('14-03-2004')); })
-		.attr('title','Generales 2004')
-		.on("mouseover", function(d) {      
-		  d3.select(this).attr('y1', 0)
-		    })
-		.on("mouseout", function(d) {       
-		    d3.select(this).attr('y1', electionsgeneral)  
-			})
-	elections.append('text')
-		.attr("x", function(d) { return xScale(parseDate('14-04-2004')); })
-		.attr("y", electionsgeneral+electionslineheight-3)
-		.text("Generales 2004").attr("font-size", "12px")
-		.attr("fill", "grey");
-	elections.append('line')
-    .attr('y1', electionsgeneral)
-    .attr('y2', electionsgeneral+electionslineheight)
-    .attr('x1', function(d) { return xScale(parseDate('09-03-2008')); })
-    .attr('x2', function(d) { return xScale(parseDate('09-03-2008')); })
-		.attr('title','Generales 2008')
-		.on("mouseover", function(d) {      
-		  d3.select(this).attr('y1', 0)
-		    })
-		.on("mouseout", function(d) {       
-		    d3.select(this).attr('y1', electionsgeneral)  
-			});
-	elections.append('text')
-		.attr("x", function(d) { return xScale(parseDate('09-03-2008')); })
-		.attr("y", electionsgeneral+electionslineheight-3)
-		.text("Generales 2008").attr("font-size", "12px")
-		.attr("fill", "grey");
 	//Elecciones Municipales 
 	elections.append("text").attr("x", 5).attr("y", electionsmunicipal+10)
 		.text("Municipales")
@@ -676,7 +606,128 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		.on("mouseout", function(d) {       
 		    d3.select(this).attr('y1', electionsmunicipal)  
 			});
-
+//elecciones Generales	
+	elections.append("text").attr("x", 5).attr("y", electionsgeneral+9)
+		.text("Generales")
+		.attr("font-size", "12px")
+		.attr("fill", "grey");
+	elections.append('line')
+    .attr('y1', electionsgeneral)
+    .attr('y2', electionsgeneral+electionslineheight )
+    .attr('x1', function(d) { return xScale(parseDate('06-06-1993')); })
+    .attr('x2', function(d) { return xScale(parseDate('06-06-1993')); })
+		.attr('title','Generales 1993')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsgeneral)  
+			});
+	elections.append('text')
+		.attr("x", function(d) { return xScale(parseDate('06-07-1993')); })
+		.attr("y", electionsgeneral+electionslineheight-3)
+		.text("Generales 1993").attr("class", "electionstext");
+	elections.append('line')
+    .attr('y1', electionsgeneral)
+    .attr('y2', electionsgeneral+electionslineheight )
+    .attr('x1', function(d) { return xScale(parseDate('03-03-1996')); })
+    .attr('x2', function(d) { return xScale(parseDate('03-03-1996')); })
+		.attr('title','Generales 1996')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsgeneral)  
+			});
+	elections.append('text')
+		.attr("x", function(d) { return xScale(parseDate('03-04-1996')); })
+		.attr("y", electionsgeneral+electionslineheight-3)
+		.text("Generales 1996").attr("class", "electionstext");
+	elections.append('line')
+    .attr('y1', electionsgeneral)
+    .attr('y2', electionsgeneral+electionslineheight)
+    .attr('x1', function(d) { return xScale(parseDate('12-03-2000')); })
+    .attr('x2', function(d) { return xScale(parseDate('12-03-2000')); })
+		.attr('title','Generales 2000')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsgeneral)  
+			});
+	elections.append('text')
+		.attr("x", function(d) { return xScale(parseDate('12-04-2000')); })
+		.attr("y", electionsgeneral+electionslineheight-3)
+		.text("Generales 2000").attr("class", "electionstext");
+	elections.append('line')
+    .attr('y1', electionsgeneral)
+    .attr('y2', electionsgeneral+electionslineheight)
+    .attr('x1', function(d) { return xScale(parseDate('14-03-2004')); })
+    .attr('x2', function(d) { return xScale(parseDate('14-03-2004')); })
+		.attr('title','Generales 2004')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsgeneral)  
+			})
+	elections.append('text')
+		.attr("x", function(d) { return xScale(parseDate('14-04-2004')); })
+		.attr("y", electionsgeneral+electionslineheight-3)
+		.text("Generales 2004").attr("class", "electionstext");
+	elections.append('line')
+    .attr('y1', electionsgeneral)
+    .attr('y2', electionsgeneral+electionslineheight)
+    .attr('x1', function(d) { return xScale(parseDate('09-03-2008')); })
+    .attr('x2', function(d) { return xScale(parseDate('09-03-2008')); })
+		.attr('title','Generales 2008')
+		.on("mouseover", function(d) {      
+		  d3.select(this).attr('y1', 0)
+		    })
+		.on("mouseout", function(d) {       
+		    d3.select(this).attr('y1', electionsgeneral)  
+			});
+	elections.append('text')
+		.attr("x", function(d) { return xScale(parseDate('09-04-2008')); })
+		.attr("y", electionsgeneral+electionslineheight-3)
+		.text("Gen. 2008").attr("class", "electionstext");
+	//elecciones Galicia	
+	elections.append("text").attr("x", 5).attr("y", electionsgalicia+7.5)
+		.text("Galicia")
+		.attr("font-size", "12px")
+		.attr("fill", "grey");
+	elections.append('line')
+    .attr('y1', electionsgalicia)
+    .attr('y2', electionsgalicia+electionslineheight )
+    .attr('x1', function(d) { return xScale(parseDate('17-10-1993')); })
+    .attr('x2', function(d) { return xScale(parseDate('17-10-1993')); })
+		.attr('title','Galicia 1993')
+		.on("mouseover", function(d) {d3.select(this).attr('y1', 0)})
+		.on("mouseout", function(d) {d3.select(this).attr('y1', electionsgalicia)});
+	elections.append('line')
+    .attr('y1', electionsgalicia)
+    .attr('y2', electionsgalicia+electionslineheight )
+    .attr('x1', function(d) { return xScale(parseDate('19-10-1997')); })
+    .attr('x2', function(d) { return xScale(parseDate('19-10-1997')); })
+		.attr('title','Galicia 1997')
+		.on("mouseover", function(d) {d3.select(this).attr('y1', 0)})
+		.on("mouseout", function(d) {d3.select(this).attr('y1', electionsgalicia)});
+	elections.append('line')
+    .attr('y1', electionsgalicia)
+    .attr('y2', electionsgalicia+electionslineheight )
+    .attr('x1', function(d) { return xScale(parseDate('21-10-2001')); })
+    .attr('x2', function(d) { return xScale(parseDate('21-10-2001')); })
+		.attr('title','Galicia 2001')
+		.on("mouseover", function(d) {d3.select(this).attr('y1', 0)})
+		.on("mouseout", function(d) {d3.select(this).attr('y1', electionsgalicia)});
+	elections.append('line')
+    .attr('y1', electionsgalicia)
+    .attr('y2', electionsgalicia+electionslineheight )
+    .attr('x1', function(d) { return xScale(parseDate('19-06-2005')); })
+    .attr('x2', function(d) { return xScale(parseDate('19-06-2005')); })
+		.attr('title','Galicia 2005')
+		.on("mouseover", function(d) {d3.select(this).attr('y1', 0)})
+		.on("mouseout", function(d) {d3.select(this).attr('y1', electionsgalicia)});
 	//Saldo notime
 	saldopath.append("path")
 		.attr("d", function(d) { return lineFunction(data);}).attr("id","saldocalculado")
@@ -718,7 +769,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 	.enter().append("circle")
 	.attr("fill", function(d) { return d.entradas < 0 ? "#C00000" : "#0055D4"; })
 	.attr("cx", function(d) { return xScale(d.date); })
-	.attr("cy",function(d) { return Math.random() * 350 + 20;})
+	.attr("cy",function(d) { return Math.random() * 350 + 5;})
 	.attr("r", function(d) { return Math.sqrt(Math.abs(d.entradas))/22; })//square root of value for radius, as the area of circle is π*r². 22 is arbitrary value
 	.attr("opacity", .9)
 	.attr("class", 
