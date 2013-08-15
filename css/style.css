@@ -3,7 +3,7 @@ body {
 }
 
 path {
-  stroke: black;
+  stroke: grey;
   stroke-width: 1;
   fill: none;
 }
@@ -54,7 +54,6 @@ line.donaciones:hover  {
 }
 
 .donationslinesnotime {
-  display:none;
   stroke-width:2;
 }
 .donante{
@@ -118,7 +117,7 @@ div.tooltip {
   margin-top:25px;	
 }
 
-.xaxis, #legendnotime, #barstimescale, #barsnotimescale, #barstimescalewithsaldo, .donaciones, .y.axis, #legend{
+.xaxis, #legendnotime, #barstimescale, #barsnotimescale, #barstimescalewithsaldo, .y.axis, #legend{
   display:none;
 }
 
