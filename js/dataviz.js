@@ -69,6 +69,9 @@ background.append("image")
 	.attr("width", "250")
 	.attr("height", "301");
 
+//set elections lines
+var elections = svg.append('g').attr('class','elections electionschart').attr('id','electionsgraph');
+
 //sets saldos dots
 var saldosdots = svg.append('g').attr('class','saldosdots');
 
@@ -87,9 +90,6 @@ var barsnotimescale = svg.append('g').attr('id','barsnotimescale');
 //set Donations line
 var donationslines = barstimescale.append('g').attr('class','donationslines');
 var donationslinesnotime = barsnotimescale.append('g').attr('class','donationslinesnotime');
-
-//set elections lines
-var elections = svg.append('g').attr('class','elections electionschart').attr('id','electionsgraph');
 
 //Saldo Line Chart
 var lineFunction = d3.svg.line()
@@ -114,7 +114,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 		.attr("class", function(d) { return "inactive btn btn-default btn-xs " + d.tipo;})
 		.text(function(d) { return d.people; })
 		.on('click',function(d) { //when click on name
-			var personflat = d.people.replace(/\s+/g, '').replace('.', ''), //removes spaces and . from person name
+			var personflat = d.people.replace(/\s+/g, '').replace(/\.+/g, ''), //removes spaces and . from person name
 			    tipodonante = d.tipo,
 			    confirmado = d.confirmado;
 				if (d3.select(this).attr('class')==='inactive btn btn-default btn-xs donante' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs beneficiario' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs donabenef'){
@@ -140,7 +140,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 		.attr("class", function(d) { return "inactive btn btn-default btn-xs " + d.tipo;})
 		.text(function(d) { return d.people; })
 		.on('click',function(d) { //when click on name
-			var personflat = d.people.replace(/\s+/g, '').replace('.', ''), //removes spaces and . from person name
+			var personflat = d.people.replace(/\s+/g, '').replace(/\.+/g, ''), //removes spaces and . from person name
 			    tipodonante = d.tipo,
 			    confirmado = d.confirmado;
 			if (d3.select(this).attr('class')==='inactive btn btn-default btn-xs donante' 
@@ -168,7 +168,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 		.attr("class", function(d) { return "inactive btn btn-default btn-xs " + d.tipo;})
 		.text(function(d) { return d.people; })
 		.on('click',function(d) { //when click on name
-			var personflat = d.people.replace(/\s+/g, '').replace('.', ''), //removes spaces and . from person name
+			var personflat = d.people.replace(/\s+/g, '').replace(/\.+/g, ''), //removes spaces and . from person name
 			    tipodonante = d.tipo,
 			    confirmado = d.confirmado;
 			if (d3.select(this).attr('class')==='inactive btn btn-default btn-xs donante' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs beneficiario' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs donabenef'){
@@ -200,6 +200,7 @@ d3.selectAll(".btn-group .btn").on('click', function() {//when click //
 			d3.selectAll("#barstimescale").style("display","block");
 			d3.selectAll("svg .x.axis").style("display","block");
 			d3.selectAll("svg .y.axis").style("display","block");
+			d3.selectAll("svg .donationslines").style("display","block");
 			d3.select("#legend").style("display","block");
 			d3.select("#electionsgraph").style("display","block");
 			d3.select("#barstimescalewithsaldo").style("display","none");
@@ -479,7 +480,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 	.attr("opacity",.4)
 	.attr("class", 
 		function(d) { 
-			return d.persona.replace(/\s+/g, '').replace(/\./g, '') +" bar"; //sets the name of the person without spaces as class for the bar
+			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') +" bar"; //sets the name of the person without spaces as class for the bar
 		}) 
 	//The tooltips time scale
 	.attr("x", function(d) { return xScale(d.date); })
@@ -508,7 +509,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 	.attr("opacity",.4)
 	.attr("class", 
 		function(d) { 
-			return d.persona.replace(/\s+/g, '').replace(/\./g, '') +" bar"; //sets the name of the person without spaces as class for the bar
+			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') +" bar"; //sets the name of the person without spaces as class for the bar
 		}) 
 	//The tooltips time scale
 	.attr("x", function(d) { return xScale(d.date); })
@@ -587,7 +588,12 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		    })
 		.on("mouseout", function(d) {       
 		    d3.select(this).attr('y1', electionsgeneral)  
-			});
+			})
+	elections.append('text')
+		.attr("x", function(d) { return xScale(parseDate('14-04-2004')); })
+		.attr("y", electionsgeneral+electionslineheight-3)
+		.text("Generales 2004").attr("font-size", "12px")
+		.attr("fill", "grey");
 	elections.append('line')
     .attr('y1', electionsgeneral)
     .attr('y2', electionsgeneral+electionslineheight)
@@ -600,35 +606,39 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		.on("mouseout", function(d) {       
 		    d3.select(this).attr('y1', electionsgeneral)  
 			});
-
+	elections.append('text')
+		.attr("x", function(d) { return xScale(parseDate('09-03-2008')); })
+		.attr("y", electionsgeneral+electionslineheight-3)
+		.text("Generales 2008").attr("font-size", "12px")
+		.attr("fill", "grey");
 	//Elecciones Municipales 
 	elections.append("text").attr("x", 5).attr("y", electionsmunicipal+10)
 		.text("Municipales")
 		.attr("font-size", "12px")
 		.attr("fill", "grey");
 	elections.append('line')
-    .attr('y1', electionsmunicipal)
-    .attr('y2', electionsmunicipal+electionslineheight)
-    .attr('x1', function(d) { return xScale(parseDate('26-05-1991')); })
-    .attr('x2', function(d) { return xScale(parseDate('26-05-1991')); })
+		.attr('y1', electionsmunicipal)
+		.attr('y2', electionsmunicipal+electionslineheight)
+		.attr('x1', function(d) { return xScale(parseDate('26-05-1991')); })
+		.attr('x2', function(d) { return xScale(parseDate('26-05-1991')); })
 		.attr('title','Municipales 1991')
 		.on("mouseover", function(d) {      
-		  d3.select(this).attr('y1', 0)
-		    })
+			d3.select(this).attr('y1', 0)
+				})
 		.on("mouseout", function(d) {       
-		    d3.select(this).attr('y1', electionsmunicipal)  
+				d3.select(this).attr('y1', electionsmunicipal)  
 			});
 	elections.append('line')
-    .attr('y1', electionsmunicipal)
-    .attr('y2', electionsmunicipal+electionslineheight)
-    .attr('x1', function(d) { return xScale(parseDate('28-05-1995')); })
-    .attr('x2', function(d) { return xScale(parseDate('28-05-1995')); })
+		.attr('y1', electionsmunicipal)
+		.attr('y2', electionsmunicipal+electionslineheight)
+		.attr('x1', function(d) { return xScale(parseDate('28-05-1995')); })
+		.attr('x2', function(d) { return xScale(parseDate('28-05-1995')); })
 		.attr('title','Municipales 1995')
 		.on("mouseover", function(d) {      
-		  d3.select(this).attr('y1', 0)
-		    })
+			d3.select(this).attr('y1', 0)
+				})
 		.on("mouseout", function(d) {       
-		    d3.select(this).attr('y1', electionsmunicipal)  
+				d3.select(this).attr('y1', electionsmunicipal)  
 			});
 	elections.append('line')
     .attr('y1', electionsmunicipal)
@@ -713,7 +723,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 	.attr("opacity", .9)
 	.attr("class", 
 		function(d) {
-			return d.persona.replace(/\s+/g, '').replace(/\./g, '') + " "+ d.confirmado +" circulos"; //sets the name of the person without spaces as class for the bar
+			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') + " "+ d.confirmado +" circulos"; //sets the name of the person without spaces as class for the bar
 		}) 
 	.on("mouseover", function(d) {      
 		    div.transition()        
@@ -736,7 +746,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
     	.attr("fill", function(d) { return d.entradas < 0 ? "#C00000" : "#0055D4"; })
 	.attr("class", 
 		function(d) { //TODO iterate through array
-			return d.persona.replace(/\s+/g, '').replace(/\./g, '')+" barnotime"; //sets the name of the person without spaces as class for the bar
+			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '')+" barnotime"; //sets the name of the person without spaces as class for the bar
 		}) 
 	//The tooltips
       .attr("x", function(d, i) { return i * barwidth; })
