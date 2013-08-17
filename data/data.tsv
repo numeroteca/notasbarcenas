@@ -317,7 +317,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 04/1999	15-04-1999	De Málaga	18000		91504	Málaga
 04/1999	15-04-1999	Moreno (A. de la P.)	6000		97504	José Luis Moreno
 04/1999	15-04-1999	Lucio	24000		121504	Lucio
-05/1999	15-05-1999	P. Crespo	126000		247504	Pablo Crespo
+05/1999	15-05-1999	P. Crespo	126000		247504	Pablo Crespo	confirmado
 05/1999	15-05-1999	M. Rajoy (En.- Junio 99)	-12600		234904	Mariano Rajoy
 05/1999	15-05-1999	Jaime M. (En. - Junio 99)	-12600		222304	Jaime Mayor Oreja
 05/1999	15-05-1999	Acta Paco A.C. (Juli.-Dic.98)	-19800		202504	Francisco Álvarez Cascos
@@ -325,7 +325,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 05/1999	15-05-1999	R.Rato (En.-Junio 99)	-13680		169024	Rodrigo Rato
 06/1999	15-06-1999	Javier Arenas (pagos varios)	-12000		157024	Javier Arenas
 06/1999	15-06-1999	Moreno (A. de la P.)	6000	108553	163024	José Luis Moreno
-07/1999	15-07-1999	Entrega a Álvaro Lap.(País Vasco) para Abascal	-12000	96553	151024	Álvaro Lapuerta
+07/1999	15-07-1999	Entrega a Álvaro Lap.(País Vasco) para Abascal	-12000	96553	151024	Álvaro Lapuerta	confirmado
 09/1999	15-09-1999	De Málaga	18000	114553	169024	Málaga
 10/1999	15-10-1999	R.Rato (2do Semestre 99)	-13680		155344	Rodrigo Rato
 11/1999	15-11-1999	M. Rajoy (2do semestre 99)	-12600		142744	Mariano Rajoy
@@ -383,7 +383,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 06/2001	15-06-2001	Málaga	18000		227257	Málaga
 06/2001	15-06-2001	1º Semestre 2001 Jaime	-12600	187306	214657	Jaime Mayor Oreja
 07/2001	15-07-2001	Jaime Ignacio	-3000		211657	Jaime Ignacio de Burgo confirmado
-07/2001	15-07-2001	Concejal Viuda Francisco Cano (Barcelona)	-18000	166306	193657	Francisco Cano
+07/2001	15-07-2001	Concejal Viuda Francisco Cano (Barcelona)	-18000	166306	193657	Francisco Cano	confirmado
 07/2001	15-07-2001	1º Semestre Paco Álv-Cascos	-19800	148306	173857	Francisco Álvarez Cascos
 07/2001	15-07-2001	Federico correspondiente a 2001 *	-18000	128506	155857	Federico Trillo
 09/2001	15-09-2001	Deuda Tenerife telemarketing	-27600	100906	128257	Tenerife
@@ -392,7 +392,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 11/2001	15-11-2001	2º Semestre 2001 Paco A.Cascos	-19800	54826	82177	Francisco Álvarez Cascos
 11/2001	15-11-2001	Liquidación Linaza (León)	-15000	39826	67177	Luis Guillermo López Linaza
 12/2001	15-12-2001	Resto año 2001 Federico Trillo *	-18000		49177	Federico Trillo
-12/2001	15-12-2001	A Pio García Escudero (devol. Antic. Atentado)	-6000		43177	Pio García Escudero
+12/2001	15-12-2001	A Pio García Escudero (devol. Antic. Atentado)	-6000		43177	Pio García Escudero	confirmado
 12/2001	15-12-2001	Federico	-3000		40177	Federico Trillo
 12/2001	15-12-2001	A Jaime Mayor	-12000	826	28177	Jaime Mayor Oreja
 2002	15-01-2002	Aportación Manuel Contreras	60000	60000	88177	Manuel Contreras
@@ -456,7 +456,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 25/06/2003	25-06-2003	M. Contreras	120000		575597	Manuel Contreras
 1/7/2003	01-07-2003	Federico año 2003 completo	-36000		539597	Federico Trillo
 2/7/2003	02-07-2003	Rubio	30000	481420	569597	José Manuel Fernández Rubio
-8/7/2003	08-07-2003	Pio Gª (15ºpaga)	-6000		563597	Pio García Escudero
+8/7/2003	08-07-2003	Pio Gª (15ºpaga)	-6000		563597	Pio García Escudero	confirmado
 16/07/2003	16-07-2003	2º Semestre Rodrigo	-13700		549897	Rodrigo Rato
 16/07/2003	16-07-2003	2º Semestre Javier	-19800		530097	Javier Arenas
 16/07/2003	16-07-2003	Paco Álvarez (2º Semestre)	-19800		510297	Francisco Álvarez Cascos
@@ -552,7 +552,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 01/2006	15-01-2006	Ant. Pinol	12000		249937	Antonio Pinal Emilio
 01/2006	15-01-2006	Vta. Aces P.Y. a Álvaro Cruz gastos	-315	11685	249622	Ángel Acebes, Paco Yáñez, Álvaro de la Cruz
 01/2006	15-01-2006	Pilar (Empresa Estudios) Pulido	12000		261622	Pilar Pulido
-1/2/2006	01-02-2006	1º Trimestre Mariano	-6300	0	255322	Mariano Rajoy
+1/2/2006	01-02-2006	1º Trimestre Mariano	-6300		255322	Mariano Rajoy
 1/2/2006	01-02-2006	1º Trimestre Ángel	-6300	11085	249022	Ángel Acebes
 04/2006	15-04-2006	Alfonso Gª Pozuelo	18000		267022	Alfonso García Pozuelo
 04/2006	15-04-2006	2º Trimestre Mariano	-6300		260722	Mariano Rajoy
@@ -639,4 +639,4 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 31/07/2008	31-07-2008	Gonzalo Urquijo (3º Planta)	-235000	246688	484625	Gonzalo Urquijo
 14/10/2008	14-10-2008	D. Cospedal 4º Trimestre	-7500	239188	477125	Dolores de Cospedal
 10/2008	15-10-2008	Entrega M.C	10000	249188	487125	Manuel Contreras
-12/2008	15-12-2008	G.U.	-200000		287125	Gonzalo Urquijo
+12/2008	15-12-2008	G.U.	-200000	49188	287125	Gonzalo Urquijo
