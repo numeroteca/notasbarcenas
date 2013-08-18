@@ -82,8 +82,44 @@ var entradascirculos = svg.append('g').attr('id','circuloschart');
 //Bars time scale
 var barstimescale = svg.append('g').attr('id','barstimescale');
 
-//Bars time scale
+//Bars time scale with saldo
 var barstimescalewithsaldo = svg.append('g').attr('id','barstimescalewithsaldo');
+/*barstimescalewithsaldo.append('text')
+		.attr("x", 180)
+		.attr("y", 80)
+		.text("Diferencia entre Anotado-Calculado");*/
+barstimescalewithsaldo
+	.append('text')
+	.attr('id','diffswitch').attr("class","inactivo")
+	.attr("x", 180)
+	.attr("y", 80)
+	.text("Activar diferencia entre Anotado-Calculado")
+	.on('click',function(d) { 
+		if (d3.select(this).attr('class')==='inactivo'){ 
+		d3.select(this).attr("class","activo"); 
+		barstimescalewithsaldo.selectAll(".bar").attr("opacity",0);
+		barstimescalewithsaldo.selectAll(".saldoanotado").attr("opacity",0);
+		barstimescalewithsaldo.selectAll("#saldocalculado").attr("opacity",.5);
+		barstimescalewithsaldo.selectAll(".circulossaldo").attr("fill","#888");
+		barstimescalewithsaldo.selectAll(".bardiff").style("display","block");
+		} else {
+		d3.select(this).attr("class","inactivo"); 
+		barstimescalewithsaldo.selectAll(".bar").attr("opacity",1);
+		barstimescalewithsaldo.selectAll(".saldoanotado").attr("opacity",1);
+		barstimescalewithsaldo.selectAll("#saldocalculado").attr("opacity",1);
+		barstimescalewithsaldo.selectAll(".circulossaldo").attr("fill","#000");
+		barstimescalewithsaldo.selectAll(".bardiff").style("display","none");
+		}
+	});
+barstimescalewithsaldo
+	.append('rect')
+	.attr('y', 66 )
+  .attr('height', 20  )
+  .attr('x', 170 )
+  .attr('width',  320)
+	.attr('stroke-width','1px')
+	.attr("stroke","#000")
+	.attr("fill","none");
 
 //Bars no time scale
 var barsnotimescale = svg.append('g').attr('id','barsnotimescale');
@@ -95,18 +131,19 @@ var donationslinesnotime = barsnotimescale.append('g').attr('class','donationsli
 //replaces spaces and . in viplist function(d) { return d.SaldoCalculado; }
 var replacement = function(d) { return d.replace(/\s+/g, '').replace(/\.+/g, '');};
 
-//Saldo Line Chart
+//Saldo Calculado Line Chart
 var lineFunction = d3.svg.line()
 	.interpolate("linear")
  	.x(function(d) { return xScale(d.date); })	
 	.y(function(d) { return yScaleB(d.SaldoCalculado);}); 
 var saldopath = barstimescalewithsaldo.append('g').attr('id','saldocalculado').attr('class','saldocalculado');
 
-//Line Chart2
+//Saldo Anotado Line Chart2 diferencia
 var lineFunction2 = d3.svg.line()
 	.interpolate("linear")
-	.x(function(d,i) { return i*barwidth; })
-	.y(function(d) { return yScale(d.SaldoAnotado);}); 
+	.x(function(d) { return xScale(d.date); })
+	.y(function(d) { return yScaleB(d.SaldoAnotado);});
+
 
 d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 	//Creates Legend for notime graph
@@ -487,11 +524,11 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		function(d) { 
 			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') +" bar"; //sets the name of the person without spaces as class for the bar
 		}) 
-	//The tooltips time scale
 	.attr("x", function(d) { return xScale(d.date); })
 	.attr("width", barwidth+1)
 	.attr("y", function(d) { return yScale(Math.max(0, d.entradas)); })
 	.attr("height", function(d) { return Math.abs(yScale(d.entradas) - yScale(0)); })
+	//The tooltips time scale
 		.on("mouseover", function(d) {      
 		    div.transition()        
 			.duration(200)      
@@ -516,11 +553,11 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		function(d) { 
 			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') +" bar"; //sets the name of the person without spaces as class for the bar
 		}) 
-	//The tooltips time scale
 	.attr("x", function(d) { return xScale(d.date); })
 	.attr("width", barwidth+1)
 	.attr("y", function(d) { return yScaleB(Math.max(0, d.entradas)); })
 	.attr("height", function(d) { return Math.abs(yScaleB(d.entradas) - yScaleB(0)); })
+	//The tooltips time scale
 		.on("mouseover", function(d) {      
 		    div.transition()        
 			.duration(200)      
@@ -612,16 +649,16 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		.attr("font-size", "12px")
 		.attr("fill", "grey");
 	elections.append('line')
-    .attr('y1', electionsgeneral)
-    .attr('y2', electionsgeneral+electionslineheight )
-    .attr('x1', function(d) { return xScale(parseDate('06-06-1993')); })
-    .attr('x2', function(d) { return xScale(parseDate('06-06-1993')); })
+		.attr('y1', electionsgeneral)
+		.attr('y2', electionsgeneral+electionslineheight )
+		.attr('x1', function(d) { return xScale(parseDate('06-06-1993')); })
+		.attr('x2', function(d) { return xScale(parseDate('06-06-1993')); })
 		.attr('title','Generales 1993')
 		.on("mouseover", function(d) {      
-		  d3.select(this).attr('y1', 0)
-		    })
+			d3.select(this).attr('y1', 0)
+				})
 		.on("mouseout", function(d) {       
-		    d3.select(this).attr('y1', electionsgeneral)  
+				d3.select(this).attr('y1', electionsgeneral)  
 			});
 	elections.append('text')
 		.attr("x", function(d) { return xScale(parseDate('06-07-1993')); })
@@ -728,40 +765,121 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		.attr('title','Galicia 2005')
 		.on("mouseover", function(d) {d3.select(this).attr('y1', 0)})
 		.on("mouseout", function(d) {d3.select(this).attr('y1', electionsgalicia)});
-	//Saldo notime
+
+	//Saldo time
+	barstimescalewithsaldo.append('text')
+		.attr("x", 180)
+		.attr("y", 40)
+		.text("Saldo Calculado");
+	barstimescalewithsaldo.append('line')
+    .attr('y1', 35)
+    .attr('y2', 35)
+    .attr('x1', 100)
+    .attr('x2', 170).attr("class","saldocalculado");
+	barstimescalewithsaldo.append('text')
+		.attr("x", 180)
+		.attr("y", 60)
+		.text("Saldo anotado en las notas");
+	barstimescalewithsaldo.append('line')
+    .attr('y1', 53)
+    .attr('y2', 53)
+    .attr('x1', 100)
+    .attr('x2', 170).attr("class","saldoanotado");
+	barstimescalewithsaldo.append("circle")
+		.attr("cx","120")
+		.attr("cy","53")
+		.attr("r", 2);
+	barstimescalewithsaldo.append("circle")
+		.attr("cx","140")
+		.attr("cy","53")
+		.attr("r", 2);
+	barstimescalewithsaldo.append("circle")
+		.attr("cx","160")
+		.attr("cy","53")
+		.attr("r", 2);
+	barstimescalewithsaldo.append("circle")
+		.attr("cx","170")
+		.attr("cy","53")
+		.attr("r", 2);
+	/*barstimescalewithsaldo.append('text')
+		.attr("x", 60)
+		.attr("y", 80)
+		.text("positiva negativa");*/
+
+
+	//Sado Anotado
 	saldopath.append("path")
-		.attr("d", function(d) { return lineFunction(data);}).attr("id","saldocalculado")
-		.on("mouseover", function(d) {      
-		    div.transition()        
-			.duration(200)      
-			.style("opacity", .9);      
-		    div.html("Saldo calculado: entradas - salidas" )  
-			.style("left", (d3.event.pageX) + "px")     
-			.style("top", (d3.event.pageY - 0) + "px");    
+		.attr("d", function(d) { return lineFunction2(data);}).attr("class","saldoanotado")
+	.on("mouseover", function(d) {        
+				d3.select(this).attr("stroke","#000");
+				div.transition().duration(200).style("opacity", .9);    
+		    div.html("Saldo Anotado en las cuentas de Barcenas" )  
+				.style("left", (d3.event.pageX) + "px")     
+				.style("top", (d3.event.pageY - 0) + "px");    
 		    })                  
 		.on("mouseout", function(d) {       
-		    div.transition()        
-			.duration(500)      
-			.style("opacity", 0);   
+				div.transition()
+				.duration(500)
+				.style("opacity", 0);    
 		});
 
-	/*saldopath.append("path")
-		.attr("d", function(d) { return lineFunction2(data);}).attr("class","saldoanotado");*/
-	
+
+	//Difference (anotado - calculado) bars
+	barstimescalewithsaldo.selectAll(".bardiff")
+	.data(data)
+	.enter().append("rect")
+	.attr("class", "bardiff")
+	.attr("fill", function(d) {
+		return d.SaldoCalculado > Math.abs(d.SaldoAnotado) ? "#F00" : "#0F0"; 
+		})
+	.attr("x", function(d) { return xScale(d.date); })
+	.attr("width", barwidth)
+	.attr("y", function(d) { 	
+		if (d.SaldoCalculado > Math.abs(d.SaldoAnotado) ) { 
+			return yScaleB(d.SaldoCalculado);
+		} else {
+			return yScaleB(d.SaldoAnotado);
+		} 
+	})
+	.attr("height", function(d) { 
+		if (d.SaldoAnotado != "" && d.SaldoAnotado != "0" && d.SaldoCalculado > Math.abs(d.SaldoAnotado)  ) {
+			return Math.abs(yScaleB(d.SaldoCalculado - d.SaldoAnotado) - yScaleB(0)) ;
+		} else if (Math.abs(d.SaldoAnotado) > d.SaldoCalculado ) {
+			return Math.abs(yScaleB(d.SaldoCalculado) - yScaleB(d.SaldoAnotado));
+		} else { 
+			return 0; 
+		}
+	});
+
+	//Saldo Calculado
+	saldopath.append("path")
+		.attr("d", function(d) { return lineFunction(data);})
+		.attr("id","saldocalculado")
+		.on("mouseover", function(d) {           
+				div.transition()
+				.duration(200)
+				.style("opacity", .9); 
+		    div.html("Saldo calculado: entradas - salidas" )  
+				.style("left", (d3.event.pageX) + "px")     
+				.style("top", (d3.event.pageY - 50) + "px");    
+		    })                  
+		.on("mouseout", function(d) {       
+				div.transition()
+				.duration(500)
+				.style("opacity", 0); 
+		});
+
 	//saldos dots. Dibuja circulos donde hay datos sobre saldo anotado
-	/*svg.selectAll("circle")
+	barstimescalewithsaldo.selectAll("circle")
 	.data(data)
 	.enter().append("circle")
-	.attr("cx", function(d) { return xScale(d.date); })
-	//.attr("cx", function(d,i) { return i*barwidth;})
-	.attr("cy",function(d) { return yScale(d.SaldoAnotado);})
-	.attr("r", 1.5);
-	svg.selectAll("circle")
-	.data(data)
-	.enter().append("circle")
-	.attr("cx", function(d) { return xScale(d.date); })
-	   .attr("cy",function(d) { return yScale(d.SaldoCalculado);})
-	   .attr("r", 1);*/
+	.attr("class","circulossaldo")
+	.attr("cx", function(d) { return xScale(d.date) +1; })
+	.attr("cy",function(d) { return yScaleB(d.SaldoAnotado);})
+	.attr("r", 2)
+	.style("opacity", function(d) { return d.SaldoAnotado == 0 ? 0 : 1; })	
+	.attr("title", function(d) { return "Saldo anotado en las cuentas " + formatComma(d.SaldoAnotado) + "€"; }  );
+
 
 	//Sets the circles
 	entradascirculos.selectAll("circle")
@@ -777,10 +895,10 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') + " "+ d.confirmado +" circulos"; //sets the name of the person without spaces as class for the bar
 		}) 
 	.on("mouseover", function(d) {      
-		    div.transition()        
+		div.transition()
 			.duration(200)      
 			.style("opacity", .9);      
-		    div.html(d.fecha + "<br/><strong/>"  + d.persona + "</strong/><br/>"  + formatComma(d.entradas) + "€ <br/>'"  + d.descripcion + "'" )  
+		div.html(d.fecha + "<br/><strong/>"  + d.persona + "</strong/><br/>"  + formatComma(d.entradas) + "€ <br/>'"  + d.descripcion + "'" )  
 			.style("left", (d3.event.pageX) + "px")     
 			.style("top", (d3.event.pageY - 0) + "px");    
 		    })                  
@@ -801,7 +919,6 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		}) 
 	//The tooltips
       .attr("x", function(d, i) { return i * barwidth; })
-      //.attr("x", function(d) { return xScale(d.date); })
       .attr("width", barwidth+1)
       .attr("y", function(d) { return yScale(Math.max(0, d.entradas)); })
       .attr("height", function(d) { return Math.abs(yScale(d.entradas) - yScale(0)); })

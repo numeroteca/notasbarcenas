@@ -4,19 +4,24 @@ body {
 
 path {
   stroke: grey;
-  stroke-width: 1;
+  /*stroke-width: 1;*/
   fill: none;
+  cursor:pointer;
 }
 
 svg { 
-  cursor:pointer;
+
+}
+
+circle, rect {
+   cursor:pointer;
 }
 
 circle:hover {
   fill:black;
 }
 
-.cirulos {
+.circulos {
 }
 
 .axis path,
@@ -44,6 +49,7 @@ line.donaciones  {
   fill: none;
   stroke: #aaa;
   shape-rendering: crispEdges;
+  cursor:pointer;
 }
 
 line.donaciones:hover  {
@@ -80,6 +86,11 @@ line.donaciones:hover  {
 .bar:hover, .barnotime:hover  {
   fill: black;
 }
+
+.bardiff {
+  display:none;
+}
+
 .highlighted {fill: red;}
 .active {font-weight:bold;}
 
@@ -135,17 +146,24 @@ div.tooltip {
 .btn-mini {
   font-size:11px !important;
 }
-
+.inactivo {
+ cursor:pointer;
+}
+.activo {
+ font-weight:bold;
+ background-color:#ddd;
+ cursor:pointer;
+}
 .saldocalculado {
   fill: none;
-  stroke: #888;
+  stroke: #555;
   /*shape-rendering: crispEdges;*/
-  stroke-width:1;
+  stroke-width:2;
 }
 
 .saldoanotado {
   fill: none;
-  stroke: #000;
+  stroke: #ddd;
   shape-rendering: crispEdges;
   stroke-width:1;
 }
@@ -156,6 +174,7 @@ div.tooltip {
   stroke: #bbb;
   shape-rendering: crispEdges;
   stroke-width:4;
+  cursor:pointer;
 }
 
 .electionstext{
