@@ -148,6 +148,17 @@ var lineFunction2 = d3.svg.line()
 d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 	//Creates Legend for notime graph
 	var legendnotime = d3.select("#legendnotime").attr("class", "legend");
+	//button to activate confirmados entries
+	legendnotime.append("button").attr("class","btn btn-default pull-right").text("Entradas y Salidas confirmadas")
+		.on('click',function(d) {	
+				if (d3.select(this).attr('class')==='btn btn-default pull-right') {
+					barsnotimescale.selectAll('rect.barnotime.confirmado').attr('stroke-width','1px').attr('stroke','#000');
+					d3.select(this).attr("class", "btn btn-default pull-right activo").style('border','2px solid black');
+					} else {
+					barsnotimescale.selectAll('rect.barnotime.confirmado').attr('stroke-width','0px');
+					d3.select(this).attr("class", "btn btn-default pull-right").style('border','');
+					}
+			});
 	legendnotime.append("h5").style("font-weight","bold").text("Selecciona una persona"); //legend title
 	legendnotime.selectAll('div')
 		.data(data)
@@ -159,21 +170,33 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 			    tipodonante = d.tipo,
 			    confirmado = d.confirmado;
 				if (d3.select(this).attr('class')==='inactive btn btn-default btn-xs donante' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs beneficiario' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs donabenef'){
-				//first time
-				d3.selectAll('svg .barnotime').attr("opacity",1)
-				d3.selectAll('svg .barnotime').transition().duration(500).attr("opacity",.15); //dims all bars 
-			      	d3.selectAll('svg .barnotime.'+personflat).transition().duration(2500).attr("class","barnotime highlighted "+personflat); //adds class "highlighted" and person related class to the bar
-				d3.select(this).transition().duration(0).attr("class","btn-warning btn btn-default btn-xs"); //adds class .active to button
+					//first time
+					barsnotimescale.selectAll('svg .barnotime').attr("opacity",1)
+					barsnotimescale.selectAll('svg .barnotime').transition().duration(500).attr("opacity",.15); //dims all bars 
+					barsnotimescale.selectAll('svg .barnotime.confirmado.'+personflat).transition().duration(2500).attr("class","barnotime highlighted "+personflat+ " confirmado"); 
+					barsnotimescale.selectAll('svg .barnotime.undefined.'+personflat).transition().duration(2500).attr("class","barnotime highlighted "+personflat+ " undefined");   
+					d3.select(this).transition().duration(0).attr("class","btn-warning btn btn-default btn-xs"); //adds class .active to button
 				//second time
 				} else if (d3.select(this).attr('class')==='btn-warning btn btn-default btn-xs'){
-				      	d3.select(this).attr("class",function(d) { return "inactive btn btn-default btn-xs " + d.tipo;}); //removes .active class
-					d3.selectAll("svg .highlighted."+  personflat).attr("class","barnotime "+  personflat);
-					d3.selectAll('svg .barnotime').transition().duration(500).attr("opacity",1);
+					d3.select(this).attr("class",function(d) { return "inactive btn btn-default btn-xs " + d.tipo;}); //removes .active class
+					barsnotimescale.selectAll("svg .barnotime.confirmado.highlighted."+  personflat).attr("class","barnotime confirmado "+  personflat);
+					barsnotimescale.selectAll("svg .barnotime.undefined.highlighted."+  personflat).attr("class","barnotime undefined "+  personflat);
+					barsnotimescale.selectAll('svg .barnotime').transition().duration(500).attr("opacity",1);
 				}
 	  		});
 
 	//Creates Legend for time graph
 	var legend = d3.select("#legend").attr("class", "legend");
+	legend.append("button").attr("class","btn btn-default pull-right").text("Entradas y Salidas confirmadas")
+		.on('click',function(d) {	
+				if (d3.select(this).attr('class')==='btn btn-default pull-right') {
+					barstimescale.selectAll('rect.bar.confirmado').attr('opacity','1').attr('stroke-width','1px').attr('stroke','#000');
+					d3.select(this).attr("class", "btn btn-default pull-right activo").style('border','2px solid black');
+					} else {
+					barstimescale.selectAll('rect.bar.confirmado').attr('stroke-width','0px');
+					d3.select(this).attr("class", "btn btn-default pull-right").style('border','');
+					}
+			});
 	legend.append("h5").style("font-weight","bold").text("Selecciona una persona"); //legend title
 	legend.selectAll('div')
 		.data(data)
@@ -188,21 +211,35 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 				|| d3.select(this).attr('class')==='inactive btn btn-default btn-xs beneficiario' 		
 				|| d3.select(this).attr('class')==='inactive btn btn-default btn-xs donabenef'){
 				//first time
-				d3.selectAll('svg .bar').attr("opacity",1)
-				d3.selectAll('svg .bar').transition().duration(500).attr("opacity",.05); //dims all bars
-				d3.selectAll('svg .bar.'+personflat).transition().duration(2500).attr("class","bar highlighted "+personflat); //adds class "highlighted" and person related class to the bar
+				barstimescale.selectAll('svg .bar').attr("opacity",1)
+				barstimescale.selectAll('svg .bar').transition().duration(500).attr("opacity",.05); //dims all bars
+				barstimescale.selectAll('svg .bar.confirmado.'+personflat).transition().duration(2500).attr("class","bar highlighted confirmado "+personflat); 
+				barstimescale.selectAll('svg .bar.undefined.'+personflat).transition().duration(2500).attr("class","bar highlighted undefined "+personflat); 
 				d3.select(this).transition().duration(0).attr("class","btn-warning btn btn-default btn-xs"); //adds class .active to button
 			//second time
 			} else if (d3.select(this).attr('class')==='btn-warning btn btn-default btn-xs'){
 				d3.select(this).attr("class",function(d) { return "inactive btn btn-default btn-xs " + d.tipo;}); //removes .active class
-				d3.selectAll("svg .highlighted."+ personflat).attr("class","bar "+ personflat);
-				d3.selectAll('svg .bar').transition().duration(500).attr("opacity",.4);
+				barstimescale.selectAll("svg .highlighted.confirmado."+ personflat).attr("class","bar confirmado "+ personflat);
+				barstimescale.selectAll("svg .highlighted.undefined."+ personflat).attr("class","bar undefined "+ personflat);
+				barstimescale.selectAll('svg .bar').transition().duration(500).attr("opacity",.4);
 			}
 		});
 
 	//Creates Legend for time graph Circles
 	var legend = d3.select("#legendcirculos").attr("class", "legend");
+	//button to activate confirmados entries
+	legend.append("button").attr("class","btn btn-default pull-right").text("Entradas y Salidas confirmadas")
+		.on('click',function(d) {	
+				if (d3.select(this).attr('class')==='btn btn-default pull-right') {
+					entradascirculos.selectAll('svg .circulos.confirmado').attr('stroke-width','2px').attr('stroke','#000');
+					d3.select(this).attr("class", "btn btn-default pull-right activado").style('border','2px solid black');
+					} else {
+					entradascirculos.selectAll('svg .circulos.confirmado').attr('stroke-width','0px');
+					d3.select(this).attr("class", "btn btn-default pull-right").style('border','');
+					}
+			});
 	legend.append("h5").style("font-weight","bold").text("Selecciona una persona"); //legend title
+ 	//interacctive legend for circles
 	legend.selectAll('div')
 		.data(data)
 		.enter().append("div")
@@ -210,22 +247,25 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 		.text(function(d) { return d.people; })
 		.on('click',function(d) { //when click on name
 			var personflat = replacement(d.people), //removes spaces and . from person name
-			    tipodonante = d.tipo,
-			    confirmado = d.confirmado;
-			if (d3.select(this).attr('class')==='inactive btn btn-default btn-xs donante' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs beneficiario' || d3.select(this).attr('class')==='inactive btn btn-default btn-xs donabenef'){
+			    tipodonante = d.tipo;
+			if (d3.select(this).attr('class')==='inactive btn btn-default btn-xs donante' 
+				|| d3.select(this).attr('class')==='inactive btn btn-default btn-xs beneficiario' 
+				|| d3.select(this).attr('class')==='inactive btn btn-default btn-xs donabenef'){
 				//first time
-					d3.selectAll('svg .circulos').attr("opacity",1)
-					d3.selectAll('svg .circulos').transition().duration(500).attr("opacity",.1); //dims all bars 
-					d3.selectAll('svg .circulos.'+personflat).transition().duration(2500).attr("class","circulos selected "+personflat + " " + confirmado); 
+					entradascirculos.selectAll('svg .circulos').attr("opacity",1);
+					entradascirculos.selectAll('svg .circulos').transition().duration(500).attr("opacity",.1); //dims all bars 
+					entradascirculos.selectAll('svg .circulos.confirmado.'+personflat).transition().duration(2500).attr("class","circulos selected "+personflat + " confirmado"); 
+					entradascirculos.selectAll('svg .circulos.undefined.'+personflat).transition().duration(2500).attr("class","circulos selected "+personflat + " undefined "); 
 					d3.select(this).transition().duration(0).attr("class","btn-warning btn btn-default btn-xs"); //adds class .active to button
 				//second time
 				} else if (d3.select(this).attr('class')==='btn-warning btn btn-default btn-xs'){
 					d3.select(this).attr("class", "inactive btn btn-default btn-xs " + tipodonante); //removes .active class
-					d3.selectAll("svg .selected."+  personflat).attr("class","circulos "+  personflat + " " +confirmado);
-					d3.selectAll('svg .circulos').transition().duration(500).attr("opacity",.9);
+					entradascirculos.selectAll("svg .selected.undefined"+  personflat).attr("class","circulos "+  personflat + " undefined" );
+					entradascirculos.selectAll("svg .selected.confirmado"+  personflat).attr("class","circulos "+  personflat + " confirmado" );
+					entradascirculos.selectAll('svg .circulos').transition().duration(500).attr("opacity",.9);
 				}
-	  		});
-});
+	  	});
+}); //end read viplist.tsv file
 
 //Switch between graphs with and without time scales
 d3.selectAll(".btn-group .btn").on('click', function() {//when click //
@@ -522,7 +562,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 	.attr("opacity",.4)
 	.attr("class", 
 		function(d) { 
-			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') +" bar"; //sets the name of the person without spaces as class for the bar
+			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') + " "+ d.confirmado +" bar"; //sets the name of the person without spaces as class for the bar
 		}) 
 	.attr("x", function(d) { return xScale(d.date); })
 	.attr("width", barwidth+1)
@@ -824,32 +864,6 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		});
 
 
-	//Difference (anotado - calculado) bars
-	barstimescalewithsaldo.selectAll(".bardiff")
-	.data(data)
-	.enter().append("rect")
-	.attr("class", "bardiff")
-	.attr("fill", function(d) {
-		return d.SaldoCalculado > Math.abs(d.SaldoAnotado) ? "#F00" : "#0F0"; 
-		})
-	.attr("x", function(d) { return xScale(d.date); })
-	.attr("width", barwidth)
-	.attr("y", function(d) { 	
-		if (d.SaldoCalculado > Math.abs(d.SaldoAnotado) ) { 
-			return yScaleB(d.SaldoCalculado);
-		} else {
-			return yScaleB(d.SaldoAnotado);
-		} 
-	})
-	.attr("height", function(d) { 
-		if (d.SaldoAnotado != "" && d.SaldoAnotado != "0" && d.SaldoCalculado > Math.abs(d.SaldoAnotado)  ) {
-			return Math.abs(yScaleB(d.SaldoCalculado - d.SaldoAnotado) - yScaleB(0)) ;
-		} else if (Math.abs(d.SaldoAnotado) > d.SaldoCalculado ) {
-			return Math.abs(yScaleB(d.SaldoCalculado) - yScaleB(d.SaldoAnotado));
-		} else { 
-			return 0; 
-		}
-	});
 
 	//Saldo Calculado
 	saldopath.append("path")
@@ -881,6 +895,32 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 	.attr("title", function(d) { return "Saldo anotado en las cuentas " + formatComma(d.SaldoAnotado) + "€"; }  );
 
 
+	//Difference (anotado - calculado) bars
+	barstimescalewithsaldo.selectAll(".bardiff")
+	.data(data)
+	.enter().append("rect")
+	.attr("class", "bardiff")
+	.attr("fill", function(d) {
+		return d.SaldoCalculado > Math.abs(d.SaldoAnotado) ? "#F00" : "#0F0"; 
+		})
+	.attr("x", function(d) { return xScale(d.date); })
+	.attr("width", barwidth)
+	.attr("y", function(d) { 	
+		if (d.SaldoCalculado > Math.abs(d.SaldoAnotado) ) { 
+			return yScaleB(d.SaldoCalculado);
+		} else {
+			return yScaleB(d.SaldoAnotado);
+		} 
+	})
+	.attr("height", function(d) { 
+		if (d.SaldoAnotado != "" && d.SaldoAnotado != "0" && d.SaldoCalculado > Math.abs(d.SaldoAnotado)  ) {
+			return Math.abs(yScaleB(d.SaldoCalculado - d.SaldoAnotado) - yScaleB(0)) ;
+		} else if (Math.abs(d.SaldoAnotado) > d.SaldoCalculado ) {
+			return Math.abs(yScaleB(d.SaldoCalculado) - yScaleB(d.SaldoAnotado));
+		} else { 
+			return 0; 
+		}
+	});
 	//Sets the circles
 	entradascirculos.selectAll("circle")
 	.data(data)
@@ -915,7 +955,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
     	.attr("fill", function(d) { return d.entradas < 0 ? "#C00000" : "#0055D4"; })
 	.attr("class", 
 		function(d) { //TODO iterate through array
-			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '')+" barnotime"; //sets the name of the person without spaces as class for the bar
+			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '')+ " "+ d.confirmado +" barnotime"; //sets the name of the person without spaces as class for the bar
 		}) 
 	//The tooltips
       .attr("x", function(d, i) { return i * barwidth; })
