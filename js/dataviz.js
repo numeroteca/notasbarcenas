@@ -190,10 +190,10 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 	legend.append("button").attr("class","btn btn-default pull-right").text("Entradas y Salidas confirmadas")
 		.on('click',function(d) {	
 				if (d3.select(this).attr('class')==='btn btn-default pull-right') {
-					barstimescale.selectAll('rect.bar.confirmado').attr('opacity','1').attr('stroke-width','1px').attr('stroke','#000');
+					svg.selectAll('rect.bar.confirmado').attr('opacity','1').attr('stroke-width','1px').attr('stroke','#000');
 					d3.select(this).attr("class", "btn btn-default pull-right activo").style('border','2px solid black');
 					} else {
-					barstimescale.selectAll('rect.bar.confirmado').attr('stroke-width','0px');
+					svg.selectAll('rect.bar.confirmado').attr('stroke-width','0px');
 					d3.select(this).attr("class", "btn btn-default pull-right").style('border','');
 					}
 			});
@@ -211,17 +211,17 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 				|| d3.select(this).attr('class')==='inactive btn btn-default btn-xs beneficiario' 		
 				|| d3.select(this).attr('class')==='inactive btn btn-default btn-xs donabenef'){
 				//first time
-				barstimescale.selectAll('svg .bar').attr("opacity",1)
-				barstimescale.selectAll('svg .bar').transition().duration(500).attr("opacity",.05); //dims all bars
-				barstimescale.selectAll('svg .bar.confirmado.'+personflat).transition().duration(2500).attr("class","bar highlighted confirmado "+personflat); 
-				barstimescale.selectAll('svg .bar.undefined.'+personflat).transition().duration(2500).attr("class","bar highlighted undefined "+personflat); 
+				svg.selectAll('svg .bar').attr("opacity",1)
+				svg.selectAll('svg .bar').transition().duration(500).attr("opacity",.05); //dims all bars
+				svg.selectAll('svg .bar.confirmado.'+personflat).transition().duration(2500).attr("class","bar highlighted confirmado "+personflat); 
+				svg.selectAll('svg .bar.undefined.'+personflat).transition().duration(2500).attr("class","bar highlighted undefined "+personflat); 
 				d3.select(this).transition().duration(0).attr("class","btn-warning btn btn-default btn-xs"); //adds class .active to button
 			//second time
 			} else if (d3.select(this).attr('class')==='btn-warning btn btn-default btn-xs'){
 				d3.select(this).attr("class",function(d) { return "inactive btn btn-default btn-xs " + d.tipo;}); //removes .active class
-				barstimescale.selectAll("svg .highlighted.confirmado."+ personflat).attr("class","bar confirmado "+ personflat);
-				barstimescale.selectAll("svg .highlighted.undefined."+ personflat).attr("class","bar undefined "+ personflat);
-				barstimescale.selectAll('svg .bar').transition().duration(500).attr("opacity",.4);
+				svg.selectAll("svg .highlighted.confirmado."+ personflat).attr("class","bar confirmado "+ personflat);
+				svg.selectAll("svg .highlighted.undefined."+ personflat).attr("class","bar undefined "+ personflat);
+				svg.selectAll('svg .bar').transition().duration(500).attr("opacity",.4);
 			}
 		});
 
@@ -591,7 +591,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 	.attr("opacity",.4)
 	.attr("class", 
 		function(d) { 
-			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') +" bar"; //sets the name of the person without spaces as class for the bar
+			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') + " "+ d.confirmado +" bar"; //sets the name of the person without spaces as class for the bar
 		}) 
 	.attr("x", function(d) { return xScale(d.date); })
 	.attr("width", barwidth+1)
