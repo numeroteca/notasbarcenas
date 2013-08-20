@@ -13,9 +13,9 @@ var barwidth = 2, //width of the bars
  electionslineheight = 15;
 
 //Prepare canvas size
-var margin = {top: 15, right: 20, bottom: 100, left: 65},
+var margin = {top: 25, right: 20, bottom: 100, left: 65},
     width = 676*barwidth - margin.left - margin.right,
-    height = 485 - margin.top - margin.bottom;
+    height = 495 - margin.top - margin.bottom;
 
 var formatComma = d3.format(",");
 
@@ -78,6 +78,7 @@ var saldosdots = svg.append('g').attr('class','saldosdots');
 
 //sets entradas circulos
 var entradascirculos = svg.append('g').attr('id','circuloschart');
+svg.append('g').attr('class','personatable');
 
 //Bars time scale
 var barstimescale = svg.append('g').attr('id','barstimescale');
@@ -256,10 +257,13 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 					entradascirculos.selectAll('svg .circulos').transition().duration(500).attr("opacity",.1); //dims all bars 
 					entradascirculos.selectAll('svg .circulos.confirmado.'+personflat).transition().duration(2500).attr("class","circulos selected "+personflat + " confirmado"); 
 					entradascirculos.selectAll('svg .circulos.undefined.'+personflat).transition().duration(2500).attr("class","circulos selected "+personflat + " undefined "); 
+					svg.selectAll('.personatable text').text("");
+					svg.select('.personatable').append('text').attr("x", 0).attr("y", 0).text(d.people).attr("font-size", "20px").attr("fill", "black").style("display","block");
 					d3.select(this).transition().duration(0).attr("class","btn-warning btn btn-default btn-xs"); //adds class .active to button
 				//second time
 				} else if (d3.select(this).attr('class')==='btn-warning btn btn-default btn-xs'){
 					d3.select(this).attr("class", "inactive btn btn-default btn-xs " + tipodonante); //removes .active class
+					svg.selectAll('.personatable text').text("");
 					entradascirculos.selectAll("svg .selected.undefined"+  personflat).attr("class","circulos "+  personflat + " undefined" );
 					entradascirculos.selectAll("svg .selected.confirmado"+  personflat).attr("class","circulos "+  personflat + " confirmado" );
 					entradascirculos.selectAll('svg .circulos').transition().duration(500).attr("opacity",.9);
@@ -268,15 +272,15 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 }); //end read viplist.tsv file
 
 //Switch between graphs with and without time scales
-d3.selectAll(".btn-group .btn").on('click', function() {//when click //
+d3.selectAll(".nav li").on('click', function() {//when click //
 	if (d3.select(this).attr('id')==='contiempo'){ // with time
-		if (d3.select(this).attr('class')==='btn btn-lg btn-danger'){ // si activo
+		if (d3.select(this).attr('class')==='active'){ // si activo
 			//no hacer nada
 		} else {						//si estaba desactivado
-			d3.select(this).attr("class","btn btn-lg btn-danger"); //adds class .active to button
-			d3.select("#sintiempo").attr("class","btn btn-lg btn-default");
-			d3.select("#circulos").attr("class","btn btn-lg btn-default");
-			d3.select("#contiemposaldo").attr("class","btn btn-lg btn-default");
+			d3.select(this).attr("class","active"); //adds class .active to button
+			d3.select("#sintiempo").attr("class","");
+			d3.select("#circulos").attr("class"," ");
+			d3.select("#contiemposaldo").attr("class","");
 			d3.select("#backgroundimage").style("display","block");
 			d3.selectAll("#barstimescale").style("display","block");
 			d3.selectAll("svg .x.axis").style("display","block");
@@ -289,18 +293,18 @@ d3.selectAll(".btn-group .btn").on('click', function() {//when click //
 			d3.select("#legendnotime").style("display","none");
 			d3.select("#legendcirculos").style("display","none");
 			d3.select("#barsnotimescale").style("display","none");
-
+			svg.selectAll('.personatable text').text("");
 		}
 	} else if (d3.select(this).attr('id')==='circulos'){ //bars + circles with time 
-		if (d3.select(this).attr('class')==='btn btn-lg btn-danger'){ // si activo
+		if (d3.select(this).attr('class')==='active'){ // si activo
 			//no hacer nada
 		} else {						//si estaba desactivado
-			d3.select(this).attr("class","btn btn-lg btn-danger"); //adds class .active to button
-			d3.select("#sintiempo").attr("class","btn btn-lg btn-default");
-			d3.select("#contiempo").attr("class","btn btn-lg btn-default");
-			d3.select("#contiemposaldo").attr("class","btn btn-lg btn-default");
+			d3.select(this).attr("class","active"); //adds class .active to button
+			d3.select("#sintiempo").attr("class","");
+			d3.select("#contiempo").attr("class","");
+			d3.select("#contiemposaldo").attr("class","");
 			d3.select("#circuloschart").style("display","block");
-			d3.select("#backgroundimage").style("display","block");
+			d3.select("#backgroundimage").style("display","none");
 			d3.selectAll("svg .x.axis").style("display","block");
 			d3.selectAll("svg .y.axis").style("display","none");
 			d3.select("#legendcirculos").style("display","block");
@@ -312,13 +316,13 @@ d3.selectAll(".btn-group .btn").on('click', function() {//when click //
 			d3.select("#barstimescalewithsaldo").style("display","none");
 		}
 	} else if (d3.select(this).attr('id')==='contiemposaldo'){ //bars + saldo line
-		if (d3.select(this).attr('class')==='btn btn-lg btn-danger'){ // si activo
+		if (d3.select(this).attr('class')==='active'){ // si activo
 			//no hacer nada
 		} else {						//si estaba desactivado
-			d3.select(this).attr("class","btn btn-lg btn-danger"); 
-			d3.select("#sintiempo").attr("class","btn btn-lg btn-default");
-			d3.select("#contiempo").attr("class","btn btn-lg btn-default");
-			d3.select("#circulos").attr("class","btn btn-lg btn-default");
+			d3.select(this).attr("class","active"); 
+			d3.select("#sintiempo").attr("class"," ");
+			d3.select("#contiempo").attr("class"," ");
+			d3.select("#circulos").attr("class"," ");
 			d3.select("#barstimescalewithsaldo").style("display","block");
 			d3.select("#backgroundimage").style("display","none");
 			d3.selectAll("svg .x.axis").style("display","block");
@@ -331,15 +335,16 @@ d3.selectAll(".btn-group .btn").on('click', function() {//when click //
 			d3.select("#legendnotime").style("display","none");
 			d3.selectAll("#barstimescale").style("display","none");
 			d3.selectAll("#barsnotimescale").style("display","none");
+			svg.selectAll('.personatable text').text("");
 		}
 	} else {
-		if (d3.select(this).attr('class')==='btn  btn-lg btn-danger'){ // without time
+		if (d3.select(this).attr('class')==='active'){ // without time
 			return;						//no hacer nada
 		} else {
-			d3.select(this).attr("class","btn  btn-lg btn-danger btn-default");  
-			d3.select("#contiempo").attr("class","btn btn-lg btn-default");
-			d3.select("#circulos").attr("class","btn btn-lg btn-default");
-			d3.select("#contiemposaldo").attr("class","btn btn-lg btn-default");
+			d3.select(this).attr("class","active");  
+			d3.select("#contiempo").attr("class"," ");
+			d3.select("#circulos").attr("class"," ");
+			d3.select("#contiemposaldo").attr("class"," ");
 			d3.select("#backgroundimage").style("display","block");
 			d3.select("#legendnotime").style("display","block");
 			d3.selectAll("#barsnotimescale").style("display","block");
@@ -353,6 +358,7 @@ d3.selectAll(".btn-group .btn").on('click', function() {//when click //
 			d3.selectAll("#barsnotimescale").style("display","block");
 			d3.select("#legendcirculos").style("display","none");
 			d3.select("#barstimescalewithsaldo").style("display","none");
+			svg.selectAll('.personatable text').text("");
 		}
 	}
 });

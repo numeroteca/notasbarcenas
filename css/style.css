@@ -118,9 +118,9 @@ div.tooltip {
   margin-left: 60px;
 }
 
-.active {
+/*.active {
   background-color:#999 !important;
-}
+}*/
 .btn {
   margin:3px;
 }
@@ -128,7 +128,7 @@ div.tooltip {
   margin-top:25px;	
 }
 
-.xaxis, #legendnotime, #barstimescale, #barsnotimescale, #barstimescalewithsaldo, .y.axis, #legend{
+.xaxis, #legendnotime, #barstimescale, #barsnotimescale, #barstimescalewithsaldo, .y.axis, #legend, #backgroundimage	{
   display:none;
 }
 
@@ -150,9 +150,9 @@ div.tooltip {
  cursor:pointer;
 }
 .activo {
- font-weight:bold;
+ /*font-weight:bold;
  background-color:#ddd;
- cursor:pointer;
+ cursor:pointer;*/
 }
 .saldocalculado {
   fill: none;

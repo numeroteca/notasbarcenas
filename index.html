@@ -12,17 +12,15 @@
 		<div class="">
 			<h3>Contabilidad b del PP seg&uacute;n las notas de B&aacute;rcenas #AdoptaUnCorrupto</h3>
 			<div id="description">
-        <p>Datos realizdo con los datos de <a href="http://bit.ly/notasbarcenas">#AdoptaUnCorrupto </a><br>
+        <p>Datos realizado con los datos de <a href="http://bit.ly/notasbarcenas">#AdoptaUnCorrupto </a><br>
 				Explora el gr&aacute;fico y descubre qui&eacute;n hay detr&aacute;s de cada <span style="background-color:#0055D4;width:50px;height:20px;">&nbsp;&nbsp;&nbsp;&nbsp;</span> entrada o <span style="background-color:#C00000;width:50px;height:20px;">&nbsp;&nbsp;&nbsp;&nbsp;</span> salida de dinero en los diferentes modos de visualizaci&oacute;n.</p>
 			</div>
-			<div style="margin-left:75px;">
-				<div class="btn-group" data-toggle="buttons-radio">
-					<button type="button" id="circulos" class="btn btn-lg btn-danger">C&iacute;rculos / tiempo</button>
-					<button type="button" id="contiempo" class="btn btn-lg btn-default" >Barras / tiempo </button>
-					<button type="button" id="contiemposaldo" class="btn btn-lg btn-default">Barras / tiempo + saldo </button>
-					<button type="button" id="sintiempo" class="btn btn-lg btn-default">Barras</button>
-				</div>
-			</div>
+			<ul class="nav nav-tabs nav-justified">
+			  <li id="circulos" class="active"><a href="#">C&iacute;rculos / tiempo</a></li>
+			  <li id="contiempo"><a href="#">Barras / tiempo</a></li>
+			  <li id="contiemposaldo"><a href="#">Saldo Anotado vs Calculado</a></li>
+				<li id="sintiempo"><a href="#">Barras</a></li>
+			</ul>
 		<div id="vis"></div>
 		<div id="legend">Leyenda <span class="btn btn-default btn-xs donante">Donante</span> <span class="btn btn-default btn-xs beneficiario">Beneficiario</span> <span class="btn btn-default btn-xs donabenef">Donante y Beneficiario</span></div>
 		<div id="legendnotime">Leyenda <span class="btn btn-default btn-xs donante">Donante</span> <span class="btn btn-default btn-xs beneficiario">Beneficiario</span> <span class="btn btn-default btn-xs donabenef">Donante y Beneficiario</span></div>
