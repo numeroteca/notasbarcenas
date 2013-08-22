@@ -254,7 +254,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 				|| d3.select(this).attr('class')==='inactive btn btn-default btn-xs donabenef'){
 				//first time
 					entradascirculos.selectAll('svg .circulos').attr("opacity",1);
-					entradascirculos.selectAll('svg .circulos').transition().duration(500).attr("opacity",.1); //dims all bars 
+					entradascirculos.selectAll('svg .circulos').transition().duration(500).attr("opacity",0.1); //dims all bars 
 					entradascirculos.selectAll('svg .circulos.confirmado.'+personflat).transition().duration(2500).attr("class","circulos selected "+personflat + " confirmado"); 
 					entradascirculos.selectAll('svg .circulos.undefined.'+personflat).transition().duration(2500).attr("class","circulos selected "+personflat + " undefined "); 
 					svg.selectAll('.personatable text').text("");
@@ -262,11 +262,18 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 					d3.select(this).transition().duration(0).attr("class","btn-warning btn btn-default btn-xs"); //adds class .active to button
 				//second time
 				} else if (d3.select(this).attr('class')==='btn-warning btn btn-default btn-xs'){
+					svg.selectAll('.personatable text').transition().duration(1500).attr("y",height/2-20);
+					entradascirculos.selectAll('.selected').transition().duration(1500).attr("cy",height/2); 
+					d3.select(this).attr("class","btn-danger btn btn-default btn-xs"); //adds class .active to button
+				//Third time
+				} else if (d3.select(this).attr('class')==='btn-danger btn btn-default btn-xs'){
 					d3.select(this).attr("class", "inactive btn btn-default btn-xs " + tipodonante); //removes .active class
 					svg.selectAll('.personatable text').text("");
-					entradascirculos.selectAll("svg .selected.undefined"+  personflat).attr("class","circulos "+  personflat + " undefined" );
-					entradascirculos.selectAll("svg .selected.confirmado"+  personflat).attr("class","circulos "+  personflat + " confirmado" );
-					entradascirculos.selectAll('svg .circulos').transition().duration(500).attr("opacity",.9);
+					entradascirculos.selectAll("svg .selected.undefined."+  personflat).attr("class","circulos "+  personflat + " undefined" )
+						.attr("cy",function(d) { return Math.random() * 350 + 5;});
+					entradascirculos.selectAll("svg .selected.confirmado."+  personflat).attr("class","circulos "+  personflat + " confirmado" )
+						.attr("cy",function(d) { return Math.random() * 350 + 5;});
+					entradascirculos.selectAll('svg .circulos').transition().duration(800).attr("opacity",0.9);
 				}
 	  	});
 }); //end read viplist.tsv file
