@@ -265,7 +265,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 					svg.selectAll('.personatable text').transition().duration(1500).attr("y",height/2-20);
 					entradascirculos.selectAll('.selected').transition().duration(1500).attr("cy",height/2); 
 					d3.select(this).attr("class","btn-danger btn btn-default btn-xs"); //adds class .active to button
-				//Third time
+				//third time
 				} else if (d3.select(this).attr('class')==='btn-danger btn btn-default btn-xs'){
 					d3.select(this).attr("class", "inactive btn btn-default btn-xs " + tipodonante); //removes .active class
 					svg.selectAll('.personatable text').text("");
