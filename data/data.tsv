@@ -484,8 +484,8 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 01/2004	15-01-2004	Fund. Hum. Y D. (Pin)	-40000		475427	Eugenio Nasarre- Fundación Humanismo y Democracia	confirmado
 5/2/2004	05-02-2004	Elvira	-6000		469427	Elvira Rodríguez
 5/2/2004	05-02-2004	Aldesa	48000	429250	517427	José Manuel Fernández Rubio
-10/2/2004	10-02-2004	Ana Palacios	-6000		511427	Ana Palacios
-10/2/2004	10-02-2004	Pilar Castillo	-6000		505427	Pilar Castillo
+10/2/2004	10-02-2004	Ana Palacios	-6000		511427	Ana Palacio
+10/2/2004	10-02-2004	Pilar Castillo	-6000		505427	Pilar del Castillo
 10/2/2004	10-02-2004	Cantabria	-60000		445427	Cantabria
 10/2/2004	10-02-2004	1º Trimestre Mariano	-6300	350950	439127	Mariano Rajoy
 17/02/2004	17-02-2004	Romero Polo (Lérida)	24000	374950	463127	Romero Polo
@@ -497,7 +497,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 1/3/2004	01-03-2004	Copasa	75000	528950	617127	Copasa
 2/3/2004	02-03-2004	Ubaldo Nieto	3000	531950	620127	Ubaldo Nieto
 8/3/2004	08-03-2004	Fdez. Rubio	48000		668127	José Manuel Fernández Rubio
-10/3/2004	10-03-2004	Pilar Castillo	-3000		665127	Pilar Castillo
+10/3/2004	10-03-2004	Pilar Castillo	-3000		665127	Pilar del Castillo
 11/3/2004	11-03-2004	Juan Cotino (Sedesa)	200000		865127	Juan Cotino
 11/3/2004	11-03-2004	A. Villela	50000		915127	Antonio Vilella
 15/03/2004	15-03-2004	Mercadona	90000	916950	1005127	Mercadona
