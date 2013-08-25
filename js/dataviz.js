@@ -13,7 +13,7 @@ var barwidth = 2, //width of the bars
  electionslineheight = 15;
 
 //Prepare canvas size
-var margin = {top: 25, right: 20, bottom: 100, left: 65},
+var margin = {top: 35, right: 20, bottom: 100, left: 65},
     width = 676*barwidth - margin.left - margin.right,
     height = 495 - margin.top - margin.bottom;
 
@@ -150,7 +150,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 	//Creates Legend for notime graph
 	var legendnotime = d3.select("#legendnotime").attr("class", "legend");
 	//button to activate confirmados entries
-	legendnotime.append("button").attr("class","btn btn-default pull-right").text("Entradas y Salidas confirmadas")
+	legendnotime.append("button").attr("class","btn btn-default pull-right").text("Activa: Entradas y Salidas confirmadas")
 		.on('click',function(d) {	
 				if (d3.select(this).attr('class')==='btn btn-default pull-right') {
 					barsnotimescale.selectAll('rect.barnotime.confirmado').attr('stroke-width','1px').attr('stroke','#000');
@@ -188,7 +188,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 
 	//Creates Legend for time graph
 	var legend = d3.select("#legend").attr("class", "legend");
-	legend.append("button").attr("class","btn btn-default pull-right").text("Entradas y Salidas confirmadas")
+	legend.append("button").attr("class","btn btn-default pull-right").text("Activa: Entradas y Salidas confirmadas")
 		.on('click',function(d) {	
 				if (d3.select(this).attr('class')==='btn btn-default pull-right') {
 					svg.selectAll('rect.bar.confirmado').attr('opacity','1').attr('stroke-width','1px').attr('stroke','#000');
@@ -229,7 +229,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 	//Creates Legend for time graph Circles
 	var legend = d3.select("#legendcirculos").attr("class", "legend");
 	//button to activate confirmados entries
-	legend.append("button").attr("class","btn btn-default pull-right").text("Entradas y Salidas confirmadas")
+	legend.append("button").attr("class","btn btn-default pull-right").text("Activa: Entradas y Salidas confirmadas")
 		.on('click',function(d) {	
 				if (d3.select(this).attr('class')==='btn btn-default pull-right') {
 					entradascirculos.selectAll('svg .circulos.confirmado').attr('stroke-width','2px').attr('stroke','#000');
@@ -240,6 +240,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 					}
 			});
 	legend.append("h5").style("font-weight","bold").text("Selecciona una persona"); //legend title
+	xScale.domain(['15-04-1990','15-12-2008']);
  	//interacctive legend for circles
 	legend.selectAll('div')
 		.data(data)
@@ -258,17 +259,32 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 					entradascirculos.selectAll('svg .circulos.confirmado.'+personflat).transition().duration(2500).attr("class","circulos selected "+personflat + " confirmado"); 
 					entradascirculos.selectAll('svg .circulos.undefined.'+personflat).transition().duration(2500).attr("class","circulos selected "+personflat + " undefined "); 
 					svg.selectAll('.personatable text').text("");
-					svg.select('.personatable').append('text').attr("x", 0).attr("y", 0).text(d.people).attr("font-size", "20px").attr("fill", "black").style("display","block");
+					svg.select('.personatable').append('text').attr("x", 0 - margin.left ).attr("y", 0).text(d.people).attr("font-size", "20px").attr("fill", "black").style("display","block");
+					svg.selectAll('.gobline').remove();
+					if (d.GobInit != "") svg.append('text').attr('class','gobline').attr("x", 0 - margin.left ).attr("y", height).text("Tiempo en gobierno").attr("font-size", "10px").attr("fill", "black").style("display","block");
+					svg.append('line').attr('class','gobline').attr('stroke-width','9px').attr("stroke","#000").attr("opacity",0.4)
+						.attr('y1', height)
+						.attr('y2', height)
+						.attr('x1', xScale(parseDate(d.GobInit)))
+						.attr('x2', xScale(parseDate(d.GobEnd)));
+					svg.append('line').attr('class','gobline').attr('stroke-width','9px').attr("stroke","#000").attr("opacity",0.4)
+						.attr('y1', height)
+						.attr('y2', height)
+						.attr('x1', xScale(parseDate(d.GobInit2)))
+						.attr('x2', xScale(parseDate(d.GobEnd2)));
+					//legend.selectAll('.btn-warning').attr("class","btn btn-default btn-xs btn-default");
 					d3.select(this).transition().duration(0).attr("class","btn-warning btn btn-default btn-xs"); //adds class .active to button
 				//second time
 				} else if (d3.select(this).attr('class')==='btn-warning btn btn-default btn-xs'){
-					svg.selectAll('.personatable text').transition().duration(1500).attr("y",height/2-20);
-					entradascirculos.selectAll('.selected').transition().duration(1500).attr("cy",height/2); 
+					svg.selectAll('.personatable text').transition().duration(1500).attr("y",height-45).attr("font-size", "25px");
+					entradascirculos.selectAll('.selected').transition().duration(1500).attr("cy",height-30); 
+					svg.selectAll('.gobline').transition().duration(1500).attr("y1",height-10).attr("y2",height-10).attr("y",height-10);
 					d3.select(this).attr("class","btn-danger btn btn-default btn-xs"); //adds class .active to button
 				//third time
 				} else if (d3.select(this).attr('class')==='btn-danger btn btn-default btn-xs'){
 					d3.select(this).attr("class", "inactive btn btn-default btn-xs " + tipodonante); //removes .active class
 					svg.selectAll('.personatable text').text("");
+					svg.selectAll('.gobline').remove();
 					entradascirculos.selectAll("svg .selected.undefined."+  personflat).attr("class","circulos "+  personflat + " undefined" )
 						.attr("cy",function(d) { return Math.random() * 350 + 5;});
 					entradascirculos.selectAll("svg .selected.confirmado."+  personflat).attr("class","circulos "+  personflat + " confirmado" )
