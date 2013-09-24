@@ -1,106 +1,107 @@
-people	tipo	GobInit	GobEnd	GobInit2	GobEnd2
-Adolfo Sánchez	donante				
-Alberto Dorrego	beneficiario				
-Alfonso García Pozuelo	donante				
-Álvaro Lapuerta	beneficiario				
-Ana Palacio	beneficiario	10-07-2002	18-04-2004		
-Ángel Acebes	beneficiario	19-01-1999	18-04-2004		
-Angel Piñeiro	donante				
-Antonio Pinal Emilio	donante				
-Antonio Vilella	donante				
-Aurelio Romero	beneficiario				
-Banco Vitoria Ingresado	beneficiario				
-Camilo José Alcalá Sánchez	donante				
-Campaña Europeas	beneficiario				
-Cantabria	beneficiario				
-Cecilio Sanchez	donante				
-Congregación	beneficiario				
-Copasa	donante				
-Copisa y Sorigué	donante				
-Cristobal Páez	beneficiario				
-Diputados	donante				
-Dolores de Cospedal	beneficiario				
-Donativo	beneficiario				
-Elvira Rodríguez	beneficiario	07-03-2003	18-04-2004			
-Emilia Álvarez	donante				
-Euroconsumo	beneficiario				
-Eugenio Nasarre- Fundación Humanismo y Democracia	beneficiario				
-Federico Trillo	beneficiario	27-04-2000	18-04-2004			
-Francisco Álvarez Cascos	donabenef	06-05-1996	18-04-2004		
-Francisco Cano	beneficiario				
-Galicia	donante				
-Générale des Eaux	donante				
-Gonzalo Urquijo	beneficiario				
-Guillermo Contreras	donante				
-Ignacio Aguirre	beneficiario				
-Ignacio López del Hierro	donante				
-Jaime Ignacio de Burgo	beneficiario				
-Jaime Matas	beneficiario	14-04-2000	18-04-2004			
-Jaime Mayor Oreja	beneficiario	05-05-1996	27-02-2001		
-Javier Arenas	beneficiario	05-05-1996	18-01-1999	10-07-2002	18-04-2004
-Javier Boix	beneficiario				
-Javier L. del R.	donante				
-Javier Rojas	beneficiario				
-Jesús María Pedrosa Urquiza	beneficiario				
-J.I. Llorens Lérida	beneficiario				
-J.L. Meres	beneficiario				
-J. Moreno	beneficiario				
-J.M.	beneficiario				
-José Antonio Sánchez	beneficiario				
-José Luis Moreno	donante				
-José Luis Ruiz Casado	beneficiario				
-José Luis Sánchez	donabenef				
-José Manuel Fernández Rubio	donante				
-Jose Manuel Robles- Severo Moto	beneficiario				
-Jose Mayor	donante				
-José Miguel Ortí Bordás	beneficiario				
-J. Rojo	beneficiario				
-Juan Carlos Aparicio Pérez	beneficiario	19-02-2000	10-07-2002		
-Juan Cotino	donante				
-Juan Manuel Villar Mir	donante				
-La Rioja	donante				
-Laureano López Rodó	beneficiario				
-Lucio	donante				
-Lucio Moreno	donante				
-Luis del Rivero	donante				
-Luis Fraga	beneficiario				
-Luis Gálvez	donante				
-Luis Guillermo López Linaza	beneficiario				
-Málaga	donabenef				
-Manuel Cobo del Rosal	beneficiario				
-Manuel Contreras	donante				
-María Eugenia García Rico	beneficiario				
-Mariano Rajoy	beneficiario	05-05-1996	03-09-2003		
-Martín Carpena	beneficiario				
-Mercadona	donante				
-Miguel Ángel Rodríguez	beneficiario				
-Pablo Crespo	donante				
-Paco	beneficiario				
-Paco Yáñez	donabenef				
-Pedro Arriola	beneficiario				
-Pedro Viñarás	beneficiario				
-Pepe Cuiña	donante				
-Pilar del Castillo	beneficiario	27-04-2000	18-08-2004		
-Pilar Pulido	donante				
-Pio García Escudero	beneficiario				
-Polo Llorens	donante				
-Rafael Palencia	donante				
-Ramon	donante				
-Ramón Aige Sánchez	donabenef				
-Rodrigo Rato	beneficiario				
-Romero Polo	donante				
-Rosa Iglesias	beneficiario				
-Rosendo Naseiro	donante				
-Ruban Antonio Vilella	donante				
-Salvador Palop	beneficiario				
-Sanchez	beneficiario				
-Sant. L.	donante				
-Secretario	beneficiario				
-Sevilla	beneficiario				
-Sociedades	beneficiario				
-Sociedades Cono Sur y Vídeo Soluciones	beneficiario				
-Sociedad Ibérica de Firmes	beneficiario				
-Tenerife	beneficiario				
-Teofila Martínez	beneficiario				
-Ubaldo Nieto	beneficiario				
-Volpeceres	donante				
+people	tipo	entidad	description	GobInit	GobEnd	GobInit2	GobEnd2	
+Adolfo Sánchez	donante		No identificado					
+Alberto Dorrego	beneficiario		 Director general de Modernización de la Administración de Justicia					
+Alfonso García Pozuelo	donante	Constructora Hispánica	Según el informe de la Udef, entre 2001 y 2011 las administraciones gobernadas por el PP adjudicaron a Hispánica contratos por valor de 525 millones de euros –en ocasiones, formando parte de una UTE–.					
+Álvaro Lapuerta	beneficiario	PP	Tesorero PP					
+Amparo Bordá	beneficiario		Se dijo que guarda relación con las víctimas del terrorismo					
+Ana Palacio	beneficiario	PP	Ministra de Exteriores entre 2002 y 2004	10-07-2002	18-04-2004			
+Ángel Acebes	beneficiario	PP	Ministro de Interior	19-01-1999	18-04-2004			
+Angel Piñeiro	donante	PP Galicia	 Fue gerente del PP de Galicia hasta 1996, cuando se trasladó a Madrid para trabajar con Mariano Rajoy, amigo íntimo desde su infancia en Pontevedra.					
+Antonio Pinal Gil	donante	Grupo Bruesa	Presidente de la empresa constructora					
+Antonio Vilela	donante	Construcciones Rubau	Apoderado					
+Aurelio Romero	beneficiario	PP	Diputado					
+Camilo José Alcalá Sánchez	donante	Constructora Cyopsa-Sisocia	Presidente de la constructora Cyopsa-Sisocia					
+Campaña Europeas	beneficiario							
+Cantabria	beneficiario							
+Cecilio Sánchez Martín	donante	Constructora FCC	Director Comercial de la zona Este del departamento de gestión de aguas de FCC 					
+Congregación	beneficiario							
+Copasa	donante	Constructora Copasa						
+Copisa y Sorigué	donante	Constructoras Copisa y Sorigué						
+Cristobal Páez	beneficiario	PP	Gerente del PP que sucedió a Bárcenas.					
+Diputados	donante							
+Dolores de Cospedal	beneficiario	PP	Secretaria general del PP desde junio de 2008					
+Donativo	beneficiario							
+Elvira Rodríguez	beneficiario	PP	Actual presidenta de la Comisión Nacional del Mercado de Valores, fue ministra de Medio Ambiente.	07-03-2003	18-04-2004			
+Emilio Álvarez	donante	Grupo Bruesa	Vicepresidente y apoderado de la empresa constructora					
+Euroconsumo	beneficiario		Organización de consumidores que promocionó el PP					
+Eugenio Nasarre	beneficiario	Fundación Humanismo y Democracia	Diputado del PP. ONG, vinculada al PP,					
+Federico Trillo	beneficiario	PP	Presidente del Congreso entre 1996 y 2000 y ministro de Defensa durante el segundo del PP	27-04-2000	18-04-2004			
+Francisco Álvarez Cascos	donabenef	PP	Ministro	06-05-1996	18-04-2004			
+Francisco Cano	beneficiario	PP	La viuda del concejal del PP en Viladecavalls (Barcelona) Francisco Cano, asesinado por ETA					
+Galicia	donante							
+Générale des Eaux	donante		Multinacional francesa que luego pasó a llamarse Vivendi y que incluía al gran grupo de comunicación propietario de Canal+ Francia					
+Gonzalo Urquijo	beneficiario		Arquitecto que rehabilitó la sede del PP en la calle de Génova					
+Guillermo Contreras	donante	Grupo Azvi	Dueño.					
+Ignacio Aguirre	beneficiario							
+Ignacio López del Hierro	donante							
+Jaime Ignacio de Burgo	beneficiario							
+Jaime Matas	beneficiario			14-04-2000	18-04-2004			
+Jaime Mayor Oreja	beneficiario			05-05-1996	27-02-2001			
+Javier Arenas	beneficiario			05-05-1996	18-01-1999	10-07-2002	18-04-2004	
+Javier Boix	beneficiario							
+Javier L. del R.	donante							
+Javier Rojas	beneficiario							
+Jesús María Pedrosa Urquiza	beneficiario							
+J.I. Llorens Lérida	beneficiario							
+J.L. Meres	beneficiario							
+J. Moreno	beneficiario							
+J.M.	beneficiario							
+José Antonio Sánchez	beneficiario							
+José Luis Moreno	donante							
+José Luis Ruiz Casado	beneficiario							
+José Luis Sánchez	donabenef							
+José Manuel Fernández Rubio	donante							
+Jose Manuel Robles- Severo Moto	beneficiario							
+Jose Mayor	donante							
+José Miguel Ortí Bordás	beneficiario							
+J. Rojo	beneficiario							
+Juan Carlos Aparicio Pérez	beneficiario			19-02-2000	10-07-2002			
+Juan Cotino	donante							
+Juan Manuel Villar Mir	donante							
+La Rioja	donante							
+Laureano López Rodó	beneficiario							
+Lucio	donante							
+Lucio Moreno	donante							
+Luis del Rivero	donante							
+Luis Fraga	beneficiario							
+Luis Gálvez	donante							
+Luis Guillermo López Linaza	beneficiario							
+Málaga	donabenef							
+Manuel Cobo del Rosal	beneficiario							
+Manuel Contreras	donante	Grupo Azvi	Dueño					
+María Eugenia García Rico	beneficiario							
+Mariano Rajoy	beneficiario			05-05-1996	03-09-2003			
+Martín Carpena	beneficiario							
+Mercadona	donante							
+Miguel Ángel Rodríguez	beneficiario							
+Pablo Crespo	donante							
+Paco	beneficiario							
+Paco Yáñez	donabenef							
+Pedro Arriola	beneficiario							
+Pedro Viñarás	beneficiario							
+Pepe Cuiña	donante							
+Pilar del Castillo	beneficiario			27-04-2000	18-08-2004			
+Pilar Pulido	donante							
+Pio García Escudero	beneficiario							
+Polo Llorens	donante							
+Rafael Palencia	donante							
+Ramon	donante							
+Ramón Aige Sánchez	donabenef							
+Rodrigo Rato	beneficiario							
+Romero Polo	donante							
+Rosa Iglesias	beneficiario							
+Rosendo Naseiro	donante							
+Ruban Antonio Vilella	donante							
+Salvador Palop	beneficiario							
+Sanchez	beneficiario							
+Santiago Abascal	beneficiario							
+Sant. L.	donante							
+Secretario	beneficiario							
+Sevilla	beneficiario							
+Sociedades	beneficiario							
+Sociedades Cono Sur y Vídeo Soluciones	beneficiario							
+Sociedad Ibérica de Firmes	beneficiario							
+Tenerife	beneficiario							
+Teofila Martínez	beneficiario							
+Ubaldo Nieto	beneficiario							
+Volpeceres	donante							
