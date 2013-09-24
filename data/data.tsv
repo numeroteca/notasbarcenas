@@ -325,7 +325,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 05/1999	15-05-1999	R.Rato (En.-Junio 99)	-13680		169024	Rodrigo Rato
 06/1999	15-06-1999	Javier Arenas (pagos varios)	-12000		157024	Javier Arenas
 06/1999	15-06-1999	Moreno (A. de la P.)	6000	108553	163024	José Luis Moreno
-07/1999	15-07-1999	Entrega a Álvaro Lap.(País Vasco) para Abascal	-12000	96553	151024	Álvaro Lapuerta	confirmado
+07/1999	15-07-1999	Entrega a Álvaro Lap.(País Vasco) para Abascal	-12000	96553	151024	Santiago Abascal
 09/1999	15-09-1999	De Málaga	18000	114553	169024	Málaga
 10/1999	15-10-1999	R.Rato (2do Semestre 99)	-13680		155344	Rodrigo Rato
 11/1999	15-11-1999	M. Rajoy (2do semestre 99)	-12600		142744	Mariano Rajoy
@@ -370,7 +370,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 12/2000	15-12-2000	Paco A.C. 3o y 4o trimestre	-19800	141052	168403	Francisco Álvarez Cascos
 01/2001	15-01-2001	J.M. Rubio	6000	147052	174403	José Manuel Fernández Rubio
 01/2001	15-01-2001	Federico *	-18000	129052	156403	Federico Trillo
-01/2001	15-01-2001	Celicio Sanch. (Aguas)	30000	159052	186403	Cecilio Sanchez
+01/2001	15-01-2001	Celicio Sanch. (Aguas)	30000	159052	186403	Cecilio Sánchez Martín
 02/2001	15-02-2001	J.M. Rubio	12000	171052	198403	José Manuel Fernández Rubio
 03/2001	15-03-2001	Especial Jaime	-6000	165052	192403	Jaime Mayor Oreja
 04/2001	15-04-2001	Málaga	18000	183052	210403	Málaga
@@ -400,7 +400,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 ?	15-05-2002	1º Semestre 2002 Mariano ...	-12620		56087	Mariano Rajoy
 ?	15-05-2002	1º Semestre 2002 Rodrigo	-13700		42387	Rodrigo Rato
 ?	15-05-2002	Jose Luis S.	50000		92387	José Luis Sánchez
-?	15-05-2002	Entrega Amparo Bordá (Jaime)	-15000		77387	Jaime Mayor Oreja
+?	15-05-2002	Entrega Amparo Bordá (Jaime)	-15000		77387	Amparo Bordá
 ?	15-05-2002	M. Contreras	30000		107387	Manuel Contreras
 ?	15-05-2002	1º Semestre Cascos	-19860	59350	87527	Francisco Álvarez Cascos
 ?	15-05-2002	Alfonso Gª Poz.	24000		111527	Alfonso García Pozuelo
@@ -464,11 +464,11 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 29/07/2003	29-07-2003	Jaime Mayor	-7500	402020	490197	Jaime Mayor Oreja
 11/9/2003	11-09-2003	J.L. Sánchez	100000	502020	590197	José Luis Sánchez
 15/09/2003	15-09-2003	Reloj Javier Arenas	-700		589497	Javier Arenas Reloj
-26/09/2003	26-09-2003	Ingresado en Banco Vitoria	-50000	451320	539497	Banco Vitoria Ingresado
+26/09/2003	26-09-2003	Ingresado en Banco Vitoria	-50000	451320	539497	Donativo
 3/10/2003	03-10-2003	Manuel Contreras	120000		659497	Manuel Contreras
-6/10/2003	06-10-2003	Ingresado en Banco Vitoria	-120000	451320	539497	Banco Vitoria Ingresado
+6/10/2003	06-10-2003	Ingresado en Banco Vitoria	-120000	451320	539497	Donativo
 22/10/2003	22-10-2003	Guillermo Contreras	30000		569497	Guillermo Contreras
-23/10/2003	23-10-2003	Eug. Nasarre (Humanismo y D.)	-30000	451320	539497	Eugenio Nasarre- Fundación Humanismo y Democracia	confirmado
+23/10/2003	23-10-2003	Eug. Nasarre (Humanismo y D.)	-30000	451320	539497	Eugenio Nasarre	confirmado
 17/11/2003	17-11-2003	J.L.Sánchez (otros 100 a Javier)	100000	551320	639497	José Luis Sánchez
 18/11/2003	18-11-2003	Extra 15º Mariano Rajoy	-8420	542920	631077	Mariano Rajoy
 2/12/2003	02-12-2003	Entrega a Javier Rojas	-198000	344900	433077	Javier Rojas
@@ -481,7 +481,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 12/1/2004	12-01-2004	Aldesa	24000		405327	José Manuel Fernández Rubio
 14/01/2004	14-01-2004	1º Trimestre J. Arenas	-9900		395427	Javier Arenas
 22/01/2004	22-01-2004	M. Contreras	120000		515427	Manuel Contreras
-01/2004	15-01-2004	Fund. Hum. Y D. (Pin)	-40000		475427	Eugenio Nasarre- Fundación Humanismo y Democracia	confirmado
+01/2004	15-01-2004	Fund. Hum. Y D. (Pin)	-40000		475427	Eugenio Nasarre		confirmado
 5/2/2004	05-02-2004	Elvira	-6000		469427	Elvira Rodríguez
 5/2/2004	05-02-2004	Aldesa	48000	429250	517427	José Manuel Fernández Rubio
 10/2/2004	10-02-2004	Ana Palacios	-6000		511427	Ana Palacio
@@ -493,13 +493,13 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 24/02/2004	24-02-2004	J.L.Sánchez	100000		562127	José Luis Sánchez
 24/02/2004	24-02-2004	A. Sevilla	-50000		512127	Sevilla
 24/02/2004	24-02-2004	A Málaga	-20000	403950	492127	Málaga
-1/3/2004	01-03-2004	Ruban (Antonio Vilella)	50000	453950	542127	Ruban Antonio Vilella
+1/3/2004	01-03-2004	Ruban (Antonio Vilella)	50000	453950	542127	Antonio Vilela
 1/3/2004	01-03-2004	Copasa	75000	528950	617127	Copasa
 2/3/2004	02-03-2004	Ubaldo Nieto	3000	531950	620127	Ubaldo Nieto
 8/3/2004	08-03-2004	Fdez. Rubio	48000		668127	José Manuel Fernández Rubio
 10/3/2004	10-03-2004	Pilar Castillo	-3000		665127	Pilar del Castillo
 11/3/2004	11-03-2004	Juan Cotino (Sedesa)	200000		865127	Juan Cotino
-11/3/2004	11-03-2004	A. Villela	50000		915127	Antonio Vilella
+11/3/2004	11-03-2004	A. Villela	50000		915127	Antonio Vilela
 15/03/2004	15-03-2004	Mercadona	90000	916950	1005127	Mercadona
 20/04/2004	20-04-2004	1º trimestre Cascos	-9900		995227	Francisco Álvarez Cascos
 26/04/2004	26-04-2004	15º de A. de la P.	-8200	898850	987027	Álvaro de la Puerta
@@ -549,7 +549,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 10/10/2005	10-10-2005	4º Trimestre 2005 Mariano	-6300		270327	Mariano Rajoy
 10/10/2005	10-10-2005	4º Trimestre 2005 Ángel	-6300	26250	264027	Ángel Acebes
 24/11/2005	24-11-2005	Ingresado en Banesto Donativos	-26090		237937	Donativo
-01/2006	15-01-2006	Ant. Pinol	12000		249937	Antonio Pinal Emilio
+01/2006	15-01-2006	Ant. Pinol	12000		249937	Antonio Pinal Gil
 01/2006	15-01-2006	Vta. Aces P.Y. a Álvaro Cruz gastos	-315	11685	249622	Ángel Acebes, Paco Yáñez, Álvaro de la Cruz
 01/2006	15-01-2006	Pilar (Empresa Estudios) Pulido	12000		261622	Pilar Pulido
 1/2/2006	01-02-2006	1º Trimestre Mariano	-6300		255322	Mariano Rajoy
@@ -563,7 +563,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 07/2006	15-07-2006	3º Trimestre Ángel	-6300	15218	253155	Ángel Acebes
 14/07/2006	14-07-2006	Trajes y camisas	-5720	9498	247435	Mariano Rajoy
 26/07/2006	26-07-2006	Federico Trillo	-3000	6498	244435	Federico Trillo
-14/09/2006	14-09-2006	Antonio Pinal / Emilio	12000		256435	Antonio Pinal Emilio
+14/09/2006	14-09-2006	Antonio Pinal / Emilio	12000		256435	Antonio Pinal Gil
 2/10/2006	02-10-2006	4º Trimestre Mariano	-6300	0	250135	Mariano Rajoy
 2/10/2006	02-10-2006	4º Trimestre Ángel	-6300	5898	243835	Ángel Acebes
 25/10/2006	25-10-2006	J.M. Villar Mir	180000		423835	Juan Manuel Villar Mir
@@ -571,11 +571,11 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 31/10/2006	31-10-2006	Adolfo Sánchez	10000		353835	Adolfo Sánchez
 6/11/2006	06-11-2006	Luis Rivero	60000		413835	Luis del Rivero
 15/11/2006	15-11-2006	M. Contreras	60000		473835	Manuel Contreras
-15/11/2006	15-11-2006	Emilia Álvarez	12000		485835	Emilia Álvarez
+15/11/2006	15-11-2006	Emilia Álvarez	12000		485835	Emilio Álvarez
 23/11/2006	23-11-2006	Arquitecto Gonzalo Urquijo	-184000	63898	301835	Gonzalo Urquijo
 13/12/2006	13-12-2006	Adolfo Sánchez	9500		311335	Adolfo Sánchez
 19/12/2006	19-12-2006	J.L.Sánchez	100000		411335	José Luis Sánchez
-21/12/2006	21-12-2006	Emilia Álvarez	12000		423335	Emilia Álvarez
+21/12/2006	21-12-2006	Emilia Álvarez	12000		423335	Emilio Álvarez
 21/12/2006	21-12-2006	Traje Mariano	-9100	176298	414235	Mariano Rajoy
 9/1/2007	09-01-2007	Ingresar en Donativos	-53000	123298	361235	Donativo
 9/1/2007	09-01-2007	1º Trimestre Mariano	-6300	0	354935	Mariano Rajoy
