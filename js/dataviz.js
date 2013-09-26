@@ -254,12 +254,16 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 				|| d3.select(this).attr('class')==='inactive btn btn-default btn-xs beneficiario' 
 				|| d3.select(this).attr('class')==='inactive btn btn-default btn-xs donabenef'){
 				//first time
-					entradascirculos.selectAll('svg .circulos').attr("opacity",1);
+					entradascirculos.selectAll('svg .circulos').attr("opacity",.7);
 					entradascirculos.selectAll('svg .circulos').transition().duration(500).attr("opacity",0.1); //dims all bars 
 					entradascirculos.selectAll('svg .circulos.confirmado.'+personflat).transition().duration(2500).attr("class","circulos selected "+personflat + " confirmado"); 
 					entradascirculos.selectAll('svg .circulos.undefined.'+personflat).transition().duration(2500).attr("class","circulos selected "+personflat + " undefined "); 
 					svg.selectAll('.personatable text').remove(	);
-					svg.select('.personatable').append('text').attr("x", 0 - margin.left ).attr("y", 0).text(d.people+ " (" + d.entidad +")").attr("font-size", "20px").attr("fill", "black").style("display","block").attr("class","vipname");
+					if (d.entidad == '') { //don't show  ( ) if the field entiad is empty
+						svg.select('.personatable').append('text').attr("x", 0 - margin.left ).attr("y", 0).text(d.people).attr("font-size", "20px").attr("fill", "black").style("display","block").attr("class","vipname");
+					} else {
+						svg.select('.personatable').append('text').attr("x", 0 - margin.left ).attr("y", 0).text(d.people + " (" + d.entidad +")").attr("font-size", "20px").attr("fill", "black").style("display","block").attr("class","vipname");
+					}
 					svg.select('.personatable').append('text').attr("x", 0 - margin.left ).attr("y", 25).text(d.description).attr("font-size", "12px").attr("fill", "black").attr("width", "400px").style("display","block").attr("class","description");
 					svg.selectAll('.gobline').remove();
 					if (d.GobInit != "") svg.append('text').attr('class','gobline').attr("x", 0 - margin.left ).attr("y", height).text("Tiempo en gobierno").attr("font-size", "10px").attr("fill", "black").style("display","block");
@@ -277,8 +281,8 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 					d3.select(this).transition().duration(0).attr("class","btn-warning btn btn-default btn-xs"); //adds class .active to button
 				//second time
 				} else if (d3.select(this).attr('class')==='btn-warning btn btn-default btn-xs'){
-					svg.selectAll('.personatable text.vipname').transition().duration(1200).attr("y",height-145).attr("font-size", "25px");
-					svg.select('.personatable text.description').transition().duration(1200).attr("y", height-125).text(d.description).attr("font-size", "12px").attr("fill", "black").attr("width", "400px").style("display","block");
+					svg.selectAll('.personatable text.vipname').transition().duration(1200).attr("y",height-95).attr("font-size", "25px");
+					svg.select('.personatable text.description').transition().duration(1200).attr("y", height-75).text(d.description).attr("font-size", "12px").attr("fill", "black").attr("width", "400px").style("display","block");
 					entradascirculos.selectAll('.selected').transition().duration(1200).attr("cy",height-30); 
 					svg.selectAll('.gobline').transition().duration(1200).attr("y1",height-10).attr("y2",height-10).attr("y",height-10).attr("font-size", "15px");
 					d3.select(this).attr("class","btn-danger btn btn-default btn-xs"); //adds class .active to button
