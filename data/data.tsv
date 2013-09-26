@@ -68,8 +68,8 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 07/1992	15-07-1992	Pago ingreso 123 IRPF IB. de F.	-6186		20100	Sociedad Ibérica de Firmes
 07/1992	15-07-1992	Entrega a J. Moreno para Begoña	-3900		16200	J. Moreno
 07/1992	15-07-1992	Entrega a Pedro A. (agosto)	-7944		8256	Pedro Arriola
-07/1992	15-07-1992	Entrega a Juan Carlos Aparicio Pérez (indicac. Paco)	-3900		4356	Juan Carlos Aparicio Pérez, Francisco Álvarez Cascos
-07/1992	15-07-1992	Entrega a Jaime I. del B. (junio/julio/agosto)	-4500		-144	Jaime Ignacio de Burgo	confirmado
+07/1992	15-07-1992	Persona enviada por Piñeiro	-3900		4356	Ángel Piñeiro
+07/1992	15-07-1992	Entrega a Paco para Begoña	-4500		-144	José María Peña
 09/1992	15-09-1992	Entrega a Pedro A.("operac. adicional" sept/oct)	-12000		-12144	Pedro Arriola
 09/1992	15-09-1992	Piñeiro	42000	82986	29856	Angel Piñeiro
 09/1992	15-09-1992	Entrega a Pedro A. (septiembre)	-7404		22452	Pedro Arriola
@@ -93,7 +93,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 02/1993	15-02-1993	A Pedro (especial)	-6000	34896	-20874	Pedro Arriola
 03/1993	15-03-1993	Entrega a P.A. cta 1993 (En. y Febr.)	-19320	15576	-40194	Pedro Arriola
 03/1993	15-03-1993	Entre a P.A Trab. Extraord. ( En. y Febr. )	-12000	3576	-52194	Pedro Arriola
-03/1993	15-03-1993	Entrega a Jose Mª Robles (severo moto)	-3000	576	-55194	Jose Manuel Robles- Severo Moto
+03/1993	15-03-1993	Entrega a Jose Mª Robles (severo moto)	-3000	576	-55194	Severo Moto
 04/1993	15-04-1993	Entrega Piñeiro	90000	90576	34806	Angel Piñeiro
 03/1993	15-03-1993	Entrega a Jaime I. (Ene.-Febr.)	-3600	86976	31206	Jaime Ignacio de Burgo	confirmado
 04/1993	15-04-1993	Entrega a Jose M. Orti	-2100	84876	29106	José Miguel Ortí Bordás
@@ -112,7 +112,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 07/1993	15-07-1993	Jose Miguel O.	-2100	69336	19566	José Miguel Ortí Bordás
 07/1993	15-07-1993	Marz Abr Mayo y Jun Dieta Sº G (218652x4) 	-5250	64086	14316	Francisco Álvarez Cascos
 07/1993	15-07-1993	P. Arr. (Julio)	-9660	54426	4656	Pedro Arriola
-07/1993	15-07-1993	Entrega a Jose Mª Robles (moto)	-1200	53226	3456	Jose Manuel Robles- Severo Moto
+07/1993	15-07-1993	Entrega a Jose Mª Robles (moto)	-1200	53226	3456	Severo Moto
 07/1993	15-07-1993	Dietas Sº Gral. (220.000 Julio)	-1320	51906	2136	Francisco Álvarez Cascos
 09/1993	15-09-1993	Dietas Sº Gral. (Agosto)	-1320	50586	816	Francisco Álvarez Cascos
 09/1993	15-09-1993	Pedro Arr. (Agosto)	-9660	40926	-8844	Pedro Arriola
@@ -316,7 +316,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 02/1999	15-02-1999	J. Ar. (liquidación a Enero)	-4200	19033	73504	Javier Arenas
 04/1999	15-04-1999	De Málaga	18000		91504	Málaga
 04/1999	15-04-1999	Moreno (A. de la P.)	6000		97504	José Luis Moreno
-04/1999	15-04-1999	Lucio	24000		121504	Lucio
+04/1999	15-04-1999		Lucio	24000		121504	Lucio Moreno
 05/1999	15-05-1999	P. Crespo	126000		247504	Pablo Crespo	confirmado
 05/1999	15-05-1999	M. Rajoy (En.- Junio 99)	-12600		234904	Mariano Rajoy
 05/1999	15-05-1999	Jaime M. (En. - Junio 99)	-12600		222304	Jaime Mayor Oreja
@@ -332,7 +332,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 ?	15-11-1999	Paco A.C. (2do semestre 99)	-19800		122944	Francisco Álvarez Cascos
 ?	15-11-1999	Jaime Mayor	-12600		110344	Jaime Mayor Oreja
 01/2000	15-01-2000	Moreno a A. de la P.	6000	61873	116344	José Luis Moreno
-01/2000	15-01-2000	Lucio	12000	73873	128344	Lucio
+01/2000	15-01-2000	Lucio	12000	73873	128344	Lucio Moreno
 01/2000	15-01-2000	Alfonso Gª Pozuelo	1800	67873	130144	Alfonso García Pozuelo
 02/2000	15-02-2000	De Málaga	18000	121873	148144	Málaga
 02/2000	15-02-2000	R. Palenc.	24000	145873	172144	Rafael Palencia
@@ -349,9 +349,9 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 07/2000	15-07-2000	Amigo diputados grupo	12000	190972	220243	Diputados
 07/2000	15-07-2000	2º Trimestre Mariano R.	-6300		213943	Mariano Rajoy
 07/2000	15-07-2000	2º Trimestre Jaime M.	-6300		207643	Jaime Mayor Oreja
-07/2000	15-07-2000	Cancelación cto. Concejal Málaga	-12090		195553	Martín Carpena
+07/2000	15-07-2000	Cancelación cto. Concejal Málaga	-12090		195553	José María Martín Carpena
 07/2000	15-07-2000	2º Trimestre R. Rato	-6840	159442	188713	Rodrigo Rato
-07/2000	15-07-2000	Cancelac. Concejal Málaga Unicaja	-960	160402	187753	Martín Carpena
+07/2000	15-07-2000	Cancelac. Concejal Málaga Unicaja	-960	160402	187753	José María Martín Carpena	
 07/2000	15-07-2000	Alfonso Gª Pozuelo	12000		199753	Alfonso García Pozuelo
 07/2000	15-07-2000	Cancelación Cto. Concejal Durango	-33000		166753	Jesús María Pedrosa Urquiza
 08/2000	15-08-2000	Acta. FEDERICO*	-12000	127402	154753	Federico Trillo
@@ -446,7 +446,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 24/04/2003	24-04-2003	Aldesa	18000		310597	José Manuel Fernández Rubio
 29/04/2003	29-04-2003	Teofila Martínez	-30000		280597	Teofila Martínez
 30/04/2003	30-04-2003	Jerez (el Lili)	-6000		274597	Aurelio Romero
-5/5/2003	05-05-2003	De Javier (L. del R.)	100000		374597	Javier L. del R.
+5/5/2003	05-05-2003	De Javier (L. del R.)	100000		374597	Luis del Rivero
 13/05/2003	13-05-2003	Polo/Llorens	30000		404597	Polo Llorens
 6/5/2003	06-05-2003	Copisa / Socique	100000		504597	Copisa y Sorigué
 25/05/2003	25-05-2003	Rubio	18000	431420	522597	José Manuel Fernández Rubio
@@ -471,7 +471,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 23/10/2003	23-10-2003	Eug. Nasarre (Humanismo y D.)	-30000	451320	539497	Eugenio Nasarre	confirmado
 17/11/2003	17-11-2003	J.L.Sánchez (otros 100 a Javier)	100000	551320	639497	José Luis Sánchez
 18/11/2003	18-11-2003	Extra 15º Mariano Rajoy	-8420	542920	631077	Mariano Rajoy
-2/12/2003	02-12-2003	Entrega a Javier Rojas	-198000	344900	433077	Javier Rojas
+2/12/2003	02-12-2003	Entrega a Javier Rojas	-198000	344900	433077	Javier Rojo Redondo
 4/12/2003	04-12-2003	Alfonso Gª Pozuelo	60000	404900	493077	Alfonso García Pozuelo
 10/12/2003	10-12-2003	Rubio	24000	428900	517077	José Manuel Fernández Rubio
 12/12/2003	12-12-2003	Camilo	90000	518900	607077	Camilo José Alcalá Sánchez
@@ -505,7 +505,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 26/04/2004	26-04-2004	15º de A. de la P.	-8200	898850	987027	Álvaro de la Puerta
 27/04/2004	27-04-2004	Ingresado en B. Vitoria-Banesto. Donativo	-100850	798000	886177	Donativo
 4/5/2004	04-05-2004	Ingresado en B. Vitoria-Banesto. Donativo	-100000	698000	786177	Donativo
-6/5/2004	06-05-2004	Pago a J. Rojo (Campaña)	-280000	418000	506177	J. Rojo
+6/5/2004	06-05-2004	Pago a J. Rojo (Campaña)	-280000	418000	506177	Javier Rojo Redondo
 14/05/2004	14-05-2004	Ingresado en Banesto Donativos	-118000	300000	388177	Donativo
 14/05/2004	14-05-2004	Mariano Rajoy 2º Trimestre	-6300		381877	Mariano Rajoy
 14/05/2004	14-05-2004	Ángel Acebes 2º Trimestre (1º pago)	-6300		375577	Ángel Acebes
@@ -621,7 +621,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado
 10/3/2008	10-03-2008	Jose Mayor (FCC)	90000		992635	Jose Mayor
 13/03/2008	13-03-2008	De Ramón Aige a Sevilla	-18000		974635	Ramón Aige Sánchez
 13/03/2008	13-03-2008	Gonzalo (Arquitecto)	-258000		716635	Gonzalo Urquijo
-13/03/2008	13-03-2008	J. Rojo / Valls	-220000	258698	496635	J. Rojo, Valls
+13/03/2008	13-03-2008	J. Rojo / Valls	-220000	258698	496635	Javier Rojo Redondo
 03/2008	15-03-2008	M.R. entrega Asesor	-3000	255698	493635	Mariano Rajoy
 31/03/2008	31-03-2008	Alv. Lapuerta a cambio de talón ingresado hoy	-60000	195698	433635	Álvaro Lapuerta
 18/04/2008	18-04-2008	Trajes M.R.	-11020		422615	Mariano Rajoy
