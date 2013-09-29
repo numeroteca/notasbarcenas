@@ -96,13 +96,16 @@ line.donaciones:hover  {
 
 div.tooltip {   
   position: absolute;             
-  width: 150px;                         
+  width: 160px;                         
   padding: 8px;             
   font: 12px sans-serif;        
   background: #ddd;   
   border: 0px;      
   border-radius: 4px;           
   pointer-events: none;         
+}
+.euros {
+  font-size: 16px;    
 }
 
 .container {

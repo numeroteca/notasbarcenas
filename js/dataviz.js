@@ -5,7 +5,7 @@ Tooltip based on http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.htm
 Also some ideas come from https://github.com/erhardt/Attention-Plotter
 */
 
-var barwidth = 2, //width of the bars
+var barwidth = 1.98, //width of the bars
  widthyears = 5,
  electionsmunicipal = 410,
  electionsgeneral = electionsmunicipal + 18,
@@ -14,7 +14,7 @@ var barwidth = 2, //width of the bars
 
 //Prepare canvas size
 var margin = {top: 35, right: 20, bottom: 100, left: 65},
-    width = 676*barwidth - margin.left - margin.right,
+    width = 676*2 - margin.left - margin.right,
     height = 495 - margin.top - margin.bottom;
 
 var formatComma = d3.format(",");
@@ -65,7 +65,7 @@ svg.append("g")
 var background = svg.append('g').attr('id','backgroundimage');
 background.append("image")
 	.attr("xlink:href", "img/leyenda-1.png")
-	.attr("x", "0")
+	.attr("x", "120")
 	.attr("y", "20")
 	.attr("width", "250")
 	.attr("height", "301");
@@ -175,13 +175,13 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 					barsnotimescale.selectAll('svg .barnotime').attr("opacity",1)
 					barsnotimescale.selectAll('svg .barnotime').transition().duration(500).attr("opacity",.15); //dims all bars 
 					barsnotimescale.selectAll('svg .barnotime.confirmado.'+personflat).transition().duration(2500).attr("class","barnotime highlighted "+personflat+ " confirmado"); 
-					barsnotimescale.selectAll('svg .barnotime.undefined.'+personflat).transition().duration(2500).attr("class","barnotime highlighted "+personflat+ " undefined");   
+					barsnotimescale.selectAll('svg .barnotime.'+personflat).transition().duration(2500).attr("class","barnotime highlighted "+personflat);   
 					d3.select(this).transition().duration(0).attr("class","btn-warning btn btn-default btn-xs"); //adds class .active to button
 				//second time
 				} else if (d3.select(this).attr('class')==='btn-warning btn btn-default btn-xs'){
 					d3.select(this).attr("class",function(d) { return "inactive btn btn-default btn-xs " + d.tipo;}); //removes .active class
 					barsnotimescale.selectAll("svg .barnotime.confirmado.highlighted."+  personflat).attr("class","barnotime confirmado "+  personflat);
-					barsnotimescale.selectAll("svg .barnotime.undefined.highlighted."+  personflat).attr("class","barnotime undefined "+  personflat);
+					barsnotimescale.selectAll("svg .barnotime.highlighted."+  personflat).attr("class","barnotime "+  personflat);
 					barsnotimescale.selectAll('svg .barnotime').transition().duration(500).attr("opacity",1);
 				}
 	  		});
@@ -215,13 +215,13 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 				svg.selectAll('svg .bar').attr("opacity",1)
 				svg.selectAll('svg .bar').transition().duration(500).attr("opacity",.05); //dims all bars
 				svg.selectAll('svg .bar.confirmado.'+personflat).transition().duration(2500).attr("class","bar highlighted confirmado "+personflat); 
-				svg.selectAll('svg .bar.undefined.'+personflat).transition().duration(2500).attr("class","bar highlighted undefined "+personflat); 
+				svg.selectAll('svg .bar.'+personflat).transition().duration(2500).attr("class","bar highlighted "+personflat); 
 				d3.select(this).transition().duration(0).attr("class","btn-warning btn btn-default btn-xs"); //adds class .active to button
 			//second time
 			} else if (d3.select(this).attr('class')==='btn-warning btn btn-default btn-xs'){
 				d3.select(this).attr("class",function(d) { return "inactive btn btn-default btn-xs " + d.tipo;}); //removes .active class
 				svg.selectAll("svg .highlighted.confirmado."+ personflat).attr("class","bar confirmado "+ personflat);
-				svg.selectAll("svg .highlighted.undefined."+ personflat).attr("class","bar undefined "+ personflat);
+				svg.selectAll("svg .highlighted."+ personflat).attr("class","bar "+ personflat);
 				svg.selectAll('svg .bar').transition().duration(500).attr("opacity",.4);
 			}
 		});
@@ -257,7 +257,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 					entradascirculos.selectAll('svg .circulos').attr("opacity",.7);
 					entradascirculos.selectAll('svg .circulos').transition().duration(500).attr("opacity",0.1); //dims all bars 
 					entradascirculos.selectAll('svg .circulos.confirmado.'+personflat).transition().duration(2500).attr("class","circulos selected "+personflat + " confirmado"); 
-					entradascirculos.selectAll('svg .circulos.undefined.'+personflat).transition().duration(2500).attr("class","circulos selected "+personflat + " undefined "); 
+					entradascirculos.selectAll('svg .circulos.'+personflat).transition().duration(2500).attr("class","circulos selected "+personflat); 
 					svg.selectAll('.personatable text').remove(	);
 					if (d.entidad == '') { //don't show  ( ) if the field entiad is empty
 						svg.select('.personatable').append('text').attr("x", 0 - margin.left ).attr("y", 0).text(d.people).attr("font-size", "20px").attr("fill", "black").style("display","block").attr("class","vipname");
@@ -291,7 +291,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 					d3.select(this).attr("class", "inactive btn btn-default btn-xs " + tipodonante); //removes .active class
 					svg.selectAll('.personatable text').text("");
 					svg.selectAll('.gobline').remove();
-					entradascirculos.selectAll("svg .selected.undefined."+  personflat).attr("class","circulos "+  personflat + " undefined" )
+					entradascirculos.selectAll("svg .selected."+  personflat).attr("class","circulos "+  personflat)
 						.attr("cy",function(d) { return Math.random() * 350 + 5;});
 					entradascirculos.selectAll("svg .selected.confirmado."+  personflat).attr("class","circulos "+  personflat + " confirmado" )
 						.attr("cy",function(d) { return Math.random() * 350 + 5;});
@@ -457,7 +457,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		.attr('y1', yScale(100000))
 		.attr('y2', yScale(100000))
 		.attr('x1', function(d) { return xScale(parseDate('06-07-2007')); })
-		.attr('x2', 647*barwidth)
+		.attr('x2', function(d) { return xScale(parseDate('31-12-2008')); })
 		.attr("class", "donaciones")
 	    	.on("mouseover", function(d) {      
 			  div.transition()        
@@ -495,7 +495,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		.attr('y1', yScale(-100000))
 		.attr('y2', yScale(-100000))
 		.attr('x1', function(d) { return xScale(parseDate('06-07-2007')); })
-		.attr('x2', 647*barwidth)
+		.attr('x2', function(d) { return xScale(parseDate('31-12-2008')); })
 		.attr("class", "donaciones")
 		.on("mouseover", function(d) {      
 			  div.transition()        
@@ -516,7 +516,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		.attr('y1', yScale(60000))
 		.attr('y2', yScale(60000))
 		.attr('x1', 0)
-		.attr('x2',596*barwidth) //6 julio 2007. BOE http://www.boe.es/diario_boe/txt.php?id=BOE-A-2007-13022
+		.attr('x2',602*barwidth) //6 julio 2007. BOE http://www.boe.es/diario_boe/txt.php?id=BOE-A-2007-13022
 		.attr("class", "donaciones")
 		.on("mouseover", function(d) {      
 		  div.transition()        
@@ -534,7 +534,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
  	donationslinesnotime.append('line')
 		.attr('y1', yScale(100000))
 		.attr('y2', yScale(100000))
-		.attr('x1', 596*barwidth)
+		.attr('x1', 602*barwidth)
 		.attr('x2', 647*barwidth)
 		.attr("class", "donaciones")
 	    	.on("mouseover", function(d) {      
@@ -554,7 +554,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 	    .attr('y1', yScale(-60000))
 	    .attr('y2', yScale(-60000))
 	    .attr('x1', 0)
-	    .attr('x2', 596*barwidth)
+	    .attr('x2', 602*barwidth)
 	    .attr("class", "donaciones")
 	    .on("mouseover", function(d) {      
 		  div.transition()        
@@ -572,7 +572,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
  	donationslinesnotime.append('line')
 		.attr('y1', yScale(-100000))
 		.attr('y2', yScale(-100000))
-		.attr('x1', 596*barwidth)
+		.attr('x1', 602*barwidth)
 		.attr('x2', 647*barwidth)
 		.attr("class", "donaciones")
 		.on("mouseover", function(d) {      
@@ -973,7 +973,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		div.transition()
 			.duration(200)      
 			.style("opacity", .9);      
-		div.html(d.fecha + "<br/><strong/>"  + d.persona + "</strong/><br/>"  + formatComma(d.entradas) + "€ <br/>'"  + d.descripcion + "'" )  
+		div.html("<span class='euros'>" + formatComma(Math.abs(d.entradas)) + "€</span>" +"<br/><small>Atribuido a:</small><br/><span class='euros'><strong/>"  + d.persona + "</strong/></span>" + " <br/><small>Anotado:</small> '" + d.descripcion + "'<br/><small>Fecha: </small>" + d.fecha )  
 			.style("left", (d3.event.pageX) + "px")     
 			.style("top", (d3.event.pageY - 0) + "px");    
 		    })                  
