@@ -47,7 +47,6 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado	c
 01/1992	15-01-1992	Entrega Miguel A.R.	-1050		56562	Miguel Ángel Rodríguez, Isabel Tenaille		Efectivo		1050
 02/1992	15-02-1992	Entrega Pedro A. (enero)	-7500		49062	Pedro Arriola		Efectivo		7500
 02/1992	15-02-1992	Entrega a Javier A. para Rafa A.	-6000		43062	Javier Arenas, Rafa A.		Efectivo		6000
-02/1992	15-02-1992	Entrega a Jaime I. del B. (Calixto)	-3600		39462	Jaime Ignacio del Burgo, Calixto Yesa	confirmado	Efectivo		3600
 03/1992	15-03-1992	Entrega A. Cámara para Laureano	-9600		29862	Laureano López Rodó		Efectivo		9600
 03/1992	15-03-1992	Entrega Pedro A. (febrero)	-7500		22362	Pedro Arriola		Efectivo		7500
 ?	15-05-1992		0	9396	22362			Saldo		
@@ -62,7 +61,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado	c
 06/1992	15-06-1992	Entrega a J.I. Burgo	-3600		30930	Jaime Ignacio del Burgo	confirmado	Efectivo		3600
 06/1992	15-06-1992	Entrega a Paco A. C. para declaración	-1800		29130	Francisco Álvarez Cascos		Efectivo		1800
 06/1992	15-06-1992	Pag parte dictamen Cobo	-18000		11130	Manuel Cobo del Rosal		Efectivo		18000
-06/1992	15-06-1992	Entrega a Ortí B. por indic. José Mª(canje)	-3000		8130	José Miguel Ortí Bordás, Jose María Aznar		Efectivo		3000
+06/1992	15-06-1992	Entrega a Ortí B. por indic. José Mª(canje)	-3000		8130	José Miguel Ortí Bordás		Efectivo		3000
 06/1992	15-07-1992	Entrega a Paco para Begoña	-3900		4230	José María Peña		Efectivo		3900
 07/1992	15-07-1992	Entrega a Pedro A. (junio)	-7944		-3714	Pedro Arriola		Efectivo		7944
 07/1992	15-07-1992	Piñeiro	30000		26286	Angel Piñeiro		Efectivo	30000	
@@ -72,7 +71,6 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado	c
 07/1992	15-07-1992	Persona enviada por Piñeiro	240000		248256	Angel Piñeiro		Efectivo	240000	
 07/1992	15-07-1992	Entrega a Paco para Begoña	-180000		68256	José María Peña		Efectivo		180000
 09/1992	15-09-1992	Entrega a Pedro A. (agosto)	-7404		60852	Pedro Arriola		Efectivo		7404
-09/1992	15-09-1992	Entrega a Juan Carlos Aparicio Pérez (indic. Paco)	-3900		56952	Juan Carlos Aparicio Pérez		Efectivo		3900
 09/1992	15-09-1992	Entrega a Jaime I. del B. (junio/julio/agosto)	-5400		51552	Jaime Ignacio del Burgo		Efectivo		5400
 09/1992	15-09-1992	Entrega a Pedro A.("operac. adicional" sept/oct)	-12000		39552	Pedro Arriola		Efectivo		12000
 09/1992	15-09-1992	Piñeiro	42000	82986	81552	Angel Piñeiro		Efectivo	42000	
@@ -82,7 +80,6 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado	c
 10/1992	15-10-1992	Piñeiro	30000		109152	Angel Piñeiro		Efectivo	30000	
 10/1992	15-10-1992	Entrega a Pedro A. (octubre)	-7944		101208	Pedro Arriola		Efectivo		7944
 10/1992	15-11-1992	Entrega a J.I. del B. (sept/oct.)	-3600		97608	Jaime Ignacio del Burgo	confirmado	Efectivo		3600
-10/1992	15-11-1992	Ingreso Retención Cono y V.Sol. (292.000+928.000)	-7320		90288	Sociedades Cono Sur y Vídeo Soluciones		Efectivo		7320
 10/1992	15-01-1993	Entrega a Pedro A. (noviembre)	-10704		79584	Pedro Arriola		Efectivo		10704
 11/1992	15-01-1993	Entrega a Pedro A. (por trb. adic. de carácter. extraord.)	-6000		73584	Pedro Arriola		Efectivo		6000
 11/1992	15-01-1993	Entrega a Pedro A. (trab adic. al cto 4º trim 91 y todo el 92)	-17604		55980	Pedro Arriola		Efectivo		17604
@@ -98,7 +95,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado	c
 02/1993	15-04-1993	A Pedro (especial)  (indic. Jose Mª)	-6000	34896	42126	Pedro Arriola				6000
 03/1993	15-03-1993	Entrega a P.A. cta 1993 (En. y Febr.)	-19320	15576	22806	Pedro Arriola				19320
 03/1993	15-04-1993	Entre a P.A     Trab. Extraord. (  En. y Febr. )	-12000	3576	10806	Pedro Arriola				12000
-03/1993	15-04-1993	Entrega a Jose Mª Robles (severo moto)	-3000	576	7806	Jose Manuel Robles, Severo Moto				3000
+03/1993	15-04-1993	Entrega a Jose Mª Robles (severo moto)	-3000	576	7806	Severo Moto				3000
 04/1993	15-04-1993	Entrega Piñeiro	90000	90576	97806	Angel Piñeiro			90000	
 03/1993	15-05-1993	Entrega a Jaime I. (Ene.-Febr.)	-3600	86976	94206	Jaime Ignacio del Burgo	confirmado			3600
 04/1993	15-05-1993	Entrega a Jose M. Orti	-2100	84876	92106	José Miguel Ortí Bordás				2100
@@ -117,7 +114,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado	c
 07/1993	15-07-1993	Jose Miguel O.	-2100	69336	82566	José Miguel Ortí Bordás				2100
 07/1993	15-09-1993	Marz Abr Mayo y Jun Dieta Sº G (218652x4)	-5250	64086	77316	Francisco Álvarez Cascos				5250
 07/1993	15-09-1993	P. Arr. (Julio)	-9660	54426	67656	Pedro Arriola				9660
-07/1993	15-09-1993	Entrega a Jose Mª Robles (moto)	-1200	53226	66456	Jose Manuel Robles, Severo Moto				1200
+07/1993	15-09-1993	Entrega a Jose Mª Robles (moto)	-1200	53226	66456	Severo Moto				1200
 07/1993	15-09-1993	Dietas Sº Gral. (220.000 Julio)	-1320	51906	65136	Francisco Álvarez Cascos				1320
 09/1993	15-09-1993	Dietas Sº Gral. (Agosto)	-1320	50586	63816	Francisco Álvarez Cascos				1320
 09/1993	15-09-1993	Pedro Arr. (Agosto)	-9660	40926	54156	Pedro Arriola				9660
@@ -452,14 +449,14 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado	c
 24/04/2003	24-04-2003	Aldesa	18000		373597	José Manuel Fernández Rubio			18000	
 29/04/2003	29-04-2003	Teofila Martínez	-30000		343597	Teofila Martínez				30000
 30/04/2003	30-04-2003	Jerez (el Lili)	-6000		337597	Aurelio Romero				6000
-5/5/2003	05-05-2003	De Javier (L. del R.)	100000		437597	Javier L. del R.			100000	
+5/5/2003	05-05-2003	De Javier (L. del R.)	100000		437597	Luis del Rivero			100000	
 13/05/2003	13-05-2003	Polo/Llorens	30000		467597	José Antonio Romero Polo			30000	
 6/5/2003	06-05-2003	Copisa / Socique	100000		567597	Copisa y Sorigué			100000	
 25/05/2003	25-05-2003	Rubio	18000	431420	585597	José Manuel Fernández Rubio			18000	
 2/6/2003	02-06-2003	Lérida (J.I. Llorens)	-6000	428420	579597	José Ignacio Llorens				6000
 16/06/2003	16-06-2003	J.L. Sánchez	100000		679597	José Luis Sánchez			100000	
 17/06/2003	17-06-2003	Liquidación Arriola	-161000	367420	518597	Pedro Arriola				161000
-25/06/2003	25-06-2003	M. Contreras	120000		638597				120000	
+25/06/2003	25-06-2003	M. Contreras	120000		638597	Manuel Contreras			120000	
 1/7/2003	01-07-2003	Federico año 2003 completo	-36000		602597	Federico Trillo				36000
 2/7/2003	02-07-2003	Rubio	30000	481420	632597	José Manuel Fernández Rubio			30000	
 8/7/2003	08-07-2003	Pio Gª (15ºpaga)	-6000		626597	Pio García Escudero	confirmado			6000
@@ -470,17 +467,16 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado	c
 29/07/2003	29-07-2003	Jaime Mayor	-7500	402020	553197	Jaime Mayor Oreja				7500
 11/9/2003	11-09-2003	J.L. Sánchez	100000	502020	653197	José Luis Sánchez			100000	
 15/09/2003	15-09-2003	Reloj Javier Arenas	-700		652497	Javier Arenas				700
-26/09/2003	26-09-2003	Ingresado en Banco Vitoria	-50000	451320	602497	Banco Vitoria Ingresado				50000
+26/09/2003	26-09-2003	Ingresado en Banco Vitoria	-50000	451320	602497	Banco Vitoria				50000
 3/10/2003	03-10-2003	Manuel Contreras	120000		722497	Manuel Contreras			120000	
-6/10/2003	06-10-2003	Ingresado en Banco Vitoria	-120000	451320	602497	Banco Vitoria Ingresado				120000
+6/10/2003	06-10-2003	Ingresado en Banco Vitoria	-120000	451320	602497	Banco Vitoria				120000
 22/10/2003	22-10-2003	Guillermo Contreras	30000		632497	Guillermo Contreras			30000	
-23/10/2003	23-10-2003	Eug. Nasarre (Humanismo y D.)	-30000	451320	602497	Eugenio Nasarre, Fundación Humanismo y Democracia	confirmado			30000
 17/11/2003	17-11-2003	J.L.Sánchez (otros 100 a Javier)	100000	551320	702497	José Luis Sánchez			100000	
 18/11/2003	18-11-2003	Extra 15º Mariano Rajoy	-8420	542920	694077	Mariano Rajoy				8420
-2/12/2003	02-12-2003	Entrega a Javier Rojas	-198000	344900	496077	Javier Rojas				198000
+2/12/2003	02-12-2003	Entrega a Javier Rojas	-198000	344900	496077	Javier Rojo Redondo				198000
 4/12/2003	04-12-2003	Alfonso Gª Pozuelo	60000	404900	556077	Alfonso García Pozuelo			60000	
 10/12/2003	10-12-2003	Rubio	24000	428900	580077	José Manuel Fernández Rubio			24000	
-12/12/2003	12-12-2003	Camilo	90000	518900	670077	Camilo			90000	
+12/12/2003	12-12-2003	Camilo	90000	518900	670077	Camilo José Alcalá Sánchez			90000	
 17/12/2003	17-12-2003	Jaime Mayor	-12000	506900	658077	Jaime Mayor Oreja				12000
 7/1/2004	07-01-2004	Ingresos en B. Vitoria	-206900	300000	451177	Donativo				206900
 8/1/2004	08-01-2004	1º Trimestre Rodrigo Rato	-6850		444327	Rodrigo Rato				6850
@@ -505,13 +501,13 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado	c
 8/3/2004	08-03-2004	Fdez. Rubio	48000		731127	José Manuel Fernández Rubio			48000	
 10/3/2004	10-03-2004	Pilar Castillo	-3000		728127	Pilar del Castillo				3000
 11/3/2004	11-03-2004	Juan Cotino (Sedesa)	200000		928127	Vicente Cotino Escrivá			200000	
-11/3/2004	11-03-2004	A. Villela	50000		978127	Antonio Vilela			50000	
+11/3/2004	11-03-2004	A. Villela	50000		978127	Antonio Vilella			50000	
 15/03/2004	15-03-2004	Mercadona	90000	916950	1068127	Mercadona			90000	
 20/04/2004	20-04-2004	1º trimestre Cascos	-9900		1058227	Francisco Álvarez Cascos				9900
 26/04/2004	26-04-2004	15º de A. de la P.	-8200	898850	1050027	Álvaro de la Puerta				8200
 27/04/2004	27-04-2004	Ingresado en B. Vitoria-Banesto. Donativo	-100850	798000	949177	Donativo				100850
 4/5/2004	04-05-2004	Ingresado en B. Vitoria-Banesto. Donativo	-100000	698000	849177	Donativo				100000
-6/5/2004	06-05-2004	Pago a J. Rojo (Campaña)	-280000	418000	569177	J. Rojo				280000
+6/5/2004	06-05-2004	Pago a J. Rojo (Campaña)	-280000	418000	569177	Javier Rojo Redondo				280000
 14/05/2004	14-05-2004	Ingresado en Banesto Donativos	-118000	300000	451177	Donativo				118000
 14/05/2004	14-05-2004	Mariano Rajoy 2º Trimestre	-6300		444877	Mariano Rajoy				6300
 14/05/2004	14-05-2004	Ángel Acebes 2º Trimestre (1º pago)	-6300		438577	Ángel Acebes				6300
@@ -555,7 +551,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado	c
 10/10/2005	10-10-2005	4º Trimestre 2005 Mariano	-6300		333327	Mariano Rajoy				6300
 10/10/2005	10-10-2005	4º Trimestre 2005 Ángel	-6300	26250	327027	Ángel Acebes				6300
 24/11/2005	24-11-2005	Ingresado en Banesto Donativos	-26090		300937	Donativo				26090
-01/2006	15-01-2006	Ant. Pinol	12000		312937	Antonio Pinal			12000	
+01/2006	15-01-2006	Ant. Pinol	12000		312937	Antonio Pinal Gil			12000	
 01/2006	15-01-2006	Vta. Aces P.Y. a Álvaro Cruz gastos	-315	11685	312622	Ángel Acebes, Paco Yáñez, Álvaro de la Cruz				315
 01/2006	15-01-2006	Pilar (Empresa Estudios) Pulido	12000		324622	Pilar Pulido			12000	
 1/2/2006	01-02-2006	1º Trimestre Mariano	-6300		318322	Mariano Rajoy				6300
@@ -569,7 +565,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado	c
 07/2006	15-07-2006	3º Trimestre Ángel	-6300	15218	316155	Ángel Acebes				6300
 14/07/2006	14-07-2006	Trajes y camisas	-5720	9498	310435	Mariano Rajoy				5720
 26/07/2006	26-07-2006	Federico Trillo	-3000	6498	307435	Federico Trillo				3000
-14/09/2006	14-09-2006	Antonio Pinal / Emilio	12000		319435	Antonio Pinal			12000	
+14/09/2006	14-09-2006	Antonio Pinal / Emilio	12000		319435	Antonio Pinal Gil			12000	
 2/10/2006	02-10-2006	4º Trimestre Mariano	-6300		313135	Mariano Rajoy				6300
 2/10/2006	02-10-2006	4º Trimestre Ángel	-6300	5898	306835	Ángel Acebes				6300
 25/10/2006	25-10-2006	J.M. Villar Mir	180000		486835	Juan Manuel Villar Mir			180000	
@@ -627,7 +623,7 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado	c
 10/3/2008	10-03-2008	Jose Mayor (FCC)	90000		1055635	Jose Mayor			90000	
 13/03/2008	13-03-2008	De Ramón Aige a Sevilla	-18000		1037635	Sevilla				18000
 13/03/2008	13-03-2008	Gonzalo (Arquitecto)	-258000		779635	Gonzalo Urquijo				258000
-13/03/2008	13-03-2008	J. Rojo / Valls	-220000	258698	559635	J. Rojo, Valls				220000
+13/03/2008	13-03-2008	J. Rojo / Valls	-220000	258698	559635	Javier Rojo Redondo				220000
 03/2008	15-03-2008	M.R. entrega Asesor	-3000	255698	556635	Mariano Rajoy				3000
 31/03/2008	31-03-2008	Alv. Lapuerta a cambio de talón ingresado hoy	-60000	195698	496635	Álvaro Lapuerta				60000
 18/04/2008	18-04-2008	Trajes M.R.	-11020		485615	Mariano Rajoy				11020
