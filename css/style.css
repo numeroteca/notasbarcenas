@@ -107,6 +107,12 @@ div.tooltip {
 .euros {
   font-size: 16px;    
 }
+.nav img {
+  opacity:.5;
+}
+.nav .active img {
+  opacity:1;
+}
 
 .container {
   margin-left: 20px !important;
