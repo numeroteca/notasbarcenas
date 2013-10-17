@@ -246,6 +246,7 @@ d3.tsv("data/viplist.tsv", function(error, data) {//reads the viplist.tsv file
 		.data(data)
 		.enter().append("div")
 		.attr("class", function(d) { return "inactive btn btn-default btn-xs " + d.tipo;})
+		.attr("title", function(d) { return "(" + d.entidad + ") " + d.description;})
 		.text(function(d) { return d.people; })
 		.on('click',function(d) { //when click on name
 			var personflat = replacement(d.people), //removes spaces and . from person name
@@ -389,6 +390,28 @@ d3.selectAll(".nav li").on('click', function() {//when click //
 			d3.select("#barstimescalewithsaldo").style("display","none");
 			svg.selectAll('.personatable text').text("");
 		}
+	}
+});
+
+//hides shows circles of donantes and beneficiarios
+d3.selectAll("#legendcirculos .btn").on('click', function() {//when click //
+	if (d3.select(this).attr('class')=='btn btn-default btn-xs donante'){ // with time
+			entradascirculos.selectAll("circle.positivo").style("display","none");
+			d3.select(this).attr("class","btn btn-xs donante btn-warning");
+			d3.selectAll("#legendcirculos div.donante").style("display","none");
+	} else if (d3.select(this).attr('class')=='btn btn-xs donante btn-warning') {
+			entradascirculos.selectAll("circle.positivo").style("display","block");
+			d3.select(this).attr("class","btn btn-default btn-xs donante");
+			d3.selectAll("#legendcirculos div.donante").style("display","inline-block");
+	} else if (d3.select(this).attr('class')=='btn btn-default btn-xs beneficiario') {
+			entradascirculos.selectAll("circle.negativo").style("display","none");
+			d3.select(this).attr("class","btn btn-xs beneficiario btn-warning");
+			d3.selectAll("#legendcirculos div.beneficiario").style("display","none");
+	} else if (d3.select(this).attr('class')=='btn btn-xs beneficiario btn-warning') {
+			entradascirculos.selectAll("circle.negativo").style("display","block");
+			d3.select(this).attr("class","btn btn-default btn-xs beneficiario");
+			d3.selectAll("#legendcirculos div.beneficiario").style("display","inline-block");
+	} else {
 	}
 });
 
@@ -967,7 +990,7 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 	.attr("opacity", 0.8)
 	.attr("class", 
 		function(d) {
-			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') + " "+ d.confirmado +" circulos"; //sets the name of the person without spaces as class for the bar
+			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') + " "+ d.confirmado +" circulos" + (d.entradas < 0 ? " negativo" : " positivo"); //sets the name of the person without spaces as class for the bar
 		}) 
 	.on("mouseover", function(d) {      
 		div.transition()
