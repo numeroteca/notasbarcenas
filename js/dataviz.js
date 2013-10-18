@@ -441,7 +441,7 @@ d3.selectAll("#legend .btn").on('click', function() {//when click //
 			d3.select(this).attr("class","btn btn-default btn-xs beneficiario");
 			d3.selectAll("#legend div.beneficiario").style("display","inline-block");
 	} else if (d3.select(this).attr('class')=='btn btn-default btn-xs ingresossuiza') {
-			barstimescale.selectAll("rect.LuisBárcenas").style("display","block");
+			barstimescale.selectAll("rect.LuisBárcenas").style("display","none");
 			d3.select(this).attr("class","btn btn-xs ingresossuiza btn-warning");
 	} else if (d3.select(this).attr('class')=='btn btn-xs ingresossuiza btn-warning') {
 			barstimescale.selectAll("rect.LuisBárcenas").style("display","none");
