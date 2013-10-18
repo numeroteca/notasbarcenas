@@ -9,8 +9,9 @@ path {
   cursor:pointer;
 }
 
-svg { 
-
+.LuisBárcenas {
+	fill:#555;
+	display:none;
 }
 
 circle, rect {
@@ -19,9 +20,6 @@ circle, rect {
 
 circle:hover {
   fill:black;
-}
-
-.circulos {
 }
 
 .axis path,
@@ -77,6 +75,10 @@ line.donaciones:hover  {
 .donabenef{
   background-color:#efb4ee !important;
   border:2px solid #900090 !important;
+}
+.ingresossuiza{
+  background-color:#bbb !important;
+  border:2px solid #555 !important;
 }
 
 .x.axis path {

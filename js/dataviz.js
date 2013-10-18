@@ -393,7 +393,7 @@ d3.selectAll(".nav li").on('click', function() {//when click //
 	}
 });
 
-//hides shows circles of donantes and beneficiarios
+// CIRCLES Active buttons to hide and show circles of donantes and beneficiarios
 d3.selectAll("#legendcirculos .btn").on('click', function() {//when click //
 	if (d3.select(this).attr('class')=='btn btn-default btn-xs donante'){ // with time
 			entradascirculos.selectAll("circle.positivo").style("display","none");
@@ -411,9 +411,45 @@ d3.selectAll("#legendcirculos .btn").on('click', function() {//when click //
 			entradascirculos.selectAll("circle.negativo").style("display","block");
 			d3.select(this).attr("class","btn btn-default btn-xs beneficiario");
 			d3.selectAll("#legendcirculos div.beneficiario").style("display","inline-block");
+	} else if (d3.select(this).attr('class')=='btn btn-default btn-xs ingresossuiza') {
+			entradascirculos.selectAll("circle.LuisBárcenas").style("display","block");
+			d3.select(this).attr("class","btn btn-xs ingresossuiza btn-warning");
+	} else if (d3.select(this).attr('class')=='btn btn-xs ingresossuiza btn-warning') {
+			entradascirculos.selectAll("circle.LuisBárcenas").style("display","none");
+			d3.select(this).attr("class","btn btn-default btn-xs ingresossuiza");
 	} else {
 	}
 });
+
+
+// BARS/time Active buttons to hide and show circles of donantes and beneficiarios
+d3.selectAll("#legend .btn").on('click', function() {//when click //
+	if (d3.select(this).attr('class')=='btn btn-default btn-xs donante'){ // with time
+			barstimescale.selectAll("rect.positivo").style("display","none");
+			d3.select(this).attr("class","btn btn-xs donante btn-warning");
+			d3.selectAll("#legend div.donante").style("display","none");
+	} else if (d3.select(this).attr('class')=='btn btn-xs donante btn-warning') {
+			barstimescale.selectAll("rect.positivo").style("display","block");
+			d3.select(this).attr("class","btn btn-default btn-xs donante");
+			d3.selectAll("#legend div.donante").style("display","inline-block");
+	} else if (d3.select(this).attr('class')=='btn btn-default btn-xs beneficiario') {
+			barstimescale.selectAll("rect.negativo").style("display","none");
+			d3.select(this).attr("class","btn btn-xs beneficiario btn-warning");
+			d3.selectAll("#legend div.beneficiario").style("display","none");
+	} else if (d3.select(this).attr('class')=='btn btn-xs beneficiario btn-warning') {
+			barstimescale.selectAll("rect.negativo").style("display","block");
+			d3.select(this).attr("class","btn btn-default btn-xs beneficiario");
+			d3.selectAll("#legend div.beneficiario").style("display","inline-block");
+	} else if (d3.select(this).attr('class')=='btn btn-default btn-xs ingresossuiza') {
+			barstimescale.selectAll("rect.LuisBárcenas").style("display","block");
+			d3.select(this).attr("class","btn btn-xs ingresossuiza btn-warning");
+	} else if (d3.select(this).attr('class')=='btn btn-xs ingresossuiza btn-warning') {
+			barstimescale.selectAll("rect.LuisBárcenas").style("display","none");
+			d3.select(this).attr("class","btn btn-default btn-xs ingresossuiza");
+	} else {
+	}
+});
+
 
 //Enters data.tsv and starts the graph-----------------------------------------
 d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
@@ -619,8 +655,9 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
     	.attr("fill", function(d) { return d.entradas < 0 ? "#C00000" : "#0055D4"; })
 	.attr("opacity",.4)
 	.attr("class", 
-		function(d) { 
-			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') + " "+ d.confirmado +" bar"; //sets the name of the person without spaces as class for the bar
+		function(d) {
+			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') + " "+ d.confirmado +" bar" + (d.entradas < 0 ? " negativo" : " positivo"); 
+			//sets the name of the person without spaces as class for the bar and adds class negativo/positivo depending on value
 		}) 
 	.attr("x", function(d) { return xScale(d.date); })
 	.attr("width", barwidth+1)
@@ -899,10 +936,6 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 		.attr("cx","170")
 		.attr("cy","53")
 		.attr("r", 2);
-	/*barstimescalewithsaldo.append('text')
-		.attr("x", 60)
-		.attr("y", 80)
-		.text("positiva negativa");*/
 
 
 	//Sado Anotado
@@ -920,7 +953,6 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 				.duration(500)
 				.style("opacity", 0);    
 		});
-
 
 
 	//Saldo Calculado
@@ -990,7 +1022,8 @@ d3.tsv("data/data.tsv", type, function(error, data) {//reads the data.tsv file
 	.attr("opacity", 0.8)
 	.attr("class", 
 		function(d) {
-			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') + " "+ d.confirmado +" circulos" + (d.entradas < 0 ? " negativo" : " positivo"); //sets the name of the person without spaces as class for the bar
+			return d.persona.replace(/\s+/g, '').replace(/\.+/g, '') + " "+ d.confirmado +" circulos" + (d.entradas < 0 ? " negativo" : " positivo"); 
+			//sets the name of the person without spaces as class for the bar and adds class negativo/positivo depending on value
 		}) 
 	.on("mouseover", function(d) {      
 		div.transition()
