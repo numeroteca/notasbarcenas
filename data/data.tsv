@@ -370,28 +370,27 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado	c
 12/2000	15-12-2000	R. Palencia	15000	173452	263803	Rafael Palencia			15000	
 12/2000	15-12-2000	M. Rajoy 3o y 4o trimestre	-12600		251203	Mariano Rajoy				12600
 12/2000	15-12-2000	Paco A.C. 3o y 4o trimestre	-19800	141052	231403	Francisco Álvarez Cascos				19800
-	15-01-2001	Saldo Anterior	0	141052	231403					
 01/2001	15-01-2001	J.M. Rubio	6000	147052	237403	José Manuel Fernández Rubio			6000	
 01/2001	15-01-2001	Federico *	-18000	129052	219403	Federico Trillo				18000
-01/2001	15-02-2001	Celicio Sanch. (Aguas)	30000	159052	249403	Cecilio Sánchez Martín			30000	
-02/2001	15-03-2001	J.M. Rubio	12000	171052	261403	José Manuel Fernández Rubio			12000	
-03/2001	15-04-2001	Especial Jaime	-6000	165052	255403	Jaime Mayor Oreja				6000
+01/2001	15-01-2001	Celicio Sanch. (Aguas)	30000	159052	249403	Cecilio Sánchez Martín			30000	
+02/2001	15-02-2001	J.M. Rubio	12000	171052	261403	José Manuel Fernández Rubio			12000	
+03/2001	15-03-2001	Especial Jaime	-6000	165052	255403	Jaime Mayor Oreja				6000
 04/2001	15-04-2001	Málaga	18000	183052	273403	Málaga			18000	
 04/2001	15-04-2001	J.M. Rubio	30000	213052	303403	José Manuel Fernández Rubio			30000	
 04/2001	15-04-2001	1º Semestre 2001 Mariano	-12600	200452	290803	Mariano Rajoy				12600
 04/2001	15-04-2001	Moreno	6000	206452	296803	José Luis Moreno			6000	
 04/2001	15-04-2001	Federico (resto 2000) *	-8166	198286	288637	Federico Trillo				8166
-04/2001	15-05-2001	País Vasco Mª Eug. Rico (Álvaro)	-2700		285937	María Eugenia García Rico				2700
-05/2001	15-06-2001	1º Semestre 2001 Rodrigo	-13680	181906	272257	Rodrigo Rato				13680
+04/2001	15-04-2001	País Vasco Mª Eug. Rico (Álvaro)	-2700		285937	María Eugenia García Rico				2700
+05/2001	15-05-2001	1º Semestre 2001 Rodrigo	-13680	181906	272257	Rodrigo Rato				13680
 06/2001	15-06-2001	Málaga	18000		290257	Málaga			18000	
-06/2001	15-07-2001	1º Semestre 2001 Jaime	-12600	187306	277657	Jaime Mayor Oreja				12600
+06/2001	15-06-2001	1º Semestre 2001 Jaime	-12600	187306	277657	Jaime Mayor Oreja				12600
 07/2001	15-07-2001	Jaime Ignacio	-3000		274657	Jaime Ignacio del Burgo	confirmado			3000
 07/2001	15-07-2001	Concejal Viuda Francisco Cano (Barcelona)	-18000	166306	256657	Francisco Cano	confirmado			18000
 07/2001	15-07-2001	1º Semestre Paco Álv-Cascos	-19800	148306	236857	Francisco Álvarez Cascos				19800
-07/2001	15-09-2001	Federico correspondiente a 2001 *	-18000	128506	218857	Federico Trillo				18000
+07/2001	15-06-2001	Federico correspondiente a 2001 *	-18000	128506	218857	Federico Trillo				18000
 09/2001	15-09-2001	Deuda Tenerife telemarketing	-27600	100906	191257	Tenerife				27600
 09/2001	15-09-2001	2º Semestre 2001 Rodrigo R.	-13680	87226	177577	Rodrigo Rato				13680
-09/2001	15-11-2001	2º Semestre 2001Mariano	-12600	74626	164977	Mariano Rajoy				12600
+09/2001	15-09-2001	2º Semestre 2001Mariano	-12600	74626	164977	Mariano Rajoy				12600
 11/2001	15-11-2001	2º Semestre 2001 Paco A.Cascos	-19800	54826	145177	Francisco Álvarez Cascos				19800
 11/2001	15-12-2001	Liquidación Linaza (León)	-15000	39826	130177	Luis Guillermo López Linaza				15000
 12/2001	15-12-2001	Resto año 2001 Federico Trillo *	-18000		112177	Federico Trillo				18000
@@ -642,3 +641,71 @@ fecha	date	descripcion	entradas	SaldoAnotado	SaldoCalculado	persona	confirmado	c
 14/10/2008	14-10-2008	D. Cospedal 4º Trimestre	-7500	239188	540125	Dolores de Cospedal				7500
 10/2008	15-10-2008	Entrega M.C	10000	249188	550125	Manuel Contreras			10000	
 12/2008	15-12-2008	G.U.	-200000	49188	350125	Gonzalo Urquijo				200000
+23-06-2000	23-06-2000	Ingreso en Dresdner Bank	-59800.7			Luis Bárcenas	confirmado
+02-07-2000	02-07-2000	Ingreso en Dresdner Bank	-114192.3			Luis Bárcenas	confirmado
+29-01-2001	29-01-2001	Ingreso en Dresdner Bank	-30050.61			Luis Bárcenas	confirmado
+17-05-2001	17-05-2001	Ingreso en Dresdner Bank	-108182.18			Luis Bárcenas	confirmado
+15-06-2001	15-06-2001	Ingreso en Dresdner Bank	-138232.78			Luis Bárcenas	confirmado
+29-06-2001	29-06-2001	Ingreso en Dresdner Bank	-120202.42			Luis Bárcenas	confirmado
+20-07-2001	20-07-2001	Ingreso en Dresdner Bank	-150313.13			Luis Bárcenas	confirmado
+10-09-2001	10-09-2001	Ingreso en Dresdner Bank	-48080.97			Luis Bárcenas	confirmado
+12-10-2001	12-10-2001	Ingreso en Dresdner Bank	-120202.42			Luis Bárcenas	confirmado
+17-12-2001	17-12-2001	Ingreso en Dresdner Bank	-54091.09			Luis Bárcenas	confirmado
+21-12-2001	21-12-2001	Ingreso en Dresdner Bank	-120923.64			Luis Bárcenas	confirmado
+22-03-2002	22-03-2002	Ingreso en Dresdner Bank	-140000			Luis Bárcenas	confirmado
+31-05-2002	31-05-2002	Ingreso en Dresdner Bank	-105000			Luis Bárcenas	confirmado
+12-07-2002	12-07-2002	Ingreso en Dresdner Bank	-239000			Luis Bárcenas	confirmado
+10-01-2003	10-01-2003	Ingreso en Dresdner Bank	-20000			Luis Bárcenas	confirmado
+13-01-2003	13-01-2003	Ingreso en Dresdner Bank	-67000			Luis Bárcenas	confirmado
+07-03-2003	07-03-2003	Ingreso en Ingreso en Lombard Odier	-180000			Luis Bárcenas	confirmado
+21-03-2003	21-03-2003	Ingreso en Ingreso en Lombard Odier	-180000			Luis Bárcenas	confirmado
+04-04-2003	04-04-2003	Ingreso en Ingreso en Lombard Odier	-190000			Luis Bárcenas	confirmado
+02-05-2003	02-05-2003	Ingreso en Dresdner Bank	-162500			Luis Bárcenas	confirmado
+04-06-2003	04-06-2003	Ingreso en Ingreso en Lombard Odier	-180000			Luis Bárcenas	confirmado
+30-06-2003	30-06-2003	Ingreso en Dresdner Bank	-120000			Luis Bárcenas	confirmado
+11-07-2003	11-07-2003	Ingreso en Dresdner Bank	-151000			Luis Bárcenas	confirmado
+11-07-2003	11-07-2003	Ingreso en Dresdner Bank	-60000			Luis Bárcenas	confirmado
+09-09-2003	09-09-2003	Ingreso en Dresdner Bank	-150000			Luis Bárcenas	confirmado
+09-09-2003	09-09-2003	Ingreso en Ingreso en Lombard Odier	-80000			Luis Bárcenas	confirmado
+03-10-2003	03-10-2003	Ingreso en Dresdner Bank	-240000			Luis Bárcenas	confirmado
+28-11-2003	28-11-2003	Ingreso en Dresdner Bank	-180000			Luis Bárcenas	confirmado
+05-12-2003	05-12-2003	Ingreso en Ingreso en Lombard Odier	-300000			Luis Bárcenas	confirmado
+19-12-2003	19-12-2003	Ingreso en Dresdner Bank	-162000			Luis Bárcenas	confirmado
+05-01-2004	05-01-2004	Ingreso en Dresdner Bank	-180000			Luis Bárcenas	confirmado
+23-01-2004	23-01-2004	Ingreso en Ingreso en Lombard Odier	-91000			Luis Bárcenas	confirmado
+23-01-2004	23-01-2004	Ingreso en Ingreso en Lombard Odier	-240000			Luis Bárcenas	confirmado
+20-02-2004	20-02-2004	Ingreso en Ingreso en Lombard Odier	-45000			Luis Bárcenas	confirmado
+09-03-2004	09-03-2004	Ingreso en Ingreso en Lombard Odier	-3000			Luis Bárcenas	confirmado
+10-04-2004	10-04-2004	Ingreso en Dresdner Bank	-150000			Luis Bárcenas	confirmado
+23-04-2004	23-04-2004	Ingreso en Ingreso en Lombard Odier	-200000			Luis Bárcenas	confirmado
+02-07-2004	02-07-2004	Ingreso en Dresdner Bank	-192000			Luis Bárcenas	confirmado
+17-09-2004	17-09-2004	Ingreso en Ingreso en Lombard Odier	-200000			Luis Bárcenas	confirmado
+12-10-2004	12-10-2004	Ingreso en Dresdner Bank	-150000			Luis Bárcenas	confirmado
+01-11-2004	01-11-2004	Ingreso en Ingreso en Lombard Odier	-200000			Luis Bárcenas	confirmado
+04-11-2004	04-11-2004	Ingreso en Ingreso en Lombard Odier	-150000			Luis Bárcenas	confirmado
+08-12-2004	08-12-2004	Ingreso en Ingreso en Lombard Odier	-250000			Luis Bárcenas	confirmado
+04-01-2005	04-01-2005	Ingreso en Dresdner Bank	-149000			Luis Bárcenas	confirmado
+28-01-2005	28-01-2005	Ingreso en Ingreso en Lombard Odier	-200000			Luis Bárcenas	confirmado
+05-03-2005	05-03-2005	Ingreso en Dresdner Bank	-200000			Luis Bárcenas	confirmado
+15-04-2005	15-04-2005	Ingreso en Ingreso en Lombard Odier	-180000			Luis Bárcenas	confirmado
+30-05-2005	30-05-2005	Ingreso en Ingreso en Lombard Odier	-60000			Luis Bárcenas	confirmado
+24-06-2005	24-06-2005	Ingreso en Dresdner Bank	-106000			Luis Bárcenas	confirmado
+16-08-2005	16-08-2005	Ingreso en Ingreso en Lombard Odier	-59000			Luis Bárcenas	confirmado
+06-09-2005	06-09-2005	Ingreso en Ingreso en Lombard Odier	-100000			Luis Bárcenas	confirmado
+12-10-2005	12-10-2005	Ingreso en Ingreso en Lombard Odier	-97000			Luis Bárcenas	confirmado
+15-11-2005	15-11-2005	Ingreso en Ingreso en Lombard Odier	-100000			Luis Bárcenas	confirmado
+08-03-2006	08-03-2006	Ingreso en Ingreso en Lombard Odier	-100000			Luis Bárcenas	confirmado
+27-06-2006	27-06-2006	Ingreso en Dresdner Bank	-40000			Luis Bárcenas	confirmado
+16-11-2006	16-11-2006	Ingreso en Dresdner Bank	-30000			Luis Bárcenas	confirmado
+23-03-2007	23-03-2007	Ingreso en Dresdner Bank	-25000			Luis Bárcenas	confirmado
+03-05-2007	03-05-2007	Ingreso en Ingreso en Lombard Odier	-100000			Luis Bárcenas	confirmado
+25-05-2007	25-05-2007	Ingreso en Ingreso en Lombard Odier	-50000			Luis Bárcenas	confirmado
+13-07-2007	13-07-2007	Ingreso en Ingreso en Lombard Odier	-200000			Luis Bárcenas	confirmado
+13-07-2007	13-07-2007	Ingreso en Ingreso en Lombard Odier	-100000			Luis Bárcenas	confirmado
+16-07-2007	16-07-2007	Ingreso en Ingreso en Lombard Odier	-100000			Luis Bárcenas	confirmado
+12-09-2007	12-09-2007	Ingreso en Ingreso en Lombard Odier	-100000			Luis Bárcenas	confirmado
+15-11-2007	15-11-2007	Ingreso en Ingreso en Lombard Odier	-50000			Luis Bárcenas	confirmado
+06-01-2008	06-01-2008	Ingreso en Ingreso en Lombard Odier	-50000			Luis Bárcenas	confirmado
+29-06-2008	29-06-2008	Ingreso en Ingreso en Lombard Odier	-30000			Luis Bárcenas	confirmado
+24-11-2008	24-11-2008	Ingreso en Ingreso en Lombard Odier	-9000			Luis Bárcenas	confirmado
+31-06-2007	31-06-2007	Ingreso en Dresdner Bank	-20000			Luis Bárcenas	confirmado
